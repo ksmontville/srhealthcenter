@@ -12,7 +12,7 @@
       </v-col>
 
       <v-col class="d-flex flex-column align-center justify-center my-4">
-        <v-btn :href="phone" color="accent">
+        <v-btn :href="appStore.officePhone" color="accent">
           Call for Appointments
         </v-btn>
       </v-col>
@@ -32,11 +32,12 @@
 </template>
 
 <script setup>
+  import {useAppStore} from "@/store/app";
   import HomeViewExpansionPanels from "@/components/HomeViewExpansionPanels.vue";
   import HomeViewContactInfo from "@/components/ContactInfo.vue";
   import logo from '../assets/img/srhc-logo-white.png'
 
-  const phone = "tel:8027637575"
+  const appStore = useAppStore()
 
 </script>
 

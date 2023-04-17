@@ -2,7 +2,9 @@
   <v-app class="app">
     <app-bar v-if="mobile"/>
     <nav-bar v-else />
-    <default-view />
+      <v-parallax :src="mobile ? backgroundSmall : backgroundMedium">
+        <default-view />
+      </v-parallax>
     <default-footer />
   </v-app>
 </template>
@@ -12,10 +14,13 @@
   import NavBar from './TheNavBar.vue'
   import DefaultView from './View.vue'
   import DefaultFooter from "./TheFooter.vue";
+  import backgroundSmall from '../../../src/assets/img/sr-bg-2-sm.jpg'
+  import backgroundMedium from '../../../src/assets/img/sr-bg-2-md.jpg'
+  import backgroundLarge from '../../../src/assets/img/sr-bg-2-lg.jpg'
   import { useDisplay } from "vuetify";
   import { ref } from "vue";
 
-  const { mobile } = useDisplay()
+  const { mobile, height, width } = useDisplay()
 
 
 </script>
