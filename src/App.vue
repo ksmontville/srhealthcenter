@@ -15,7 +15,7 @@
 
   @font-face {
     font-family: "Kalam";
-    src: local("Kalam"), url("public/font/Kalam-Regular.ttf");
+    src: local("Kalam"), url(public/font/Kalam-Regular.ttf) format("truetype");
 
 }
 
