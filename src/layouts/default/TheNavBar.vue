@@ -1,5 +1,6 @@
 <template>
   <v-app-bar class="navbar" color="primary" density="prominent">
+    <v-img :src="backgroundMedium" cover>
     <v-container fluid>
       <v-row align="stretch">
 
@@ -38,7 +39,7 @@
 
       </v-row>
     </v-container>
-
+</v-img>
   </v-app-bar>
 
 </template>

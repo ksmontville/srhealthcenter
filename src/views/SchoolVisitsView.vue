@@ -36,7 +36,7 @@
           and able to provide accurate information to children in a timely and friendly manner.
         </v-list-item>
       </v-list>
-      <v-sheet color="amber-lighten-3" class="rounded pa-4">
+      <v-sheet color="secondary" class="rounded pa-4">
         <p class="my-4 pa-4"><strong>Did you know...</strong></p>
         <p class="my-4 pa-4">... that the average in-school visit SAVES parents 2 hours of travel and work time, while reducing lost
           classroom time for students and teachers by 1.5 hours!</p>
@@ -54,8 +54,8 @@
 
     <v-col cols="12" md="6" id="medicalServices">
       <p class="text-h6 text-white text-center font-weight-bold my-4">Medical Services</p>
-      <v-list>
-        <v-list-item v-for="medicalService in medicalServices" :key="medicalService">
+      <v-list bg-color="highlight">
+        <v-list-item v-for="medicalService in medicalServices" :key="medicalService" class="rounded">
           <v-icon :icon="mdiHospital" class="mx-2" />
           {{ medicalService }}
         </v-list-item>
@@ -176,7 +176,7 @@
   /*}*/
 
   a:hover, router-link:hover {
-    color: #AA8B56;
+    color: #4E6C50;
   }
 
   a:focus, router-link:focus {

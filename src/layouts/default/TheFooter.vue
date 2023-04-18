@@ -1,6 +1,6 @@
 <template>
 
-  <v-footer class="footer" color="highlight">
+  <v-footer class="footer" color="secondary">
     <v-container :class="mobile? '' : 'd-flex flex-row justify-center align-center'">
 
       <v-row class="my-4" align="center" justify="center" no-gutters>
@@ -78,9 +78,9 @@
     opacity: 85%;
   }
 
-  .footer-link {
-    color: #395144;
-  }
+  /*.footer-link {*/
+  /*  color: #395144;*/
+  /*}*/
 
   .router-link-exact-active {
     background-color: rgba(200, 200, 200, 0.2);

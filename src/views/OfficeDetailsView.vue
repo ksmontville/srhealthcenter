@@ -32,7 +32,7 @@
   <v-container class="my-8">
 
     <v-sheet class="d-flex flex-column justify-center align-center rounded-lg mx-auto my-8"
-             max-width="800" height="400" color="accent">
+             max-width="800" height="400" color="primary">
 
       <p class="text-body-1 text-white text-center font-weight-bold my-4">
         Photos of South Royalton Health Center
@@ -118,7 +118,7 @@
   /*}*/
 
   a:hover, router-link:hover {
-    color: #AA8B56;
+    color: #4E6C50;
   }
 
   a:focus, router-link:focus {

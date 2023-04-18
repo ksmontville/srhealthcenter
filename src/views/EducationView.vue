@@ -23,7 +23,7 @@
 
     <v-col cols="12" class="my-4">
       <v-sheet class="d-flex flex-column justify-center align-center rounded-lg mx-auto my-8"
-             max-width="800" height="400" color="accent">
+             max-width="800" height="400" color="primary">
       <p class="text-body-1 text-white text-center font-weight-bold my-4">SRHC Loves to Read!</p>
       <small class="my-2">Click to Enlarge</small>
       <v-carousel color="white" cycle continuous>

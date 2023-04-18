@@ -1,7 +1,7 @@
 <template>
 
   <v-card>
-    <v-tabs v-model="tab" show-arrows bg-color="secondary">
+    <v-tabs v-model="tab" show-arrows bg-color="primary">
       <v-tab v-for="tab in tabs" :key="tab.id" :value="tab.tab">{{ tab.tab }}</v-tab>
     </v-tabs>
 

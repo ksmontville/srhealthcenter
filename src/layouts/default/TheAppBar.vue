@@ -1,20 +1,20 @@
 <template>
   <v-app-bar class="navbar" color="primary" density="prominent">
+    <v-img :src="backgroundSmall" class="navbar-bg" cover>
     <v-app-bar-title @click="$router.push({path: '/'})">
-      <v-container class="d-flex flex-column align-center">
-        <v-row justify="center" align="center">
-          <v-col>
-            <p class="brand text-h4" id="brand">SRHC</p>
+      <v-container>
+        <v-row align="center" justify="center">
+          <v-col cols="" class="text-center">
+            <p class="brand text-h5" id="brand">SRHC</p>
+            <p class="brand text-h6">Improving the lives of children</p>
           </v-col>
-        </v-row>
-        <v-row>
-          <v-col>
-            <p class="brand text-body-1">Improving the lives of children</p>
+          <v-col cols="1">
+            <v-app-bar-nav-icon class="" @click="toggleNav" />
           </v-col>
         </v-row>
       </v-container>
     </v-app-bar-title>
-    <v-app-bar-nav-icon class="ma-auto" @click="toggleNav" />
+    </v-img>
   </v-app-bar>
 
   <v-navigation-drawer v-model="navOpen" location="right" temporary width="200" color="highlight">
@@ -32,7 +32,8 @@
 <script setup>
   import {ref} from "vue";
   import {useAppStore} from "@/store/app";
-
+  import backgroundSmall from "../../../public/img/background/sr-bg-2-sm.jpg"
+  import {mdiMenu} from "@mdi/js";
   const appStore = useAppStore()
 
   const navOpen = ref(null)
@@ -52,6 +53,14 @@
 
   .navbar {
     opacity: 95%;
+  }
+
+  .navbar-bg {
+
+  }
+
+  .navbar-icon {
+
   }
 
   .brand, .nav-link {

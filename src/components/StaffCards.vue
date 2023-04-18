@@ -43,9 +43,9 @@
             </v-card-text>
 
 
-          <v-sheet color="accent" class="staff-card-footer">
+          <v-sheet color="primary" class="staff-card-footer">
             <v-card-actions class="staff-card-actions justify-center">
-              <v-btn class="staff-card-button" variant="flat" color="primary"
+              <v-btn class="staff-card-button" variant="flat" color="highlight"
                      @click="staffDetail.showText = !staffDetail.showText">
                 Learn More
               </v-btn>

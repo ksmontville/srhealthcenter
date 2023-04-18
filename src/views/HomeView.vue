@@ -2,6 +2,7 @@
 
   <v-container class="my-8" id="hero">
     <v-row>
+    <v-sheet color="primary" class="rounded-lg ma-auto pa-4">
       <v-col cols="12">
         <v-img :src="logo" alt="South Royal Health Center Logo" max-height="400"></v-img>
       </v-col>
@@ -11,12 +12,12 @@
       </v-col>
 
       <v-col class="d-flex flex-column align-center justify-center my-4">
-        <v-btn :href="appStore.officePhone" color="accent" size="large">
+        <v-btn :href="appStore.officePhone" color="highlight" size="large">
           Call for Appointments
         </v-btn>
       </v-col>
+</v-sheet>
     </v-row>
-
     <v-row class="my-16" justify="center" align="start">
       <v-col cols="12" md="8">
         <p class="body-text text-body-1 text-white">

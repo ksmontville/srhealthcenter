@@ -24,23 +24,25 @@
 <style scoped>
 
   .app {
-    background-image: url("../../../src/assets/img/sr-bg-2-sm.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+    margin: auto;
+    background-color: #AA8B56;
+    /*background-image: url("../../../src/assets/img/sr-bg-2-sm.jpg");*/
+    /*background-repeat: no-repeat;*/
+    /*background-attachment: fixed;*/
+    /*background-position: center;*/
+    /*background-size: cover;*/
   }
 
   @media (min-width: 768px) {
-    .app {
-      background-image: url("../../../src/assets/img/sr-bg-2-md.jpg");
-    }
+    /*.app {*/
+    /*  background-image: url("../../../src/assets/img/sr-bg-2-md.jpg");*/
+    /*}*/
   }
 
   @media (min-width: 1280px) {
-    .app {
-      background-image: url("../../../src/assets/img/sr-bg-2-lg.jpg");
-    }
+    /*.app {*/
+    /*  background-image: url("../../../src/assets/img/sr-bg-2-lg.jpg");*/
+    /*}*/
   }
 
 </style>
