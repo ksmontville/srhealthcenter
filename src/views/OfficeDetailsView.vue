@@ -35,7 +35,7 @@
              max-width="800" height="400" color="accent">
 
       <p class="text-body-1 text-white text-center font-weight-bold my-4">
-        Photos of our South Royalton Health Center
+        Photos of South Royalton Health Center
       </p>
       <small class="my-2">Click to Enlarge</small>
       <v-carousel color="white" cycle continuous>
