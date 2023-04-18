@@ -4,7 +4,9 @@ import {ref} from "vue";
 
 export const useAppStore = defineStore('app', () => {
 
-  const officePhone = "tel:8027637575"
+  const officePhone = ref("tel:8027637575")
+
+  const patientPortalUrl = ref("https://12904.portal.athenahealth.com/")
 
   const navLinks = ref([
   {
@@ -69,7 +71,7 @@ export const useAppStore = defineStore('app', () => {
     }
   }
 
-  return {officePhone, navLinks, activeId,
+  return {officePhone, patientPortalUrl, navLinks, activeId,
           setActiveId,
   }
 })

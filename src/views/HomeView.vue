@@ -11,32 +11,46 @@
       </v-col>
 
       <v-col class="d-flex flex-column align-center justify-center my-4">
-        <v-btn :href="appStore.officePhone" color="accent">
+        <v-btn :href="appStore.officePhone" color="accent" size="large">
           Call for Appointments
         </v-btn>
       </v-col>
     </v-row>
+
+    <v-row class="my-16" justify="center" align="start">
+      <v-col cols="12" md="8">
+        <p class="body-text text-body-1 text-white">
+          {{ aboutUsText }}
+        </p>
+      </v-col>
+
+      <v-col cols="12" md="4">
+        <testimonial-cards />
+      </v-col>
+    </v-row>
   </v-container>
-
-
-  <v-sheet id="expansionPanels" max-width="800" class="rounded-lg mx-auto my-16">
-    <home-view-expansion-panels />
-  </v-sheet>
-
-
-<!--  <v-sheet id="contactInfo" max-width="800" class="rounded-lg mx-auto my-16">-->
-<!--    <home-view-contact-info />-->
-<!--  </v-sheet>-->
 
 </template>
 
 <script setup>
   import {useAppStore} from "@/store/app";
-  import HomeViewExpansionPanels from "@/components/HomeViewExpansionPanels.vue";
-  import HomeViewContactInfo from "@/components/ContactInfo.vue";
+  import TestimonialCards from "@/components/TestimonialCards.vue";
   import logo from '../assets/img/srhc-logo-white.png'
 
   const appStore = useAppStore()
+
+  const aboutUsText = "Welcome to South Royalton Health Center. If you're looking for accessible pediatric care, " +
+  "a child–friendly environment, and a responsive team of pediatricians in the Upper Valley/Central Vermont, " +
+  "then look no further. A medical home is defined as patient-centered, comprehensive, team-based, coordinated, accessible, " +
+  "and focused on quality and safety, and thats us! We love kids, and our goal is to have a positive impact in the " +
+  "lives of children by providing exceptional health care and compassionate service to the families we serve.\n" +
+  "At South Royalton Health Center, we offer a full range of pediatric care including prenatal visits for " +
+  "expecting parents, well–child check–ups, immunizations, sick appointments, mental health and women's health care. " +
+  "Our caring team is committed to providing quality service in a comfortable, safe office setting where children and " +
+  "parents can feel at ease. We also set aside time to equip parents with the tools and resources necessary for the " +
+  "development of healthy children from birth to adolescence. We have a dedicated nurse care coordinator to help " +
+  "patients and families coordinate their specialty care and community/school resources to achieve the best quality " +
+  "of life possible and to help in the transition to adult medicine.\n"
 
 </script>
 

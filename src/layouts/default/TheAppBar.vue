@@ -35,8 +35,6 @@
 
   const appStore = useAppStore()
 
-  const patientPortalUrl = "https://12904.portal.athenahealth.com/"
-
   const navOpen = ref(null)
 
   const toggleNav = () => {
@@ -45,7 +43,7 @@
 
 
   const openPatientPortal = () => {
-  window.open(patientPortalUrl)
+  window.open(appStore.patientPortalUrl)
   }
 
 </script>
