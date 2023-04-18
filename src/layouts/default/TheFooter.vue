@@ -1,6 +1,6 @@
 <template>
 
-  <v-footer color="highlight">
+  <v-footer class="footer" color="highlight">
     <v-container :class="mobile? '' : 'd-flex flex-row justify-center align-center'">
 
       <v-row class="my-4" align="center" justify="center" no-gutters>
@@ -73,6 +73,10 @@
 </script>
 
 <style scoped>
+
+  .footer {
+    opacity: 85%;
+  }
 
   .footer-link {
     color: #395144;

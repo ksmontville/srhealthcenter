@@ -61,7 +61,15 @@ export const useAppStore = defineStore('app', () => {
 
   // ID of active nav-link for styling purposes
   const activeId = ref(null)
+  const setActiveId = (route) => {
+    for(let i=0;  i < navLinks.value.length; i++) {
+      if(navLinks.value[i].route === route) {
+        activeId.value = navLinks.value[i].id
+      }
+    }
+  }
 
-
-  return {officePhone, navLinks, activeId, }
+  return {officePhone, navLinks, activeId,
+          setActiveId,
+  }
 })

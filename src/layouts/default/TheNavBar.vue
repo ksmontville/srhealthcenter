@@ -1,6 +1,5 @@
 <template>
-  <v-app-bar color="primary" density="prominent">
-
+  <v-app-bar class="navbar" color="primary" density="prominent">
     <v-container fluid>
       <v-row align="stretch">
 
@@ -29,7 +28,9 @@
           <v-row class="d-flex justify-center ma-auto">
             <v-col v-for="navLink in appStore.navLinks" :key="navLink.id" class="d-flex justify-center">
               <v-btn :text="navLink.name" :to="navLink.route" variant="text"
-              @click="appStore.activeId = navLink.id" :class="appStore.activeId === navLink.id ? 'highlight' : ''"
+              @click="appStore.activeId = navLink.id"
+                     class="nav-link"
+                     :class="appStore.activeId === navLink.id ? 'highlight' : ''"
               />
             </v-col>
           </v-row>
@@ -43,8 +44,9 @@
 </template>
 
 <script setup>
-  import { mdiFacebook } from "@mdi/js";
-  import { ref } from "vue";
+  import backgroundSmall from '../../../src/assets/img/sr-bg-2-sm.jpg'
+  import backgroundMedium from '../../../src/assets/img/sr-bg-2-md.jpg'
+  import backgroundLarge from '../../../src/assets/img/sr-bg-2-lg.jpg'
   import {useAppStore} from "@/store/app";
 
   // const openFacebook = () => {
@@ -56,7 +58,12 @@
 </script>
 
 <style scoped>
-  .brand {
+
+  .navbar {
+    opacity: 95%;
+  }
+
+  .brand, .nav-link {
     font-family: "Kalam", Roboto, Arial, sans-serif !important;
   }
 

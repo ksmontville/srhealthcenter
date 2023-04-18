@@ -3,8 +3,7 @@
   <v-container class="my-8" id="hero">
     <v-row>
       <v-col cols="12">
-        <v-img :src="logo" alt="South Royal Health Center Logo" max-height="400">
-        </v-img>
+        <v-img :src="logo" alt="South Royal Health Center Logo" max-height="400"></v-img>
       </v-col>
 
       <v-col cols="12" class="my-4">
