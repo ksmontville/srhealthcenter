@@ -2,8 +2,9 @@
 
   <v-container class="my-8" id="hero">
     <v-row>
-    <v-sheet color="primary" class="rounded-lg ma-auto pa-4">
+    <v-sheet color="primary" class="rounded-lg ma-auto pa-4" elevation="16">
       <v-col cols="12">
+
         <v-img :src="logo" alt="South Royal Health Center Logo" max-height="400"></v-img>
       </v-col>
 
@@ -14,6 +15,12 @@
       <v-col class="d-flex flex-column align-center justify-center my-4">
         <v-btn :href="appStore.officePhone" color="highlight" size="large">
           Call for Appointments
+        </v-btn>
+      </v-col>
+
+      <v-col class="d-flex flex-column align-center justify-center my-4">
+        <v-btn color="highlight" size="large" @click="openPatientPortal(appStore.patientPortalUrl)">
+          Patient Portal
         </v-btn>
       </v-col>
 </v-sheet>
@@ -40,10 +47,14 @@
 
   const appStore = useAppStore()
 
+  const openPatientPortal = (url) => {
+    window.open(url)
+  }
+
   const aboutUsText = "Welcome to South Royalton Health Center. If you're looking for accessible pediatric care, " +
   "a child–friendly environment, and a responsive team of pediatricians in the Upper Valley/Central Vermont, " +
   "then look no further. A medical home is defined as patient-centered, comprehensive, team-based, coordinated, accessible, " +
-  "and focused on quality and safety, and thats us! We love kids, and our goal is to have a positive impact in the " +
+  "and focused on quality and safety, and that's us! We love kids, and our goal is to have a positive impact in the " +
   "lives of children by providing exceptional health care and compassionate service to the families we serve.\n" +
   "At South Royalton Health Center, we offer a full range of pediatric care including prenatal visits for " +
   "expecting parents, well–child check–ups, immunizations, sick appointments, mental health and women's health care. " +

@@ -1,14 +1,14 @@
 <template>
   <v-app-bar class="navbar" color="primary" density="prominent">
-    <v-img :src="backgroundSmall" class="navbar-bg" cover>
-    <v-app-bar-title @click="$router.push({path: '/'})">
+    <v-img :src="navbarBg" class="navbar-bg" cover>
+    <v-app-bar-title>
       <v-container>
         <v-row align="center" justify="center">
-          <v-col cols="" class="text-center">
+          <v-col cols="" class="text-center" @click="$router.push({path: '/'})">
             <p class="brand text-h5" id="brand">SRHC</p>
             <p class="brand text-h6">Improving the lives of children</p>
           </v-col>
-          <v-col cols="1">
+          <v-col cols="2">
             <v-app-bar-nav-icon class="" @click="toggleNav" />
           </v-col>
         </v-row>
@@ -32,8 +32,8 @@
 <script setup>
   import {ref} from "vue";
   import {useAppStore} from "@/store/app";
+  import navbarBg from '../../../public/img/background/navbar-bg.jpg'
   import backgroundSmall from "../../../public/img/background/sr-bg-2-sm.jpg"
-  import {mdiMenu} from "@mdi/js";
   const appStore = useAppStore()
 
   const navOpen = ref(null)

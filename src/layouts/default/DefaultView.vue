@@ -1,6 +1,6 @@
 <template>
   <v-app class="app">
-    <app-bar v-if="mobile"/>
+    <app-bar v-if="smAndDown"/>
     <nav-bar v-else />
     <default-view />
     <default-footer />
@@ -17,7 +17,7 @@
   // import backgroundLarge from '../../../src/assets/img/sr-bg-2-lg.jpg'
   import { useDisplay } from "vuetify";
 
-  const { mobile } = useDisplay()
+  const { smAndDown } = useDisplay()
 
 </script>
 

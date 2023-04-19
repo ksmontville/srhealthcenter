@@ -1,7 +1,7 @@
 <template>
 
   <v-card v-for="testimonial in testimonials" :key="testimonial.id" max-width="400"
-          color="highlight" class="testimonial-card mx-auto my-4">
+          color="highlight" class="testimonial-card mx-auto my-4" elevation="8">
     <v-card-title class="">
       {{ testimonial.name }}
     </v-card-title>

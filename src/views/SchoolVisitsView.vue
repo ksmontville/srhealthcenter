@@ -36,7 +36,7 @@
           and able to provide accurate information to children in a timely and friendly manner.
         </v-list-item>
       </v-list>
-      <v-sheet color="secondary" class="rounded pa-4">
+      <v-sheet color="secondary" class="rounded pa-4" elevation="8">
         <p class="my-4 pa-4"><strong>Did you know...</strong></p>
         <p class="my-4 pa-4">... that the average in-school visit SAVES parents 2 hours of travel and work time, while reducing lost
           classroom time for students and teachers by 1.5 hours!</p>
@@ -54,7 +54,7 @@
 
     <v-col cols="12" md="6" id="medicalServices">
       <p class="text-h6 text-white text-center font-weight-bold my-4">Medical Services</p>
-      <v-list bg-color="highlight">
+      <v-list bg-color="highlight" class="rounded" elevation="8">
         <v-list-item v-for="medicalService in medicalServices" :key="medicalService" class="rounded">
           <v-icon :icon="mdiHospital" class="mx-2" />
           {{ medicalService }}
@@ -94,7 +94,7 @@
 
       <v-row justify="center" align="start">
         <v-col cols="12" md="3">
-          <v-sheet class="rounded mx-auto my-8">
+          <v-sheet class="rounded mx-auto my-8" max-width="400">
             <v-sheet color="amber-lighten-3" class="rounded text-h6 text-center pa-4">
               <strong>NEW!</strong> We are now offering these dental services to adults!
             </v-sheet>

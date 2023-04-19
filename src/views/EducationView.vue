@@ -18,20 +18,24 @@
      </v-col>
 
     <v-col class="mb-4" cols="12">
-      <education-tabs />
+      <v-lazy>
+        <education-tabs />
+      </v-lazy>
     </v-col>
 
     <v-col cols="12" class="my-4">
-      <v-sheet class="d-flex flex-column justify-center align-center rounded-lg mx-auto my-8"
-             max-width="800" height="400" color="primary">
-      <p class="text-body-1 text-white text-center font-weight-bold my-4">SRHC Loves to Read!</p>
-      <small class="my-2">Click to Enlarge</small>
-      <v-carousel color="white" cycle continuous>
-        <v-carousel-item v-for="photo in photos" :key="photo.id">
-          <v-img :src="photo.image" :alt="photo.alt" height="400" cover @click="openImage(photo.image)" />
-        </v-carousel-item>
-      </v-carousel>
-      </v-sheet>
+      <v-lazy>
+        <v-sheet class="d-flex flex-column justify-center align-center rounded-lg mx-auto my-8"
+               max-width="800" height="400" color="primary">
+        <p class="text-body-1 text-white text-center font-weight-bold my-4">SRHC Loves to Read!</p>
+        <small class="my-2">Click to Enlarge</small>
+        <v-carousel color="white" cycle continuous>
+          <v-carousel-item v-for="photo in photos" :key="photo.id">
+            <v-img :src="photo.image" :alt="photo.alt" height="400" cover @click="openImage(photo.image)" />
+          </v-carousel-item>
+        </v-carousel>
+        </v-sheet>
+      </v-lazy>
     </v-col>
   </v-row>
 
@@ -41,7 +45,7 @@
 
 <script setup>
 
-  import EducationTabs from "@/components/EducationTabs.vue";
+  import EducationTabs from "@/components/ReadingTabs.vue";
   import bookshelf from '../../public/img/education/bookshelf.jpg'
   import readingPoster from '../../public/img/education/reading-poster.jpg'
   import recommendedBooks from '../../public/img/education/recommended-books.jpg'

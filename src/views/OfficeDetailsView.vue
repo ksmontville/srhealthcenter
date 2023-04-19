@@ -29,26 +29,27 @@
   </v-container>
 
 <!--  Carousel -->
-  <v-container class="my-8">
+  <v-lazy>
+    <v-container class="my-8">
 
-    <v-sheet class="d-flex flex-column justify-center align-center rounded-lg mx-auto my-8"
-             max-width="800" height="400" color="primary">
+      <v-sheet class="d-flex flex-column justify-center align-center rounded-lg mx-auto my-8"
+               max-width="800" height="400" color="primary">
 
-      <p class="text-body-1 text-white text-center font-weight-bold my-4">
-        Photos of South Royalton Health Center
-      </p>
-      <small class="my-2">Click to Enlarge</small>
-      <v-carousel color="white" cycle continuous>
+        <p class="text-body-1 text-white text-center font-weight-bold my-4">
+          Photos of South Royalton Health Center
+        </p>
+        <small class="my-2">Click to Enlarge</small>
+        <v-carousel color="white" cycle continuous>
 
-        <v-carousel-item v-for="officePhoto in officePhotos" :key="officePhoto.id">
-          <v-img :src="officePhoto.image" :alt="officePhoto.alt" cover height="400"
-                 @click="openImage(officePhoto.image)"/>
-        </v-carousel-item>
-      </v-carousel>
+          <v-carousel-item v-for="officePhoto in officePhotos" :key="officePhoto.id">
+            <v-img :src="officePhoto.image" :alt="officePhoto.alt" cover height="400"
+                   @click="openImage(officePhoto.image)"/>
+          </v-carousel-item>
+        </v-carousel>
 
-    </v-sheet>
- </v-container>
-
+      </v-sheet>
+   </v-container>
+  </v-lazy>
 </template>
 
 <script setup>

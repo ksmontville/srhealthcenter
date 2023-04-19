@@ -1,10 +1,10 @@
 <template>
   <v-app-bar class="navbar" color="primary" density="prominent">
-    <v-img :src="backgroundMedium" cover>
+    <v-img :src="navbarBg" cover>
     <v-container fluid>
-      <v-row align="stretch">
 
-        <v-col>
+      <v-row>
+        <v-col cols="4">
           <v-app-bar-title>
             <v-container class="d-flex flex-column align-center">
               <v-row>
@@ -16,6 +16,7 @@
 <!--                  <v-icon :icon="mdiFacebook" class="mx-4" @click="openFacebook"/>-->
 <!--                </v-col>-->
               </v-row>
+
               <v-row>
                 <v-col>
                   <p class="brand text-h6">Improving the lives of children</p>
@@ -26,12 +27,12 @@
         </v-col>
 
         <v-col cols="8">
-          <v-row class="d-flex justify-center ma-auto">
-            <v-col v-for="navLink in appStore.navLinks" :key="navLink.id" class="d-flex justify-center">
+          <v-row justify="end" align="center">
+            <v-col cols="2" v-for="navLink in appStore.navLinks" :key="navLink.id" class="mx-2">
               <v-btn :text="navLink.name" :to="navLink.route" variant="text"
-              @click="appStore.activeId = navLink.id"
-                     class="nav-link"
-                     :class="appStore.activeId === navLink.id ? 'highlight' : ''"
+                @click="appStore.activeId = navLink.id"
+                class="nav-link"
+                :class="appStore.activeId === navLink.id ? 'highlight' : ''"
               />
             </v-col>
           </v-row>
@@ -45,9 +46,8 @@
 </template>
 
 <script setup>
-  import backgroundSmall from '../../../src/assets/img/sr-bg-2-sm.jpg'
+  import navbarBg from '../../../public/img/background/navbar-bg.jpg'
   import backgroundMedium from '../../../src/assets/img/sr-bg-2-md.jpg'
-  import backgroundLarge from '../../../src/assets/img/sr-bg-2-lg.jpg'
   import {useAppStore} from "@/store/app";
 
   // const openFacebook = () => {
