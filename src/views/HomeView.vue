@@ -26,7 +26,7 @@
     </v-row>
     <v-row class="my-16" justify="center" align="start">
       <v-col cols="12" md="8">
-        <p class="body-text text-body-1 text-white">
+        <p class="body-text text-body-1 text-justify text-white pa-4">
           {{ aboutUsText }}
         </p>
       </v-col>

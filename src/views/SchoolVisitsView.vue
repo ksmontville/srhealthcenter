@@ -20,7 +20,7 @@
       <p class="body-text text-body-1 text-white">
         Since school is where students spend a considerable part of their day, providing health services, there are many benefits.
       </p>
-      <v-list class="rounded mt-4 pa-4" bg-color="highlight">
+      <v-list class="rounded mt-4 pa-4 mx-auto" bg-color="highlight" max-width="800">
         <v-list-item>
           <v-icon :icon="mdiHospital" class="mx-2" />
           <strong>Parents benefit</strong> by not losing time from work and getting prompt treatment for their children.
@@ -36,7 +36,7 @@
           and able to provide accurate information to children in a timely and friendly manner.
         </v-list-item>
       </v-list>
-      <v-sheet color="secondary" class="rounded pa-4" elevation="8">
+      <v-sheet color="secondary" class="rounded pa-4 mx-auto" elevation="8" max-width="800">
         <p class="my-4 pa-4"><strong>Did you know...</strong></p>
         <p class="my-4 pa-4">... that the average in-school visit SAVES parents 2 hours of travel and work time, while reducing lost
           classroom time for students and teachers by 1.5 hours!</p>
@@ -49,7 +49,7 @@
     </v-col>
 
     <v-col cols="12">
-      <p class="text-h5 text-white text-center body-text my-8">Healthhub provides the following services to schools:</p>
+      <p class="text-h5 text-white text-center body-text my-8">HealthHUB provides the following services to schools:</p>
     </v-col>
 
     <v-col cols="12" md="6" id="medicalServices">
