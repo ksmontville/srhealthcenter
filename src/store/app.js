@@ -40,11 +40,6 @@ export const useAppStore = defineStore('app', () => {
   route: "forms"
   },
   {
-  id: 6,
-  name: "Education",
-  route: "education"
-  },
-  {
   id: 7,
   name: "Services",
   route: "services"

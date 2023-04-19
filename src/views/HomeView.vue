@@ -1,6 +1,5 @@
 <template>
-
-  <v-container class="my-8" id="hero">
+  <v-container class="mt-8" id="hero">
     <v-row>
     <v-sheet color="primary" class="rounded-lg ma-auto pa-4" elevation="16">
       <v-col cols="12">
@@ -59,9 +58,9 @@
   "At South Royalton Health Center, we offer a full range of pediatric care including prenatal visits for " +
   "expecting parents, well–child check–ups, immunizations, sick appointments, mental health and women's health care. " +
   "Our caring team is committed to providing quality service in a comfortable, safe office setting where children and " +
-  "parents can feel at ease. We also set aside time to equip parents with the tools and resources necessary for the " +
+  "parents can feel at ease. We also set aside time to equip parents with the tools and education necessary for the " +
   "development of healthy children from birth to adolescence. We have a dedicated nurse care coordinator to help " +
-  "patients and families coordinate their specialty care and community/school resources to achieve the best quality " +
+  "patients and families coordinate their specialty care and community/school education to achieve the best quality " +
   "of life possible and to help in the transition to adult medicine.\n"
 
 </script>

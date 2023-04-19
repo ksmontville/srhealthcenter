@@ -54,11 +54,11 @@
       name: "Forms",
       route: "forms",
     },
-    {
-      id: 2,
-      name: "Education",
-      route: "education",
-    },
+    // {
+    //   id: 2,
+    //   name: "Education",
+    //   route: "education",
+    // },
     {
       id: 3,
       name: "Contact",

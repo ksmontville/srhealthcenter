@@ -27,7 +27,7 @@
         </v-col>
 
         <v-col cols="8">
-          <v-row justify="end" align="center">
+          <v-row justify="center" align="center">
             <v-col cols="2" v-for="navLink in appStore.navLinks" :key="navLink.id" class="mx-2">
               <v-btn :text="navLink.name" :to="navLink.route" variant="text"
                 @click="appStore.activeId = navLink.id"
@@ -47,7 +47,7 @@
 
 <script setup>
   import navbarBg from '../../../public/img/background/navbar-bg.jpg'
-  import backgroundMedium from '../../../src/assets/img/sr-bg-2-md.jpg'
+  import backgroundMedium from '../../assets/img/sr-bg-2-md.jpg'
   import {useAppStore} from "@/store/app";
 
   // const openFacebook = () => {

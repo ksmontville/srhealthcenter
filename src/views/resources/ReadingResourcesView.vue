@@ -1,7 +1,7 @@
 <template>
  <v-container>
 
-  <p class="text-h2 text-white text-center my-16">Education</p>
+  <p class="text-h2 text-white text-center my-16">Reading Resources</p>
 
   <v-row justify="center" align="start">
      <v-col class="my-4" cols="12">
@@ -46,9 +46,9 @@
 <script setup>
 
   import EducationTabs from "@/components/ReadingTabs.vue";
-  import bookshelf from '../../public/img/education/bookshelf.jpg'
-  import readingPoster from '../../public/img/education/reading-poster.jpg'
-  import recommendedBooks from '../../public/img/education/recommended-books.jpg'
+  import bookshelf from '../../../public/img/education/bookshelf.jpg'
+  import readingPoster from '../../../public/img/education/reading-poster.jpg'
+  import recommendedBooks from '../../../public/img/education/recommended-books.jpg'
 
    const openImage = (src) => {
     window.open(src)

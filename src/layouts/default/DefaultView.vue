@@ -3,6 +3,7 @@
     <app-bar v-if="smAndDown"/>
     <nav-bar v-else />
     <default-view />
+    <education-toolbar />
     <default-footer />
   </v-app>
 </template>
@@ -10,6 +11,7 @@
 <script setup>
   import AppBar from './TheAppBar.vue'
   import NavBar from './TheNavBar.vue'
+  import EducationToolbar from "@/layouts/default/EducationToolbar.vue";
   import DefaultView from './View.vue'
   import DefaultFooter from "./TheFooter.vue";
   // import backgroundSmall from '../../../src/assets/img/sr-bg-2-sm.jpg'

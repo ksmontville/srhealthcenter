@@ -32,7 +32,7 @@
       our practice and doctors.
     </p>
     <p class="body-text text-body-1 text-white">
-      Explore our <router-link :to="{path: 'education'}" @click="appStore.setActiveId('education')">Education</router-link> section for some great tips on newborn care.
+      Explore our <router-link :to="{path: 'reading'}" @click="appStore.setActiveId('reading')">Education</router-link> section for some great tips on newborn care.
     </p>
     <p class="body-text text-body-1 text-white">
       Again, Congratulations! Enjoy this exciting time.
