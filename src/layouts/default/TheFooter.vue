@@ -41,7 +41,6 @@
   const appStore = useAppStore()
 
   const copy = "Copyright © 2023 South Royalton Health Center"
-  const facebookUrl = "https://www.facebook.com/southroyaltonhealthcenter"
 
   const footerLinks = [
     {
@@ -67,7 +66,7 @@
   ]
 
   const openFacebook = () => {
-    window.open(facebookUrl)
+    window.open(appStore.facebookUrl)
   }
 
 </script>

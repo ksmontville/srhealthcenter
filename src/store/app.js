@@ -7,6 +7,7 @@ export const useAppStore = defineStore('app', () => {
   const officePhone = ref("tel:8027637575")
 
   const patientPortalUrl = ref("https://12904.portal.athenahealth.com/")
+  const facebookUrl = ref("https://www.facebook.com/southroyaltonhealthcenter/")
 
   const navLinks = ref([
   {
@@ -66,7 +67,7 @@ export const useAppStore = defineStore('app', () => {
     }
   }
 
-  return {officePhone, patientPortalUrl, navLinks, activeId,
+  return {officePhone, patientPortalUrl, facebookUrl, navLinks, activeId,
           setActiveId,
   }
 })

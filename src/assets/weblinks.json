@@ -1,0 +1,143 @@
+{
+  "General Sites": [
+    {
+      "id": 0,
+      "text": "HealthyChildren.org",
+      "url": "https://www.healthychildren.org/"
+    },
+    {
+      "id": 1,
+      "text": "Mayo Clinic Topics",
+      "url": "https://www.mayoclinic.org/healthy-lifestyle/childrens-health/basics/childrens-health/hlv-20049425"
+    },
+    {
+      "id": 2,
+      "text": "Cleveland Clinic's Children's Health Archives",
+      "url": "http://health.clevelandclinic.org/topics/family-health/childrens-health/?utm_campaign=healthhub-ccch-url&utm_medium=offline&utm_source=redirect"
+    },
+    {
+      "id": 3,
+      "text": "CDC: Vaccines",
+      "url": "https://www.cdc.gov/vaccines/pubs/Parents-Guide/default.htm"
+    },
+    {
+      "id": 4,
+      "text": "Swallowing Pills",
+      "url": "https://kidshealth.org/en/parents/swallowing-pills.html"
+    },
+    {
+      "id": 5,
+      "text": "Managing Your Child's Pain While Getting a Shot",
+      "url": "https://www.healthychildren.org/English/safety-prevention/immunizations/Pages/Managing-Your-Childs-Pain-While-Getting-a-Shot.aspx"
+    },
+    {
+      "id": 6,
+      "text": "Lice Treatment",
+      "url": "https://nuvoforheadlice.com/?page_id=225"
+    },
+    {
+      "id": 7,
+      "text": "Dust Mites Prevention",
+      "url": "https://www.mayoclinic.org/diseases-conditions/dust-mites/symptoms-causes/syc-20352173"
+    },
+    {
+      "id": 8,
+      "text": "Lead Prevention",
+      "url": "https://www.cdc.gov/nceh/lead/prevention/populations.htm?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fnceh%2Flead%2Ftips.htm"
+    },
+    {
+      "id": 9,
+      "text": "Bladder Irritants",
+      "url": "https://www.hopkinsmedicine.org/johns_hopkins_bayview/_docs/medical_services/gynecology_obstetrics/bladder_irritants.pdf"
+    },
+    {
+      "id": 10,
+      "text": "Choosing Wisely: Decision Health Tools from Antibiotics to X-ray\n",
+      "url": "https://www.choosingwisely.org/?s=children"
+    },
+    {
+      "id": 11,
+      "text": "Poison Ivy",
+      "url": "https://www.thespruce.com/how-to-identify-poison-ivy-in-all-the-seasons-4125544"
+    },
+    {
+      "id": 12,
+      "text": "How Books Can Help Your Child",
+      "url": "https://pathways.org/how-books-can-help-your-child/?utm_source=mailchimp&utm_medium=email&utm_campaign=weekly&utm_source=Pathways.org+Subscribers&utm_campaign=396d9e152b-EMAIL_CAMPAIGN_2020_03_02_02_56_COPY_01&utm_medium=email&utm_term=0_2e064ee131-396d9e152b-188193981"
+    },
+    {
+      "id": 13,
+      "text": "Headache Tracker App",
+      "url": "https://migrainebuddy.com/"
+    }
+  ],
+  "Educational Resources": [
+    {
+      "id": 14,
+      "text": "Special Education Resources for Parents",
+      "url": "https://nhspecialed.org/"
+    },
+    {
+      "id": 15,
+      "text": "ADD/ADHD: ADDitude Magazine, Excellent Tools and Resources",
+      "url": "https://www.additudemag.com/what-is-adhd-symptoms-causes-treatments/"
+    },
+    {
+      "id": 16,
+      "text": "Autism Speaks",
+      "url": "https://www.nationalautismresources.com/"
+    },
+    {
+      "id": 17,
+      "text": "School Discipline Rights of Students with IEPs and 504 Plans",
+      "url": "https://www.parentcenterhub.org/school-discipline-rights-of-students-with-ieps-504-plans/"
+    },
+    {
+      "id": 18,
+      "text": "22-Ways-to-Make-Sure-Your-Kid-Loves-School",
+      "url": "https://www.srhealthcenter.com/storage/app/media/22-Ways-to-Make-Sure-Your-Kid-Loves-School.pdf"
+    }
+    ],
+  "Nutrition": [
+      {
+      "id": "",
+      "text": "",
+      "url": ""
+    }
+    ],
+  "Parenting": [
+      {
+      "id": "",
+      "text": "",
+      "url": ""
+    }
+    ],
+  "Adolescence": [
+    {
+      "id": "",
+      "text": "",
+      "url": ""
+    }
+  ],
+  "Mental Health Resources": [
+    {
+      "id": "",
+      "text": "",
+      "url": ""
+    }
+  ],
+  "There's an App for That!": [
+    {
+      "id": "",
+      "text": "",
+      "url": ""
+    }
+  ],
+  "Substance Use Resources": [
+    {
+      "id": "",
+      "text": "",
+      "url": ""
+    }
+  ]
+}
