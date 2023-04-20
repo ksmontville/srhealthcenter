@@ -1,0 +1,46 @@
+[
+    {
+      "id": 0,
+      "text": "Quick Local Guide",
+      "url": "https://mcusercontent.com/f6b75b8ec815ed44e15f52edd/files/254b2dcc-5c60-4b00-b2dc-4fe05866c2b4/Quick_Guide_to_Community_Supports_Final_1.pdf"
+    },
+    {
+      "id": 1,
+      "text": "Teen Guide to Upper Valley Resources",
+      "url": "https://www.dartmouth-hitchcock.org/teen_guide.html",
+      "subtext": "Crisis help, activities, transportation, health and more!"
+    },
+    {
+     "id": 2,
+      "text": "Vermont Agency of Human Services",
+      "url": "https://dcf.vermont.gov/",
+      "subtext": "Provides a wide array of programs and services, including adoption & foster care, child care, child development, child protection, child support, disability determination, and economic benefits such as 3SquaresVT, fuel assistance, and Reach Up."
+    },
+    {
+      "id": 3,
+      "text": "Department for Children and Families",
+      "url": "https://dcf.vermont.gov/",
+      "list": [
+        {
+          "text": "Benefits Call Center",
+          "phone": "1-800-479-6151",
+          "tel": "tel:18004796161"
+        },
+        {
+         "text": "Child Abuse Hotline",
+          "phone": "1-800-649-5285",
+          "tel": "tel:18006495282"
+        },
+        {
+          "text": "Child Care Helpline",
+          "phone": "1-800649-2642",
+          "tel": "tel:18006492642"
+        },
+        {
+          "text": "Child Support Helpline",
+          "phone": "1-800-786-3214",
+          "tel": "tel:18007863215"
+        }
+      ]
+    }
+  ]

@@ -33,6 +33,10 @@
           <v-icon :icon="mdiHospitalBoxOutline" class="mx-2" />
           <small>{{ hour }}</small>
         </v-list-item>
+        <v-list-item class="d-flex align-center justify-center my-4">
+          <p class="text-center font-weight-bold mx-auto my-2">Office Phone</p>
+          <v-btn :href="appStore.officePhone" color="secondary">{{ appStore.officePhoneStr }}</v-btn>
+        </v-list-item>
       </v-list>
 
     </v-list>
@@ -44,9 +48,11 @@
 <script setup>
   import {useDisplay} from "vuetify";
   import {mdiWeb, mdiNearMe, mdiBookOpenPageVariantOutline, mdiNeedle, mdiHospitalBoxOutline } from "@mdi/js";
+  import {useAppStore} from "@/store/app";
 
   const { mobile } = useDisplay()
 
+  const appStore = useAppStore()
   const toolBarTitle = "Patient Education"
 
   const hours = ["Open Monday through Friday at 8:00 am with appointments beginning at 9:00 am until 5:00 pm",

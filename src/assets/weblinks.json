@@ -100,44 +100,272 @@
     ],
   "Nutrition": [
       {
-      "id": "",
-      "text": "",
-      "url": ""
+      "id": "19",
+      "text": "Video: Eating Healthy",
+      "url": "https://www.youtube.com/watch?v=fqhYBTg73fw"
+    },
+    {
+      "id": "20",
+      "text": "Video: New Health Drink",
+      "url": "https://www.youtube.com/watch?v=YjutUrbIM3I"
+    },
+    {
+      "id": "21",
+      "text": "The Vegetarian Resource Group",
+      "url": "https://www.vrg.org/"
+    },
+    {
+      "id": "22",
+      "text": "5210 Let's Go!",
+      "url": "https://mainehealth.org/lets-go/childrens-program"
     }
-    ],
+  ],
   "Parenting": [
       {
-      "id": "",
-      "text": "",
-      "url": ""
+      "id": "23",
+      "text": "Aha! Parenting",
+      "url": "https://www.ahaparenting.com/parenting-tools/connection/play-child-emotional-intelligence"
+    },
+    {
+      "id": "24",
+      "text": "CDC: Essentials for Parenting Toddlers and Preschoolers",
+      "url": "https://www.cdc.gov/parents/essentials/index.html"
+    },
+    {
+      "id": "25",
+      "text": "1-2-3 Magic",
+      "url": "https://www.123magic.com/newsletters/"
+    },
+    {
+      "id": "26",
+      "text": "Coming Out: Information for Parents of LGBTQ Teens",
+      "url": "https://www.healthychildren.org/English/ages-stages/teen/dating-sex/Pages/Four-Stages-of-Coming-Out.aspx"
+    },
+    {
+      "id": "27",
+      "text": "Transyouth Family Allies",
+      "url": "http://www.imatyfa.org/parents.html"
+    },
+    {
+      "id": "28",
+      "text": "Girls Health at All Ages",
+      "url": "https://www.girlology.com/"
+    },
+    {
+      "id": "29",
+      "text": "8 Week FREE ADHD Parenting Class",
+      "url": "https://us8.campaign-archive.com/?u=05c078d02e79a07f64018da62&id=ec65698543&goal=0_d9446392d6-fdfb7538cd-297828245"
+    },
+    {
+      "id": "30",
+      "text": "Single Parenting Positive Parenting",
+      "url": "https://positivepsychology.com/positive-parenting/"
+    },
+    {
+      "id": "31",
+      "text": "Positive Parenting 2",
+      "url": "https://blog.pcc.com/what-is-positive-parenting?utm_campaign=Blog&utm_medium=email&_hsmi=99828423&_hsenc=p2ANqtz-8mkF5-F2cQL1khUA6RXCOSzMNjq_TDDCkDv_KGL3Wh1D35V2vUYKnV4zH8OCWt0DwDHo_CpHYfC9iKEjde0UJpgEqiRffpLpHUizeCDBevy8vMbaw&utm_content=99828423&utm_source=hs_email"
+    },
+    {
+      "id": "32",
+      "text": "Time to have the Sex Talk??? Check out these videos and blogcast",
+      "url": "https://birdsandbeesandkids.com/"
+    },
+    {
+      "id": "33",
+      "text": "Social Emotional Development Tips",
+      "url": "https://talkingisteaching.org/assets/public-files/HHS-SED-Tips-for-Families.pdf"
+    },
+    {
+      "id": "34",
+      "text": "Parenting with ODD",
+      "url": "https://blog.brainbalancecenters.com/2014/03/managing-oppositional-defiant-disorder-kids"
+    },
+    {
+      "id": "35",
+      "text": "Wandering Prevention Autism",
+      "url": "https://www.autismspeaks.org/wandering-prevention-resources?utm_source=email&utm_medium=text-link&utm_campaign=espeaks"
     }
-    ],
+  ],
   "Adolescence": [
     {
-      "id": "",
-      "text": "",
+      "id": "36",
+      "text": "TeenLineTV",
+      "url": "https://www.essexchips.org/teenline"
+    },
+    {
+      "id": "37",
+      "text": "Center for Young Women's Health",
+      "url": "https://youngwomenshealth.org/"
+    },
+    {
+      "id": "38",
+      "text": "Teen's Health",
+      "url": "https://teenshealth.org/teen/"
+    },
+    {
+      "id": "39",
+      "text": "Young Men's Health",
+      "url": "https://youngmenshealthsite.org/"
+    },
+    {
+      "id": "40",
+      "text": "The Teen Years Explained",
+      "url": "https://www.jhsph.edu/research/centers-and-institutes/center-for-adolescent-health/_docs/TTYE-Guide.pdf"
+    },
+    {
+      "id": "41",
+      "text": "Out Right VT",
+      "url": "https://www.outrightvt.org/"
+    },
+    {
+      "id": "42",
+      "text": "LGBT Resources",
+      "url": "https://www.thetrevorproject.org/pages/support-center"
+    },
+    {
+      "id": "43",
+      "text": "Video: Acne",
+      "url": "https://www.youtube.com/watch?v=C5Co4czoo5s"
+    },
+    {
+      "id": "44",
+      "text": "Sex Ed for Youth with Disabilities or Chronic Illness",
+      "url": "https://www.med.umich.edu/yourchild/topics/disabsex.htm"
+    },
+    {
+      "id": "45",
+      "text": "Transition to Adulthood with Autism",
+      "url": "https://www.autismspeaks.org/transition-adulthood"
+    },
+    {
+      "id": "46",
+      "text": "Transgender Resources in the Community [LINK BROKEN]",
       "url": ""
     }
   ],
   "Mental Health Resources": [
     {
-      "id": "",
-      "text": "",
-      "url": ""
+      "id": "47",
+      "text": "Free CBT Program for Anxiety",
+      "url": "https://maps.anxietycanada.com/courses/"
+    },
+    {
+      "id": "48",
+      "text": "Check out this AI \"therapist\" for free!",
+      "url": "https://woebothealth.com/"
+    },
+    {
+      "id": "49",
+      "text": "Anxiety and Mind-Gut Connection",
+      "url": "https://adaa.org/learn-from-us/from-the-experts/blog-posts/consumer/how-calm-anxious-stomach-brain-gut-connection?fbclid=IwAR2_iRvwB1M36hCW1rOZu9hHo7IJHa1ofbtU9Z2CZF2Q0JF--7INdgrO04c"
+    },
+    {
+      "id": "50",
+      "text": "Misophonia: why does people chewing bother me and what can I do?",
+      "url": "https://adaa.org/learn-from-us/from-the-experts/blog-posts/consumer/misophonia-nails-chalkboard"
+    },
+    {
+      "id": "51",
+      "text": "Reactive Attachment Disorder",
+      "url": "https://www.mayoclinic.org/diseases-conditions/reactive-attachment-disorder/symptoms-causes/syc-20352939"
+    },
+    {
+      "id": "52",
+      "text": "Talking to Kids/Teens About a Suicide Death",
+      "url": "https://www.texaschildrens.org/sites/default/files/uploads/documents/Talking%20to%20Your%20Child%20About%20a%20Suicide%20Death%20.pdf"
     }
   ],
   "There's an App for That!": [
     {
-      "id": "",
-      "text": "",
-      "url": ""
+      "id": "53",
+      "text": "ADHD Apps and More!",
+      "url": "https://www.additudemag.com/?s=apps"
+    },
+    {
+      "id": "54",
+      "text": "Anxiety App for Younger Kids",
+      "subtext": "Check out \"Stop Breathe Think Kids\"",
+      "url": "https://www.simplepractice.com/blog/kids-anxiety-apps-share-parents/"
+    },
+    {
+      "id": "55",
+      "text": "More Anxiety Apps for Kids",
+      "url": "https://www.educationalappstore.com/best-apps/5-best-mental-health-and-wellbeing-apps-for-kids"
+    },
+    {
+      "id": "56",
+      "text": "Anxiety Apps for Tweens/Teens",
+      "subtext": "Check out \"What's Up\", \"Mind Shift\", and \"MyLife\"",
+      "url": "https://www.bustle.com/p/15-genius-apps-anyone-with-anxiety-needs-to-download-8058921"
+    },
+    {
+      "id": "57",
+      "text": "Tapping",
+      "subtext": "Great help to release emotions",
+      "url": "https://www.thetappingsolutionapp.com/"
+    },
+    {
+      "id": "58",
+      "text": "Excellent CBT Skills App",
+      "url": "https://apps.apple.com/us/app/cbt-tools-for-youth/id596804744"
+    },
+    {
+      "id": "59",
+      "text": "DBT Skills App",
+      "url": "https://www.diarycard.net/"
     }
   ],
   "Substance Use Resources": [
     {
-      "id": "",
-      "text": "",
-      "url": ""
+      "id": "60",
+      "text": "Marijuana and Psychosis",
+      "url": "https://childmind.org/article/marijuana-and-psychosis/"
+    },
+    {
+      "id": "61",
+      "text": "CBD",
+      "url": "https://childmind.org/article/cbd-what-parents-need-to-know/"
+    },
+    {
+      "id": "62",
+      "text": "Vaping/E-Cigarettes",
+      "url": "https://e-cigarettes.surgeongeneral.gov/getthefacts.html"
+    },
+    {
+      "id": "63",
+      "text": "VT Vape",
+      "url": "https://www.unhypedvt.com/#section-2"
+    },
+    {
+      "id": "64",
+      "text": "AA Virtual Meetings VT",
+      "url": "https://aavt.org/"
+    },
+    {
+      "id": "65",
+      "text": "NA-VT Virtual Meetings",
+      "url": "https://gmana.org/"
+    },
+    {
+      "id": "66",
+      "text": "Video: Single Best Thing You Can Do To Quit Smoking",
+      "url": "https://www.youtube.com/watch?v=z16vhtjWKL0"
+    },
+    {
+      "id": "67",
+      "text": "802quits",
+      "url": "https://802quits.org/"
+    },
+    {
+      "id": "68",
+      "text": "Call: 1-800-QUIT-NOW",
+      "url": "tel:18007848669"
+    },
+    {
+      "id": "69",
+      "text": "Text: ditchjuul to 88709",
+      "url": "tel:18007848669"
     }
   ]
 }

@@ -1,0 +1,112 @@
+[
+  {
+    "id": 0,
+    "text": "The Deacon's Fund of the United Church of Strafford",
+    "subtext": "For help with unexpected expenses like a telephone bill or needing a winter jacket.",
+    "contact": "Rebecca Bailey",
+    "phone": "(802) 765-4585",
+    "tel": "tel:8027654585"
+  },
+  {
+    "id": 1,
+    "text": "Neighbor Helping Neighbor",
+    "subtext": "For help with services; ride to an appointment, or mechanic, picking up prescriptions, help with moving a heavy object, OCC lawn care, snow removal, delivery of food shelf items, library books, just friendly visits.",
+    "list": [
+      {
+        "name": "Royalton Neighbors",
+        "contact": "Kate or John Linehan",
+        "url": "",
+        "phone": "(802) 765-4354",
+        "tel": "tel:8027654354"
+      },
+      {
+        "name": "Tunbridge Neighbors",
+        "contact": "Tunbridge Neighbors Facebook [LINK BROKEN]",
+        "url": "https://www.tunbridgevt.com/residents/groups/tnhn/",
+        "phone": "(802) 889-3437",
+        "tel": "tel:8028893437"
+      }
+    ]
+  },
+   {
+    "id": 2,
+    "text": "Carrie Sanborn Fund",
+    "subtext": "For help with household bills, such as a heating bill.",
+    "list": [
+      {
+        "name": "",
+        "contact": "Rose Silloway",
+        "url": "",
+        "phone": "(802) 765-4567",
+        "tel": "tel:8027654567"
+      },
+      {
+        "name": "",
+        "contact": "Sue Colburn",
+        "url": "",
+        "phone": "(802) 765-4445",
+        "tel": "tel:8027654445"
+      }
+    ]
+  },
+    {
+    "id": 3,
+    "text": "United Ways of Vermont",
+    "subtext": "For help with unexpected expenses, dial 211.",
+    "contact": "",
+    "phone": "211",
+    "tel": "tel:211"
+  },
+  {
+    "id": 4,
+    "text": "Capstone",
+    "subtext": "Economic stability, fuel assistance (heating), food shelf. Orange County East, Bradford, VT.",
+    "image": true,
+    "contact": "",
+    "phone": "(800) 846-9506",
+    "tel": "tel:8008469506"
+  },
+  {
+    "id": 5,
+    "text": "Women Infants and Children (WIC)",
+    "subtext": "Help for pregnant moms and children through age 6, including free formula.",
+    "phone": "(802) 295-8820 ext. 2",
+    "tel": "tel:8022958820"
+  },
+    {
+    "id": 6,
+    "text": "Vermont Economic Services",
+    "subtext": "For Vermont state help with food stamps, on-going fuel assistance, Medicaid/health/dental insurance.",
+    "phone": "(800) 479-6151",
+    "tel": "tel:8004796151"
+  },
+    {
+    "id": 7,
+    "text": "Vermont Health Connect",
+    "subtext": "Health and dental insurance.",
+    "phone": "(855) 899-9600",
+    "tel": "tel:8558999600"
+  },
+    {
+    "id": 8,
+    "text": "Upper Valley Haven",
+    "subtext": "Housing for homeless, food shelf, and clothing.",
+    "address": "White River Jct., Vermont",
+    "phone": "(802) 295-6500",
+    "tel": "tel:8022956500"
+  },
+  {
+    "id": 9,
+    "text": "Listen Community Services",
+    "subtext": "Heating and housing assistance, community dinners, food pantry, scholarships for summer camps, holiday baskets.",
+    "list": [
+      {
+        "name": "3 Thrift Stores in the Upper Valley",
+        "contact": "Clothing, furniture, housewares, toys, and more!",
+        "url": "https://www.listencs.org/",
+        "phone": "(603) 448-4553",
+        "tel": "tel:6034484553"
+      }
+    ]
+  }
+]

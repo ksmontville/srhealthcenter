@@ -13,7 +13,13 @@
           <v-list bg-color="transparent">
             <v-list-item v-for="object in key[1]" :key="object.id">
               <a :href="object.url" target="_blank">
-                <v-icon :icon="mdiHospital" class="mx-2" />{{ object.text }}</a>
+                <v-icon :icon="mdiHospital" class="mx-2" />{{ object.text }}
+              </a>
+              <v-list v-if="object.subtext" bg-color="transparent">
+                <v-list-item>
+                  <small>-- {{ object.subtext }}</small>
+                </v-list-item>
+              </v-list>
             </v-list-item>
           </v-list>
         </v-expansion-panel-text>
@@ -31,11 +37,6 @@
 
   const webLinks = weblinks
 
-  const openLink = (url) => {
-    window.open(url)
-  }
-
-  console.log(Object.values(weblinks))
 </script>
 
 <style scoped>

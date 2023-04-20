@@ -3,7 +3,7 @@
 
     <p class="text-h2 text-white text-center my-16">Child Health Web Links</p>
 
-    <p class="text-h6 text-white font-weight-bold my-4">Disclaimer</p>
+    <p class="text-h6 text-white font-weight-bold">Disclaimer</p>
     <p class="body-text text-body-1 text-white">
       This website is an informational guide only; it cannot answer personal health-related questions, legal questions,
       or research questions. The information presented here should not be substituted for medical, legal or other
@@ -39,7 +39,6 @@
 <script setup>
   import {mdiFacebook} from "@mdi/js";
   import {useAppStore} from "@/store/app";
-  import webResources from "@/components/WebResourcesExpansionPanels.vue"
   import WebResourcesExpansionPanels from "@/components/WebResourcesExpansionPanels.vue";
 
   const appStore = useAppStore()

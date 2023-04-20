@@ -1,0 +1,116 @@
+[
+  {
+    "id": 0,
+    "text": "Food Pantries in Vermont",
+    "url": "https://www.foodpantries.org/st/vermont"
+  },
+  {
+    "id": 1,
+    "text": "Hunger Free Vermont",
+    "url": "https://www.hungerfreevt.org/summer-meals-site-lists?utm_source=Unknown+List&utm_campaign=71711a1f1d-EMAIL_CAMPAIGN_2020_06_30_04_59&utm_medium=email&utm_term=0_-71711a1f1d-&mc_cid=71711a1f1d&mc_eid=73faf3c0ff&utm_source=E-News+Master+List&utm_campaign=71711a1f1d-EMAIL_CAMPAIGN_2020_06_30_04_59&utm_medium=email&utm_term=0_c47f86dc73-71711a1f1d-196849969&mc_cid=71711a1f1d&mc_eid=73faf3c0ff"
+  },
+  {
+    "id": 2,
+    "text": "Sharon Food Shelf",
+    "url": "",
+    "list": [
+      {
+        "contact": "",
+        "text": "Open Tuesdays and Thursdays: 4:30-6:30 pm",
+        "phone": "(802) 763-2007",
+        "tel": "tel:8027632007"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "text": "Thetford Food Shelf",
+    "url": "",
+    "list": [
+      {
+        "contact": "Laurie Ingalls",
+        "text": "Open Tuesdays & Thursdays: 10-12 Noon",
+        "phone": "(802) 785-3190",
+        "tel": "tel:8027853190"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "text": "Bradford Area Food Shelf",
+    "url": "",
+    "list": [
+      {
+        "contact": "Open Mon., Wed., Thu. from 8:30 am - 4:30 pm",
+        "text": "22 Whistle Stop Way, Bradford, PO Box 500, Bradford, VT 05033",
+        "phone": "(802) 222-5419",
+        "tel": "tel:8022225419"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "text": "Strafford Food Shelf",
+    "url": "",
+    "list": [
+      {
+        "contact": "Sue or Melvin Colburn at Colburn's Stpre",
+        "text": "",
+        "phone": "(802) 765-4421",
+        "tel": "tel:8027654421"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "text": "Tunbridge Food Shelf",
+    "url": "",
+    "list": [
+      {
+        "contact": "Sue Barnaby",
+        "text": "Open Friday 4-6:00 pm",
+        "phone": "(802) 889-3736",
+        "tel": "tel:8028893736"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "text": "South Royalton Community Food Shelf",
+    "url": "",
+    "list": [
+      {
+        "contact": "Thursdays 11:30 am - 1:00 pm and 5:00 pm - 7:00 pm",
+        "text": "2955 VT 14 South Royalton, Vermont",
+        "phone": "(802) 587-2621",
+        "tel": "tel:8025872621"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "text": "3SquaresVT",
+    "url": "https://dcf.vermont.gov/esd/3SquaresVT",
+    "list": [
+      {
+        "contact": "Federal USDA program (formerly food stamps ) that can help stretch your food budget so you can put three healthy meals on your table every day. At the national level, it is called the Supplemental Nutrition Assistance Program or SNAP.",
+        "text": "(800) 479-6151",
+        "phone": "1-800-479-6151",
+        "tel": "tel:18004796151"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "text": "Veggie VanGo",
+    "url": "",
+    "image": true,
+    "list": [
+      {
+        "contact": "Providing healthy, fresh food as a traveling food pantry at local hospitals and schools. In partnership with the VT Fresh program, offering cooking demos, and taste tests of the vegetables available, paired with recipes and cooking tips.",
+        "text": "Located at Orange County Parent Child Center 2nd Tuesday, 11:00-5:30pm and Gifford Hospital every 2nd Thursday, 11:30-1pm",
+        "phone": ""
+      }
+    ]
+  }
+]
