@@ -17,7 +17,7 @@
         www.cdc.gov/vaccines/pubs/vis/</a>
     </p>
 
-    <p class="text-h6 text-white font-weight-bold my-4">Our Vaccine Philosophy</p>
+    <p class="text-h6 text-primary font-weight-bold my-4">Our Vaccine Philosophy</p>
     <p class="body-text text-body-1 text-white">
       Our practice believes that all children should receive the recommended vaccines according to the guidelines
       provided by the AAP and the CDC. Vaccines are safe and effective in preventing diseases and health complications
@@ -38,7 +38,7 @@
       from the AAP.
     </p>
 
-    <p class="text-h6 text-white font-weight-bold my-4">Recommended Immunization Schedule</p>
+    <p class="text-h6 text-primary font-weight-bold my-4">Recommended Immunization Schedule</p>
     <p class="body-text text-body-1 text-white">
       <v-list bg-color="transparent">
         <v-list-item v-for="vaccineLink in vaccineLinks" :key="vaccineLink.id">

@@ -3,7 +3,7 @@
 
     <p class="text-h2 text-white text-center my-16">Child Health Web Links</p>
 
-    <p class="text-h6 text-white font-weight-bold">Disclaimer</p>
+    <p class="text-h6 text-primary font-weight-bold">Disclaimer</p>
     <p class="body-text text-body-1 text-white">
       This website is an informational guide only; it cannot answer personal health-related questions, legal questions,
       or research questions. The information presented here should not be substituted for medical, legal or other
@@ -24,7 +24,7 @@
     <v-container class="my-8">
       <v-row justify="center" align="start">
         <v-col cols="12" md="3">
-          <p class="body-text text-h6 tex-center text-white">Select a topic panel for links to helpful resources.</p>
+          <p class="body-text text-h6 tex-center text-primary">Select a topic panel for links to helpful resources.</p>
         </v-col>
         <v-col cols="12" md="9">
           <web-resources-expansion-panels />

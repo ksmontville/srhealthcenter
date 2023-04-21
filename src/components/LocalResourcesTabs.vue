@@ -23,7 +23,6 @@
     <v-window v-model="tab" class="text-white">
 <!--      GENERAL HELP-->
       <v-window-item value="general">
-        <p class="text-h6 ma-auto text-decoration-underline">General Help</p>
         <v-list bg-color="transparent">
           <v-list-item v-for="item in generalHelp" :key="item.id">
             <a :href="item.url" target="_blank"><strong>{{ item.text }}</strong></a>
@@ -40,8 +39,6 @@
 
 <!--      FOOD RESOURCES-->
       <v-window-item value="food">
-        <p class="text-h6 ma-auto text-decoration-underline">Food Pantries</p>
-
         <v-container>
           <v-row no-gutters>
             <v-col v-for="item in foodResources" :key="item.id" cols="12" md="6" lg="4">
@@ -69,8 +66,6 @@
 
 <!--      EXPENSES-->
       <v-window-item value="expenses">
-        <p class="text-h6 ma-auto text-decoration-underline">Help With Bills and Expenses</p>
-
         <v-container fluid>
           <v-row no-gutters>
             <v-col v-for="item in expenseResources" :key="item.id" cols="12" md="6" lg="4">
@@ -106,7 +101,6 @@
 
 <!--      MENTAL HEALTH-->
       <v-window-item value="mental-health">
-        <p class="text-h6 ma-auto text-decoration-underline">Mental Health Resources</p>
         <v-container>
           <v-row no-gutters>
             <v-col cols="12">
@@ -162,7 +156,6 @@
 
 <!--      PARENTING AND CHILDCARE-->
       <v-window-item value="parenting-childcare">
-        <p class="text-h6 ma-auto text-decoration-underline">Parenting and Childcare</p>
         <v-container>
           <v-row no-gutters>
             <v-col v-for="item in parentingAndChildResources" :key="item.id" cols="12" md="6" lg="4">
@@ -202,7 +195,6 @@
 
 <!--    TRANSPORTATION-->
       <v-window-item value="transportation">
-        <p class="text-h6 ma-auto text-decoration-underline">Transportation</p>
         <v-container>
           <v-row no-gutters>
             <v-col v-for="item in transportationResources" :key="item.id" cols="12" md="6">
@@ -238,7 +230,6 @@
 
 <!--      DOMESTIC VIOLENCE-->
       <v-window-item value="domestic-violence">
-        <p class="text-h6 ma-auto text-decoration-underline">Domestic Violence</p>
         <v-container>
           <v-row no-gutters>
             <v-col v-for="item in domesticViolenceResources" :key="item.id" cols="12" md="6" lg="4">

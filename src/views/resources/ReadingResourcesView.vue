@@ -5,7 +5,7 @@
 
   <v-row justify="center" align="start">
      <v-col class="my-4" cols="12">
-      <p class="text-h6 text-white font-weight-bold">Disclaimer</p>
+      <p class="text-h6 text-primary font-weight-bold">Disclaimer</p>
       <p class="body-text text-body-1 text-white">
         This website is an informational guide only; it cannot answer personal health-related questions, legal questions,
         or research questions. The information presented here should not be substituted for medical, legal or other
