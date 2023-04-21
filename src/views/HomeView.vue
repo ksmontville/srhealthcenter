@@ -1,40 +1,49 @@
 <template>
   <v-container class="mt-8" id="hero">
     <v-row>
-    <v-sheet color="primary" class="rounded-lg ma-auto pa-4" elevation="16">
-      <v-col cols="12">
+      <v-sheet color="primary" class="rounded-lg ma-auto pa-4" elevation="16">
+        <v-col cols="12">
+          <v-img :src="logo" alt="South Royal Health Center Logo" max-height="256" ></v-img>
+        </v-col>
 
-        <v-img :src="logo" alt="South Royal Health Center Logo" max-height="400"></v-img>
-      </v-col>
+        <v-col cols="12" class="my-4">
+          <p class="hero-text text-h2 text-white text-center">Welcome to Your Medical Home</p>
+        </v-col>
 
-      <v-col cols="12" class="my-4">
-        <p class="hero-text text-h2 text-white text-center">Welcome to Your Medical Home</p>
-      </v-col>
+        <v-col class="d-flex flex-column align-center justify-center my-4">
+          <v-btn :href="appStore.officePhone" color="highlight" size="large">
+            Call for Appointments
+          </v-btn>
+        </v-col>
 
-      <v-col class="d-flex flex-column align-center justify-center my-4">
-        <v-btn :href="appStore.officePhone" color="highlight" size="large">
-          Call for Appointments
-        </v-btn>
-      </v-col>
-
-      <v-col class="d-flex flex-column align-center justify-center my-4">
-        <v-btn color="highlight" size="large" @click="openPatientPortal(appStore.patientPortalUrl)">
-          Patient Portal
-        </v-btn>
-      </v-col>
-</v-sheet>
+        <v-col class="d-flex flex-column align-center justify-center my-4">
+          <v-btn color="highlight" size="large" @click="openPatientPortal(appStore.patientPortalUrl)">
+            Patient Portal
+          </v-btn>
+        </v-col>
+      </v-sheet>
     </v-row>
-    <v-row class="my-16" justify="center" align="start">
-      <v-col cols="12" md="8">
-        <p class="body-text text-body-1 text-justify text-white pa-4">
-          {{ aboutUsText }}
-        </p>
-      </v-col>
 
-      <v-col cols="12" md="4">
-        <testimonial-cards />
-      </v-col>
-    </v-row>
+    <v-sheet color="secondary" class="rounded">
+      <v-row class="my-16 pa-4" justify="start" align="center">
+        <v-col cols="12" md="8">
+        <v-sheet class="hero-text body-text text-h6 text-md-h4 text-white pa-2 rounded text-center"
+                 color="primary">
+          South Royalton Health Center
+        </v-sheet>
+        </v-col>
+        <v-col cols="12" md="8">
+          <p class="body-text text-body-2 text-justify text-white pa-sm-4 pa-md-8">
+            {{ aboutUsText }}
+          </p>
+        </v-col>
+
+        <v-col cols="12" md="4">
+          <testimonial-cards />
+        </v-col>
+      </v-row>
+
+    </v-sheet>
   </v-container>
 
 </template>

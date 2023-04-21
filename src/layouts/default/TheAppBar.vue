@@ -5,7 +5,7 @@
       <v-container>
         <v-row align="center" justify="center">
           <v-col cols="" class="text-center" @click="$router.push({path: '/'})">
-            <p class="brand text-h5" id="brand">SRHC</p>
+            <p class="brand text-h3 fon" id="brand">SRHC</p>
             <p class="brand text-h6">Improving the lives of children</p>
           </v-col>
           <v-col cols="2">

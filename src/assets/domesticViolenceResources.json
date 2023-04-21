@@ -1,0 +1,49 @@
+[
+  {
+    "id": 0,
+    "text": "Wise",
+    "subtext": "To empower victims of domestic and sexual violence and stalking to become safe and self-reliant through crisis intervention and support services. WISE advances social justice through community education, training and public policy.",
+    "contact": "",
+    "image": true,
+    "phone": "",
+    "tel": "",
+    "list": [
+      {
+        "name": "Program Center",
+        "contact": "38 Bank St., Lebanon, NH 03766",
+        "url": "",
+        "phone": "(603) 448-5922",
+        "tel": "tel:6034485922",
+        "fax": "Fax: 603-448-2799"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "text": "New Hampshire Coalition",
+    "subtext": "Domestic Violence Hotline",
+    "contact": "",
+    "image": true,
+    "phone": "(866) 644-3574",
+    "tel": "tel:8666443574",
+    "list": [
+      {
+        "name": "",
+        "contact": "Sexual Assault Hotline [LINK DEAD]",
+        "url": "https://www.nhcadsv.org/index.cfm",
+        "phone": "(800) 277-5570",
+        "tel": "tel:8002775570",
+        "fax": ""
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "text": "Safeline Inc",
+    "subtext": "24/7 hotline for victims of domestic and sexual violence",
+    "contact": "Chelsea, Vermont",
+    "image": true,
+    "phone": "(800) 639-7233",
+    "tel": "tel:8006397233"
+  }
+]

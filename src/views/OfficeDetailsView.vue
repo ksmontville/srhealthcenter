@@ -1,9 +1,9 @@
 <template>
-  <v-container>
+  <v-container class="pa-8">
 
     <p class="text-h2 text-white text-center my-16">Office Details</p>
 
-    <p class="text-h6 text-white font-weight-bold my-4">Appointments</p>
+    <p class="text-h6 text-primary font-weight-bold my-4">Appointments</p>
     <p class="body-text text-body-1 text-white">SRHC takes pride in offering a range of providers and appointment times to accommodate
       your schedule. Please <a :href="appStore.officePhone">call</a> our office to schedule your appointment and our
       front desk staff will work with you to find the best time for your family.
@@ -12,13 +12,13 @@
       so feel free to ask if that would be appropriate for your child as well.
     </p>
 
-    <p class="text-h6 text-white font-weight-bold my-4">Insurance and Billing</p>
+    <p class="text-h6 text-primary font-weight-bold my-4">Insurance and Billing</p>
     <p class="body-text text-body-1 text-white">
       Please call or <router-link :to="{path: 'contact'}" @click="appStore.setActiveId('contact')">contact us</router-link> via the portal for information
       specific to your insurance company and plan. We accept most plans except medicare, but are happy to discuss this further with you.
     </p>
 
-    <p class="text-h6 text-white font-weight-bold my-4">Payment Options</p>
+    <p class="text-h6 text-primary font-weight-bold my-4">Payment Options</p>
     <p class="body-text text-body-1 text-white">
       We accept checks, cash or credit cards and you can now pay through the
       <router-link :to="{path: 'patient-portal'}" @click="appStore.setActiveId('patient-portal')">portal</router-link>!

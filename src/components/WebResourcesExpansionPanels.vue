@@ -13,7 +13,7 @@
           <v-list bg-color="transparent">
             <v-list-item v-for="object in key[1]" :key="object.id">
               <a :href="object.url" target="_blank">
-                <v-icon :icon="mdiHospital" class="mx-2" />{{ object.text }}
+                <v-icon :icon="mdiHospital" class="mx-2" color="white"/>{{ object.text }}
               </a>
               <v-list v-if="object.subtext" bg-color="transparent">
                 <v-list-item>

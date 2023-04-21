@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="pa-8">
 
     <p class="text-h2 text-white text-center my-16">Patient Forms</p>
     <p class="body-text text-body-1 text-white my-8">
@@ -9,7 +9,7 @@
 
     <v-row>
       <v-col>
-        <p class="text-h6 text-white font-weight-bold my-4">New Patient Forms</p>
+        <p class="text-h6 text-primary font-weight-bold my-4">New Patient Forms</p>
         <p class="body-text text-body-1 text-white">
           Please fill out before your first appointment.
         </p>
@@ -28,16 +28,16 @@
     </v-row>
 
 
-    <p class="text-h6 text-white font-weight-bold my-4">Well Visits Forms</p>
+    <p class="text-h6 text-primary font-weight-bold my-4">Well Visits Forms</p>
     <p class="body-text text-body-1 text-white">
       Save time at your visit! Click on the links below and fill out the developmental screeners and health history
       updates electronically, it will be sent to our office securely and ready for your visit!
     </p>
 
-    <p class="text-h6 text-white font-weight-bold my-4">Mental Health Visits</p>
+    <p class="text-h6 text-primary font-weight-bold my-4">Mental Health Visits</p>
     <p class="body-text text-body-1 text-white"></p>
 
-    <p class="text-h6 text-white font-weight-bold my-4">Asthma Visits</p>
+    <p class="text-h6 text-primary font-weight-bold my-4">Asthma Visits</p>
     <p class="body-text text-body-1 text-white"></p>
 
   </v-container>

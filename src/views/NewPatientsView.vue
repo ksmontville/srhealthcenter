@@ -1,6 +1,6 @@
 <template>
 
-  <v-container>
+  <v-container class="pa-8">
 
     <p class="text-h2 text-white text-center my-16">New Patients</p>
 
@@ -14,7 +14,7 @@
       download immunization and health forms, and  even pay your bill online!
     </p>
 
-    <p class="text-h6 text-white font-weight-bold my-4">The Initial Visit</p>
+    <p class="text-h6 text-primary font-weight-bold my-4">The Initial Visit</p>
     <p class="body-text text-body-1 text-white">
       Our compassionate pediatric providers do whatever it takes to make every visit to our office a pleasant, relaxed experience.
       With all of the important information about our practice available on our website, you can feel confident that
@@ -24,10 +24,10 @@
       before you come in. We look forward to meeting you!
     </p>
 
-    <p class="text-h6 text-white font-weight-bold my-4">Prior to your first appointment pleases send or drop off:</p>
+    <p class="text-h6 text-primary font-weight-bold my-4">Prior to your first appointment pleases send or drop off:</p>
     <v-list class="body-text text-body-1 text-white" bg-color="transparent">
-      <v-list-item><v-icon :icon="mdiHospital" class="mx-2"/>Complete immunization records</v-list-item>
-      <v-list-item><v-icon :icon="mdiHospital" class="mx-2"/>Medical records from your previous pediatrician</v-list-item>
+      <v-list-item><v-icon :icon="mdiHospital" class="mx-2" color="secondary"/>Complete immunization records</v-list-item>
+      <v-list-item><v-icon :icon="mdiHospital" class="mx-2" color="secondary"/>Medical records from your previous pediatrician</v-list-item>
     </v-list>
     <p class="body-text text-body-1 text-white">
       For your first appointment, please fill out the
@@ -38,22 +38,26 @@
       prior to the appointment.
     </p>
 
-    <p class="text-h6 text-white font-weight-bold my-4">What to Bring to Your Appointment</p>
+    <p class="text-h6 text-primary font-weight-bold my-4">What to Bring to Your Appointment</p>
     <p class="body-text text-body-1 text-white">
       <v-list bg-color="transparent">
-        <v-list-item><v-icon :icon="mdiHospital" class="mx-2"/>Insurance cards</v-list-item>
-        <v-list-item><v-icon :icon="mdiHospital" class="mx-2"/>Co-Payment/deductible payment</v-list-item>
-        <v-list-item><v-icon :icon="mdiHospital" class="mx-2"/>List of any questions or concerns for provider</v-list-item>
+        <v-list-item><v-icon :icon="mdiHospital" class="mx-2" color="secondary"/>Insurance cards</v-list-item>
+        <v-list-item><v-icon :icon="mdiHospital" class="mx-2" color="secondary"/>Co-Payment/deductible payment</v-list-item>
+        <v-list-item><v-icon :icon="mdiHospital" class="mx-2" color="secondary"/>List of any questions or concerns for provider</v-list-item>
       </v-list>
     </p>
 
-    <p class="text-h6 text-white font-weight-bold my-4">Please be Ready to Tell Provider:</p>
+    <p class="text-h6 text-primary font-weight-bold my-4">Please be Ready to Tell Provider:</p>
     <p class="body-text text-body-1 text-white">
       <v-list class="" bg-color="transparent">
-        <v-list-item><v-icon :icon="mdiHospital" class="mx-2"/>Child's medical history, medications, over the counter medications and supplements, and any allergies</v-list-item>
-        <v-list-item><v-icon :icon="mdiHospital" class="mx-2"/>Details about your family medical history</v-list-item>
-        <v-list-item><v-icon :icon="mdiHospital" class="mx-2"/>Recent care obtained outside our practice</v-list-item>
-        <v-list-item><v-icon :icon="mdiHospital" class="mx-2"/>Info on how your child is doing at home, school, etc</v-list-item>
+        <v-list-item><v-icon :icon="mdiHospital" class="mx-2" color="secondary"/>
+          Child's medical history, medications, over the counter medications and supplements, and any allergies</v-list-item>
+        <v-list-item><v-icon :icon="mdiHospital" class="mx-2" color="secondary"/>
+          Details about your family medical history</v-list-item>
+        <v-list-item><v-icon :icon="mdiHospital" class="mx-2" color="secondary"/>
+          Recent care obtained outside our practice</v-list-item>
+        <v-list-item><v-icon :icon="mdiHospital" class="mx-2" color="secondary"/>
+          Info on how your child is doing at home, school, etc</v-list-item>
       </v-list>
     </p>
 

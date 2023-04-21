@@ -1,0 +1,158 @@
+[
+  {
+    "id": 0,
+    "text": "Clara Martin Center (CMC)",
+    "subtext": "Community Mental Health Services for children, adults, and families.",
+    "contact": "",
+    "phone": "",
+    "tel": "",
+    "list": [
+      {
+        "name": "Emergency Hotline",
+        "contact": "",
+        "url": "",
+        "phone": "(800) 639-6360",
+        "tel": "tel:8006396360"
+      },
+      {
+        "name": "Bradford, VT Office",
+        "contact": "",
+        "url": "",
+        "phone": "(802) 222-4477",
+        "tel": "tel:8022224477"
+      }
+    ]
+  },
+    {
+    "id": 1,
+    "text": "Child and Family Services",
+    "subtext": "Counseling, parent support, adoption services, foster care, substance abuse treatment.",
+    "image": true,
+    "contact": "",
+    "phone": "",
+    "tel": "",
+    "list": [
+      {
+        "name": "West Lebanon, NH",
+        "contact": "",
+        "url": "",
+        "phone": "(603) 298-8237",
+        "tel": "tel:6032988237"
+      },
+      {
+        "name": "35-37 Crescent Street",
+        "contact": "Claremont, NH 03743",
+        "url": "",
+        "phone": "(603) 542-005",
+        "tel": "tel:603542005"
+      },
+      {
+        "name": "Headquarters",
+        "contact": "",
+        "url": "",
+        "phone": "(800) 640-6486",
+        "tel": "tel:8006406486"
+      }
+    ]
+  },
+    {
+    "id": 2,
+    "text": "Suicide, Drug, and Alcohol Crisis Hotline",
+    "subtext": "Sometimes we lose track of our lives. They suddenly aren’t where we thought they’d be, and we don’t know how to get back on track. At Headrest, we help with some of those tough, very real issues. In addition to our 24-hour crisis hotline that responds yearly to 10,000 calls from Vermont, New Hampshire, and Maine, we offer addiction recovery services regardless of any client’s ability to pay. Headrest’s mission is to help those with limited income so that no person is turned away; no person is alone.",
+    "image": true,
+    "contact": "",
+    "phone": "",
+    "tel": "",
+    "list": [
+      {
+        "name": "24-hour Crisis Hotline",
+        "contact": "",
+        "url": "",
+        "phone": "(800) 273-8255",
+        "tel": "tel:8002738255"
+      },
+      {
+        "name": "Teen Line",
+        "contact": "",
+        "url": "",
+        "phone": "(800) 639-6085",
+        "tel": "tel:8006396085"
+      }
+    ]
+  },
+    {
+    "id": 3,
+    "text": "Hanover Community Counselor",
+    "subtext": "Coordinates Hanover Alcohol Diversion Program. Serves residents of Hanover, Etna, Hanover Center, Hanover High School. Crisis intervention and short-term counseling.",
+    "contact": "",
+    "phone": "",
+    "tel": "",
+    "list": [
+      {
+        "name": "42 Lebanon St., Hanover, NH",
+        "contact": "",
+        "url": "https://www.hanovernh.org",
+        "phone": "(603) 643-5317",
+        "tel": "tel:6036435317"
+      }
+    ]
+  },
+    {
+    "id": 4,
+    "text": "Healthcare and Rehabilitation Services",
+    "subtext": "Mental Health Services",
+    "contact": "",
+    "address": "185 North Main Street, Suite #2, White River Junction, VT",
+    "phone": "(802) 295-3031",
+    "tel": "tel:8022953031",
+    "list": [
+      {
+        "name": "Crisis Services available professionals 24/7 for adults, children, and families.",
+        "contact": "https://www.hcrs.org",
+        "url": "https://www.hcrs.org",
+        "phone": "(802) 886-4500",
+        "tel": "tel:8028864500"
+      }
+    ]
+  },
+    {
+    "id": 5,
+    "text": "West Central Behavior Health",
+    "subtext": "Counseling Center for Child and Family",
+    "contact": "",
+    "url": "https://www.wcbh.org",
+    "address": "",
+    "phone": "",
+    "tel": "",
+    "list": [
+      {
+        "name": "",
+        "contact": "20 W Park St., Suite 416, Lebanon, NH",
+        "url": "",
+        "phone": "(603) 448-1101",
+        "tel": "tel:6034481101"
+      },
+      {
+        "name": "",
+        "contact": "140 North Street, Claremont, NH",
+        "url": "",
+        "phone": "(603) 542-2578",
+        "tel": "tel:6035422578"
+      },
+      {
+        "name": "",
+        "contact": "Emergency",
+        "url": "",
+        "phone": "(800) 556-6249",
+        "tel": "tel:8005566249"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "text": "National Hopeline Network",
+    "subtext": "The National Hopeline Network links crisis centers certified by the American Association of Suicidology (AAS) under one toll-free number.",
+    "phone": "(800) 784-2433",
+    "tel": "tel:8007842433"
+  }
+]

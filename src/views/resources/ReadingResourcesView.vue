@@ -13,9 +13,9 @@
       </p>
     </v-col>
 
-    <v-col class="my-4" cols="12">
-      <p class="text-h4 text-white text-center font-weight-bold my-4">Reading by Topic</p>
-     </v-col>
+<!--    <v-col class="my-4" cols="12">-->
+<!--      <p class="text-h4 text-white text-center font-weight-bold my-4">Reading by Topic</p>-->
+<!--     </v-col>-->
 
     <v-col class="mb-4" cols="12">
       <v-lazy>

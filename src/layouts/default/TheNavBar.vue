@@ -10,7 +10,7 @@
               <v-row>
                 <v-col class="d-flex justify-center align-center" @click="appStore.activeId = null">
                   <v-btn @click="$router.push({path: '/'})" variant="text"
-                         class="brand text-h3 d-flex justify-center">SRHC</v-btn>
+                         class="brand text-h2 d-flex justify-center">SRHC</v-btn>
                 </v-col>
 <!--                <v-col>-->
 <!--                  <v-icon :icon="mdiFacebook" class="mx-4" @click="openFacebook"/>-->
@@ -19,7 +19,7 @@
 
               <v-row>
                 <v-col>
-                  <p class="brand text-h6">Improving the lives of children</p>
+                  <p class="brand text-h4">Improving the lives of children</p>
                 </v-col>
               </v-row>
             </v-container>

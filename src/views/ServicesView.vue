@@ -1,21 +1,21 @@
 <template>
-  <v-container>
+  <v-container class="pa-8">
 
     <p class="text-h2 text-white text-center my-16">Services</p>
 
-    <p class="text-h6 text-white font-weight-bold my-4">Our Mission</p>
+    <p class="text-h6 text-primary font-weight-bold my-4">Our Mission</p>
     <p class="body-text text-body-1 text-white">
       Our practice is working together to build life-long relationships between our staff and our patients by
       consistently providing our patients with compassion, excellence and value. To fulfill this mission, we are committed to:
       <v-list bg-color="transparent">
         <v-list-item v-for="missionBullet in missionBullets" :key="missionBullet">
-          <v-icon :icon="mdiHospital" class="mx-2"/>
+          <v-icon :icon="mdiHospital" class="mx-2" color="secondary"/>
           {{ missionBullet }}
         </v-list-item>
       </v-list>
     </p>
 
-    <p class="text-h6 text-white font-weight-bold my-4">Services</p>
+    <p class="text-h6 text-primary font-weight-bold my-4">Services</p>
     <p class="body-text text-body-1 text-white">
       If you are preparing for your child's first visit, you can do a few things to help expedite the appointment
       <router-link :to="{path: 'new-patients'}" @click="appStore.setActiveId('new-patients')">please see our new patient page.</router-link>
@@ -24,15 +24,15 @@
       South Royalton Health Center offers a full array of services to help your child maintain good health.
       <v-list class="rounded" bg-color="highlight" density="compact" max-height="256">
         <v-list-item v-for="serviceBullet in serviceBullets" :key="serviceBullet">
-          <v-icon :icon="mdiHospital" class="mx-2"/>
+          <v-icon :icon="mdiHospital" class="mx-2" color="primary"/>
           {{ serviceBullet }}
         </v-list-item>
         <v-list-item>
-          <v-icon :icon="mdiHospital" class="mx-2"/>
+          <v-icon :icon="mdiHospital" class="mx-2" color="primary"/>
           Prescribing and Counseling for:
           <v-list bg-color="transparent">
             <v-list-item v-for="counselingBullet in counselingBullets" :key="counselingBullet">
-              <v-icon :icon="mdiHospital" class="mx-2"/>
+              <v-icon :icon="mdiHospital" class="mx-2" color="primary"/>
               {{ counselingBullet }}
             </v-list-item>
           </v-list>
@@ -42,7 +42,7 @@
 
     <v-row justify="center" align="center">
       <v-col cols="12" md="8">
-        <p class="text-h6 text-white font-weight-bold my-4">Free Weekly Play Group</p>
+        <p class="text-h6 text-primary font-weight-bold my-4">Free Weekly Play Group</p>
         <p class="body-text text-body-1 text-white">
           Danielle Isham, our Care Coordinator, teams up with Orange County Child Center and the Family Place with the
           free weekly playgroup for families and caregivers with children birth to age five at the Red Door Church in South Royalton.
@@ -75,7 +75,7 @@
       </v-col>
     </v-row>
 
-  <p class="body-text text-h6 text-white text-center my-8">Weekly Playgroup Locations and Schedule</p>
+  <p class="body-text text-h6 text-primary text-center my-8">Weekly Playgroup Locations and Schedule</p>
   <playgroup-table class="rounded mx-auto my-8"/>
 
   </v-container>

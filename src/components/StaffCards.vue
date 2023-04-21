@@ -2,10 +2,10 @@
   <v-container>
     <v-row>
       <v-col cols="12" sm="6" md="4" v-for="staffDetail in staffDetails" :key="staffDetail.id">
-        <v-card color="secondary" max-width="400" elevation="8"
+        <v-card color="secondary" max-width="400"  elevation="8"
                 :title="staffDetail.name"
                 :subtitle="staffDetail.cert"
-                class="staff-card-header ma-auto my-2">
+                class="staff-card-header overflow-hidden ma-auto my-2">
 
           <template v-slot:append>
               <v-avatar size="x-large" class="ma-auto">

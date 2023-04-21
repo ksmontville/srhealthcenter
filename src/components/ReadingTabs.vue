@@ -1,12 +1,15 @@
 <template>
 
-  <v-card>
-    <v-tabs v-model="tab" show-arrows bg-color="primary">
+  <v-card color="highlight" max-width="800" class="ma-auto">
+    <v-toolbar color="primary" density="comfortable">
+      <v-toolbar-title class="text-center">Reading by Topic</v-toolbar-title>
+    </v-toolbar>
+    <v-tabs v-model="tab" show-arrows bg-color="secondary">
       <v-tab v-for="tab in tabs" :key="tab.id" :value="tab.tab">{{ tab.tab }}</v-tab>
     </v-tabs>
 
     <v-card-text>
-      <v-window v-model="tab">
+      <v-window v-model="tab" >
         <v-window-item v-for="tab in tabs" :key="tab.id" :value="tab.tab">
           <v-list bg-color="transparent">
             <v-list-item v-for="content in tab.contents" :key="content">

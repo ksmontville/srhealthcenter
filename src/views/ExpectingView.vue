@@ -1,9 +1,9 @@
 <template>
-  <v-container>
+  <v-container class="pa-8">
 
     <p class="text-h2 text-white text-center my-16">Expecting</p>
 
-    <p class="text-h6 text-white font-weight-bold my-4">Congratulations</p>
+    <p class="text-h6 text-primary font-weight-bold my-4">Congratulations</p>
     <p class="body-text text-body-1 text-white">
       Having a baby is one of the most exciting times in your life. Nothing is more rewarding than the privilege of
       caring for this new life and providing an environment in which both you and your child will thrive and develop.
@@ -12,13 +12,13 @@
       partnering with you on the exciting journey of raising a child.
     </p>
 
-    <p class="text-h6 text-white font-weight-bold my-4">Getting Acquainted</p>
+    <p class="text-h6 text-primary font-weight-bold my-4">Getting Acquainted</p>
     <p class="body-text text-body-1 text-white">
       Please feel free to call our office if you have additional questions about us. Or, if you prefer, call today to
       schedule a free prenatal, "get acquainted" meeting.
     </p>
 
-    <p class="text-h6 text-white font-weight-bold my-4">Upon Arrival</p>
+    <p class="text-h6 text-primary font-weight-bold my-4">Upon Arrival</p>
     <p class="body-text text-body-1 text-white">
       When your baby is born at an affiliated hospital, simply tell your obstetrician and the hospital staff that you
       have chosen South Royalton Health Center as your child's pediatric provider. Our office will be notified of
@@ -26,7 +26,7 @@
       baby's first visit to our office.
     </p>
 
-    <p class="text-h6 text-white font-weight-bold my-4">Useful Resources</p>
+    <p class="text-h6 text-primary font-weight-bold my-4">Useful Resources</p>
     <p class="body-text text-body-1 text-white">
       Visit our <router-link :to="{path: 'services'}" @click="appStore.setActiveId('services')">Our Mission and Services</router-link> section to learn more about
       our practice and doctors.

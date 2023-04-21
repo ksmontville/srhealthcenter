@@ -1,0 +1,22 @@
+[
+  {
+  "id": 0,
+  "text": "The Family Place",
+  "subtext": "The Family Place delivers comprehensive programs designed to strengthen positive relationships, teach essential skills and promote enduring healthy growth for families with young children in the Upper Valley and surrounding communities. Assistance with children, after school program/daycare expenses.",
+  "image": true,
+  "contact": "",
+  "address": "319 US-5, Norwich, VT 05055",
+  "phone": "(802) 649-3296",
+  "tel": "tel:8026493296"
+  },
+  {
+  "id": 1,
+  "text": "Orange County Parent Child Center",
+  "subtext": "Our work throughout Orange County brings family support and outreach programming into homes and communities, meeting families where it is convenient and comfortable for them. Our programs connect parents with practical strategies and skills that address the full spectrum of family joys and challenges.",
+  "image": true,
+  "contact": "",
+  "address": "Chelsea, Vermont",
+  "phone": "(802) 685-2264",
+  "tel": "tel:8026852254"
+  }
+]

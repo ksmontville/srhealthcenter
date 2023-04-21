@@ -1,0 +1,62 @@
+[
+  {
+    "id": 0,
+    "text": "Advance Transit",
+    "subtext": "Advance Transit operates FREE buses that you can take almost anywhere you want to go. These buses give you independence and freedom, as well as the opportunity to do more activities, to get a job, to volunteer, and more. Most school offices have bus schedules and maps. You can also get them online. Advance Transit will even give you a ride with your bike, which they can attach to the bus! If you have any comments or questions call the Advance Transit office.",
+    "image": false,
+    "contact": "",
+    "address": "",
+    "phone": "(802) 295-1824",
+    "tel": "tel:8022951824",
+    "url": "https://www.advancetransit.com"
+  },
+  {
+    "id": 1,
+    "text": "Connecticut River Transit, Inc",
+    "subtext": "Connecticut River Transit, Inc. is a private, non-profit personal mobility specialist servicing the Windham and Southern Windsor County areas. There is a weekday route (no holidays) going from Springfield and Windsor, VT to Dartmouth College and Dartmouth-Hitchcock Medical Center. Cost is a suggested donation of $2 per ride.",
+    "image": false,
+    "contact": "",
+    "address": "",
+    "phone": "",
+    "tel": "",
+    "url": "https://www.moover.com/"
+  },
+  {
+    "id": 2,
+    "text": "Upper Valley Ride Share (UVRS)",
+    "subtext": "UVRS is a FREE carpool matching service for anyone commuting in Vermont or the Upper Valley-Lake Sunapee region of New Hampshire.",
+    "image": false,
+    "contact": "",
+    "address": "",
+    "phone": "",
+    "tel": "",
+    "url": "https://www.uppervalleyrideshare.com"
+  },
+  {
+  "id": 3,
+  "text": "StageCoach Transportation Services",
+  "subtext": "Now operating as Tri-Valley Transit (TVT).",
+  "image": false,
+  "contact": "",
+  "address": "",
+  "phone": "",
+  "tel": "",
+  "url": "https://www.trivalleytransit.org//",
+  "list": [
+    {
+      "name": "Call:",
+      "contact": "",
+      "url": "",
+      "phone": "(802) 728-3773",
+      "tel": "tel:8027283773"
+    },
+    {
+      "name": "Toll Free:",
+      "contact": "",
+      "url": "",
+      "phone": "(800) 427-3553",
+      "tel": "tel:8004273553"
+    }
+  ]
+  }
+]

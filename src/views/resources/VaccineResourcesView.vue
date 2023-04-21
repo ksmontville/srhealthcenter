@@ -43,7 +43,7 @@
       <v-list bg-color="transparent">
         <v-list-item v-for="vaccineLink in vaccineLinks" :key="vaccineLink.id">
           <a :href="vaccineLink.url" target="_blank">
-            <v-icon :icon="mdiHospital" class="mx-2" />{{ vaccineLink.text }}</a>
+            <v-icon :icon="mdiHospital" class="mx-2" color="secondary"/>{{ vaccineLink.text }}</a>
         </v-list-item>
       </v-list>
     </p>

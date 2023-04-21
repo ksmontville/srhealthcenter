@@ -1,37 +1,37 @@
 <template>
-<v-container>
+<v-container class="pa-8">
 
   <p class="text-h2 text-white text-center my-16">School Visits</p>
-  <p class="text-h6 text-white text-center my-16">
+  <p class="text-h6 text-primary text-center my-16">
     South Royalton, Strafford, Chelsea, Sharon, Bethel, Tunbridge,
     Orange, Washington, Rochester, Stockbridge, and Williamstown, Vermont
   </p>
   <v-row justify="center" align="baseline">
     <v-col cols="12" id="schoolServices">
       <p class="body-text text-body-1 text-white">
-        HealthHUB was started in the 1990s by Robert Wood Johnson Foundation grants.
+        HealthHub was started in the 1990s by Robert Wood Johnson Foundation grants.
         It is a non-profit, 501(c3) organization. HealthHUB operates in collaboration with the
         South Royalton Health Center providing school based health care. Our shared vision is to make
         comprehensive health services available to children in a  location that is readily accessible to all,
         thereby improving their overall health and wellbeing, helping them be ready to learn.
       </p>
 
-      <p class="text-h6 text-white text-center font-weight-bold my-8">Why School Based?</p>
+      <p class="text-h6 text-primary text-center font-weight-bold my-8">Why School Based?</p>
       <p class="body-text text-body-1 text-white">
         Since school is where students spend a considerable part of their day, providing health services, there are many benefits.
       </p>
       <v-list class="rounded mt-4 pa-4 mx-auto" bg-color="highlight" max-width="800">
         <v-list-item>
-          <v-icon :icon="mdiHospital" class="mx-2" />
+          <v-icon :icon="mdiHospital" class="mx-2" color="primary"/>
           <strong>Parents benefit</strong> by not losing time from work and getting prompt treatment for their children.
         </v-list-item>
         <v-list-item>
-          <v-icon :icon="mdiHospital" class="mx-2" />
+          <v-icon :icon="mdiHospital" class="mx-2" color="primary"/>
           <strong>Students and teachers benefit</strong> by having more class time because appointments are scheduled in
           coordination with the student’s schedule.
         </v-list-item>
         <v-list-item>
-          <v-icon :icon="mdiHospital" class="mx-2" />
+          <v-icon :icon="mdiHospital" class="mx-2" color="primary"/>
           <strong>Everyone benefits</strong> by having a health care professional regularly in the school available for questions
           and able to provide accurate information to children in a timely and friendly manner.
         </v-list-item>
@@ -42,21 +42,21 @@
           classroom time for students and teachers by 1.5 hours!</p>
       </v-sheet>
 
-      <p class="text-h6 text-white text-center font-weight-bold my-8">To Schedule Appointments:</p>
+      <p class="text-h6 text-primary text-center font-weight-bold my-8">To Schedule Appointments:</p>
       <p class="body-text text-body-1 text-white">Currently to schedule for medical, dental or counseling
         please <a :href="appStore.officePhone">call</a> the SRHC main office and we will get you connected!
         For more information please feel free to email us at <a href="mailto:HealthHubVT@gmail.com.">HealthHubVT@gmail.com.</a></p>
     </v-col>
 
     <v-col cols="12">
-      <p class="text-h5 text-white text-center body-text my-8">HealthHUB provides the following services to schools:</p>
+      <p class="text-h5 text-primary text-center body-text my-8">HealthHub provides the following services to schools:</p>
     </v-col>
 
     <v-col cols="12" md="6" id="medicalServices">
-      <p class="text-h6 text-white text-center font-weight-bold my-4">Medical Services</p>
+      <p class="text-h6 text-primary text-center font-weight-bold my-4">Medical Services</p>
       <v-list bg-color="highlight" class="rounded" elevation="8">
         <v-list-item v-for="medicalService in medicalServices" :key="medicalService" class="rounded">
-          <v-icon :icon="mdiHospital" class="mx-2" />
+          <v-icon :icon="mdiHospital" class="mx-2" color="primary"/>
           {{ medicalService }}
         </v-list-item>
       </v-list>
@@ -64,7 +64,7 @@
 
 
     <v-col cols="12" md="6" id="mentalHealthServices">
-      <p class="text-h6 text-white text-center font-weight-bold my-4">Mental Health Services</p>
+      <p class="text-h6 text-primary text-center font-weight-bold my-4">Mental Health Services</p>
       <p class="body-text text-body-1 text-white">
         <strong>Kimberly J. Therrien</strong> is a Licensed Independent Clinical Social Worker (LICSW) who has 25 years of experience
         working with children and families. Kim utilizes a variety of therapeutic approaches in her clinical work
@@ -80,7 +80,7 @@
     </v-col>
 
     <v-col cols="12" id="dentalServices">
-      <p class="text-h6 text-white text-center font-weight-bold my-4">Dental Services</p>
+      <p class="text-h6 text-primary text-center font-weight-bold my-4">Dental Services</p>
       <p class="body-text text-body-1 text-white my-4">The clinic’s dental hygienist provides dental cleanings, screenings fluoride, digital diagnostic x-rays,
         and sealants every six to seven months for the schools of South Royalton, Strafford, Chelsea, Sharon, Bethel,
         Tunbridge, Orange, Washington, Stockbridge, Rochester, and Williamstown, Vermont. The school clinic has a
@@ -110,7 +110,7 @@
         </v-col>
 
         <v-col cols="12" md="3">
-          <p class="text-h6 text-white text-center font-weight-bold my-4">Resources for adults without dental insurance:</p>
+          <p class="text-h6 text-primary text-center font-weight-bold my-4">Resources for adults without dental insurance:</p>
           <v-list bg-color="transparent" class="text-white text-center pa-4">
             <v-list-item v-for="dentalResource in dentalResources" :key="dentalResource.id">
               <p><strong>{{ dentalResource.name }}</strong>, {{ dentalResource.address }}</p>
