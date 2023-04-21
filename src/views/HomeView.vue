@@ -29,7 +29,8 @@
         <v-col cols="12" md="8">
         <v-sheet class="hero-text body-text text-h6 text-md-h4 text-white pa-2 rounded text-center"
                  color="primary">
-          South Royalton Health Center
+          <p>South Royalton Health Center</p>
+          <small>Accessible pediatric care in a child friendly environment</small>
         </v-sheet>
         </v-col>
         <v-col cols="12" md="8">
