@@ -158,7 +158,7 @@
       <v-window-item value="parenting-childcare">
         <v-container>
           <v-row no-gutters>
-            <v-col v-for="item in parentingAndChildResources" :key="item.id" cols="12" md="6" lg="4">
+            <v-col v-for="item in parentingAndChildResources" :key="item.id" cols="12" md="6">
               <v-list bg-color="transparent">
                 <v-list-item>
                   <a v-if="item.url" :href="item.url" target="_blank">{{ item.text }}</a>

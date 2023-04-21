@@ -20,32 +20,41 @@
       <p class="body-text text-body-1 text-white">
         Since school is where students spend a considerable part of their day, providing health services, there are many benefits.
       </p>
-      <v-list class="rounded mt-4 pa-4 mx-auto" bg-color="highlight" max-width="800">
-        <v-list-item>
-          <v-icon :icon="mdiHospital" class="mx-2" color="primary"/>
-          <strong>Parents benefit</strong> by not losing time from work and getting prompt treatment for their children.
-        </v-list-item>
-        <v-list-item>
-          <v-icon :icon="mdiHospital" class="mx-2" color="primary"/>
-          <strong>Students and teachers benefit</strong> by having more class time because appointments are scheduled in
-          coordination with the student’s schedule.
-        </v-list-item>
-        <v-list-item>
-          <v-icon :icon="mdiHospital" class="mx-2" color="primary"/>
-          <strong>Everyone benefits</strong> by having a health care professional regularly in the school available for questions
-          and able to provide accurate information to children in a timely and friendly manner.
-        </v-list-item>
-      </v-list>
-      <v-sheet color="secondary" class="rounded pa-4 mx-auto" elevation="8" max-width="800">
-        <p class="my-4 pa-4"><strong>Did you know...</strong></p>
-        <p class="my-4 pa-4">... that the average in-school visit SAVES parents 2 hours of travel and work time, while reducing lost
-          classroom time for students and teachers by 1.5 hours!</p>
-      </v-sheet>
+      <v-row align="end" justify="center">
+        <v-col cols="12" md="4">
+          <v-list class="rounded mt-4 pa-4 mx-auto" bg-color="highlight" max-width="400">
+            <v-list-item>
+              <v-icon :icon="mdiHospital" class="mx-2" color="primary"/>
+              <strong>Parents benefit</strong> by not losing time from work and getting prompt treatment for their children.
+            </v-list-item>
+            <v-list-item>
+              <v-icon :icon="mdiHospital" class="mx-2" color="primary"/>
+              <strong>Students and teachers benefit</strong> by having more class time because appointments are scheduled in
+              coordination with the student’s schedule.
+            </v-list-item>
+            <v-list-item>
+              <v-icon :icon="mdiHospital" class="mx-2" color="primary"/>
+              <strong>Everyone benefits</strong> by having a health care professional regularly in the school available for questions
+              and able to provide accurate information to children in a timely and friendly manner.
+            </v-list-item>
+          </v-list>
+        </v-col>
+        <v-col cols="12" md="4">
+          <v-sheet color="secondary" class="rounded pa-4 mx-auto pa-8" elevation="8" max-width="400">
+            <p class="my-4 text-h5"><strong>Did you know...</strong></p>
+            <p class="text-h6">... that the average in-school visit SAVES parents 2 hours of travel and work time, while reducing lost
+              classroom time for students and teachers by 1.5 hours!</p>
+          </v-sheet>
+        </v-col>
+      </v-row>
+    </v-col>
 
+    <v-col>
       <p class="text-h6 text-primary text-center font-weight-bold my-8">To Schedule Appointments:</p>
       <p class="body-text text-body-1 text-white">Currently to schedule for medical, dental or counseling
         please <a :href="appStore.officePhone">call</a> the SRHC main office and we will get you connected!
         For more information please feel free to email us at <a href="mailto:HealthHubVT@gmail.com.">HealthHubVT@gmail.com.</a></p>
+
     </v-col>
 
     <v-col cols="12">
@@ -94,11 +103,11 @@
 
       <v-row justify="center" align="start">
         <v-col cols="12" md="3">
-          <v-sheet class="rounded mx-auto my-8" max-width="400">
-            <v-sheet color="amber-lighten-3" class="rounded text-h6 text-center pa-4">
+          <v-sheet class="mx-auto my-8" max-width="400">
+            <v-sheet color="amber-lighten-1" class="text-h6 text-center pa-4">
               <strong>NEW!</strong> We are now offering these dental services to adults!
             </v-sheet>
-            <v-sheet color="blue-grey-lighten-3" class="rounded pa-4">
+            <v-sheet color="blue-grey-lighten-2" class="pa-4">
               <p class="body-text text-body-1 text-center my-2">To schedule appointments call</p>
               <p class="text-center mb-4"><a href="tel:8024316060">(802) 431-6060</a></p>
             </v-sheet>
