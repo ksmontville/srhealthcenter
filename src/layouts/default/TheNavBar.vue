@@ -19,7 +19,7 @@
 
               <v-row>
                 <v-col>
-                  <p class="brand text-h4">Improving the lives of children</p>
+                  <p class="brand text-h6">Improving the lives of children</p>
                 </v-col>
               </v-row>
             </v-container>
