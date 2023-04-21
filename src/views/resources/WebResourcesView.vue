@@ -24,7 +24,7 @@
     <v-container class="my-8">
       <v-row justify="center" align="start">
         <v-col cols="12" md="3">
-          <p class="body-text text-h6 tex-center text-primary">Select a topic panel for links to helpful resources.</p>
+          <p class="body-text text-h6 tex-center text-white">Select a topic panel for links to helpful resources.</p>
         </v-col>
         <v-col cols="12" md="9">
           <web-resources-expansion-panels />
