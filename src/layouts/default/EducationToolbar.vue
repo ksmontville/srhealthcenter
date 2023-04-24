@@ -1,7 +1,7 @@
 <template>
 
   <v-bottom-navigation v-if="mobile" bg-color="highlight" grow>
-    <v-btn :to="{path: 'web-resources'}">
+    <v-btn :to="{path: 'srhc-recommended-child-health-web-links'}">
       <v-icon :icon="mdiWeb"/>
       Web
     </v-btn>
@@ -9,11 +9,11 @@
       <v-icon :icon="mdiNearMe" />
       Local
     </v-btn>
-    <v-btn :to="{path: 'reading'}">
+    <v-btn :to="{path: 'srhc-recommended-books'}">
       <v-icon :icon="mdiBookOpenPageVariantOutline" />
       Reading
     </v-btn>
-    <v-btn :to="{path: 'vaccines'}">
+    <v-btn :to="{path: 'vaccine-information'}">
       <v-icon :icon="mdiNeedle" />
       Vaccines
     </v-btn>
@@ -22,10 +22,10 @@
   <v-navigation-drawer v-else location="right" permanent floating color="highlight" elevation="8">
     <v-sheet color="primary" class="rounded text-h6 text-center ma-4" elevation="4">{{ toolBarTitle }}</v-sheet>
     <v-list>
-      <v-list-item :to="{path: 'web-resources'}"><v-icon :icon="mdiWeb" class="mx-2"/>Web Resources</v-list-item>
+      <v-list-item :to="{path: 'srhc-recommended-child-health-web-links'}"><v-icon :icon="mdiWeb" class="mx-2"/>Web Resources</v-list-item>
       <v-list-item :to="{path: 'local-resources'}"><v-icon :icon="mdiNearMe" class="mx-2"/>Local Resources</v-list-item>
-      <v-list-item :to="{path: 'reading'}"><v-icon :icon="mdiBookOpenPageVariantOutline" class="mx-2"/>Reading</v-list-item>
-      <v-list-item :to="{path: 'vaccines'}"><v-icon :icon="mdiNeedle" class="mx-2"/>Vaccines</v-list-item>
+      <v-list-item :to="{path: 'srhc-recommended-books'}"><v-icon :icon="mdiBookOpenPageVariantOutline" class="mx-2"/>Reading</v-list-item>
+      <v-list-item :to="{path: 'vaccine-information'}"><v-icon :icon="mdiNeedle" class="mx-2"/>Vaccines</v-list-item>
 
       <v-sheet color="primary" class="rounded text-h6 text-center ma-4" elevation="4">Office Hours</v-sheet>
       <v-list>

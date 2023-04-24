@@ -28,11 +28,11 @@
 
     <p class="text-h6 text-primary font-weight-bold my-4">Useful Resources</p>
     <p class="body-text text-body-1 text-white">
-      Visit our <router-link :to="{path: 'services'}" @click="appStore.setActiveId('services')">Our Mission and Services</router-link> section to learn more about
+      Visit our <router-link :to="{path: 'our-mission-and-services'}" @click="appStore.setActiveId('our-mission-and-services')">Our Mission and Services</router-link> section to learn more about
       our practice and doctors.
     </p>
     <p class="body-text text-body-1 text-white">
-      Explore our <router-link :to="{path: 'reading'}" @click="appStore.setActiveId('reading')">Education</router-link> section for some great tips on newborn care.
+      Explore our <router-link :to="{path: 'srhc-recommended-books'}" @click="appStore.setActiveId('srhc-recommended-books')">Education</router-link> section for some great tips on newborn care.
     </p>
     <p class="body-text text-body-1 text-white">
       Again, Congratulations! Enjoy this exciting time.

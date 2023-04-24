@@ -20,7 +20,7 @@
       With all of the important information about our practice available on our website, you can feel confident that
       you and your child are well-prepared for your first appointment. We also invite you to review our about us page in
       order to get to know our
-      <router-link :to="{path: 'about'}" @click="appStore.setActiveId('about')">clinicians and staff</router-link>
+      <router-link :to="{path: 'meet-our-providers-staff'}" @click="appStore.setActiveId('meet-our-providers-staff')">clinicians and staff</router-link>
       before you come in. We look forward to meeting you!
     </p>
 
@@ -31,7 +31,7 @@
     </v-list>
     <p class="body-text text-body-1 text-white">
       For your first appointment, please fill out the
-      <router-link :to="{path: 'forms'}" @click="appStore.setActiveId('forms')">New Patient Forms</router-link>.
+      <router-link :to="{path: 'patient-forms'}" @click="appStore.setActiveId('patient-forms')">New Patient Forms</router-link>.
       Please your <strong>insurance card</strong> with you and any questions or concerns for your provider (we love when people bring their list!).
       Please plan on arriving <strong>15 minutes early</strong> so your child can play in our playroom while we assure your paperwork is in order.
       These steps allow you to have the full time with your provider, and your child to get comfortable with our office

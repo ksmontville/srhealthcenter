@@ -11,40 +11,46 @@ export const useAppStore = defineStore('app', () => {
   const facebookUrl = ref("https://www.facebook.com/southroyaltonhealthcenter/")
 
   const navLinks = ref([
-  {
+
+   {
   id: 0,
+  name: "Home",
+  route: "/"
+  },
+  {
+  id: 1,
   name: "Patient Portal",
   route: "patient-portal"
   },
   {
-  id: 1,
+  id: 2,
   name: "About Us",
-  route: "about"
+  route: "meet-our-providers-staff"
   },
   {
-  id: 2,
+  id: 3,
   name: "Office Details",
   route: "office-details"
   },
   {
-  id: 3,
+  id: 4,
   name: "New Patients",
   route: "new-patients"
   },
   {
-  id: 4,
+  id: 5,
   name: "Expecting",
   route: "expecting"
   },
   {
-  id: 5,
+  id: 6,
   name: "Patient Forms",
-  route: "forms"
+  route: "patient-forms"
   },
   {
   id: 7,
   name: "Services",
-  route: "services"
+  route: "our-mission-and-services"
   },
   {
   id: 8,

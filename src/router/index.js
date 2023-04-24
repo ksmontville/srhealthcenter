@@ -15,9 +15,9 @@ const routes = [
         component: () => import(/* webpackChunkName: "home" */ '@/views/HomeView.vue'),
       },
       {
-        path: 'about',
+        path: 'meet-our-providers-staff',
         name: "About",
-        component: () => import(/*webpackChunkName: "about": */ '@/views/AboutView.vue'),
+        component: () => import(/*webpackChunkName: "meet-our-providers-staff": */ '@/views/AboutView.vue'),
       },
       {
         path: 'office-details',
@@ -35,34 +35,14 @@ const routes = [
         component: () => import(/*webpackChunkName: "expecting": */ '@/views/ExpectingView.vue'),
       },
       {
-        path: 'forms',
+        path: 'patient-forms',
         name: "Patient Forms",
         component: () => import(/*webpackChunkName: "patient-forms": */ '@/views/PatientFormsView.vue'),
       },
       {
-        path: 'services',
+        path: 'our-mission-and-services',
         name: "Services",
-        component: () => import(/*webpackChunkName: "services": */ '@/views/ServicesView.vue'),
-      },
-      {
-        path: 'web-resources',
-        name: "Web Resources",
-        component: () => import(/*webpackChunkName: "web-resources": */ '@/views/resources/WebResourcesView.vue'),
-      },
-      {
-        path: 'local-resources',
-        name: "Local Resources",
-        component: () => import(/*webpackChunkName: "local-resources": */ '@/views/resources/LocalResourcesView.vue'),
-      },
-      {
-        path: 'reading',
-        name: "Reading",
-        component: () => import(/*webpackChunkName: "reading": */ '@/views/resources/ReadingResourcesView.vue'),
-      },
-      {
-        path: 'vaccines',
-        name: "Vaccines",
-        component: () => import(/*webpackChunkName: "vaccines": */ '@/views/resources/VaccineResourcesView.vue'),
+        component: () => import(/*webpackChunkName: "our-mission-and-services": */ '@/views/ServicesView.vue'),
       },
       {
         path: 'school-visits',
@@ -73,6 +53,26 @@ const routes = [
         path: 'contact',
         name: "Contact Us",
         component: () => import(/*webpackChunkName: "contact": */ '@/views/ContactView.vue'),
+      },
+      {
+        path: 'srhc-recommended-child-health-web-links',
+        name: "Web Resources",
+        component: () => import(/*webpackChunkName: "srhc-recommended-child-health-web-links": */ '@/views/resources/WebResourcesView.vue'),
+      },
+      {
+        path: 'local-resources',
+        name: "Local Resources",
+        component: () => import(/*webpackChunkName: "local-resources": */ '@/views/resources/LocalResourcesView.vue'),
+      },
+      {
+        path: 'srhc-recommended-books',
+        name: "Reading",
+        component: () => import(/*webpackChunkName: "srhc-recommended-books": */ '@/views/resources/ReadingResourcesView.vue'),
+      },
+      {
+        path: 'vaccine-information',
+        name: "Vaccines",
+        component: () => import(/*webpackChunkName: "vaccine-information": */ '@/views/resources/VaccineResourcesView.vue'),
       },
       {
         path: 'patient-portal',

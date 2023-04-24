@@ -9,7 +9,7 @@
         </v-col>
 
         <v-col v-for="footerLink in footerLinks" :key="footerLink.id" class="d-flex flex-row justify-center">
-          <v-btn :to="footerLink.route" @click="appStore.activeId = null"
+          <v-btn :to="footerLink.route" @click="appStore.setActiveId(footerLink.route)"
                        class="footer-link my-2" size="x-small" variant="text">{{ footerLink.name }}</v-btn>
         </v-col>
       </v-row>
@@ -51,7 +51,7 @@
     {
       id: 1,
       name: "Forms",
-      route: "forms",
+      route: "patient-forms",
     },
     // {
     //   id: 2,
