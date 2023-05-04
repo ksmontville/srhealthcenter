@@ -2,6 +2,7 @@
   {
     "id": 0,
     "type": "New Patient Forms",
+    "text": "Please fill out before your first appointment.",
     "forms": [
       {
         "id": 0,
@@ -20,6 +21,7 @@
   {
     "id": 1,
     "type": "Well Visit Forms",
+    "text": "Save time at your visit! Click on the links below and fill out the developmental screeners and health history updates electronically, it will be sent to our office securely and ready for your visit!",
     "forms": [
       {
         "id": 0,
