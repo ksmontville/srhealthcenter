@@ -96,11 +96,16 @@
       </v-col>
     </v-row>
 
-    <div data-secure-form="srhealthcenter-intake-form-child"></div>
+    <div>
+      <v-btn @click="toggleForm">Toggle</v-btn>
+      <div v-if="formIsActive" class="pa-4" data-secure-form="srhealthcenter-intake-form-child"></div>
+
+    </div>
   </v-container>
 </template>
 
 <script setup>
+  import {ref} from "vue";
   import {mdiHospital} from "@mdi/js";
   import patientForms from '@/assets/patientForms.json'
   import playroom from '../../public/img/forms/playroom.jpg'
@@ -108,6 +113,12 @@
   const embedFormScript = document.createElement('script')
   embedFormScript.setAttribute('src', 'https://hushforms.com/f/public/javascript/embed-hush-form.js')
   document.head.appendChild(embedFormScript)
+
+  const formIsActive = ref(false)
+
+  const toggleForm = () => {
+    formIsActive.value = !formIsActive.value
+  }
 
 
 </script>
