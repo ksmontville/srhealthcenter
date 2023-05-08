@@ -79,6 +79,11 @@ const routes = [
         name: "Patient Portal",
         component: () => import(/*webpackChunkName: "patient-portal": */ '@/views/PatientPortalView.vue'),
       },
+      {
+        path: '/:pathMatch(.*)*',
+        name: 'error',
+        component: () => import(/*webpackChunkName: "error-page": */ '@/views/ErrorPage.vue'),
+      },
     ],
   },
 ]
