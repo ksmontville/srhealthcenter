@@ -1,6 +1,23 @@
 [
   {
-    "id": 0,
+  "id": 0,
+  "text": "988 Suicide and Crisis Line",
+  "subtext": "Available 24 hours a day in English and Spanish.",
+  "contact": "",
+  "phone": "",
+  "tel": "",
+  "list": [
+    {
+      "name": "Emergency Hotline",
+      "contact": "",
+      "url": "https://988lifeline.org/",
+      "phone": "988",
+      "tel": "tel:988"
+    }
+  ]
+  },
+  {
+    "id": 1,
     "text": "Clara Martin Center (CMC)",
     "subtext": "Community Mental Health Services for children, adults, and families.",
     "contact": "",
@@ -24,7 +41,7 @@
     ]
   },
     {
-    "id": 1,
+    "id": 2,
     "text": "Child and Family Services",
     "subtext": "Counseling, parent support, adoption services, foster care, substance abuse treatment.",
     "image": true,
@@ -56,7 +73,7 @@
     ]
   },
     {
-    "id": 2,
+    "id": 3,
     "text": "Suicide, Drug, and Alcohol Crisis Hotline",
     "subtext": "Sometimes we lose track of our lives. They suddenly aren’t where we thought they’d be, and we don’t know how to get back on track. At Headrest, we help with some of those tough, very real issues. In addition to our 24-hour crisis hotline that responds yearly to 10,000 calls from Vermont, New Hampshire, and Maine, we offer addiction recovery services regardless of any client’s ability to pay. Headrest’s mission is to help those with limited income so that no person is turned away; no person is alone.",
     "image": true,
@@ -81,7 +98,7 @@
     ]
   },
     {
-    "id": 3,
+    "id": 4,
     "text": "Hanover Community Counselor",
     "subtext": "Coordinates Hanover Alcohol Diversion Program. Serves residents of Hanover, Etna, Hanover Center, Hanover High School. Crisis intervention and short-term counseling.",
     "contact": "",
@@ -98,8 +115,8 @@
     ]
   },
     {
-    "id": 4,
-    "text": "Healthcare and Rehabilitation Services",
+    "id": 5,
+    "text": "Healthcare and Rehabilitation Services (HCRS)",
     "subtext": "Mental Health Services",
     "contact": "",
     "address": "185 North Main Street, Suite #2, White River Junction, VT",
@@ -116,7 +133,7 @@
     ]
   },
     {
-    "id": 5,
+    "id": 6,
     "text": "West Central Behavior Health",
     "subtext": "Counseling Center for Child and Family",
     "contact": "",
@@ -149,7 +166,7 @@
     ]
   },
   {
-    "id": 6,
+    "id": 7,
     "text": "National Hopeline Network",
     "subtext": "The National Hopeline Network links crisis centers certified by the American Association of Suicidology (AAS) under one toll-free number.",
     "phone": "(800) 784-2433",

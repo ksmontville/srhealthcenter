@@ -34,7 +34,7 @@
 </template>
 
 <script setup>
-  import navbarBg from "../../../public/img/background/navbar-bg.jpg"
+  import navbarBg from "@/assets/img/background/navbar-bg.jpg"
   import logo from "../../assets/img/srhc-logo-white.png"
   import {useAppStore} from "@/store/app";
 

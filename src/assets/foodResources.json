@@ -87,10 +87,23 @@
       }
     ]
   },
+ {
+  "id": 8,
+  "text": "Bethel Area Food Shelf",
+  "url": "",
+  "list": [
+    {
+      "contact": "Monday 12:00 pm - 2:00 pm & Wednesday 4:00 pm - 6:00 pm",
+      "text": "129 Church Street, Bethel, VT 05032",
+      "phone": "(802) 234-5680",
+      "tel": "tel:8022345680"
+    }
+  ]
+},
   {
-    "id": 8,
+    "id": 9,
     "text": "3SquaresVT",
-    "url": "https://dcf.vermont.gov/esd/3SquaresVT",
+    "url": "https://dcf.vermont.gov/benefits/3SquaresVT",
     "list": [
       {
         "contact": "Federal USDA program (formerly food stamps ) that can help stretch your food budget so you can put three healthy meals on your table every day. At the national level, it is called the Supplemental Nutrition Assistance Program or SNAP.",
@@ -101,15 +114,13 @@
     ]
   },
   {
-    "id": 9,
+    "id": 10,
     "text": "Veggie VanGo",
-    "url": "",
+    "url": "https://www.vtfoodbank.org/share-food/veggievango",
     "image": true,
     "list": [
       {
-        "contact": "Providing healthy, fresh food as a traveling food pantry at local hospitals and schools. In partnership with the VT Fresh program, offering cooking demos, and taste tests of the vegetables available, paired with recipes and cooking tips.",
-        "text": "Located at Orange County Parent Child Center 2nd Tuesday, 11:00-5:30pm and Gifford Hospital every 2nd Thursday, 11:30-1pm",
-        "phone": ""
+        "contact": "Providing healthy, fresh food as a traveling food pantry at local hospitals and schools. In partnership with the VT Fresh program, offering cooking demos, and taste tests of the vegetables available, paired with recipes and cooking tips."
       }
     ]
   }

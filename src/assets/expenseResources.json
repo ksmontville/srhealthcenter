@@ -85,7 +85,13 @@
     "text": "Vermont Health Connect",
     "subtext": "Health and dental insurance.",
     "phone": "(855) 899-9600",
-    "tel": "tel:8558999600"
+    "tel": "tel:8558999600",
+    "list": [
+      {
+        "name": "Local Navigator:",
+        "contact": "Michele Packard at Gifford Medical Center"
+      }
+    ]
   },
     {
     "id": 8,

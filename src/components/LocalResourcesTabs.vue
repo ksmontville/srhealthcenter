@@ -104,18 +104,18 @@
         <v-container>
           <v-row no-gutters>
             <v-col cols="12">
-              <v-list bg-color="transparent">
-                <v-list-item>
-                  <strong>National Suicide Help Line: <a href="tel:18002738255">1-800-273-8255</a></strong>
-                </v-list-item>
-                <v-list-item>
-                  <p>
-                    Also
-                    <a href="https://suicidepreventionlifeline.org" target="_blank">https://suicidepreventionlifeline.org/chat/</a>
-                    allows for live chat for emotional support and other resources.
-                  </p>
-                </v-list-item>
-              </v-list>
+<!--              <v-list bg-color="transparent">-->
+<!--                <v-list-item>-->
+<!--                  <strong>National Suicide Help Line: <a href="tel:18002738255">1-800-273-8255</a></strong>-->
+<!--                </v-list-item>-->
+<!--                <v-list-item>-->
+<!--                  <p>-->
+<!--                    Also-->
+<!--                    <a href="https://suicidepreventionlifeline.org" target="_blank">https://suicidepreventionlifeline.org/chat/</a>-->
+<!--                    allows for live chat for emotional support and other resources.-->
+<!--                  </p>-->
+<!--                </v-list-item>-->
+<!--              </v-list>-->
             </v-col>
 
             <v-col v-for="item in mentalHealthResources" :key="item.id" cols="12" md="6" lg="4">
@@ -124,6 +124,8 @@
 
                   <a v-if="item.url" :href="item.url" target="_blank">{{ item.text }}</a>
                   <p v-else><strong>{{ item.text }}</strong></p>
+                  <v-img v-if="item.text === '988 Suicide and Crisis Line'"  class="my-2"
+                       :src="logo" alt="988 Suicide Crisis Hotline" width="200" height="56"/>
                   <v-img v-if="item.text === 'Clara Martin Center (CMC)'" class="my-2"
                          :src="claramartinLogo" alt="Logo for the Clara Martin Center." width="200" height="56"/>
                   <v-img v-if="item.text === 'Suicide, Drug, and Alcohol Crisis Hotline'"  class="my-2"
@@ -167,6 +169,8 @@
                          :src="theFamilyPlaceLogo" alt="Logo for The Family Place childcare center." width="200" height="56"/>
                   <v-img v-if="item.text === 'Orange County Parent Child Center'"  class="my-2"
                          :src="ocpccLogo" alt="Logo for the Orange County Parent Child Center" width="200" height="56"/>
+                  <v-img v-if="item.text === 'Bright Futures Childcare Information System'"  class="my-2"
+                         :src="vtdcf" alt="Logo for the Vermont Department for Children and Families" width="200" height=""/>
 
                   <v-list-item class="text-body-2">
                     <p v-if="item.subtext" class="my-2">{{ item.subtext }}</p>
@@ -283,15 +287,17 @@
   import parentingAndChildResources from "../assets/parentingAndChildcareResources.json"
   import transportationResources from "../assets/transportationResources.json"
   import domesticViolenceResources from "../assets/domesticViolenceResources.json"
-  import veggieVanGo from "../../public/img/localresources/veggievango.jpg"
-  import capstoneLogo from "../../public/img/localresources/capstone.jpg"
-  import claramartinLogo from "../../public/img/localresources/claramartin.jpg"
-  import headrestLogo from "../../public/img/localresources/headrestlogo.jpg"
-  import theFamilyPlaceLogo from "../../public/img/localresources/thefamilyplace.png"
-  import ocpccLogo from "../../public/img/localresources/orangecountypcc.jpg"
-  import wiseLogo from "../../public/img/localresources/wiselogofinallogo.png"
-  import nhcLogo from"../../public/img/localresources/nhcadsv.jpg"
-  import safelineLogo from "../../public/img/localresources/safeline.jpg"
+  import veggieVanGo from "@/assets/img/localresources/veggievango.jpg"
+  import capstoneLogo from "@/assets/img/localresources/capstone.jpg"
+  import logo from "@/assets/img/localresources/988.png"
+  import claramartinLogo from "@/assets/img/localresources/claramartin.jpg"
+  import headrestLogo from "@/assets/img/localresources/headrestlogo.jpg"
+  import theFamilyPlaceLogo from "@/assets/img/localresources/thefamilyplace.png"
+  import ocpccLogo from "@/assets/img/localresources/orangecountypcc.jpg"
+  import vtdcf from "@/assets/img/localresources/vtdcf.png"
+  import wiseLogo from "@/assets/img/localresources/wiselogofinallogo.png"
+  import nhcLogo from "@/assets/img/localresources/nhcadsv.jpg"
+  import safelineLogo from "@/assets/img/localresources/safeline.jpg"
 
   const { mobile } = useDisplay()
 

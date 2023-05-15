@@ -1,7 +1,7 @@
 <template>
   <v-container class="pa-8">
 
-    <p class="text-h2 text-white text-center my-16">Expecting</p>
+    <p class="text-h2 text-white text-center my-16">So You're Expecting!</p>
 
     <p class="text-h6 text-primary font-weight-bold my-4">Congratulations</p>
     <p class="body-text text-body-1 text-white">

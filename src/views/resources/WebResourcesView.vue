@@ -1,7 +1,8 @@
 <template>
-  <v-container>
+  <v-container class="pa-8">
 
     <p class="text-h2 text-white text-center my-16">Child Health Web Links</p>
+    <p class="text-h4 text-white text-center my-16"><em>SRHC Recommended</em></p>
 
     <p class="text-h6 text-primary font-weight-bold">Disclaimer</p>
     <p class="body-text text-body-1 text-white">
@@ -10,7 +11,7 @@
       professional advice. Please feel free to call us about your child's health!
     </p>
 
-    <p class="text-h5 text-white text-center font-weight-bold my-16">
+    <p class="text-h6 text-white text-center font-weight-bold my-16">
       Please like us on <a :href="appStore.facebookUrl" target="_blank">Facebook <v-icon :icon="mdiFacebook" class="mx02" /></a>
       for current hot topic news and fun!</p>
 

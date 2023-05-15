@@ -1,5 +1,5 @@
 <template>
- <v-container>
+ <v-container class="pa-8">
 
   <p class="text-h2 text-white text-center my-16">Reading Resources</p>
 
@@ -46,9 +46,9 @@
 <script setup>
 
   import EducationTabs from "@/components/ReadingTabs.vue";
-  import bookshelf from '../../../public/img/education/bookshelf.jpg'
-  import readingPoster from '../../../public/img/education/reading-poster.jpg'
-  import recommendedBooks from '../../../public/img/education/recommended-books.jpg'
+  import bookshelf from '@/assets/img/education/bookshelf.jpg'
+  import readingPoster from '@/assets/img/education/reading-poster.jpg'
+  import recommendedBooks from '@/assets/img/education/recommended-books.jpg'
 
    const openImage = (src) => {
     window.open(src)

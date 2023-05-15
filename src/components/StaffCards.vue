@@ -60,20 +60,20 @@
 <script setup>
   import {reactive } from "vue";
   import {useDisplay} from "vuetify";
-  import millerPhoto from '../../public/img/staff/dr-miller-card-photo.jpg'
-  import millerAvatar from '../../public/img/staff/dr-miller-card-avatar.jpg'
-  import freydaPhoto from '../../public/img/staff/freyda-card-photo.jpg'
-  import freydaAvatar from '../../public/img/staff/freyda-card-avatar.jpg'
-  import lincolnPhoto from '../../public/img/staff/lincoln-card-photo.jpg'
-  import lincolnAvatar from '../../public/img/staff/lincoln-card-avatar.jpg'
-  import durkeePhoto from '../../public/img/staff/durkee-card-photo.jpg'
-  import durkeeAvatar from '../../public/img/staff/durkee-card-avatar.jpg'
-  import ishamPhoto from '../../public/img/staff/isham-card-photo.jpg'
-  import ishamAvatar from '../../public/img/staff/isham-card-avatar.jpg'
-  import amberPhoto from '../../public/img/staff/amber-card-photo.jpg'
-  import amberAvatar from '../../public/img/staff/amber-card-avatar.jpg'
-  import williamsPhoto from '../../public/img/staff/williams-card-photo.jpg'
-  import williamsAvatar from '../../public/img/staff/williams-card-avatar.jpg'
+  import millerPhoto from '@/assets/img/staff/dr-miller-card-photo.jpg'
+  import millerAvatar from '@/assets/img/staff/dr-miller-card-avatar.jpg'
+  import freydaPhoto from '@/assets/img/staff/freyda-card-photo.jpg'
+  import freydaAvatar from '@/assets/img/staff/freyda-card-avatar.jpg'
+  import lincolnPhoto from '@/assets/img/staff/lincoln-card-photo.jpg'
+  import lincolnAvatar from '@/assets/img/staff/lincoln-card-avatar.jpg'
+  import durkeePhoto from '@/assets/img/staff/durkee-card-photo.jpg'
+  import durkeeAvatar from '@/assets/img/staff/durkee-card-avatar.jpg'
+  import ishamPhoto from '@/assets/img/staff/isham-card-photo.jpg'
+  import ishamAvatar from '@/assets/img/staff/isham-card-avatar.jpg'
+  import amberPhoto from '@/assets/img/staff/amber-card-photo.jpg'
+  import amberAvatar from '@/assets/img/staff/amber-card-avatar.jpg'
+  import williamsPhoto from '@/assets/img/staff/williams-card-photo.jpg'
+  import williamsAvatar from '@/assets/img/staff/williams-card-avatar.jpg'
 
   const { mobile } = useDisplay()
 
@@ -86,9 +86,9 @@
       text: "Dr. Ashley was born and raised in southern New Hampshire, left briefly for college, returned to the " +
         "Upper Valley for medical school at Dartmouth and never left. She was lucky to spend time at " +
         "South Royalton Health Center during training and was very excited to join her practice in 2014 and become " +
-        "the owner when Dr. Becky retired. Dr. Ashley can be found both in the office at SRHC. " +
+        "the owner when Dr. Becky retired." +
         "She has a special interest in adolescent medicine and mental health, but truly enjoys following families " +
-        "from birth to graduation. She is a fellow of the American Academy of Pediatrics, has been actively involved " +
+        "from birth to graduation. She is a fellow of the American Academy of Pediatrics, and before has been actively involved " +
         "at the state and national level. When not seeing patients you can find Dr. Ashley competing at local horse " +
         "trials (triathlons on horse back), hiking or snowshoeing in the surrounding mountains, and swimming in the " +
         "local rivers with her dogs.",
@@ -122,10 +122,9 @@
       field: "Clinician",
       text: "Amelia P. Lincoln has worked with youth in Upper Valley schools for over 15 years, most recently as a " +
         "Student Assistance Professional at White River Valley Schools. Amelia has a master’s in education from " +
-        "New England College and has recently completed her master’s in clinical mental health counseling through " +
-        "Northern Vermont University. Amelia is working towards licensure as a clinical mental health counselor and " +
-        "licensed alcohol and drug counselor and is excited to have a clinical practice through the South Royalton " +
-        "Health Center and Health Hub. She is especially interested in working in the area of substance use prevention " +
+        "New England College, her master’s in clinical mental health counseling through " +
+        "Northern Vermont University, and is a clinical mental health counselor and alcohol and drug counselor. " +
+        "She is especially interested in working in the area of substance use prevention " +
         "and early intervention and helping youth value themselves. She is affectionately known by many as ‘the lady " +
         "with the dog,’ as her English Shepherd True has been a school therapy dog for many years and the two are most " +
         "often together. Amelia sees patients at SRHC and at the local schools.",

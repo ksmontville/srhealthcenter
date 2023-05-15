@@ -58,5 +58,27 @@
       "tel": "tel:8004273553"
     }
   ]
-  }
+  },
+  {
+  "id": 3,
+  "text": "Go! Vermont",
+  "subtext": "All the travel options you need in Vermont.",
+  "image": false,
+  "contact": "",
+  "address": "",
+  "phone": "",
+  "tel": "",
+  "url": "https://www.connectingcommuters.org/"
+},
+{
+  "id": 4,
+  "text": "Molly's Place",
+  "subtext": "Molly's Place at the Family Center is a warm, welcoming, child-friendly place at Dartmouth Hitchcock Medical Center in Lebanon, NH. Offering bike and ski helmets, strollers, gas cards, and other transportation needs.",
+  "image": false,
+  "contact": "",
+  "address": "",
+  "phone": "",
+  "tel": "",
+  "url": "https://childrens.dartmouth-health.org/family-center/mollys-place/"
+}
 ]

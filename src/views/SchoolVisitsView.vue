@@ -10,7 +10,7 @@
     <v-col cols="12" id="schoolServices">
       <p class="body-text text-body-1 text-white">
         HealthHub was started in the 1990s by Robert Wood Johnson Foundation grants.
-        It is a non-profit, 501(c3) organization. HealthHUB operates in collaboration with the
+        It is a non-profit, 501(c3) organization. HealthHub operates in collaboration with the
         South Royalton Health Center providing school based health care. Our shared vision is to make
         comprehensive health services available to children in a  location that is readily accessible to all,
         thereby improving their overall health and wellbeing, helping them be ready to learn.

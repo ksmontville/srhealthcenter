@@ -3,6 +3,7 @@
   "id": 0,
   "text": "The Family Place",
   "subtext": "The Family Place delivers comprehensive programs designed to strengthen positive relationships, teach essential skills and promote enduring healthy growth for families with young children in the Upper Valley and surrounding communities. Assistance with children, after school program/daycare expenses.",
+  "url": "https://www.familyplacevt.org",
   "image": true,
   "contact": "",
   "address": "319 US-5, Norwich, VT 05055",
@@ -13,10 +14,33 @@
   "id": 1,
   "text": "Orange County Parent Child Center",
   "subtext": "Our work throughout Orange County brings family support and outreach programming into homes and communities, meeting families where it is convenient and comfortable for them. Our programs connect parents with practical strategies and skills that address the full spectrum of family joys and challenges.",
+  "url": "https://www.orangecountypcc.org/",
   "image": true,
   "contact": "",
   "address": "Chelsea, Vermont",
   "phone": "(802) 685-2264",
   "tel": "tel:8026852254"
+  },
+  {
+  "id": 2,
+  "text": "Bright Futures Childcare Information System",
+  "subtext": "This is the place for parents, early childhood and after school programs, and professionals to get answers to questions about child care and the services available to help ensure that high quality child care is available to every child in Vermont.",
+  "url": "http://www.brightfutures.dcf.state.vt.us/vtcc/process.do?8Mmr3gjumkz13-SgYEjWekr3%3dxguw3YEa.aU7zaju.xnn.xGOG6-Oh-SG%2bSS%256UOS%256U0d.SSSgwEkeUs3peYY.wjRszYgwUVm31mLUjseguAEK_kmujseu3gsUWVjUVm3mWgwkmpwUVm3kmLmkkUs_umUkYAgkz13SdD6FO6qOdSSG_O/",
+  "image": true,
+  "contact": "",
+  "address": "",
+  "phone": "",
+  "tel": ""
+  },
+    {
+  "id": 3,
+  "text": "Local Playgroups",
+  "subtext": "Play groups in our area on constantly changing, for the most up to date information please click on the links below",
+  "url": "https://www.familyplacevt.org/playgroups/",
+  "image": false,
+  "contact": "",
+  "address": "",
+  "phone": "",
+  "tel": ""
   }
 ]

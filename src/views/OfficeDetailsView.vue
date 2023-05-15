@@ -54,13 +54,12 @@
 
 <script setup>
   import { useAppStore } from "@/store/app";
-  import srhcBuilding from '../../public/img/office/srhc-building.jpg'
-  import srhcEntrance from '../../public/img/office/srhc-entrance.jpg'
-  import srhcSign from '../../public/img/office/srhc-sign.jpg'
-  import srhcHandyHouse from '../../public/img/office/srhc-handy-house.jpg'
-  import officeOne from '../../public/img/office/office-1.jpg'
-  import officeTwo from '../../public/img/office/office-2.jpg'
-  import officeThree from '../../public/img/office/office-3.jpg'
+  import srhcBuilding from '@/assets/img/office/srhc-building.jpg'
+  import srhcHandyHouse from '@/assets/img/office/srhc-handy-house.jpg'
+  import officeOne from '@/assets/img/office/office-1.jpg'
+  import officeTwo from '@/assets/img/office/office-2.jpg'
+  import officeThree from '@/assets/img/office/office-3.jpg'
+  import officeFour from '@/assets/img/office/office-4.jpg'
 
   const appStore = useAppStore()
 
@@ -76,33 +75,28 @@
     },
     {
       id: 1,
-      image: srhcEntrance,
-      alt: "The entrance to South Royal Health Center."
-    },
-    {
-      id: 2,
-      image: srhcSign,
-      alt: "The South Royal Health Center signpost."
-    },
-    {
-      id: 3,
       image: srhcHandyHouse,
       alt: "The Handy Houses historic sign."
     },
     {
-      id: 4,
+      id: 2,
       image: officeOne,
       alt: "Checkin desk at South Royalton Health Center."
     },
     {
-      id: 5,
+      id: 3,
       image: officeTwo,
       alt: "Playroom at South Royalton Health Center."
     },
     {
-      id: 6,
+      id: 4,
       image: officeThree,
-      alt: "An office workspace at South Royalton Health Center."
+      alt: "An exam room at South Royalton Health Center."
+    },
+    {
+      id: 5,
+      image: officeFour,
+      alt: "An exam room at South Royalton Health Center."
     },
   ]
 

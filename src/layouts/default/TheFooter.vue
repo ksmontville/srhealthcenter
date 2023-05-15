@@ -19,7 +19,7 @@
           <small class="text-center">79 South Windsor Drive, PO Box 119, South Royalton, VT 05068</small>
         </v-col>
         <v-col cols="12" class="d-flex justify-center align-center my-2">
-          <small>(802) 763-7575</small>
+          <small><a :href="appStore.officePhone">(802) 763-7575</a></small>
         </v-col>
         <v-col cols="12" class="d-flex justify-center align-center my-2">
           <small class="">{{ copy }}</small>
@@ -77,12 +77,20 @@
     opacity: 85%;
   }
 
-  /*.footer-link {*/
-  /*  color: #395144;*/
+  a, router-link {
+    color: #F0EBCE;
+  }
+
+  /*a:visited, router-link:visited {*/
+  /*  color: #AA8B56;*/
   /*}*/
 
-  .router-link-exact-active {
-    background-color: rgba(200, 200, 200, 0.2);
+  a:hover, router-link:hover {
+    color: #4E6C50;
+  }
+
+  a:focus, router-link:focus {
+    color: sandybrown;
   }
 
 </style>
