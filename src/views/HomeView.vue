@@ -1,6 +1,6 @@
 <template>
   <v-container class="mt-8" id="hero">
-    <v-row>
+    <v-row class="mx-auto">
       <v-sheet color="primary" class="rounded-lg ma-auto pa-4" elevation="16">
         <v-col cols="12">
           <v-img :src="logo" alt="South Royal Health Center Logo" max-height="256" ></v-img>
@@ -24,37 +24,44 @@
       </v-sheet>
     </v-row>
 
-    <v-sheet color="secondary" class="rounded">
-      <v-row class="my-16 pa-4" justify="start" align="center">
-        <v-col cols="12" md="8">
-        <v-sheet class="hero-text body-text text-h6 text-md-h4 text-white pa-2 rounded text-center"
-                 color="primary">
-          <p>South Royalton Health Center</p>
-          <small>Accessible pediatric care in a child friendly environment</small>
-        </v-sheet>
-        </v-col>
-        <v-col cols="12" md="8">
-          <p class="body-text text-body-2 text-justify text-white pa-sm-4 pa-md-8">
-            {{ aboutUsText }}
-          </p>
-        </v-col>
+      <v-row class="mx-auto my-8" justify="center" align="center">
+        <v-img :src="childSm" class="rounded" :max-height="!mobile ? 800 : null" cover>
+          <v-row align="center" class="ma-auto">
+            <v-col cols="12">
+              <p class="hero-text body-text text-h5 text-md-h4 text-white pa-2 my-8 rounded text-center">
+                Accessible pediatric care in a child friendly environment</p>
+    <!--          <small>Accessible pediatric care in a child friendly environment</small>-->
+            </v-col>
 
-        <v-col cols="12" md="4">
-          <testimonial-cards />
-        </v-col>
+            <v-col cols="12" md="8">
+              <p class="body-text text-body-2 text-justify text-white pa-2 pa-md-8">
+                {{ aboutUsText }}
+              </p>
+            </v-col>
+
+            <v-col cols="12" md="4">
+              <v-container>
+                <testimonial-cards/>
+              </v-container>
+            </v-col>
+          </v-row>
+        </v-img>
       </v-row>
+    </v-container>
 
-    </v-sheet>
-  </v-container>
 
 </template>
 
 <script setup>
   import {useAppStore} from "@/store/app";
+  import {useDisplay} from "vuetify";
   import TestimonialCards from "@/components/TestimonialCards.vue";
   import logo from '../assets/img/srhc-logo-white.png'
+  import child from '@/assets/img/office/child.jpg'
+  import childSm from '@/assets/img/office/child-sm.jpg'
 
   const appStore = useAppStore()
+  const { mobile } = useDisplay()
 
   const openPatientPortal = (url) => {
     window.open(url)
