@@ -38,7 +38,7 @@
 
       <v-list-item>
         <v-icon :icon="mdiHospital" class="mx-2" color="white"/>
-        <a href="https://www.cdc.gov/vaccines/communication-resources.html?Sort=Date%3A%3Adesc&Content%20Type=Video" target="blank">Video resources</a> from the CDC regarding immunizations and vaccines.
+        <a href="https://www.cdc.gov/vaccines/parents/index.html" target="blank">Resources</a> from the CDC regarding immunizations and vaccines.
       </v-list-item>
 
       <v-list-item>
@@ -78,11 +78,11 @@
       text: "7-18 Years-Schedule for Persons Aged 7 Through 18 Years",
       url: "https://www.cdc.gov/vaccines/schedules/easy-to-read/adolescent-easyread.html"
     },
-    {
-      id: 2,
-      text: "Catch-up Schedule -Schedule for Persons Aged 4 Months Through 18 Years Who Start Late or Who Are More than One Month Behind",
-      url: "https://www.cdc.gov/vaccines/schedules/hcp/child-adolescent.html"
-    },
+    // {
+    //   id: 2,
+    //   text: "Catch-up Schedule -Schedule for Persons Aged 4 Months Through 18 Years Who Start Late or Who Are More than One Month Behind",
+    //   url: "https://www.cdc.gov/vaccines/schedules/hcp/child-adolescent.html"
+    // },
   ]
 
 </script>

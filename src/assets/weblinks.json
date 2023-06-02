@@ -21,11 +21,6 @@
       "url": "http://health.clevelandclinic.org/topics/family-health/childrens-health/?utm_campaign=healthhub-ccch-url&utm_medium=offline&utm_source=redirect"
     },
     {
-      "id": "3",
-      "text": "CDC: Vaccines",
-      "url": "https://www.cdc.gov/vaccines/pubs/Parents-Guide/default.htm"
-    },
-    {
       "id": "4",
       "text": "Swallowing Pills",
       "url": "https://kidshealth.org/en/parents/swallowing-pills.html"
@@ -90,8 +85,13 @@
     {
       "id": "14",
       "text": "Special Education Resources for Parents",
-      "url": "https://nhspecialed.org/"
+      "url": "https://snsc-uv.org/wp-content/uploads/Family-Guide-To-SPED-NH.pdf"
     },
+    {
+    "id": "14",
+    "text": "Special Needs Support Center",
+    "url": "https://nhfv.org/resources/special-needs-support-center/"
+  },
     {
       "id": "15",
       "text": "ADD/ADHD: ADDitude Magazine, Excellent Tools and Resources",
@@ -111,6 +111,16 @@
       "id": "18",
       "text": "22-Ways-to-Make-Sure-Your-Kid-Loves-School",
       "url": "https://www.srhealthcenter.com/storage/app/media/22-Ways-to-Make-Sure-Your-Kid-Loves-School.pdf"
+    },
+    {
+      "id": "79",
+      "text": "Wrights Law",
+      "url": "https://www.wrightslaw.com/"
+    },
+    {
+      "id": "80",
+      "text": "School Services for Children with Special Needs: Know Your Rights",
+      "url": "https://www.aacap.org/AACAP/Families_and_Youth/Facts_for_Families/FFF-Guide/Services-In-School-For-Children-With-Special-Needs-What-Parents-Need-To-Know-083.aspx"
     }
     ],
   "Nutrition": [
@@ -132,7 +142,7 @@
     {
       "id": "22",
       "text": "5210 Let's Go!",
-      "url": "https://mainehealth.org/lets-go/childrens-program"
+      "url": "https://www.mainehealth.org/Lets-Go/Community/Parents/Children-Youth"
     }
   ],
   "Parenting": [
@@ -149,7 +159,7 @@
     {
       "id": "25",
       "text": "1-2-3 Magic",
-      "url": "https://www.123magic.com/newsletters/"
+      "url": "https://www.123magic.com/positive-parenting-solutions/parents"
     },
     {
       "id": "26",
@@ -205,13 +215,58 @@
       "id": "73",
       "text": "Parenting Podcast with Dr. Wendy Sue Swanson",
       "url": "https://www.wendysueswanson.com/category/podcast/"
+    },
+    {
+      "id": "73",
+      "text": "Parenting Podcast with Dr. Wendy Sue Swanson",
+      "url": "https://www.wendysueswanson.com/category/podcast/"
+    },
+    {
+      "id": "74",
+      "text": "Everyday Parenting: The ABCs of Child Rearing",
+      "url": "https://alankazdin.com/everyday-parenting-the-abcs-of-child-rearing/"
+    },
+    {
+      "id": "75",
+      "text": "Stanford Medicine Resources for Parenting",
+      "url": "https://med.stanford.edu/childpsychiatry/parenting/topics/adhd.html"
+    },
+    {
+      "id": "76",
+      "text": "Harvard University Activities Guide for Executive Function",
+      "url": "https://developingchild.harvard.edu/resources/activities-guide-enhancing-and-practicing-executive-function-skills-with-children-from-infancy-to-adolescence/"
+    },
+    {
+      "id": "77",
+      "text": "Help for Parents with ADHD",
+      "url": "https://childmind.org/article/help-for-parents-with-adhd/"
+    },
+    {
+      "id": "78",
+      "text": "Pacer Center, Champions for Children with Disabilities",
+      "url": "https://www.pacer.org/"
+    },
+    {
+      "id": "81",
+      "text": "How to take a screen away from your kid without a raging meltdown",
+      "url": "https://awsamuel.medium.com/how-to-take-a-screen-away-from-your-kid-without-a-raging-meltdown-d85ce9eefb7b"
+    },
+    {
+      "id": "86",
+      "text": "Strong Families Vermont",
+      "url": "https://www.healthvermont.gov/family/pregnancy/strong-families-vermont-start-home#:~:text=This%20Program%20supports%20healthy%20decision,to%20meet%20the%20family's%20goals"
+    },
+    {
+      "id": "87",
+      "text": "Raising Teens: Ten Tasks of Adolescent Development",
+      "url": "https://hr.mit.edu/static/worklife/raising-teens/ten-tasks.html"
     }
   ],
   "Adolescence": [
     {
       "id": "36",
       "text": "TeenLineTV",
-      "url": "https://www.essexchips.org/teenline"
+      "url": "https://www.essexchips.org/resources"
     },
     {
       "id": "37",
@@ -260,8 +315,28 @@
     },
     {
       "id": "46",
-      "text": "Transgender Resources in the Community [LINK BROKEN]",
-      "url": ""
+      "text": "Transgender Resources in the Community",
+      "url": "https://translifeline.org/"
+    },
+    {
+      "id": "82",
+      "text": "Cannabis and Youth",
+      "url": "https://www.healthvermont.gov/sites/default/files/documents/pdf/ADAP_LTC_Cannabis_and_Youth.pdf"
+    },
+    {
+      "id": "83",
+      "text": "Risks for Misusing Substances for Teens",
+      "url": "https://parentupvt.org/why-is-my-child-at-risk#What-Are-the-Risks-of-Misusing-Substances-for-Teens"
+    },
+    {
+      "id": "84",
+      "text": "MyLifeMyQuit Vermont",
+      "url": "https://vt.mylifemyquit.org/index"
+    },
+    {
+      "id": "85",
+      "text": "Amaze, Medically Accurate and Age Appropriate Sex Ed for all adolescents",
+      "url": "https://amaze.org/what-is-amaze/"
     }
   ],
   "Mental Health Resources": [
@@ -328,7 +403,7 @@
     {
       "id": "58",
       "text": "Excellent CBT Skills App",
-      "url": "https://apps.apple.com/us/app/cbt-tools-for-youth/id596804744"
+      "url": "https://www.anxietycanada.com/resources/mindshift-cbt/"
     },
     {
       "id": "59",

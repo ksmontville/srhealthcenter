@@ -56,10 +56,21 @@
   import { useAppStore } from "@/store/app";
   import srhcBuilding from '@/assets/img/office/srhc-building.jpg'
   import srhcHandyHouse from '@/assets/img/office/srhc-handy-house.jpg'
+  import srhcSign from '@/assets/img/office/srhc-sign.jpg'
+  import srhcEntrance from '@/assets/img/office/srhc-entrance.jpg'
   import officeOne from '@/assets/img/office/office-1.jpg'
   import officeTwo from '@/assets/img/office/office-2.jpg'
   import officeThree from '@/assets/img/office/office-3.jpg'
   import officeFour from '@/assets/img/office/office-4.jpg'
+  import officeFive from '@/assets/img/office/office-5.jpg'
+  import officeSix from '@/assets/img/office/office-6.jpg'
+  import examRoomOne from '@/assets/img/office/exam-room-1.jpg'
+  import examRoomTwo from '@/assets/img/office/exam-room-2.jpg'
+  import examRoomThree from '@/assets/img/office/exam-room-3.jpg'
+  import examRoomFour from '@/assets/img/office/exam-room-4.jpg'
+  import examRoomFive from '@/assets/img/office/exam-room-5.jpg'
+  import examRoomSix from '@/assets/img/office/exam-room-six.jpg'
+
 
   const appStore = useAppStore()
 
@@ -80,22 +91,72 @@
     },
     {
       id: 2,
+      image: srhcSign,
+      alt: "The signage for South Royalton Health Center."
+    },
+    {
+      id: 3,
+      image: srhcEntrance,
+      alt: "The entrance to South Royalton Health Center."
+    },
+    {
+      id: 4,
       image: officeOne,
       alt: "Checkin desk at South Royalton Health Center."
     },
     {
-      id: 3,
+      id: 5,
       image: officeTwo,
       alt: "Playroom at South Royalton Health Center."
     },
     {
-      id: 4,
+      id: 6,
       image: officeThree,
+      alt: "A smiling receptionist at South Royalton Health Center."
+    },
+    {
+      id: 7,
+      image: officeFour,
+      alt: "The playroom in the office at South Royalton Health Center."
+    },
+    {
+      id: 8,
+      image: officeFive,
+      alt: "Fun wall art at the South Royalton Health center office."
+    },
+    {
+      id: 9,
+      image: officeSix,
+      alt: "Reading nook at the South Royalton Health Center office."
+    },
+    {
+      id: 10,
+      image: examRoomOne,
       alt: "An exam room at South Royalton Health Center."
     },
     {
-      id: 5,
-      image: officeFour,
+      id: 11,
+      image: examRoomTwo,
+      alt: "An exam room at South Royalton Health Center."
+    },
+    {
+      id: 12,
+      image: examRoomThree,
+      alt: "An exam room at South Royalton Health Center."
+    },
+    {
+      id: 13,
+      image: examRoomFour,
+      alt: "An exam room at South Royalton Health Center."
+    },
+    {
+      id: 14,
+      image: examRoomFive,
+      alt: "An exam room at South Royalton Health Center."
+    },
+    {
+      id: 15,
+      image: examRoomSix,
       alt: "An exam room at South Royalton Health Center."
     },
   ]

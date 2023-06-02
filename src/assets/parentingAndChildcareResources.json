@@ -32,11 +32,22 @@
   "phone": "",
   "tel": ""
   },
-    {
+  {
   "id": 3,
   "text": "Local Playgroups",
   "subtext": "Play groups in our area on constantly changing, for the most up to date information please click on the links below",
   "url": "https://www.familyplacevt.org/playgroups/",
+  "image": false,
+  "contact": "",
+  "address": "",
+  "phone": "",
+  "tel": ""
+  },
+  {
+  "id": 4,
+  "text": "Vermont Camp and School Finder",
+  "subtext": "Find summer camps and other activities for your children in Vermont.",
+  "url": "https://campfindervt.com/",
   "image": false,
   "contact": "",
   "address": "",
