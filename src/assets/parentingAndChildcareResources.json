@@ -53,5 +53,38 @@
   "address": "",
   "phone": "",
   "tel": ""
+  },
+  {
+  "id": 5,
+  "text": "All Brains Belong VT",
+  "subtext": "A nonprofit community health organization with a mission to make life better for neurodivergent people. ABB offers neurodiversity-affirming healthcare, social connection programs, and neurodiversity-related educational training. ABB's community programs are free and open to everyone, even those receiving their healthcare elsewhere.",
+  "url": "https://allbrainsbelong.org/",
+  "image": false,
+  "contact": "",
+  "address": "",
+  "phone": "",
+  "tel": ""
+  },
+  {
+  "id": 6,
+  "text": "Brain Club",
+  "subtext": "A free weekly community conversation on \"everyday brain life\" topics, every Tues 6pm on Zoom (plus recorded). Archived recordings are available at no charge, dating back to Jan 2022.",
+  "url": "https://allbrainsbelong.org/brain-club/",
+  "image": false,
+  "contact": "",
+  "address": "",
+  "phone": "",
+  "tel": ""
+  },
+  {
+  "id": 7,
+  "text": "Kid Connections",
+  "subtext": "A free customized friend-matching program for kids and teens, age 4-17, based on shared interests and communication profiles.",
+  "url": "https://allbrainsbelong.org/kid-connections/",
+  "image": false,
+  "contact": "",
+  "address": "",
+  "phone": "",
+  "tel": ""
   }
 ]
