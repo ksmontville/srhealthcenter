@@ -86,5 +86,16 @@
   "address": "",
   "phone": "",
   "tel": ""
+  },
+  {
+  "id": 8,
+  "text": "Prevent Child Abuse Vermont",
+  "subtext": "Family Support Programs are offered online free of charge to Vermont parents and families, including Parents' Helpline, Parent's Home Companion, and many more.",
+  "url": "https://www.pcavt.org/family-support-programs",
+  "image": false,
+  "contact": "",
+  "address": "",
+  "phone": "",
+  "tel": ""
   }
 ]

@@ -1,5 +1,5 @@
 {
-  "Highest": 88,
+  "Highest": 96,
   "General Sites": [
     {
       "id": "70",
@@ -261,6 +261,11 @@
       "id": "87",
       "text": "Raising Teens: Ten Tasks of Adolescent Development",
       "url": "https://hr.mit.edu/static/worklife/raising-teens/ten-tasks.html"
+    },
+    {
+      "id": "90",
+      "text": "Resilient Families Program",
+      "url": "https://www.smilingmind.com.au/resilient-families-program"
     }
   ],
   "Adolescence": [
@@ -415,6 +420,36 @@
       "id": "88",
       "text": "TeenToks: Mental Health Videos",
       "url": "https://apps.apple.com/us/app/teentoks-mental-health-videos/id1628384135"
+    },
+    {
+      "id": 89,
+      "text": "Smiling Mind Mindfulness App",
+      "url": "https://www.smilingmind.com.au/smiling-mind-app"
+    },
+    {
+      "id": "91",
+      "text": "Teensafe Cell Phone Tracker",
+      "url": "https://teensafe.net/"
+    },
+    {
+      "id": "92",
+      "text": "Bark",
+      "url": "https://www.bark.us/"
+    },
+    {
+      "id": "94",
+      "text": "Limitly Screen Time App",
+      "url": "http://limitlyapp.com/"
+    },
+    {
+      "id": "95",
+      "text": "Google Family Link",
+      "url": "https://families.google/familylink//"
+    },
+    {
+      "id": "96",
+      "text": "Google Family Link",
+      "url": "https://families.google/familylink//"
     }
   ],
   "Substance Use Resources": [
