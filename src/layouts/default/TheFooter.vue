@@ -86,7 +86,7 @@
   /*}*/
 
   a:hover, router-link:hover {
-    color: #4E6C50;
+    color: #395144;
   }
 
   a:focus, router-link:focus {

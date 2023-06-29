@@ -125,6 +125,8 @@
       "The Shyness and Social Anxiety Workbook for Teens: CBT and ACT Skills to Help You Build Social Confidence, by Jennifer Shannon LMFT, Doug Shannon, Christine Padesk",
       "Mindfulness for Teen Anxiety: A Workbook for Overcoming Anxiety at Home, at School, and Everywhere Else (Teen Instant Help), by Christopher Willard PsyD",
       "Outsmarting Worry (An Older Kid's Guide to Managing Anxiety) Paperback  by Dawn Huebner",
+      "Worry Workbook for Teens",
+      "Anxious Kids, Anxious Parents"
     ],
     },
     {id: 9,

@@ -24,31 +24,29 @@
       </v-sheet>
     </v-row>
 
-      <v-row class="mx-auto my-8" justify="center" align="center">
-          <v-row align="start" class="ma-auto">
-            <v-col cols="12">
-              <v-sheet color="secondary" class="rounded-lg">
-                <p class="hero-text body-text text-h5 text-md-h4 text-white pa-4 my-8 rounded text-center">
-                  Accessible pediatric care in a child friendly environment</p>
-              </v-sheet>
-    <!--          <small>Accessible pediatric care in a child friendly environment</small>-->
-            </v-col>
+    <v-row class="mx-auto my-8" justify="center" align="center">
+        <v-row align="start" class="ma-auto">
+          <v-col cols="12">
+            <p class="hero-text body-text text-h5 text-md-h4 text-white pa-4 my-8 rounded text-center">
+              Accessible pediatric care in a child friendly environment</p>
+<!--          <small>Accessible pediatric care in a child friendly environment</small>-->
+          </v-col>
 
-            <v-col cols="12" md="8">
-              <p class="body-text text-body-1 text-justify text-white pa-2 pa-md-8">
-                {{ aboutUsText }}
-              </p>
-            </v-col>
+          <v-col cols="12" md="8">
+            <p class="body-text text-body-1 text-justify text-white pa-2 pa-md-8">
+              {{ aboutUsText }}
+            </p>
+          </v-col>
 
-            <v-col cols="12" md="4">
-              <v-container>
-        <v-img :src="childSm" class="rounded" :max-height="!mobile ? 400 : null" />
-                <testimonial-cards/>
-              </v-container>
-            </v-col>
-          </v-row>
-      </v-row>
-    </v-container>
+          <v-col cols="12" md="4">
+            <v-container>
+      <v-img :src="childSm" class="rounded" :max-height="!mobile ? 400 : null" />
+              <testimonial-cards/>
+            </v-container>
+          </v-col>
+        </v-row>
+    </v-row>
+  </v-container>
 
 
 </template>

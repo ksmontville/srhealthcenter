@@ -7,14 +7,38 @@
       {
         "id": 0,
         "form": "General Intake Form",
-        "link": "https://hushforms.com/srhealthcenter-general-intake-form",
+        "link": "https://hushforms.com/35388-new-intake-form",
         "text": "All new patients, counseling and medical"
       },
       {
         "id": 1,
-        "form": "Patient Health Questionnaire (PHQ-9)",
-        "link": "https://hushforms.com/srhealthcenter-patient-health-questionnaire-phq-9",
+        "form": "Patient Health Questionnaire",
+        "link": "https://hushforms.com/35388-health-questionnaire-form",
         "text": "All new patients, counseling and medical"
+      },
+      {
+        "id": 2,
+        "form": "Counseling Intro Letter",
+        "link": "../src/assets/counseling-intro-letter.pdf",
+        "text": "Counseling patients please read this first!"
+      },
+      {
+        "id": 3,
+        "form": "Counseling Client Intake Form",
+        "link": "https://hushforms.com/35388-counseling-intake-form",
+        "text": "New counseling patients only."
+      },
+      {
+        "id": 4,
+        "form": "Disclosure Document for NL/NC Psychotherapists",
+        "link": "https://hushforms.com/35388-non-licensed-non-certified-psychotherapist-public-disclosure-form",
+        "text": "New counseling patients only."
+      },
+      {
+        "id": 5,
+        "form": "Release of Information Form",
+        "link": "https://hushforms.com/35388-consent-for-release-of-information-form",
+        "text": "For requesting old records, to allow communication between schools and practice/counselor, or for communication with specialists, this can be a little confusing so don't hesitate to call!"
       }
     ]
   },
@@ -25,9 +49,27 @@
     "forms": [
       {
         "id": 0,
-        "form": "Test Form",
-        "link": "https://hushforms.com/srhealthcenter-secure-contact-form",
+        "form": "Annual Health History Form",
+        "link": "https://hushforms.com/35388-annual-update",
         "text": "Please complete at each yearly well visit"
+      },
+      {
+        "id": 1,
+        "form": "Ages and Stages Development Screener (ASQ)",
+        "link": "https://www.asqonline.com/family/416f0e",
+        "text": "Please complete both the appropriate ASQ and the ASQ-SE for all visits from 6 months to 4 years."
+      },
+      {
+        "id": 2,
+        "form": "Dental Risk Assessment",
+        "link": "https://hushforms.com/35388-dental-caries-risk-assessment",
+        "text": "Please complete for all well visits between 6 months and 3 years."
+      },
+      {
+        "id": 3,
+        "form": "MCHAT",
+        "link": "https://hushforms.com/35388-m-chat-form",
+        "text": "Please complete for your 18 month and 2 year well visit."
       }
     ]
   },
@@ -37,13 +79,23 @@
     "forms": [
       {
         "id": 0,
-        "form": "Depression Anxiety Stress Scales (DASS-21)",
-        "link": "https://hushforms.com/srhealthcenter-depression-anxiety-stress-scales-dass-21"
+        "form": "Anxiety Screener (GAD7)",
+        "link": "https://hushforms.com/35388-anxiety-screener-form"
       },
       {
         "id": 1,
-        "form": "General Anxiety Disorder (GAD-7)",
-        "link": "https://hushforms.com/srhealthcenter-general-anxiety-disorder-gad-7"
+        "form": "Depression Screener (PHQ9)",
+        "link": "https://hushforms.com/35388-depression-screener-form"
+      },
+      {
+        "id": 2,
+        "form": "ADHD: Teacher (Vanderbilt)",
+        "link": "https://hushforms.com/35388-adhd-teacher-form"
+      },
+      {
+        "id": 3,
+        "form": "ADHD: Parent (Vanderbilt)",
+        "link": "https://hushforms.com/35388-adhd-parent-form"
       }
     ]
   },
@@ -53,8 +105,13 @@
     "forms": [
       {
         "id": 0,
-        "form": "Test Form",
-        "link": "https://hushforms.com/srhealthcenter-secure-contact-form"
+        "form": "Asthma Control Test, Under 12 Years",
+        "link": "https://hushforms.com/35388-asthma-control-test-for-children"
+      },
+      {
+        "id": 1,
+        "form": "Asthma Control Test, 12 Years and Older",
+        "link": "https://hushforms.com/35388-asthama-control-test-for-teens"
       }
     ]
   }
