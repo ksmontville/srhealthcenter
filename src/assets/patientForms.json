@@ -19,7 +19,7 @@
       {
         "id": 2,
         "form": "Counseling Intro Letter",
-        "link": "src/assets/counseling-intro-letter.pdf",
+        "link": "public/counseling-intro-letter.pdf",
         "text": "Counseling patients please read this first!"
       },
       {
