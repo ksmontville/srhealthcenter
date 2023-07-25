@@ -6,36 +6,24 @@
     "forms": [
       {
         "id": 0,
-        "form": "General Intake Form",
-        "link": "https://hushforms.com/35388-new-intake-form",
-        "text": "All new patients, counseling and medical"
+        "form": "New Patient Intake Form",
+        "link": "https://hushforms.com/35388-new-patient-forms",
+        "text": "All new patients, counseling and medical."
       },
       {
         "id": 1,
-        "form": "Patient Health Questionnaire",
-        "link": "https://hushforms.com/35388-health-questionnaire-form",
-        "text": "All new patients, counseling and medical"
-      },
-      {
-        "id": 2,
         "form": "Counseling Intro Letter",
         "link": "counseling-intro-letter.pdf",
         "text": "Counseling patients please read this first!"
       },
       {
-        "id": 3,
+        "id": 2,
         "form": "Counseling Client Intake Form",
         "link": "https://hushforms.com/35388-counseling-intake-form",
         "text": "New counseling patients only."
       },
       {
-        "id": 4,
-        "form": "Disclosure Document for NL/NC Psychotherapists",
-        "link": "https://hushforms.com/35388-non-licensed-non-certified-psychotherapist-public-disclosure-form",
-        "text": "New counseling patients only."
-      },
-      {
-        "id": 5,
+        "id": 3,
         "form": "Release of Information Form",
         "link": "https://hushforms.com/35388-consent-for-release-of-information-form",
         "text": "For requesting old records, to allow communication between schools and practice/counselor, or for communication with specialists, this can be a little confusing so don't hesitate to call!"
@@ -51,22 +39,28 @@
         "id": 0,
         "form": "Annual Health History Form",
         "link": "https://hushforms.com/35388-annual-update",
-        "text": "Please complete at each yearly well visit"
+        "text": "Parents/guardians please complete at each yearly well visit."
       },
       {
         "id": 1,
         "form": "Ages and Stages Development Screener (ASQ)",
         "link": "https://www.asqonline.com/family/416f0e",
-        "text": "Please complete both the appropriate ASQ and the ASQ-SE for all visits from 6 months to 4 years."
+        "text": "Please complete both the appropriate ASQ and the ASQ-SE for all well visits from 6 months to 4 years."
+      },
+       {
+        "id": 2,
+        "form": "Teen/YA Health Screener",
+        "link": "https://hushforms.com/srhealthcenter-3193",
+        "text": "Teens and young adults please complete at each well visit."
       },
       {
-        "id": 2,
+        "id": 3,
         "form": "Dental Risk Assessment",
         "link": "https://hushforms.com/35388-dental-caries-risk-assessment",
         "text": "Please complete for all well visits between 6 months and 3 years."
       },
       {
-        "id": 3,
+        "id": 4,
         "form": "MCHAT",
         "link": "https://hushforms.com/35388-m-chat-form",
         "text": "Please complete for your 18 month and 2 year well visit."
