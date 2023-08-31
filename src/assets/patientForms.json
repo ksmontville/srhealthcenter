@@ -12,18 +12,12 @@
       },
       {
         "id": 1,
-        "form": "Counseling Intro Letter",
-        "link": "counseling-intro-letter.pdf",
-        "text": "Counseling patients please read this first!"
-      },
-      {
-        "id": 2,
         "form": "Counseling Client Intake Form",
         "link": "https://hushforms.com/35388-counseling-intake-form",
         "text": "New counseling patients only."
       },
       {
-        "id": 3,
+        "id": 2,
         "form": "Release of Information Form",
         "link": "https://hushforms.com/35388-consent-for-release-of-information-form",
         "text": "For requesting old records, to allow communication between schools and practice/counselor, or for communication with specialists, this can be a little confusing so don't hesitate to call!"
