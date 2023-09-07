@@ -5,7 +5,7 @@
       <v-row justify="center" align="center">
         <v-col cols="3">
           <v-app-bar-title>
-            <v-row>
+            <v-row justify="center" align="center">
               <v-col @click="appStore.setActiveId('/')">
                 <v-img :src="logo" max-width="128" @click="$router.push('/')"/>
                 <p class="brand text-subtitle-2">Improving the lives of children</p>
@@ -15,8 +15,8 @@
         </v-col>
 
         <v-col cols="9">
-          <v-row justify="end" align="center">
-            <v-col cols="2" v-for="navLink in appStore.navLinks" :key="navLink.id" class="mx-2">
+          <v-row justify="center" align="center">
+            <v-col v-for="navLink in appStore.navLinks" :key="navLink.id" class="mx-2">
               <v-btn :text="navLink.name" :to="navLink.route" variant="text"
                 @click="appStore.activeId = navLink.id"
                 class="nav-link"

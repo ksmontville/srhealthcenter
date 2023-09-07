@@ -40,6 +40,11 @@ const routes = [
         component: () => import(/*webpackChunkName: "patient-forms": */ '@/views/PatientFormsView.vue'),
       },
       {
+        path: 'impact-testing',
+        name: "Impact Testing",
+        component: () => import(/*webpackChunkName: "patient-forms": */ '@/views/ImpactTestingView.vue'),
+      },
+      {
         path: 'our-mission-and-services',
         name: "Services",
         component: () => import(/*webpackChunkName: "our-mission-and-services": */ '@/views/ServicesView.vue'),

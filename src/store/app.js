@@ -47,18 +47,23 @@ export const useAppStore = defineStore('app', () => {
   name: "Patient Forms",
   route: "patient-forms"
   },
-  {
+ {
   id: 7,
+  name: "ImPACT Testing",
+  route: "impact-testing"
+  },
+  {
+  id: 8,
   name: "Services",
   route: "our-mission-and-services"
   },
   {
-  id: 8,
+  id: 9,
   name: "School Visits",
   route: "school-visits"
   },
   {
-  id: 9,
+  id: 10,
   name: "Contact Us",
   route: "contact"
   },

@@ -51,11 +51,6 @@
     navOpen.value = !navOpen.value
   }
 
-
-  // const openPatientPortal = () => {
-  // window.open(appStore.patientPortalUrl)
-  // }
-
 </script>
 
 <style scoped>
