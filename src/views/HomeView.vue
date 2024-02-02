@@ -17,10 +17,17 @@
         </v-col>
 
         <v-col class="d-flex flex-column align-center justify-center my-4">
-          <v-btn color="highlight" size="large" @click="openPatientPortal(appStore.patientPortalUrl)">
+          <v-btn color="highlight" size="large" @click="openUrl(appStore.onlineBookingUrl)">
+            Book Appointment Online
+          </v-btn>
+        </v-col>
+
+        <v-col class="d-flex flex-column align-center justify-center my-4">
+          <v-btn color="highlight" size="large" @click="openUrl(appStore.patientPortalUrl)">
             Patient Portal
           </v-btn>
         </v-col>
+
       </v-sheet>
     </v-row>
 
@@ -62,7 +69,7 @@
   const appStore = useAppStore()
   const { mobile } = useDisplay()
 
-  const openPatientPortal = (url) => {
+  const openUrl = (url) => {
     window.open(url)
   }
 
