@@ -8,6 +8,8 @@ export const useAppStore = defineStore('app', () => {
   const officePhone = ref("tel:8027637575")
 
   const patientPortalUrl = ref("https://12904.portal.athenahealth.com/")
+  const onlineBookingUrl = ref("https://book2.getweave.com/62731e39-480c-4e5b-99d5-fd864ed4fa63/request-appointment/")
+  const onlinePaymentUrl = ref("https://weavebillpay.com/c9ad33ec")
   const facebookUrl = ref("https://www.facebook.com/southroyaltonhealthcenter/")
 
   const navLinks = ref([
@@ -79,7 +81,7 @@ export const useAppStore = defineStore('app', () => {
     }
   }
 
-  return {officePhoneStr, officePhone, patientPortalUrl, facebookUrl, navLinks, activeId,
+  return {officePhoneStr, officePhone, patientPortalUrl, onlineBookingUrl, onlinePaymentUrl, facebookUrl, navLinks, activeId,
           setActiveId,
   }
 })
