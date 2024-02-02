@@ -17,7 +17,7 @@
 
     <p class="text-h6 text-primary font-weight-bold my-4">Pay Bill Online</p>
     <p class="body-text text-body-1 text-white">
-    Patients can now pay their bill online safely and securely using Weave! Just press the button below or scan the QR code to begin.
+    Patients can now pay their bill online safely and securely using Weave! Just press the button below to be taken to our encrypted online payment portal.
     </p>
 
   <v-row>
