@@ -48,7 +48,11 @@
     {
       "id": "9",
       "text": "Bladder Irritants",
-      "url": "https://www.hopkinsmedicine.org/johns_hopkins_bayview/_docs/medical_services/gynecology_obstetrics/bladder_irritants.pdf"
+      "url": "https://www.brighamandwomens.org/assets/BWH/obgyn/pdfs/bladder-irritants.pdf"
+    },
+     {
+      "text": "More About Bladder Irritants",
+      "url": "https://www.choc.org/programs-services/urology/bladder-irritants/"
     },
     {
       "id": "10",
@@ -143,6 +147,14 @@
       "id": "22",
       "text": "5210 Let's Go!",
       "url": "https://www.mainehealth.org/Lets-Go/Community/Parents/Children-Youth"
+    },
+    {
+      "text": "LCHF Diet Plan: Beginner's Guide",
+      "url": "https://www.healthline.com/nutrition/lchf-diet-plan-and-menu"
+    },
+    {
+      "text": "Noom",
+      "url": "www.noom.com"
     }
   ],
   "Parenting": [
@@ -275,6 +287,14 @@
       "id": "98",
       "text": "Solid Starts Encyclopedia",
       "url": "https://solidstarts.com/foods/"
+    },
+    {
+      "text": "Prevent Child Abuse Vermont - Support Programs",
+      "url": "https://www.pcavt.org/family-support-programs"
+    },
+    {
+     "text": "Prevent Child Abuse Vermont - Help Line",
+      "url": "https://www.pcavt.org/parents-helpline"
     }
   ],
   "Adolescence": [
@@ -461,9 +481,13 @@
       "url": "https://families.google/familylink//"
     },
     {
+      "text": "Resilient Families Program App",
+      "url": "https://www.smilingmind.com.au/resilient-families-program#RFP-Get-Started"
+    },
+    {
       "id": "96",
-      "text": "Google Family Link",
-      "url": "https://families.google/familylink//"
+      "text": "DBT Diary Card and Skills Coach",
+      "url": "https://www.diarycard.net/"
     }
   ],
   "Substance Use Resources": [
@@ -571,6 +595,10 @@
       "id": "69",
       "text": "Text: ditchjuul to 88709",
       "url": "tel:18007848669"
+    },
+    {
+      "text": "Energy Drink Consumption",
+      "url": "https://www.additudemag.com/energy-drinks-adhd-depression-children/?utm_source=eletter&utm_medium=email&utm_campaign=professional_march_2024&utm_content=030324&goal=0_a767e6fc3c-d3b6bc17ae-314508378"
     }
   ]
 }

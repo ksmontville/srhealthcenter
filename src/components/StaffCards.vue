@@ -60,8 +60,8 @@
 <script setup>
   import {reactive } from "vue";
   import {useDisplay} from "vuetify";
-  import millerPhoto from '@/assets/img/staff/dr-miller-card-photo.jpg'
-  import millerAvatar from '@/assets/img/staff/dr-miller-card-avatar.jpg'
+  import millerPhoto from '@/assets/img/staff/dr-miller-card-photo.jpeg'
+  import millerAvatar from '@/assets/img/staff/dr-miller-card-photo.jpeg'
   import freydaPhoto from '@/assets/img/staff/freyda-card-photo.jpg'
   import freydaAvatar from '@/assets/img/staff/freyda-card-avatar.jpg'
   import lincolnPhoto from '@/assets/img/staff/lincoln-card-photo.jpg'
