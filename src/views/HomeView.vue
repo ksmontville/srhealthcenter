@@ -77,7 +77,7 @@
   "a child–friendly environment, and a responsive team of pediatricians in the Upper Valley/Central Vermont, " +
   "then look no further. A medical home is defined as patient-centered, comprehensive, team-based, coordinated, accessible, " +
   "and focused on quality and safety, and that's us! We love kids, and our goal is to have a positive impact in the " +
-  "lives of children by providing exceptional health care and compassionate service to the families we serve.\n" +
+  "lives of children by providing exceptional evidence based health care and compassionate service to the families we serve.\n" +
   "At South Royalton Health Center, we offer a full range of pediatric care including prenatal visits for " +
   "expecting parents, well–child check–ups, immunizations, sick appointments, mental health and women's health care. " +
   "Our caring team is committed to providing quality service in a comfortable, safe office setting where children and " +
