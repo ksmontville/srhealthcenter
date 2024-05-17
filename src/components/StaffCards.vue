@@ -66,8 +66,6 @@
   import freydaAvatar from '@/assets/img/staff/freyda-card-avatar.jpg'
   import lincolnPhoto from '@/assets/img/staff/lincoln-card-photo.jpg'
   import lincolnAvatar from '@/assets/img/staff/lincoln-card-avatar.jpg'
-  import durkeePhoto from '@/assets/img/staff/durkee-card-photo.jpg'
-  import durkeeAvatar from '@/assets/img/staff/durkee-card-avatar.jpg'
   import ishamPhoto from '@/assets/img/staff/isham-card-photo.jpg'
   import ishamAvatar from '@/assets/img/staff/isham-card-avatar.jpg'
   import amberPhoto from '@/assets/img/staff/amber-card-photo.jpg'
@@ -135,18 +133,6 @@
     },
     {
       id: 3,
-      name: "Sabra Durkee",
-      cert: "RN, Office Manager",
-      field: "Nursing",
-      text: "Answering your questions over the phone, rooming patients, giving shots, obtaining labs, managing " +
-        "referrals, Sabra does it all!",
-      avatar: durkeeAvatar,
-      photo: durkeePhoto,
-      alt: "Photo of Sabra Durkee at South Royalton Health Center",
-      showText: false,
-    },
-    {
-      id: 4,
       name: "Danielle Isham",
       cert: "RN, Care Coordinator",
       field: "Nursing",
@@ -162,7 +148,7 @@
       showText: false,
     },
     {
-      id: 5,
+      id: 4,
       name: "Amber Barnard",
       cert: "Front Desk",
       field: "Support Staff",
@@ -176,7 +162,7 @@
       showText: false,
     },
     {
-      id: 6,
+      id: 5,
       name: "Catherine Williams",
       cert: "Front Desk",
       field: "Support Staff",
