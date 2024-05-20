@@ -27,6 +27,18 @@
         "form": "Consent for Release of Information",
         "link": "https://forms.wv3.io/form?formId=df4d7bff-7c91-4af2-94fe-2ceda4483b01&companyId=62731e39-480c-4e5b-99d5-fd864ed4fa63",
         "text": "For requesting old records, to allow communication between schools and practice/counselor, or for communication with specialists, this can be a little confusing so don't hesitate to call!"
+      },
+      {
+        "id": 4,
+        "form": "HIPAA Privacy Policy",
+        "link": "https://forms.wv3.io/form?formId=b9d08171-b108-45d2-bdd3-21bc22937dd9&companyId=62731e39-480c-4e5b-99d5-fd864ed4fa63",
+        "text": "Privacy policy for South Royalton Health Center."
+      },
+        {
+        "id": 5,
+        "form": "Financial Policy",
+        "link": "https://forms.wv3.io/form?formId=45cb98d6-ee78-402c-ae3f-2c17e3105709&companyId=62731e39-480c-4e5b-99d5-fd864ed4fa63",
+        "text": "Financial policy for South Royalton Health Center."
       }
     ]
   },
