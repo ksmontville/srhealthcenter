@@ -16,7 +16,7 @@
 
       <v-row class="my-8" align="center" justify="center" no-gutters>
         <v-col cols="12" class="d-flex justify-center align-center my-2">
-          <small class="text-center">79 South Windsor Drive, PO Box 119, South Royalton, VT 05068</small>
+          <small class="text-center">79 South Windsor Street, PO Box 119, South Royalton, VT 05068</small>
         </v-col>
         <v-col cols="12" class="d-flex justify-center align-center my-2">
           <small><a :href="appStore.officePhone">(802) 763-7575</a></small>

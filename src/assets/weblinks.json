@@ -38,7 +38,7 @@
     {
       "id": "7",
       "text": "Dust Mites Prevention",
-      "url": "https://www.mayoclinic.org/diseases-conditions/dust-mites/symptoms-causes/syc-20352173"
+      "url": "https://www.mayoclinic.org/diseases-conditions/dust-mites/diagnosis-treatment/drc-20352178#self-care"
     },
     {
       "id": "8",
@@ -83,6 +83,11 @@
       "id": "72",
       "text": "Melatonin For Children: A Guide for Parents",
       "url": "https://drcraigcanapari.com/should-my-child-take-melatonin-a-guide-for-parents/"
+    },
+    {
+      "id": "100",
+      "text": "Oral Hydration Therapy",
+      "url": "https://kidshealth.org/en/parents/dehydration-sheet.html/"
     }
   ],
   "Educational Resources": [

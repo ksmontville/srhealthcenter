@@ -27,6 +27,18 @@
         "form": "Consent for Release of Information",
         "link": "https://forms.wv3.io/form?formId=df4d7bff-7c91-4af2-94fe-2ceda4483b01&companyId=62731e39-480c-4e5b-99d5-fd864ed4fa63",
         "text": "For requesting old records, to allow communication between schools and practice/counselor, or for communication with specialists, this can be a little confusing so don't hesitate to call!"
+      },
+      {
+        "id": 4,
+        "form": "HIPAA Privacy Policy",
+        "link": "https://forms.wv3.io/form?formId=b9d08171-b108-45d2-bdd3-21bc22937dd9&companyId=62731e39-480c-4e5b-99d5-fd864ed4fa63",
+        "text": "Privacy policy for South Royalton Health Center."
+      },
+        {
+        "id": 5,
+        "form": "Financial Policy",
+        "link": "https://forms.wv3.io/form?formId=45cb98d6-ee78-402c-ae3f-2c17e3105709&companyId=62731e39-480c-4e5b-99d5-fd864ed4fa63",
+        "text": "Financial policy for South Royalton Health Center."
       }
     ]
   },
@@ -74,12 +86,12 @@
       {
         "id": 0,
         "form": "Anxiety Screener (GAD7)",
-        "link": "https://forms.wv3.io/form?formId=9acc695b-89d8-4dbe-9c38-6fe9139b96db&companyId=62731e39-480c-4e5b-99d5-fd864ed4fa63"
+        "link": "https://hushforms.com/35388-anxiety-screener-form"
       },
       {
         "id": 1,
         "form": "Depression Screener (PHQ9)",
-        "link": "https://forms.wv3.io/form?formId=963509a5-70e3-4766-9b25-311b37fe9e50&companyId=62731e39-480c-4e5b-99d5-fd864ed4fa63"
+        "link": "https://hushforms.com/35388-depression-screener-form"
       },
       {
         "id": 2,
@@ -89,7 +101,7 @@
       {
         "id": 3,
         "form": "ADHD: Teacher (Vanderbilt)",
-        "link": "https://forms.wv3.io/form?formId=738db959-3d7f-49fb-80c5-f9be0140483c&companyId=62731e39-480c-4e5b-99d5-fd864ed4fa63"
+        "link": "https://hushforms.com/35388-adhd-teacher-form"
       }
     ]
   },
