@@ -6,36 +6,30 @@
     "forms": [
       {
         "id": 0,
-        "form": "New Patient Intake Form",
-        "link": "https://forms.wv3.io/form?formId=cb345eb1-4235-4be8-b842-3e52eb0a1cc6&companyId=62731e39-480c-4e5b-99d5-fd864ed4fa63",
-        "text": "All new patients, counseling and medical."
-      },
-      {
-        "id": 1,
         "form": "Health Questionnaire",
         "link": "https://forms.wv3.io/form?formId=30a192c7-86b0-46b3-b2f2-28ad61bf9bfe&companyId=62731e39-480c-4e5b-99d5-fd864ed4fa63",
         "text": "All new patients, counseling and medical."
       },
       {
-        "id": 2,
+        "id": 1,
         "form": "Counseling Client Intake Form",
         "link": "https://forms.wv3.io/form?formId=2c6ebccd-ebd1-456c-9628-cb6d98ca0536&companyId=62731e39-480c-4e5b-99d5-fd864ed4fa63",
         "text": "New counseling patients only."
       },
       {
-        "id": 3,
+        "id": 2,
         "form": "Consent for Release of Information",
         "link": "https://forms.wv3.io/form?formId=df4d7bff-7c91-4af2-94fe-2ceda4483b01&companyId=62731e39-480c-4e5b-99d5-fd864ed4fa63",
         "text": "For requesting old records, to allow communication between schools and practice/counselor, or for communication with specialists, this can be a little confusing so don't hesitate to call!"
       },
       {
-        "id": 4,
+        "id": 3,
         "form": "HIPAA Privacy Policy",
         "link": "https://forms.wv3.io/form?formId=b9d08171-b108-45d2-bdd3-21bc22937dd9&companyId=62731e39-480c-4e5b-99d5-fd864ed4fa63",
         "text": "Privacy policy for South Royalton Health Center."
       },
         {
-        "id": 5,
+        "id": 4,
         "form": "Financial Policy",
         "link": "https://forms.wv3.io/form?formId=45cb98d6-ee78-402c-ae3f-2c17e3105709&companyId=62731e39-480c-4e5b-99d5-fd864ed4fa63",
         "text": "Financial policy for South Royalton Health Center."
