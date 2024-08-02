@@ -16,11 +16,6 @@
       "url": "https://www.mayoclinic.org/healthy-lifestyle/childrens-health/basics/childrens-health/hlv-20049425"
     },
     {
-      "id": "2",
-      "text": "Cleveland Clinic's Children's Health Archives",
-      "url": "http://health.clevelandclinic.org/topics/family-health/childrens-health/?utm_campaign=healthhub-ccch-url&utm_medium=offline&utm_source=redirect"
-    },
-    {
       "id": "4",
       "text": "Swallowing Pills",
       "url": "https://kidshealth.org/en/parents/swallowing-pills.html"
@@ -29,11 +24,6 @@
       "id": "5",
       "text": "Managing Your Child's Pain While Getting a Shot",
       "url": "https://www.healthychildren.org/English/safety-prevention/immunizations/Pages/Managing-Your-Childs-Pain-While-Getting-a-Shot.aspx"
-    },
-    {
-      "id": "6",
-      "text": "Lice Treatment",
-      "url": "https://nuvoforheadlice.com/?page_id=225"
     },
     {
       "id": "7",
@@ -117,11 +107,6 @@
       "url": "https://www.parentcenterhub.org/school-discipline-rights-of-students-with-ieps-504-plans/"
     },
     {
-      "id": "18",
-      "text": "22-Ways-to-Make-Sure-Your-Kid-Loves-School",
-      "url": "https://www.srhealthcenter.com/storage/app/media/22-Ways-to-Make-Sure-Your-Kid-Loves-School.pdf"
-    },
-    {
       "id": "79",
       "text": "Wrights Law",
       "url": "https://www.wrightslaw.com/"
@@ -159,7 +144,7 @@
     },
     {
       "text": "Noom",
-      "url": "www.noom.com"
+      "url": "https://www.noom.com/"
     }
   ],
   "Parenting": [
@@ -344,11 +329,6 @@
       "url": "https://www.youtube.com/watch?v=C5Co4czoo5s"
     },
     {
-      "id": "44",
-      "text": "Sex Ed for Youth with Disabilities or Chronic Illness",
-      "url": "https://www.med.umich.edu/yourchild/topics/disabsex.htm"
-    },
-    {
       "id": "45",
       "text": "Transition to Adulthood with Autism",
       "url": "https://www.autismspeaks.org/transition-adulthood"
@@ -449,11 +429,6 @@
       "id": "58",
       "text": "Excellent CBT Skills App",
       "url": "https://www.anxietycanada.com/resources/mindshift-cbt/"
-    },
-    {
-      "id": "59",
-      "text": "DBT Skills App",
-      "url": "https://www.diarycard.net/"
     },
     {
       "id": "88",

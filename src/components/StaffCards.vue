@@ -62,8 +62,7 @@
   import {useDisplay} from "vuetify";
   import millerPhoto from '@/assets/img/staff/dr-miller-card-photo.jpeg'
   import millerAvatar from '@/assets/img/staff/dr-miller-card-photo.jpeg'
-  import freydaPhoto from '@/assets/img/staff/freyda-card-photo.jpg'
-  import freydaAvatar from '@/assets/img/staff/freyda-card-avatar.jpg'
+  import cindyPhoto from '@/assets/img/staff/cindy-card-photo.jpg'
   import lincolnPhoto from '@/assets/img/staff/lincoln-card-photo.jpg'
   import lincolnAvatar from '@/assets/img/staff/lincoln-card-avatar.jpg'
   import ishamPhoto from '@/assets/img/staff/isham-card-photo.jpg'
@@ -97,24 +96,6 @@
     },
     {
       id: 1,
-      name: "Freyda Neyman",
-      cert: "MD, FAAP",
-      field: "Clinician",
-      text: "Dr Freyda Neyman was raised in The Bronx but spent 30+ years in Philadelphia, where she went to college, " +
-        "medical school and completed her pediatric residency. Dr Freyda spent most of her pediatric career in " +
-        "Philadelphia academic centers teaching medical students and residents in both the  outpatient and pediatric " +
-        "emergency care settings. She has a special interest in childhood, and youth, health and development. \n" +
-        "\n" +
-        "She and her partner live in Central Vermont and have three grown children, two German Shepherds and two cats. " +
-        "When not seeing patients at SRHC or in the HealthHub school-based health clinics , she enjoys hiking , " +
-        "kayaking and playing with her animals. ",
-      avatar: freydaAvatar,
-      photo: freydaPhoto,
-      alt: "Photo of Freyda Neyman at South Royalton Health Center",
-      showText: false,
-    },
-    {
-      id: 2,
       name: "Amelia Lincoln",
       cert: "MCMHC",
       field: "Clinician",
@@ -132,7 +113,7 @@
       showText: false,
     },
     {
-      id: 3,
+      id: 2,
       name: "Danielle Isham",
       cert: "RN, Care Coordinator",
       field: "Nursing",
@@ -148,7 +129,7 @@
       showText: false,
     },
     {
-      id: 4,
+      id: 3,
       name: "Amber Barnard",
       cert: "Front Desk",
       field: "Support Staff",
@@ -162,7 +143,7 @@
       showText: false,
     },
     {
-      id: 5,
+      id: 4,
       name: "Catherine Williams",
       cert: "Front Desk",
       field: "Support Staff",
@@ -175,6 +156,22 @@
       alt: "Photo of Catherine Williams at South Royalton Health Center",
       showText: false,
     },
+    {
+  id: 5,
+    name: "Cindy Eggleston",
+    cert: "LPN",
+    field: "Support Staff",
+    text: "Judith \"Cindy\" Eggleston was born and raised in Bradford, Vermont. Though she moved around some in her early to mid 20's, Bradford has always been considered home to her. " +
+          "She spent several years managing large horse farms and a ranch, then worked as an Administrative Assistant at a pediatrics office for 2 years. " +
+          "The pediatrics office was where she discovered she really enjoyed the atmosphere of clinical care and wanted to further her career in order to be more involved. " +
+          "She attended Vermont State University where she graduated the Practical Nursing program. " +
+          "She intends to next begin working towards her Associates Degree in Behavioral Sciences to broaden the scope of her abilities and knowledge for those among the practice as well as the community. " +
+          "When she isn't at work, Cindy enjoys reading novels, hiking with her beloved dogs and fishing the local lakes and ponds for bass.",
+    avatar: cindyPhoto,
+    photo: cindyPhoto,
+    alt: "Photo of Cindy Eggleston at South Royalton Health Center",
+    showText: false,
+},
   ])
 </script>
 
