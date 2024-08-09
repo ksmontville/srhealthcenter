@@ -43,6 +43,14 @@
             <p class="body-text text-body-1 text-justify text-white pa-2 pa-md-8">
               {{ aboutUsText }}
             </p>
+            <h3 class="body-text text-center text-white pa-2 pa-md-8">
+              Concerned about the <u>Change Healthcare</u> security breach? Click below to learn more and for free monitoring.
+            </h3>
+            <v-row justify="center" align="center">
+              <v-btn class="my-8" color="highlight" size="large" @click="openUrl('https://www.changehealthcare.com/hipaa-substitute-notice')" >
+                Learn More
+              </v-btn>
+            </v-row>
           </v-col>
 
           <v-col cols="12" md="4">
@@ -63,7 +71,6 @@
   import {useDisplay} from "vuetify";
   import TestimonialCards from "@/components/TestimonialCards.vue";
   import logo from '../assets/img/srhc-logo-white.png'
-  import child from '@/assets/img/office/child.jpg'
   import childSm from '@/assets/img/office/child-sm.jpg'
 
   const appStore = useAppStore()
