@@ -130,6 +130,22 @@
     },
     {
       id: 3,
+      name: "Cindy Eggleston",
+      cert: "LPN",
+      field: "Nursing",
+      text: "Judith \"Cindy\" Eggleston was born and raised in Bradford, Vermont. Though she moved around some in her early to mid 20's, Bradford has always been considered home to her. " +
+            "She spent several years managing large horse farms and a ranch, then worked as an Administrative Assistant at a pediatrics office for 2 years. " +
+            "The pediatrics office was where she discovered she really enjoyed the atmosphere of clinical care and wanted to further her career in order to be more involved. " +
+            "She attended Vermont State University where she graduated the Practical Nursing program. " +
+            "She intends to next begin working towards her Associates Degree in Behavioral Sciences to broaden the scope of her abilities and knowledge for those among the practice as well as the community. " +
+            "When she isn't at work, Cindy enjoys reading novels, hiking with her beloved dogs and fishing the local lakes and ponds for bass.",
+      avatar: cindyPhoto,
+      photo: cindyPhoto,
+      alt: "Photo of Cindy Eggleston at South Royalton Health Center",
+      showText: false,
+    },
+    {
+      id: 4,
       name: "Amber Barnard",
       cert: "Front Desk",
       field: "Support Staff",
@@ -143,7 +159,7 @@
       showText: false,
     },
     {
-      id: 4,
+      id: 5,
       name: "Catherine Williams",
       cert: "Front Desk",
       field: "Support Staff",
@@ -156,22 +172,6 @@
       alt: "Photo of Catherine Williams at South Royalton Health Center",
       showText: false,
     },
-    {
-  id: 5,
-    name: "Cindy Eggleston",
-    cert: "LPN",
-    field: "Support Staff",
-    text: "Judith \"Cindy\" Eggleston was born and raised in Bradford, Vermont. Though she moved around some in her early to mid 20's, Bradford has always been considered home to her. " +
-          "She spent several years managing large horse farms and a ranch, then worked as an Administrative Assistant at a pediatrics office for 2 years. " +
-          "The pediatrics office was where she discovered she really enjoyed the atmosphere of clinical care and wanted to further her career in order to be more involved. " +
-          "She attended Vermont State University where she graduated the Practical Nursing program. " +
-          "She intends to next begin working towards her Associates Degree in Behavioral Sciences to broaden the scope of her abilities and knowledge for those among the practice as well as the community. " +
-          "When she isn't at work, Cindy enjoys reading novels, hiking with her beloved dogs and fishing the local lakes and ponds for bass.",
-    avatar: cindyPhoto,
-    photo: cindyPhoto,
-    alt: "Photo of Cindy Eggleston at South Royalton Health Center",
-    showText: false,
-},
   ])
 </script>
 
