@@ -6,6 +6,7 @@ export const useAppStore = defineStore("app", () => {
   const officePhoneStr = "(802) 763-7575";
   const officePhone = ref("tel:8027637575");
   const officeFax = ref("fax:8442898252");
+  const officeFaxStr = "(844) 289-8252";
 
   const patientPortalUrl = ref("https://12904.portal.athenahealth.com/");
   const onlineBookingUrl = ref(
@@ -99,6 +100,7 @@ export const useAppStore = defineStore("app", () => {
     officePhoneStr,
     officePhone,
     officeFax,
+    officeFaxStr,
     patientPortalUrl,
     onlineBookingUrl,
     onlinePaymentUrl,
