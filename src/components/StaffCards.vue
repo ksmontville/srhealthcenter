@@ -100,7 +100,7 @@ const staffDetails = reactive([
   {
     id: 0,
     name: "Ashley Miller",
-    cert: "MD, FAAP",
+    cert: "MD, FAAP, DipABLM",
     field: "Clinician",
     text:
       "Dr. Ashley was born and raised in southern New Hampshire, left briefly for college, returned to the " +
@@ -108,8 +108,9 @@ const staffDetails = reactive([
       "South Royalton Health Center during training and was very excited to join her practice in 2014 and become " +
       "the owner when Dr. Becky retired." +
       "She has a special interest in adolescent medicine and mental health, but truly enjoys following families " +
-      "from birth to graduation. She is a fellow of the American Academy of Pediatrics, and before has been actively involved " +
-      "at the state and national level. When not seeing patients you can find Dr. Ashley competing at local horse " +
+      "from birth to graduation. She is a fellow of the American Academy of Pediatrics, and before has been actively involved at the state and national level. " +
+      "She is a Certified Lifestyle Medicine Physician which means she looks at patients and families as a whole, and how every aspect of their life affects their health. Dr. Ashley enjoys teaching and is a Clinical Assistant Professor of Pediatrics at Geisel School of Medicine at Dartmouth. She was honored to be named Green Mountain Pediatrician of the year in 2022. " +
+      "When not seeing patients you can find Dr. Ashley competing at local horse " +
       "trials (triathlons on horse back), hiking or snowshoeing in the surrounding mountains, and swimming in the " +
       "local rivers with her dogs.",
     avatar: millerAvatar,
@@ -140,14 +141,14 @@ const staffDetails = reactive([
     id: 2,
     name: "Abigail Henderson",
     cert: "PNP",
-    field: "Nursing",
+    field: "Clinician",
     text:
-      "Welcoming our new HealthHubVT clinician, starting in Jan 2025 PNP Abbi will be found in our HealthHub schools and at SRHC. We can't wait for her to start! Abigail Henderson is a Pediatric Nurse Practitioner who grew up in Rutland County." +
-      "Abbi earned her Bachelor of Science in nursing from the University of Connecticut and her Master of Science in Nursing from Maryville University" +
-      "Working with children of all ages has always been her passion, but she especially loves providing newborn care and lactation support, as well as treating mental health concerns" +
-      "Additionally, she is credentialed as a Forensic Nurse Examiner which allows her the privilege of helping adolescents and children who have suffered physical and sexual abuse." +
-      "She loves working with children and families and is thrilled to be joining the team at South Royalton Health Center." +
-      "Abbi lives with her husband, two children, and their collection of animals." +
+      " Abigail Henderson is a Pediatric Nurse Practitioner who grew up in Rutland County. " +
+      "Abbi earned her Bachelor of Science in nursing from the University of Connecticut and her Master of Science in Nursing from Maryville University. " +
+      "Working with children of all ages has always been her passion, but she especially loves providing newborn care and lactation support, as well as treating mental health concerns. " +
+      "Additionally, she is credentialed as a Forensic Nurse Examiner which allows her the privilege of helping adolescents and children who have suffered physical and sexual abuse. " +
+      "She loves working with children and families and is thrilled to be joining the team at South Royalton Health Center. " +
+      "Abbi lives with her husband, two children, and their collection of animals. " +
       "She enjoys all outdoor activities but especially mountain biking, snowboarding, hiking, running, and horseback riding.",
     avatar: abbiPhoto,
     photo: abbiPhoto,

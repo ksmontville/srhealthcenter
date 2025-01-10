@@ -1,6 +1,6 @@
 <template>
   <v-container class="mt-8" id="hero">
-    <v-row class="mx-auto">
+    <v-row class="mx-auto" align="">
       <v-sheet
         color="primary"
         class="rounded-lg ma-auto pa-4 w-100"
@@ -59,42 +59,49 @@
         </v-col>
 
         <v-col cols="12" md="8">
-          <v-row class="mb-8">
-            <p
-              class="body-text text-body-1 text-justify text-white pa-2 pa-md-8"
-            >
-              {{ aboutUsText }}
-            </p>
-          </v-row>
           <v-row class="bg-secondary rounded-lg my-16 pa-4">
             <v-col cols="12">
               <p class="body-text text-white text-h2 pa-2">
-                So when you're ready to stop...
+                When you're ready to stop...
               </p></v-col
             >
             <v-container class="text-body text-body-1 ma-2 pa-2">
-              <v-col cols="12" class="ma-4"
-                ><strong>Waiting weeks</strong> or months to get in to see a
-                doctor</v-col
-              >
-              <v-divider :thickness="4" color="highlight" />
-              <v-col cols="12" class="ma-4"
-                ><strong>Feeling rushed</strong> in the treatment room</v-col
-              >
-              <v-divider :thickness="4" color="highlight" />
-              <v-col cols="12" class="ma-4"
-                ><strong>Having your treatment limited</strong> to symptoms for
-                just one ailment per visit—and not having the time to explore
-                the source of your problem</v-col
-              >
+              <v-row align="center">
+                <v-col cols="12" lg="6">
+                  <v-col cols="12" class="ma-4"
+                    ><strong>Waiting weeks</strong> or months to get in to see a
+                    doctor;</v-col
+                  >
+                  <v-divider :thickness="4" color="highlight" />
+                  <v-col cols="12" class="ma-4"
+                    ><strong>Feeling rushed</strong> in the treatment
+                    room;</v-col
+                  >
+                  <v-divider :thickness="4" color="highlight" />
+                  <v-col cols="12" class="ma-4"
+                    ><strong>Having your treatment limited</strong> to symptoms
+                    for just one ailment per visit—and not having the time to
+                    explore the source of your problem...</v-col
+                  >
 
-              <v-divider :thickness="4" color="highlight" />
+                  <v-divider :thickness="4" color="highlight" />
+                </v-col>
+                <v-spacer />
+                <v-col cols="12" lg="6">
+                  <v-img
+                    :src="stockBabySm"
+                    :srcset="`${stockBabySm} 480w, ${stockBabyMd} 800w, ${stockBabyLg} 1200w`"
+                    class="rounded ma-auto"
+                    cover
+                  />
+                </v-col>
+              </v-row>
             </v-container>
           </v-row>
           <v-row class="rounded-lg my-16 pa-4">
             <v-col cols="12"
               ><p class="body-text text-white text-h2 pa-2">
-                Come experience pediatrics in private practice
+                Come experience pediatrics in private practice!
               </p></v-col
             >
           </v-row>
@@ -105,35 +112,49 @@
               </p></v-col
             >
             <v-container class="text-body text-body-1 ma-2 pa-2">
-              <v-col cols="12" class="ma-4"
-                ><strong>Have the same, highly-trained doctor</strong> who knows
-                your family well, and has managed your childrens' health from
-                newborns to young adults</v-col
-              >
-              <v-divider :thickness="4" color="highlight" />
-              <v-col cols="12" class="ma-4"
-                ><strong
-                  >Get same next business day in-office or telehealth
-                  visits</strong
-                >
-                with unhurried, longer appointments when needed</v-col
-              >
-              <v-divider :thickness="4" color="highlight" />
-              <v-col cols="12" class="ma-4"
-                >Know you can
-                <strong
-                  >text, email, and call your doctor's office directly</strong
-                >, even after hours, when a fever or pain is soaring along with
-                your worry</v-col
-              >
-              <v-divider :thickness="4" color="highlight" />
+              <v-row align="center">
+                <v-col cols="12" lg="6">
+                  <v-col cols="12" class="ma-4"
+                    ><strong>Have the same, highly-trained doctor</strong> who
+                    knows your family well, and has managed your childrens'
+                    health from newborns to young adults;</v-col
+                  >
+                  <v-divider :thickness="4" color="highlight" />
+                  <v-col cols="12" class="ma-4"
+                    ><strong
+                      >Get same next business day in-office or telehealth
+                      visits</strong
+                    >
+                    with unhurried, longer appointments when needed;</v-col
+                  >
+                  <v-divider :thickness="4" color="highlight" />
+
+                  <v-spacer />
+                  <v-col cols="12" class="ma-4"
+                    >Know you can
+                    <strong
+                      >text, email, and call your doctor's office
+                      directly</strong
+                    >, even after hours!
+                  </v-col>
+                  <v-divider :thickness="4" color="highlight" />
+                </v-col>
+                <v-col cols="12" lg="6" class="">
+                  <v-img
+                    :src="stockTeddySm"
+                    :srcset="`${stockTeddySm} 480w, ${stockTeddyMd} 800w, ${stockTeddyLg} 1200w`"
+                    class="rounded"
+                    cover
+                  />
+                </v-col>
+              </v-row>
             </v-container>
           </v-row>
           <v-row class="rounded-lg my-16 pa-4">
             <v-col cols="12" class="mx-auto my-auto">
               <p class="body-text text-white text-h2 pa-2">
                 Get ready for a long-lasting, doctor-patient relationship that’s
-                all about meaningful connection, not a cold transaction
+                all about meaningful connection -- not a cold transaction.
               </p>
             </v-col>
           </v-row>
@@ -152,7 +173,8 @@
       </v-row>
     </v-row>
     <v-row
-      class="bg-primary d-flex flex-column flex-md-row w-100 pa-8 pa-md-4 rounded-lg"
+      class="bg-primary mx-auto w-100 pa-2 pa-md-8 rounded-lg"
+      align="center"
     >
       <v-col cols="12" md="8" class="mt-8">
         <p class="body-text text-white text-h4 pa-2">
@@ -225,6 +247,12 @@ import TestimonialCards from "@/components/TestimonialCards.vue";
 import logo from "../assets/img/srhc-logo-white.png";
 import millerPhoto from "../assets/img/staff/dr-miller-card-photo.jpeg";
 import childSm from "@/assets/img/office/child-sm.jpg";
+import stockTeddySm from "@/assets/img/stock/stock-teddy-sm.jpg";
+import stockTeddyMd from "@/assets/img/stock/stock-teddy-md.jpg";
+import stockTeddyLg from "@/assets/img/stock/stock-teddy-lg.jpg";
+import stockBabySm from "@/assets/img/stock/stock-baby-sm.jpg";
+import stockBabyMd from "@/assets/img/stock/stock-baby-md.jpg";
+import stockBabyLg from "@/assets/img/stock/stock-baby-lg.jpg";
 
 const appStore = useAppStore();
 const { mobile } = useDisplay();
@@ -233,19 +261,19 @@ const openUrl = (url) => {
   window.open(url);
 };
 
-const aboutUsText =
-  "Welcome to South Royalton Health Center. If you're looking for accessible pediatric care, " +
-  "a child–friendly environment, and a responsive team of pediatricians in the Upper Valley/Central Vermont, " +
-  "then look no further. A medical home is defined as patient-centered, comprehensive, team-based, coordinated, accessible, " +
-  "and focused on quality and safety, and that's us! We love kids, and our goal is to have a positive impact in the " +
-  "lives of children by providing exceptional evidence based health care and compassionate service to the families we serve.\n" +
-  "At South Royalton Health Center, we offer a full range of pediatric care including prenatal visits for " +
-  "expecting parents, well–child check–ups, immunizations, sick appointments, mental health and women's health care. " +
-  "Our caring team is committed to providing quality service in a comfortable, safe office setting where children and " +
-  "parents can feel at ease. We also set aside time to equip parents with the tools and education necessary for the " +
-  "development of healthy children from birth to adolescence. We have a dedicated nurse care coordinator to help " +
-  "patients and families coordinate their specialty care and community/school education to achieve the best quality " +
-  "of life possible and to help in the transition to adult medicine.\n";
+//const aboutUsText =
+//  "Welcome to South Royalton Health Center. If you're looking for accessible pediatric care, " +
+//  "a child–friendly environment, and a responsive team of pediatricians in the Upper Valley/Central Vermont, " +
+//  "then look no further. A medical home is defined as patient-centered, comprehensive, team-based, coordinated, accessible, " +
+//  "and focused on quality and safety, and that's us! We love kids, and our goal is to have a positive impact in the " +
+//  "lives of children by providing exceptional evidence based health care and compassionate service to the families we serve.\n" +
+//  "At South Royalton Health Center, we offer a full range of pediatric care including prenatal visits for " +
+//  "expecting parents, well–child check–ups, immunizations, sick appointments, mental health and women's health care. " +
+//  "Our caring team is committed to providing quality service in a comfortable, safe office setting where children and " +
+//  "parents can feel at ease. We also set aside time to equip parents with the tools and education necessary for the " +
+//  "development of healthy children from birth to adolescence. We have a dedicated nurse care coordinator to help " +
+//  "patients and families coordinate their specialty care and community/school education to achieve the best quality " +
+//  "of life possible and to help in the transition to adult medicine.\n";
 </script>
 
 <style scoped>
