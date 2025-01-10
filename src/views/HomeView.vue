@@ -7,11 +7,13 @@
         elevation="16"
       >
         <v-col cols="12">
-          <v-img
-            :src="logo"
-            alt="South Royal Health Center Logo"
-            max-height="256"
-          ></v-img>
+          <v-lazy>
+            <v-img
+              :src="logo"
+              alt="South Royal Health Center Logo"
+              max-height="256"
+            />
+          </v-lazy>
         </v-col>
 
         <v-col cols="12" class="my-4">
@@ -88,12 +90,14 @@
                 </v-col>
                 <v-spacer />
                 <v-col cols="12" lg="6">
-                  <v-img
-                    :src="stockBabySm"
-                    :srcset="`${stockBabySm} 480w, ${stockBabyMd} 800w, ${stockBabyLg} 1200w`"
-                    class="rounded ma-auto"
-                    cover
-                  />
+                  <v-lazy>
+                    <v-img
+                      :src="stockBabySm"
+                      :srcset="`${stockBabySm} 480w, ${stockBabyMd} 800w, ${stockBabyLg} 1200w`"
+                      class="rounded ma-auto"
+                      cover
+                    />
+                  </v-lazy>
                 </v-col>
               </v-row>
             </v-container>
@@ -140,12 +144,14 @@
                   <v-divider :thickness="4" color="highlight" />
                 </v-col>
                 <v-col cols="12" lg="6" class="">
-                  <v-img
-                    :src="stockTeddySm"
-                    :srcset="`${stockTeddySm} 480w, ${stockTeddyMd} 800w, ${stockTeddyLg} 1200w`"
-                    class="rounded"
-                    cover
-                  />
+                  <v-lazy>
+                    <v-img
+                      :src="stockTeddySm"
+                      :srcset="`${stockTeddySm} 480w, ${stockTeddyMd} 800w, ${stockTeddyLg} 1200w`"
+                      class="rounded"
+                      cover
+                    />
+                  </v-lazy>
                 </v-col>
               </v-row>
             </v-container>
@@ -162,11 +168,13 @@
 
         <v-col cols="12" md="4">
           <v-container>
-            <v-img
-              :src="childSm"
-              class="rounded"
-              :max-height="!mobile ? 400 : null"
-            />
+            <v-lazy>
+              <v-img
+                :src="childSm"
+                class="rounded"
+                :max-height="!mobile ? 400 : null"
+              />
+            </v-lazy>
             <testimonial-cards />
           </v-container>
         </v-col>
@@ -218,7 +226,9 @@
         </v-container>
       </v-col>
       <v-col cols="12" md="4">
-        <v-img :src="millerPhoto" class="rounded-lg" max-height="800" />
+        <v-lazy>
+          <v-img :src="millerPhoto" class="rounded-lg" max-height="800" />
+        </v-lazy>
       </v-col>
     </v-row>
     <v-row class="flex flex-column ma-8 pa-4" justify="center" align="center">
