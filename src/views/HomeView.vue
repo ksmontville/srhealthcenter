@@ -55,10 +55,11 @@
         <v-col cols="12" md="8">
           <v-row class="bg-secondary rounded-lg my-16 pa-4">
             <v-col cols="12">
-              <p class="body-text text-white text-h2 pa-2">
+              <p class="body-text text-white text-h4 text-md-h2 pa-2">
                 When you're ready to stop...
               </p></v-col
             >
+            <v-divider :thickness="8" color="black" />
             <v-container class="text-body text-body-1 ma-2 pa-2">
               <v-row align="center">
                 <v-col cols="12" lg="6">
@@ -96,17 +97,18 @@
           </v-row>
           <v-row class="rounded-lg my-16 pa-4">
             <v-col cols="12"
-              ><p class="body-text text-white text-h2 pa-2">
+              ><p class="body-text text-white text-h4 text-md-h2 pa-2">
                 Come experience pediatrics in private practice!
               </p></v-col
             >
           </v-row>
           <v-row class="bg-secondary rounded-lg my-16 pa-4">
             <v-col cols="12"
-              ><p class="body-text text-white text-h2 pa-2">
+              ><p class="body-text text-white text-h4 text-md-h2 pa-2">
                 Now imagine how it would feel to...
               </p></v-col
             >
+            <v-divider :thickness="8" color="black" />
             <v-container class="text-body text-body-1 ma-2 pa-2">
               <v-row align="center">
                 <v-col cols="12" lg="6">
@@ -150,7 +152,7 @@
           </v-row>
           <v-row class="rounded-lg my-16 pa-4">
             <v-col cols="12" class="mx-auto my-auto">
-              <p class="body-text text-white text-h2 pa-2">
+              <p class="body-text text-white text-h5 text-md-h3 pa-2">
                 Get ready for a long-lasting, doctor-patient relationship that’s
                 all about meaningful connection -- not a cold transaction.
               </p>
@@ -172,17 +174,16 @@
         </v-col>
       </v-row>
     </v-row>
-    <v-row
-      class="bg-primary mx-auto w-100 pa-2 pa-md-8 rounded-lg"
-      align="center"
-    >
-      <v-col cols="12" md="8" class="mt-8">
-        <p class="body-text text-white text-h4 pa-2">
+    <v-row class="bg-primary pa-2 pa-md-8 rounded-lg w-auto" align="center">
+      <v-col cols="12">
+        <p class="body-text text-white text-center text-h5 text-md-h3 pa-2">
           Hello, I'm Dr. Ashley Miller
         </p>
-        <v-divider :thickness="8" color="black" />
+      </v-col>
+      <v-divider :thickness="8" color="black" />
+      <v-col class="mt-8">
         <v-container class="body-text text-body-1 text-white pa-4">
-          <v-col>
+          <v-col cols="">
             Board Certified Pediatrician since 2009. I help local families and
             individuals get the level of care they deserve with the convenience
             and intimacy of a small practice. But without the usual high
@@ -217,9 +218,9 @@
           >
         </v-container>
       </v-col>
-      <v-col cols="12" md="4">
+      <v-col>
         <v-lazy>
-          <v-img :src="millerPhoto" class="rounded-lg" max-height="800" />
+          <v-img :src="millerPhoto" class="rounded-lg ma-auto" :width="400" />
         </v-lazy>
       </v-col>
     </v-row>
