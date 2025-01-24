@@ -52,14 +52,6 @@
 
     <v-row class="mx-auto my-8" justify="center" align="center">
       <v-row align="start" class="ma-auto">
-        <v-col cols="12">
-          <p
-            class="hero-text body-text text-h5 text-md-h2 text-white pa-4 my-8 rounded text-center"
-          >
-            Accessible pediatric care in a child friendly environment
-          </p>
-        </v-col>
-
         <v-col cols="12" md="8">
           <v-row class="bg-secondary rounded-lg my-16 pa-4">
             <v-col cols="12">
@@ -232,20 +224,13 @@
       </v-col>
     </v-row>
     <v-row class="flex flex-column ma-8 pa-4" justify="center" align="center">
-      <h3 class="body-text text-center text-white pa-2 pa-md-8">
-        Concerned about the <u>Change Healthcare</u> security breach? Click
-        below to learn more and for free monitoring.
-      </h3>
-      <v-btn
-        class="my-8"
-        color="highlight"
-        size="large"
-        @click="
-          openUrl('https://www.changehealthcare.com/hipaa-substitute-notice')
-        "
-      >
-        Learn More
-      </v-btn>
+      <v-col cols="12">
+        <p
+          class="hero-text body-text text-h5 text-md-h3 text-white pa-4 my-8 rounded text-center"
+        >
+          Accessible pediatric care in a child friendly environment
+        </p>
+      </v-col>
     </v-row>
   </v-container>
 </template>
