@@ -219,9 +219,7 @@
         </v-container>
       </v-col>
       <v-col>
-        <v-lazy>
-          <v-img :src="millerPhoto" class="rounded-lg ma-auto" :width="400" />
-        </v-lazy>
+        <v-img :src="millerPhoto" class="rounded-lg ma-auto" :width="400" />
       </v-col>
     </v-row>
     <v-row class="flex flex-column ma-8 pa-4" justify="center" align="center">
