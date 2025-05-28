@@ -56,14 +56,6 @@ const routes = [
           ),
       },
       {
-        path: "impact-testing",
-        name: "Impact Testing",
-        component: () =>
-          import(
-            /*webpackChunkName: "patient-forms": */ "@/views/ImpactTestingView.vue"
-          ),
-      },
-      {
         path: "our-mission-and-services",
         name: "Services",
         component: () =>

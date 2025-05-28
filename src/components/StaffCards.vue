@@ -91,8 +91,6 @@ import ishamPhoto from "@/assets/img/staff/isham-card-photo.jpg";
 import ishamAvatar from "@/assets/img/staff/isham-card-avatar.jpg";
 import amberPhoto from "@/assets/img/staff/amber-card-photo.jpg";
 import amberAvatar from "@/assets/img/staff/amber-card-avatar.jpg";
-import williamsPhoto from "@/assets/img/staff/williams-card-photo.jpg";
-import williamsAvatar from "@/assets/img/staff/williams-card-avatar.jpg";
 
 const { mobile } = useDisplay();
 
@@ -202,21 +200,6 @@ const staffDetails = reactive([
     avatar: amberAvatar,
     photo: amberPhoto,
     alt: "Photo of Amber Barnard at South Royalton Health Center",
-    showText: false,
-  },
-  {
-    id: 6,
-    name: "Catherine Williams",
-    cert: "Front Desk",
-    field: "Support Staff",
-    text:
-      "I am a local from South Royalton, VT, who grew up and went to school at South Royalton School K-12, " +
-      "so I know many of the people from the area. When I’m not here you can find me doing what I love the most; " +
-      "being a mom to my adorable 16mo old boy. I love children and have lots of experience working in an " +
-      "office setting, so this job is a perfect fit for me!",
-    avatar: williamsAvatar,
-    photo: williamsPhoto,
-    alt: "Photo of Catherine Williams at South Royalton Health Center",
     showText: false,
   },
 ]);
