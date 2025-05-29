@@ -55,21 +55,16 @@ export const useAppStore = defineStore("app", () => {
     },
     {
       id: 7,
-      name: "ImPACT Testing",
-      route: "impact-testing",
-    },
-    {
-      id: 8,
       name: "Services",
       route: "our-mission-and-services",
     },
     {
-      id: 9,
+      id: 8,
       name: "School Visits",
       route: "school-visits",
     },
     {
-      id: 10,
+      id: 9,
       name: "Contact Us",
       route: "contact",
     },
