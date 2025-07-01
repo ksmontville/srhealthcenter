@@ -28,11 +28,17 @@
         "link": "https://forms.wv3.io/form?formId=b9d08171-b108-45d2-bdd3-21bc22937dd9&companyId=62731e39-480c-4e5b-99d5-fd864ed4fa63",
         "text": "Privacy policy for South Royalton Health Center."
       },
-        {
+      {
         "id": 4,
-        "form": "Financial Policy",
-        "link": "https://forms.wv3.io/form?formId=45cb98d6-ee78-402c-ae3f-2c17e3105709&companyId=62731e39-480c-4e5b-99d5-fd864ed4fa63",
-        "text": "Financial policy for South Royalton Health Center."
+        "form": "Patient Care Agreement",
+        "link": "https://forms.wv3.io/form?formId=3895d56e-f075-4573-97e1-42779b61af29&companyId=62731e39-480c-4e5b-99d5-fd864ed4fa63",
+        "text": "Patient Care Agreement for South Royalton Health Center."
+      },
+      {
+        "id": 5,
+        "form": "Patient Care Agreement (18 Years and Older)",
+        "link": "https://forms.wv3.io/form?formId=a9352dcf-459a-4e2a-93ed-ffd47cb6f606&companyId=62731e39-480c-4e5b-99d5-fd864ed4fa63",
+        "text": "Patient Care Agreement for 18 years and older patients at South Royalton Health Center."
       }
     ]
   },
@@ -53,7 +59,7 @@
         "link": "https://www.asqonline.com/family/416f0e",
         "text": "Please complete both the appropriate ASQ and the ASQ-SE for all well visits from 6 months to 4 years."
       },
-       {
+      {
         "id": 2,
         "form": "Teen Screener",
         "link": "https://forms.wv3.io/form?formId=e0f6e841-8122-46bf-99c0-320faf2ced38&companyId=62731e39-480c-4e5b-99d5-fd864ed4fa63",
