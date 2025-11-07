@@ -25,46 +25,41 @@ export const useAppStore = defineStore("app", () => {
     },
     {
       id: 1,
-      name: "Patient Portal",
-      route: "patient-portal",
-    },
-    {
-      id: 2,
       name: "About Us",
       route: "meet-our-providers-staff",
     },
     {
-      id: 3,
+      id: 2,
       name: "Office Details",
       route: "office-details",
     },
     {
-      id: 4,
+      id: 3,
       name: "New Patients",
       route: "new-patients",
     },
     {
-      id: 5,
+      id: 4,
       name: "Expecting",
       route: "expecting",
     },
     {
-      id: 6,
+      id: 5,
       name: "Patient Forms",
       route: "patient-forms",
     },
     {
-      id: 7,
+      id: 6,
       name: "Services",
       route: "our-mission-and-services",
     },
     {
-      id: 8,
+      id: 7,
       name: "School Visits",
       route: "school-visits",
     },
     {
-      id: 9,
+      id: 8,
       name: "Contact Us",
       route: "contact",
     },
