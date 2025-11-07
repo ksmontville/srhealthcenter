@@ -13,8 +13,8 @@
 
     <p class="body-text text-body-1 text-white my-4">
       For detailed informational sheets published by the Centers for Disease Control (CDC) please visit
-      <a href="https://www.cdc.gov/vaccines/pubs/vis/" target="_blank">
-        www.cdc.gov/vaccines/pubs/vis/</a>
+      <a href="https://www.cdc.gov/vaccines/hcp/current-vis/" target="_blank">
+        www.cdc.gov/vaccines/hcp/current-vis/</a>
     </p>
 
     <p class="text-h6 text-primary font-weight-bold my-4">Our Vaccine Philosophy</p>
@@ -34,11 +34,6 @@
         <v-icon :icon="mdiHospital" class="mx-2" color="white"/>Click
         <a href="https://www.healthychildren.org/English/safety-prevention/immunizations/Pages/Why-I-Vaccinate-Parent-Testimonials.aspx?_gl=1*188lr2s*_ga*NTM5Mjg4MDQ2LjE2ODMwNTg0NTM.*_ga_FD9D3XZVQQ*MTY4MzgzMTgyMS4zLjAuMTY4MzgzMTgyNi4wLjAuMA..&_ga=2.200534894.1563832976.1683831821-539288046.1683058453" target="_blank">
           here</a> for an informative article and parent testimonials.
-      </v-list-item>
-
-      <v-list-item>
-        <v-icon :icon="mdiHospital" class="mx-2" color="white"/>
-        <a href="https://www.cdc.gov/vaccines/parents/index.html" target="blank">Resources</a> from the CDC regarding immunizations and vaccines.
       </v-list-item>
 
       <v-list-item>
@@ -70,19 +65,9 @@
   const vaccineLinks = [
     {
       id: 0,
-      text: "0-6 Years -Schedule for Persons Aged 0 Through 6 Years",
-      url: "https://www.cdc.gov/vaccines/schedules/easy-to-read/child-easyread.html"
+      text: "Recommended Immunization Schedules",
+      url: "https://www.healthychildren.org/English/safety-prevention/immunizations/Pages/Recommended-Immunization-Schedules.aspx"
     },
-    {
-      id: 1,
-      text: "7-18 Years-Schedule for Persons Aged 7 Through 18 Years",
-      url: "https://www.cdc.gov/vaccines/schedules/easy-to-read/adolescent-easyread.html"
-    },
-    // {
-    //   id: 2,
-    //   text: "Catch-up Schedule -Schedule for Persons Aged 4 Months Through 18 Years Who Start Late or Who Are More than One Month Behind",
-    //   url: "https://www.cdc.gov/vaccines/schedules/hcp/child-adolescent.html"
-    // },
   ]
 
 </script>
