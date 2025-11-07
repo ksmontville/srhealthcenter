@@ -43,7 +43,7 @@
     "address": ["79 South Windsor Street", "PO Box 119", "South Royalton, VT 05068"],
     "hours": ["Open Monday through Friday at 8:00 am with appointments beginning at 9:00 am until 5:00 pm",
       "Closed for lunch from 12:00 pm to 1:00 pm",
-      "On-call clinician available after hours and on weekends at our primary phone number."
+      "On-call clinician available after hours and on weekends for established patients at our primary phone number."
     ],
     "phoneStr": "(802) 763-7575",
   }

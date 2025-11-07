@@ -61,7 +61,11 @@
           <small>{{ hour }}</small>
         </v-list-item>
         <v-list-item class="d-flex align-center justify-center my-4">
-          <v-btn @click="openUrl(appStore.patientPortalUrl)" color="primary" block>
+          <v-btn
+            @click="openUrl(appStore.patientPortalUrl)"
+            color="primary"
+            block
+          >
             Patient Portal
           </v-btn>
         </v-list-item>
@@ -105,7 +109,7 @@ const openUrl = (url) => {
 const hours = [
   "Open Monday through Friday at 8:00 am with appointments beginning at 9:00 am until 5:00 pm",
   "Closed for lunch from 12:00 pm to 1:00 pm",
-  "On-call clinician available after hours and on weekends at our primary phone number.",
+  "On-call clinician available after hours and on weekends for established patients at our primary phone number.",
 ];
 // const webResources = [
 //   {},
