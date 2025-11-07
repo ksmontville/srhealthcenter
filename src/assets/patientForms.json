@@ -11,31 +11,43 @@
         "text": "All new patients, counseling and medical."
       },
       {
-        "id": 1,
-        "form": "Counseling Client Intake Form",
-        "link": "https://forms.wv3.io/form?formId=2c6ebccd-ebd1-456c-9628-cb6d98ca0536&companyId=62731e39-480c-4e5b-99d5-fd864ed4fa63",
-        "text": "New counseling patients only."
-      },
-      {
         "id": 2,
-        "form": "Consent for Release of Information",
+        "form": "Consent for Release of Information - Transferring to our office",
         "link": "https://forms.wv3.io/form?formId=df4d7bff-7c91-4af2-94fe-2ceda4483b01&companyId=62731e39-480c-4e5b-99d5-fd864ed4fa63",
-        "text": "For requesting old records, to allow communication between schools and practice/counselor, or for communication with specialists, this can be a little confusing so don't hesitate to call!"
+        "text": "For requesting old records from another provider."
       },
       {
         "id": 3,
+        "form": "Consent for Release of Information - Transferring out",
+        "link": "https://forms.wv3.io/form?formId=d13f8fa8-1e13-439b-9194-db8cf327cd33&companyId=62731e39-480c-4e5b-99d5-fd864ed4fa63",
+        "text": "For sending records to another provider."
+      },
+      {
+        "id": 4,
+        "form": "Consent for Release of Information - School Release",
+        "link": "https://forms.wv3.io/form?formId=daa11c8e-bec1-473c-8386-d130bb8b3189&companyId=62731e39-480c-4e5b-99d5-fd864ed4fa63",
+        "text": "For communication between schools and practice."
+      },
+      {
+        "id": 5,
+        "form": "Consent for Release of Information - Counseling",
+        "link": "https://forms.wv3.io/form?formId=0ccfbf10-9d8d-4251-b796-87f04c45c595&companyId=62731e39-480c-4e5b-99d5-fd864ed4fa63",
+        "text": "For counseling patients - includes PCP and school releases."
+      },
+      {
+        "id": 6,
         "form": "HIPAA Privacy Policy",
         "link": "https://forms.wv3.io/form?formId=b9d08171-b108-45d2-bdd3-21bc22937dd9&companyId=62731e39-480c-4e5b-99d5-fd864ed4fa63",
         "text": "Privacy policy for South Royalton Health Center."
       },
       {
-        "id": 4,
+        "id": 7,
         "form": "Patient Care Agreement",
         "link": "https://forms.wv3.io/form?formId=3895d56e-f075-4573-97e1-42779b61af29&companyId=62731e39-480c-4e5b-99d5-fd864ed4fa63",
         "text": "Patient Care Agreement for South Royalton Health Center."
       },
       {
-        "id": 5,
+        "id": 8,
         "form": "Patient Care Agreement (18 Years and Older)",
         "link": "https://forms.wv3.io/form?formId=a9352dcf-459a-4e2a-93ed-ffd47cb6f606&companyId=62731e39-480c-4e5b-99d5-fd864ed4fa63",
         "text": "Patient Care Agreement for 18 years and older patients at South Royalton Health Center."
