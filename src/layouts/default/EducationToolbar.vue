@@ -61,6 +61,11 @@
           <small>{{ hour }}</small>
         </v-list-item>
         <v-list-item class="d-flex align-center justify-center my-4">
+          <v-btn @click="openUrl(appStore.patientPortalUrl)" color="primary" block>
+            Patient Portal
+          </v-btn>
+        </v-list-item>
+        <v-list-item class="d-flex align-center justify-center my-4">
           <p class="text-center font-weight-bold mx-auto my-2">Office Phone</p>
           <v-btn :href="appStore.officePhone" color="secondary">{{
             appStore.officePhoneStr
@@ -92,6 +97,10 @@ const { mobile } = useDisplay();
 
 const appStore = useAppStore();
 const toolBarTitle = "Patient Education";
+
+const openUrl = (url) => {
+  window.open(url);
+};
 
 const hours = [
   "Open Monday through Friday at 8:00 am with appointments beginning at 9:00 am until 5:00 pm",
