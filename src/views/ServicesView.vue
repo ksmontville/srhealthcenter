@@ -116,7 +116,6 @@
   const serviceBullets = [
     "Preventative Health Care/Well Care",
     "Diaper Bank",
-    "Sports Physicals",
     "Vaccines",
     "Prenatal Visits (Meet Your Pediatrician)",
     "Menstrual and contraceptive care",
@@ -124,7 +123,7 @@
     "Concussion Management",
     "Lactation Support",
     "Nutritional Counseling",
-    "On Site Basic Labs",
+    "On Site Basic Labs and Phlebotomy",
     "Support for those transitioning",
     "Developmental Evaluations",
     "Care Coordination",
