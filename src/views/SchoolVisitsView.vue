@@ -4,7 +4,7 @@
   <p class="text-h2 text-white text-center my-16">School Visits</p>
   <p class="text-h6 text-primary text-center my-16">
     South Royalton, Strafford, Chelsea, Sharon, Bethel, Tunbridge,
-    Orange, Washington, Rochester, Stockbridge, and Williamstown, Vermont
+    Orange, Washington, and Williamstown, Vermont
   </p>
   <v-row justify="center" align="baseline">
     <v-col cols="12" id="schoolServices">
@@ -51,10 +51,10 @@
 
     <v-col>
       <p class="text-h6 text-primary text-center font-weight-bold my-8">To Schedule Appointments:</p>
-      <p class="body-text text-body-1 text-white">Currently to schedule for medical, dental or counseling
+      <p class="body-text text-body-1 text-white">Currently to schedule for medical or counseling
         please <a :href="appStore.officePhone">call</a> the SRHC main office and we will get you connected!
         For more information please feel free to email us at <a href="mailto:HealthHubVT@gmail.com.">HealthHubVT@gmail.com</a>
-      or visit the HealthHUB webpage at <a href="https://www.hungerfreevt.org/getfoodhelp" target="_blank">https://www.healthhubvt.org/</a> for more information.</p>
+      or visit the HealthHUB webpage at <a href="https://www.healthhubvt.org/" target="_blank">https://www.healthhubvt.org/</a> for more information.</p>
 
     </v-col>
 
