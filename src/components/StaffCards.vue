@@ -202,6 +202,22 @@ const staffDetails = reactive([
     alt: "Photo of Amber Barnard at South Royalton Health Center",
     showText: false,
   },
+  {
+    id: 6,
+    name: "Kahlee Holden",
+    cert: "Front Desk",
+    field: "Support Staff",
+    text:
+      "Kahlee grew up in West Fairlee Vermont. After a decade long stint in Groton Vermont starting her family, " +
+      "Kahlee moved to Bradford Vermont where she worked at a Pediatrics office as the assistant practice manager " +
+      "and referral specialist for 3 years. It was here that Kahlee found out she had a knack for medical " +
+      "administration and paperwork! Now she sits behind our check in/check out window ready to help with checking " +
+      "in and scheduling appointments. When she isn't at work, Kahlee enjoys reading and spending time with her family.",
+    avatar: null,
+    photo: null,
+    alt: "Photo of Kahlee Holden at South Royalton Health Center",
+    showText: false,
+  },
 ]);
 </script>
 
