@@ -28,7 +28,7 @@
   >
     <v-sheet
       color="primary"
-      class="rounded text-h6 text-center ma-4"
+      class="rounded text-h6 text-center ma-4 pa-3"
       elevation="4"
       >{{ toolBarTitle }}</v-sheet
     >
@@ -96,7 +96,7 @@ import { useAppStore } from "@/store/app";
 const { mobile } = useDisplay();
 
 const appStore = useAppStore();
-const toolBarTitle = "Patient Education";
+const toolBarTitle = "Resources for Healthy Kids & Families";
 
 const openUrl = (url) => {
   window.open(url);
