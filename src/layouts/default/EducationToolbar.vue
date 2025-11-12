@@ -4,10 +4,10 @@
       <v-icon :icon="mdiMedicalBag" />
       SRHC Recs
     </v-btn>
-    <v-btn :to="{ path: 'local-resources' }">
+    <!-- <v-btn :to="{ path: 'local-resources' }">
       <v-icon :icon="mdiNearMe" />
       Local
-    </v-btn>
+    </v-btn> -->
     <v-btn :to="{ path: 'srhc-recommended-books' }">
       <v-icon :icon="mdiBookOpenPageVariantOutline" />
       Reading
@@ -36,9 +36,9 @@
       <v-list-item :to="{ path: 'srhc-recommended-child-health-web-links' }"
         ><v-icon :icon="mdiMedicalBag" class="mx-2" />SRHC Recs</v-list-item
       >
-      <v-list-item :to="{ path: 'local-resources' }"
+      <!-- <v-list-item :to="{ path: 'local-resources' }"
         ><v-icon :icon="mdiNearMe" class="mx-2" />Local</v-list-item
-      >
+      > -->
       <v-list-item :to="{ path: 'srhc-recommended-books' }"
         ><v-icon
           :icon="mdiBookOpenPageVariantOutline"
