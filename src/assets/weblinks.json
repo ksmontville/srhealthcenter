@@ -1,593 +1,69 @@
 {
   "General Sites": [
     {
-      "id": "70",
-      "text": "988 Suicide & Crisis Line",
-      "url": "https://988lifeline.org/"
-    },
-    {
       "id": "0",
-      "text": "HealthyChildren.org",
-      "url": "https://www.healthychildren.org/"
+      "text": "The AAP Parenting Website",
+      "url": "https://www.healthychildren.org/English/Pages/default.aspx"
     },
     {
       "id": "1",
-      "text": "Mayo Clinic Topics",
+      "text": "Children's health The Mayo Clinic",
       "url": "https://www.mayoclinic.org/healthy-lifestyle/childrens-health/basics/childrens-health/hlv-20049425"
     },
     {
-      "id": "4",
-      "text": "Swallowing Pills",
-      "url": "https://kidshealth.org/en/parents/swallowing-pills.html"
-    },
-    {
-      "id": "5",
-      "text": "Head Lice Treatment",
-      "url": " https://www.framinghampediatrics.com/common-health-topics/lice"
-    },
-    {
-      "id": "6",
-      "text": "Managing Your Child's Pain While Getting a Shot",
-      "url": "https://www.healthychildren.org/English/safety-prevention/immunizations/Pages/Managing-Your-Childs-Pain-While-Getting-a-Shot.aspx"
-    },
-    {
-      "id": "7",
-      "text": "Dust Mites Prevention",
-      "url": "https://www.mayoclinic.org/diseases-conditions/dust-mites/diagnosis-treatment/drc-20352178#self-care"
-    },
-    {
-      "id": "8",
-      "text": "Lead Prevention",
-      "url": "https://www.cdc.gov/nceh/lead/prevention/populations.htm?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fnceh%2Flead%2Ftips.htm"
-    },
-    {
-      "id": "9",
-      "text": "Bladder Irritants",
-      "url": "https://www.brighamandwomens.org/assets/BWH/obgyn/pdfs/bladder-irritants.pdf"
-    },
-     {
-      "text": "More About Bladder Irritants",
-      "url": "https://www.choc.org/programs-services/urology/bladder-irritants/"
-    },
-    {
-      "id": "10",
-      "text": "Choosing Wisely: Decision Health Tools from Antibiotics to X-ray\n",
+      "id": "2",
+      "text": "Choosing Wisely: Decision Health Tools from Antibiotics to X-ray",
       "url": "https://www.choosingwisely.org/?s=children"
-    },
-    {
-      "id": "11",
-      "text": "Poison Ivy",
-      "url": "https://www.thespruce.com/how-to-identify-poison-ivy-in-all-the-seasons-4125544"
-    },
-    {
-      "id": "12",
-      "text": "How Books Can Help Your Child",
-      "url": "https://pathways.org/how-books-can-help-your-child/?utm_source=mailchimp&utm_medium=email&utm_campaign=weekly&utm_source=Pathways.org+Subscribers&utm_campaign=396d9e152b-EMAIL_CAMPAIGN_2020_03_02_02_56_COPY_01&utm_medium=email&utm_term=0_2e064ee131-396d9e152b-188193981"
-    },
-    {
-      "id": "13",
-      "text": "Headache Tracker App",
-      "url": "https://migrainebuddy.com/"
-    },
-     {
-      "id": "71",
-      "text": "Sleep Better with Craig Canapari, MD",
-      "url": "https://drcraigcanapari.com/"
-    },
-    {
-      "id": "72",
-      "text": "Melatonin For Children: A Guide for Parents",
-      "url": "https://drcraigcanapari.com/should-my-child-take-melatonin-a-guide-for-parents/"
-    },
-    {
-      "id": "100",
-      "text": "Oral Hydration Therapy",
-      "url": "https://kidshealth.org/en/parents/dehydration-sheet.html/"
     }
   ],
-  "Educational Resources": [
+  "Early Childhood Development": [
     {
-      "id": "14",
-      "text": "Special Education Resources for Parents",
-      "url": "https://snsc-uv.org/wp-content/uploads/Family-Guide-To-SPED-NH.pdf"
+      "id": "3",
+      "text": "Pathways",
+      "url": "https://pathways.org/milestones?gad_source=1&gad_campaignid=1498697660&gclid=CjwKCAjwu9fHBhAWEiwAzGRC_8b5oZ6VgQPSIgYpmh_QiQNXYVASn4s_KebHyJnDExRjn8xcc5vBpBoCqNoQAvD_BwE&gbraid=0AAAAADuWbJEQCoM36IBnZhLnuSxvS3fO8"
     },
     {
-    "id": "14",
-    "text": "Special Needs Support Center",
-    "url": "https://nhfv.org/resources/special-needs-support-center/"
-  },
-    {
-      "id": "15",
-      "text": "ADD/ADHD: ADDitude Magazine, Excellent Tools and Resources",
-      "url": "https://www.additudemag.com/what-is-adhd-symptoms-causes-treatments/"
-    },
-    {
-      "id": "16",
-      "text": "Autism Speaks",
-      "url": "https://www.nationalautismresources.com/"
-    },
-    {
-      "id": "17",
-      "text": "School Discipline Rights of Students with IEPs and 504 Plans",
-      "url": "https://www.parentcenterhub.org/school-discipline-rights-of-students-with-ieps-504-plans/"
-    },
-    {
-      "id": "79",
-      "text": "Wrights Law",
-      "url": "https://www.wrightslaw.com/"
-    },
-    {
-      "id": "80",
-      "text": "School Services for Children with Special Needs: Know Your Rights",
-      "url": "https://www.aacap.org/AACAP/Families_and_Youth/Facts_for_Families/FFF-Guide/Services-In-School-For-Children-With-Special-Needs-What-Parents-Need-To-Know-083.aspx"
-    }
-    ],
-  "Nutrition": [
-      {
-      "id": "19",
-      "text": "Video: Eating Healthy",
-      "url": "https://www.youtube.com/watch?v=fqhYBTg73fw"
-    },
-    {
-      "id": "20",
-      "text": "Video: New Health Drink",
-      "url": "https://www.youtube.com/watch?v=YjutUrbIM3I"
-    },
-    {
-      "id": "21",
-      "text": "The Vegetarian Resource Group",
-      "url": "https://www.vrg.org/"
-    },
-    {
-      "id": "22",
-      "text": "5210 Let's Go!",
-      "url": "https://www.mainehealth.org/Lets-Go/Community/Parents/Children-Youth"
-    },
-    {
-      "text": "LCHF Diet Plan: Beginner's Guide",
-      "url": "https://www.healthline.com/nutrition/lchf-diet-plan-and-menu"
-    },
-    {
-      "text": "Noom",
-      "url": "https://www.noom.com/"
+      "id": "4",
+      "text": "Solid Starts Encyclopedia",
+      "url": "https://solidstarts.com/foods/"
     }
   ],
   "Parenting": [
     {
-    "id": "23",
-    "text": "Aha! Parenting",
-    "url": "https://www.ahaparenting.com/parenting-tools/connection/play-child-emotional-intelligence"
-    },
-    {
-      "id": "24",
-      "text": "CDC: Essentials for Parenting Toddlers and Preschoolers",
-      "url": "https://www.cdc.gov/parents/essentials/index.html"
-    },
-    {
-      "id": "25",
-      "text": "1-2-3 Magic",
-      "url": "https://www.123magic.com/positive-parenting-solutions/parents"
-    },
-    {
-      "id": "26",
-      "text": "Coming Out: Information for Parents of LGBTQ Teens",
-      "url": "https://www.healthychildren.org/English/ages-stages/teen/dating-sex/Pages/Four-Stages-of-Coming-Out.aspx"
-    },
-    {
-      "id": "27",
-      "text": "Transyouth Family Allies",
-      "url": "http://www.imatyfa.org/parents.html"
-    },
-    {
-      "id": "28",
-      "text": "Girls Health at All Ages",
-      "url": "https://www.girlology.com/"
-    },
-    {
-      "id": "29",
-      "text": "8 Week FREE ADHD Parenting Class",
-      "url": "https://us8.campaign-archive.com/?u=05c078d02e79a07f64018da62&id=ec65698543&goal=0_d9446392d6-fdfb7538cd-297828245"
-    },
-    {
-      "id": "30",
-      "text": "Single Parenting Positive Parenting",
-      "url": "https://positivepsychology.com/positive-parenting/"
-    },
-    {
-      "id": "31",
-      "text": "Positive Parenting 2",
-      "url": "https://blog.pcc.com/what-is-positive-parenting?utm_campaign=Blog&utm_medium=email&_hsmi=99828423&_hsenc=p2ANqtz-8mkF5-F2cQL1khUA6RXCOSzMNjq_TDDCkDv_KGL3Wh1D35V2vUYKnV4zH8OCWt0DwDHo_CpHYfC9iKEjde0UJpgEqiRffpLpHUizeCDBevy8vMbaw&utm_content=99828423&utm_source=hs_email"
-    },
-    {
-      "id": "32",
-      "text": "Time to have the Sex Talk??? Check out these videos and blogcast",
-      "url": "https://birdsandbeesandkids.com/"
-    },
-    {
-      "id": "33",
-      "text": "Social Emotional Development Tips",
-      "url": "https://talkingisteaching.org/assets/public-files/HHS-SED-Tips-for-Families.pdf"
-    },
-    {
-      "id": "34",
-      "text": "Parenting with ODD",
-      "url": "https://blog.brainbalancecenters.com/2014/03/managing-oppositional-defiant-disorder-kids"
-    },
-    {
-      "id": "35",
-      "text": "Wandering Prevention Autism",
-      "url": "https://www.autismspeaks.org/wandering-prevention-resources?utm_source=email&utm_medium=text-link&utm_campaign=espeaks"
-    },
-    {
-      "id": "73",
-      "text": "Parenting Podcast with Dr. Wendy Sue Swanson",
-      "url": "https://www.wendysueswanson.com/category/podcast/"
-    },
-    {
-      "id": "73",
-      "text": "Parenting Podcast with Dr. Wendy Sue Swanson",
-      "url": "https://www.wendysueswanson.com/category/podcast/"
-    },
-    {
-      "id": "74",
-      "text": "Everyday Parenting: The ABCs of Child Rearing",
-      "url": "https://alankazdin.com/everyday-parenting-the-abcs-of-child-rearing/"
-    },
-    {
-      "id": "75",
-      "text": "Stanford Medicine Resources for Parenting",
-      "url": "https://med.stanford.edu/childpsychiatry/parenting/topics/adhd.html"
-    },
-    {
-      "id": "76",
-      "text": "Harvard University Activities Guide for Executive Function",
-      "url": "https://developingchild.harvard.edu/resources/activities-guide-enhancing-and-practicing-executive-function-skills-with-children-from-infancy-to-adolescence/"
-    },
-    {
-      "id": "77",
-      "text": "Help for Parents with ADHD",
-      "url": "https://childmind.org/article/help-for-parents-with-adhd/"
-    },
-    {
-      "id": "78",
-      "text": "Pacer Center, Champions for Children with Disabilities",
-      "url": "https://www.pacer.org/"
-    },
-    {
-      "id": "81",
-      "text": "How to take a screen away from your kid without a raging meltdown",
-      "url": "https://awsamuel.medium.com/how-to-take-a-screen-away-from-your-kid-without-a-raging-meltdown-d85ce9eefb7b"
-    },
-    {
-      "id": "86",
-      "text": "Strong Families Vermont",
-      "url": "https://www.healthvermont.gov/family/pregnancy/strong-families-vermont-start-home#:~:text=This%20Program%20supports%20healthy%20decision,to%20meet%20the%20family's%20goals"
-    },
-    {
-      "id": "87",
+      "id": "5",
       "text": "Raising Teens: Ten Tasks of Adolescent Development",
       "url": "https://hr.mit.edu/static/worklife/raising-teens/ten-tasks.html"
-    },
-    {
-      "id": "90",
-      "text": "Resilient Families Program",
-      "url": "https://www.smilingmind.com.au/resilient-families-program"
-    },
-    {
-      "id": "97",
-      "text": "Solid Starts",
-      "url": "https://solidstarts.com/baby-led-weaning/"
-    },
-    {
-      "id": "98",
-      "text": "Solid Starts Encyclopedia",
-      "url": "https://solidstarts.com/foods/"
-    },
-    {
-      "text": "Prevent Child Abuse Vermont - Support Programs",
-      "url": "https://www.pcavt.org/family-support-programs"
-    },
-    {
-     "text": "Prevent Child Abuse Vermont - Help Line",
-      "url": "https://www.pcavt.org/parents-helpline"
     }
   ],
   "Adolescence": [
     {
-      "id": "36",
-      "text": "TeenLineTV",
-      "url": "https://www.essexchips.org/resources"
-    },
-    {
-      "id": "37",
-      "text": "Center for Young Women's Health",
+      "id": "6",
+      "text": "Young Women's Health",
       "url": "https://youngwomenshealth.org/"
     },
     {
-      "id": "38",
-      "text": "Teen's Health",
-      "url": "https://teenshealth.org/teen/"
-    },
-    {
-      "id": "39",
+      "id": "7",
       "text": "Young Men's Health",
       "url": "https://youngmenshealthsite.org/"
     },
     {
-      "id": "40",
-      "text": "The Teen Years Explained",
-      "url": "https://www.jhsph.edu/research/centers-and-institutes/center-for-adolescent-health/_docs/TTYE-Guide.pdf"
-    },
-    {
-      "id": "41",
-      "text": "Out Right VT",
-      "url": "https://www.outrightvt.org/"
-    },
-    {
-      "id": "42",
-      "text": "LGBT Resources",
-      "url": "https://www.thetrevorproject.org/pages/support-center"
-    },
-    {
-      "id": "43",
-      "text": "Video: Acne",
-      "url": "https://www.youtube.com/watch?v=C5Co4czoo5s"
-    },
-    {
-      "id": "45",
-      "text": "Transition to Adulthood with Autism",
-      "url": "https://www.autismspeaks.org/transition-adulthood"
-    },
-    {
-      "id": "46",
-      "text": "Transgender Resources in the Community",
-      "url": "https://translifeline.org/"
-    },
-    {
-      "id": "82",
-      "text": "Cannabis and Youth",
-      "url": "https://www.healthvermont.gov/sites/default/files/documents/pdf/ADAP_LTC_Cannabis_and_Youth.pdf"
-    },
-    {
-      "id": "83",
-      "text": "Risks for Misusing Substances for Teens",
-      "url": "https://parentupvt.org/why-is-my-child-at-risk#What-Are-the-Risks-of-Misusing-Substances-for-Teens"
-    },
-    {
-      "id": "84",
-      "text": "MyLifeMyQuit Vermont",
-      "url": "https://vt.mylifemyquit.org/index"
-    },
-    {
-      "id": "85",
-      "text": "Amaze, Medically Accurate and Age Appropriate Sex Ed for all adolescents",
-      "url": "https://amaze.org/what-is-amaze/"
+      "id": "8",
+      "text": "OutrightVT",
+      "url": "https://outrightvt.org/"
     }
   ],
   "Mental Health Resources": [
     {
-      "id": "47",
-      "text": "Free CBT Program for Anxiety",
-      "url": "https://maps.anxietycanada.com/courses/"
-    },
-    {
-      "id": "48",
-      "text": "Check out this AI \"therapist\" for free!",
-      "url": "https://woebothealth.com/"
-    },
-    {
-      "id": "49",
-      "text": "Anxiety and Mind-Gut Connection",
-      "url": "https://adaa.org/learn-from-us/from-the-experts/blog-posts/consumer/how-calm-anxious-stomach-brain-gut-connection?fbclid=IwAR2_iRvwB1M36hCW1rOZu9hHo7IJHa1ofbtU9Z2CZF2Q0JF--7INdgrO04c"
-    },
-    {
-      "id": "50",
-      "text": "Misophonia: why does people chewing bother me and what can I do?",
-      "url": "https://adaa.org/learn-from-us/from-the-experts/blog-posts/consumer/misophonia-nails-chalkboard"
-    },
-    {
-      "id": "51",
-      "text": "Reactive Attachment Disorder",
-      "url": "https://www.mayoclinic.org/diseases-conditions/reactive-attachment-disorder/symptoms-causes/syc-20352939"
-    },
-    {
-      "id": "52",
-      "text": "Talking to Kids/Teens About a Suicide Death",
-      "url": "https://www.texaschildrens.org/sites/default/files/uploads/documents/Talking%20to%20Your%20Child%20About%20a%20Suicide%20Death%20.pdf"
-    },
-    {
-      "id": "99",
-      "text": "Second Growth",
-      "url": "https://www.secondgrowth.org/"
+      "id": "9",
+      "text": "Mental Health Resources for Caregivers & Perinatal People: A wealth of resources, carefully curated to address your diverse needs and empower you in your journey",
+      "url": "https://www.vtcpap.com/resources-for-caregivers"
     }
   ],
-  "There's an App for That!": [
+  "Community Resources": [
     {
-      "id": "53",
-      "text": "ADHD Apps and More!",
-      "url": "https://www.additudemag.com/?s=apps"
-    },
-    {
-      "id": "54",
-      "text": "Anxiety App for Younger Kids",
-      "subtext": "Check out \"Stop Breathe Think Kids\"",
-      "url": "https://www.simplepractice.com/blog/kids-anxiety-apps-share-parents/"
-    },
-    {
-      "id": "55",
-      "text": "More Anxiety Apps for Kids",
-      "url": "https://www.educationalappstore.com/best-apps/5-best-mental-health-and-wellbeing-apps-for-kids"
-    },
-    {
-      "id": "56",
-      "text": "Anxiety Apps for Tweens/Teens",
-      "subtext": "Check out \"What's Up\", \"Mind Shift\", and \"MyLife\"",
-      "url": "https://www.bustle.com/p/15-genius-apps-anyone-with-anxiety-needs-to-download-8058921"
-    },
-    {
-      "id": "57",
-      "text": "Tapping",
-      "subtext": "Great help to release emotions",
-      "url": "https://www.thetappingsolutionapp.com/"
-    },
-    {
-      "text": "CBT Companion",
-      "url": "https://resiliens.com/cbt-companion/"
-    },
-    {
-      "id": "58",
-      "text": "Excellent CBT Skills App",
-      "url": "https://www.anxietycanada.com/resources/mindshift-cbt/"
-    },
-    {
-      "id": "88",
-      "text": "TeenToks: Mental Health Videos",
-      "url": "https://apps.apple.com/us/app/teentoks-mental-health-videos/id1628384135"
-    },
-    {
-      "id": 89,
-      "text": "Smiling Mind Mindfulness App",
-      "url": "https://www.smilingmind.com.au/smiling-mind-app"
-    },
-    {
-      "id": "91",
-      "text": "Teensafe Cell Phone Tracker",
-      "url": "https://teensafe.net/"
-    },
-    {
-      "id": "92",
-      "text": "Bark",
-      "url": "https://www.bark.us/"
-    },
-    {
-      "id": "94",
-      "text": "Limitly Screen Time App",
-      "url": "http://limitlyapp.com/"
-    },
-    {
-      "id": "95",
-      "text": "Google Family Link",
-      "url": "https://families.google/familylink//"
-    },
-    {
-      "text": "Resilient Families Program App",
-      "url": "https://www.smilingmind.com.au/resilient-families-program#RFP-Get-Started"
-    },
-    {
-      "id": "96",
-      "text": "DBT Diary Card and Skills Coach",
-      "url": "https://www.diarycard.net/"
-    }
-  ],
-  "Substance Use Resources": [
-    {
-      "id": "60",
-      "text": "Marijuana and Psychosis",
-      "url": "https://childmind.org/article/marijuana-and-psychosis/"
-    },
-    {
-      "id": "61",
-      "text": "CBD",
-      "url": "https://childmind.org/article/cbd-what-parents-need-to-know/"
-    },
-    {
-      "id": "62",
-      "text": "Vaping/E-Cigarettes",
-      "url": "https://e-cigarettes.surgeongeneral.gov/getthefacts.html"
-    },
-    {
-      "id": "63",
-      "text": "VT Vape",
-      "url": "https://www.unhypedvt.com/#section-2"
-    },
-    {
-      "id": "89",
-      "text": "Vaping/E-Cigarettes Visual Dictionary",
-      "url": "https://www.cdc.gov/tobacco/basic_information/e-cigarettes/pdfs/ecigarette-or-vaping-products-visual-dictionary-508.pdf"
-    },
-    {
-      "id": "90",
-      "text": "Unauthorized E-cigarettes That Appeal to Youth",
-      "url": "https://fda.gov/tobacco-products/ctp-newsroom/unauthorized-e-cigarettes-appeal-youth"
-    },
-    {
-      "id": "91",
-      "text": "Cigs in an E-Cig",
-      "url": "https://med.stanford.edu/tobaccopreventiontoolkit/take-and-teach/toolkit-factsheets.html"
-    },
-    {
-      "id": "92",
-      "text": "Vaping Addiction and Nicotine Withdrawal",
-      "url": "https://teen.smokefree.gov/quit-vaping/vaping-addiction-nicotine-withdrawal"
-    },
-    {
-      "id": "93",
-      "text": "Addressing Vaping in Vermont Schools",
-      "url": "https://healthvermont.gov/sites/default/files/document/hpdp-tcp-addressing-vaping-schools-toolkit.pdf"
-    },
-    {
-      "id": "94",
-      "text": "Become a Smoke Free Teen",
-      "url": "https://teen.smokefree.gov/"
-    },
-    {
-      "id": "95",
-      "text": "SmokeFree TXT for Teens",
-      "url": "https://teen.smokefree.gov/become-smokefree/smokefreeteen-signup/"
-    },
-    {
-      "id": "96",
-      "text": "quitSTART App",
-      "url": "https://teen.smokefree.gov/become-smokefree/quitstart-app"
-    },
-    {
-      "id": "97",
-      "text": "This is Quitting",
-      "url": "https://truthinitiative.org/thisisquitting"
-    },
-    {
-      "id": "98",
-      "text": "NOT For Me (American Lung Association)",
-      "url": "https://notforme.org/"
-    },
-    {
-      "id": "99",
-      "text": "Become an EX",
-      "url": "https://www.becomeanex.org/helping-a-teen-or-young-adult-quit-vaping/"
-    },
-    {
-      "id": "64",
-      "text": "AA Virtual Meetings VT",
-      "url": "https://aavt.org/"
-    },
-    {
-      "id": "65",
-      "text": "NA-VT Virtual Meetings",
-      "url": "https://gmana.org/"
-    },
-    {
-      "id": "66",
-      "text": "Video: Single Best Thing You Can Do To Quit Smoking",
-      "url": "https://www.youtube.com/watch?v=z16vhtjWKL0"
-    },
-    {
-      "id": "67",
-      "text": "802quits",
-      "url": "https://802quits.org/"
-    },
-    {
-      "id": "68",
-      "text": "Call: 1-800-QUIT-NOW",
-      "url": "tel:18007848669"
-    },
-    {
-      "id": "69",
-      "text": "Text: ditchjuul to 88709",
-      "url": "tel:18007848669"
-    },
-    {
-      "text": "Energy Drink Consumption",
-      "url": "https://www.additudemag.com/energy-drinks-adhd-depression-children/?utm_source=eletter&utm_medium=email&utm_campaign=professional_march_2024&utm_content=030324&goal=0_a767e6fc3c-d3b6bc17ae-314508378"
+      "id": "10",
+      "text": "Community Resource Specialists and database (food/housing and so much more) vt211/United Ways of VT",
+      "url": "https://search.vermont211.org/"
     }
   ]
 }

@@ -10,7 +10,7 @@
       on this page to ensure you and your child's first trip, and every trip, to our office is productive, stress-free and enjoyable.
       Also please check out the
       <router-link :to="{path: 'patient-portal'}" @click="appStore.setActiveId('patient-portal')">patient portal page</router-link>.
-      Our patient portal allows you to communicate securely with your provider and office staff, request appointments,
+      Our patient portal allows you to communicate securely with your clinician and office staff, request appointments,
       download immunization and health forms, and  even pay your bill online!
     </p>
 
@@ -32,9 +32,9 @@
     <p class="body-text text-body-1 text-white">
       For your first appointment, please fill out the
       <router-link :to="{path: 'patient-forms'}" @click="appStore.setActiveId('patient-forms')">New Patient Forms</router-link>.
-      Please your <strong>insurance card</strong> with you and any questions or concerns for your provider (we love when people bring their list!).
+      Please bring your <strong>insurance card</strong> with you and any questions or concerns for your clinician (we love when people bring their list!).
       Please plan on arriving <strong>15 minutes early</strong> so your child can play in our playroom while we assure your paperwork is in order.
-      These steps allow you to have the full time with your provider, and your child to get comfortable with our office
+      These steps allow you to have the full time with your clinician, and your child to get comfortable with our office
       prior to the appointment.
     </p>
 
@@ -43,11 +43,11 @@
       <v-list bg-color="transparent">
         <v-list-item><v-icon :icon="mdiHospital" class="mx-2" color="secondary"/>Insurance cards</v-list-item>
         <v-list-item><v-icon :icon="mdiHospital" class="mx-2" color="secondary"/>Co-Payment/deductible payment</v-list-item>
-        <v-list-item><v-icon :icon="mdiHospital" class="mx-2" color="secondary"/>List of any questions or concerns for provider</v-list-item>
+        <v-list-item><v-icon :icon="mdiHospital" class="mx-2" color="secondary"/>List of any questions or concerns for clinician</v-list-item>
       </v-list>
     </p>
 
-    <p class="text-h6 text-primary font-weight-bold my-4">Please be Ready to Tell Provider:</p>
+    <p class="text-h6 text-primary font-weight-bold my-4">Please be Ready to Tell Clinician:</p>
     <p class="body-text text-body-1 text-white">
       <v-list class="" bg-color="transparent">
         <v-list-item><v-icon :icon="mdiHospital" class="mx-2" color="secondary"/>
