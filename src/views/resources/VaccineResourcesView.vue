@@ -85,13 +85,13 @@
       </v-list>
     </p>
 
-    <p class="body-text text-body-1 text-white my-4">
+    <!-- <p class="body-text text-body-1 text-white my-4">
       For detailed informational sheets published by the Centers for Disease
       Control (CDC) please visit
       <a href="https://www.cdc.gov/vaccines/hcp/current-vis/" target="_blank">
         www.cdc.gov/vaccines/hcp/current-vis/</a
       >
-    </p>
+    </p> -->
   </v-container>
 </template>
 
