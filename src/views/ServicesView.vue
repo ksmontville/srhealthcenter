@@ -66,7 +66,7 @@
     <v-row justify="center" align="center">
       <v-col cols="12" md="8">
         <p class="text-h6 text-primary font-weight-bold my-4">
-          Free Weekly Play Group
+          Local Weekly Free Play Groups
         </p>
         <!--        <p class="body-text text-body-1 text-white">-->
         <!--          Danielle Isham, our Care Coordinator, teams up with Orange County Child Center and the Family Place with the-->
