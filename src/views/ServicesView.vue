@@ -4,8 +4,8 @@
 
     <p class="text-h6 text-primary font-weight-bold my-4">Our Mission</p>
     <p class="body-text text-body-1 text-white">
-      Our practice is working together to build life-long relationships between
-      our staff and our patients by consistently providing our patients with
+      Our practice works together to build life-long relationships between our
+      staff and our families by consistently providing our patients with
       compassion, excellence and value. To fulfill this mission, we are
       committed to:
       <v-list bg-color="transparent">
@@ -146,13 +146,11 @@ import playgroupPhoto from "@/assets/img/services/playgroup.jpg";
 const appStore = useAppStore();
 
 const missionBullets = [
-  "Improving the lives of the children we serve by providing quality care in a child-centered environment.",
+  "Improving the lives of the youth we serve by providing quality care in a youth-centered environment.",
   "Listening to our patients and their families who we are privileged to serve.",
   "Guiding our patients along a path of optimal health and wellness.",
   "Continually pursuing excellence at all levels through continuing education.",
-  "“One of the reasons we are trusted advisers for parents is because we are a safe harbor where they can ask questions, " +
-    "tell us their fears, be taken seriously and receive evidence-based information, reassurance and guidance.” " +
-    "-- AAP President Moira A. Szilagyi, M.D., Ph.D., FAAP",
+  '"One of the reasons we are trusted advisers for parents is because we are a safe harbor where they can ask questions, tell us their fears, be taken seriously and receive evidence-based information, reassurance and guidance." -- AAP President Moira A. Szilagyi, M.D., Ph.D., FAAP',
 ];
 
 const serviceBullets = [
