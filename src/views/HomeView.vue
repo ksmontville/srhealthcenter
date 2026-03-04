@@ -120,10 +120,10 @@
                   <v-divider :thickness="4" color="highlight" />
                   <v-col cols="12" class="ma-4"
                     ><strong
-                      >Get same next business day in-office or telehealth
+                      >Get same or next business day in-office or telehealth
                       visits</strong
                     >
-                    with unhurried, longer appointments when needed;</v-col
+                    with unhurried, longer appointments as needed;</v-col
                   >
                   <v-divider :thickness="4" color="highlight" />
 
