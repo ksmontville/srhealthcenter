@@ -100,17 +100,7 @@ const staffDetails = reactive([
     name: "Ashley Miller",
     cert: "MD, FAAP, DipABLM",
     field: "Clinician",
-    text:
-      "Dr. Ashley was born and raised in southern New Hampshire, left briefly for college, returned to the " +
-      "Upper Valley for medical school at Dartmouth and never left. She was lucky to spend time at " +
-      "South Royalton Health Center during training and was very excited to join her practice in 2014 and become " +
-      "the owner when Dr. Becky retired." +
-      "She has a special interest in adolescent medicine and mental health, but truly enjoys following families " +
-      "from birth to graduation. She is a fellow of the American Academy of Pediatrics, and before has been actively involved at the state and national level. " +
-      "She is a Certified Lifestyle Medicine Physician which means she looks at patients and families as a whole, and how every aspect of their life affects their health. Dr. Ashley enjoys teaching and is a Clinical Assistant Professor of Pediatrics at Geisel School of Medicine at Dartmouth. She was honored to be named Green Mountain Pediatrician of the year in 2022. " +
-      "When not seeing patients you can find Dr. Ashley competing at local horse " +
-      "trials (triathlons on horse back), hiking or snowshoeing in the surrounding mountains, and swimming in the " +
-      "local rivers with her dogs.",
+    text: "Dr. Ashley was born and raised in southern New Hampshire, left briefly for college, returned to the Upper Valley for medical school at Dartmouth, and never left. She was lucky to spend time at South Royalton Health Center during training and was very excited to join the practice in 2014. She has a special interest in adolescent medicine and mental health but truly enjoys following families from birth to graduation. She is a board-certified pediatrician and a fellow of the American Academy of Pediatrics where she is actively involved at the state and national level. She is also a board-certified Lifestyle Medicine Physician. This means she looks at patients and families as a whole, taking into account how every aspect of their life affects their health and offering lifestyle based interventions, not just medication. Dr. Ashley enjoys teaching and is a Clinical Assistant Professor of Pediatrics at Geisel School of Medicine at Dartmouth. She was honored to be named Green Mountain Pediatrician of the year in 2022. When not seeing patients, you can find Dr. Ashley competing at local dressage show (think ice dancing on horseback), hiking or snowshoeing in the surrounding mountains, and swimming in the local rivers and lakes with her dogs.",
     avatar: millerAvatar,
     photo: millerPhoto,
     alt: "Photo of Dr. Ashley Miller at South Royalton Health Center",
