@@ -119,17 +119,14 @@ const staffDetails = reactive([
   {
     id: 1,
     name: "Amelia Lincoln",
-    cert: "MCMHC",
+    cert: "MEd, LCMHC",
     field: "Clinician",
     text:
-      "Amelia P. Lincoln has worked with youth in Upper Valley schools for over 15 years, most recently as a " +
-      "Student Assistance Professional at White River Valley Schools. Amelia has a master’s in education from " +
-      "New England College, her master’s in clinical mental health counseling through " +
-      "Northern Vermont University, and is a clinical mental health counselor and alcohol and drug counselor. " +
-      "She is especially interested in working in the area of substance use prevention " +
-      "and early intervention and helping youth value themselves. She is affectionately known by many as ‘the lady " +
-      "with the dog,’ as her English Shepherd True has been a school therapy dog for many years and the two are most " +
-      "often together. Amelia sees patients at SRHC and at the local schools.",
+      "Amelia P. Lincoln, MEd, LCMHC is a licensed clinical mental health counselor who has been working with youth in Upper Valley schools for over twenty years. " +
+      "She is known to many as 'the lady with the dog' as her English Shepherd True was the school therapy dog at White River Valley School and the two are most often seen together. " +
+      "Amelia is working towards her licensed alcohol and drug counselor credentials and is especially interested in working in the area of substance use prevention and early intervention and helping youth find their way. " +
+      "She sees patients via Telehealth, at SRHC and in the local schools through her private practice True Paths Counseling LLC. " +
+      "Amelia can be reached at 802-282-9281 or at amelia@truepathscounseling.net",
     avatar: lincolnAvatar,
     photo: lincolnPhoto,
     alt: "Photo of Amelia Lincoln at South Royalton Health Center",
