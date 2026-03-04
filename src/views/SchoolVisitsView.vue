@@ -75,11 +75,13 @@
           To Schedule Appointments:
         </p>
         <p class="body-text text-body-1 text-white">
-          Currently to schedule for medical or counseling please
-          <a :href="appStore.officePhone">call</a> the SRHC main office and we
-          will get you connected! For more information please feel free to email
-          us at
-          <a href="mailto:HealthHubVT@gmail.com.">HealthHubVT@gmail.com</a> or
+          To schedule for medical visits please call the SRHC main office and we
+          will get you connected! For counseling visits Amelia can be reached at
+          <a href="tel:8022829281">802-282-9281</a> or at
+          <a href="mailto:amelia@truepathscounseling.net"
+            >amelia@truepathscounseling.net</a
+          >. For more information please feel free to email us at
+          <a href="mailto:HealthHubVT@gmail.com">HealthHubVT@gmail.com</a> or
           visit the HealthHUB webpage at
           <a href="https://www.healthhubvt.org/" target="_blank"
             >https://www.healthhubvt.org/</a
