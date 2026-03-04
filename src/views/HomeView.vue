@@ -229,7 +229,7 @@
         <p
           class="hero-text body-text text-h5 text-md-h3 text-white pa-4 my-8 rounded text-center"
         >
-          Accessible pediatric care in a child friendly environment
+          Accessible pediatric care in a youth friendly environment
         </p>
       </v-col>
     </v-row>
