@@ -120,10 +120,10 @@
                   <v-divider :thickness="4" color="highlight" />
                   <v-col cols="12" class="ma-4"
                     ><strong
-                      >Get same next business day in-office or telehealth
+                      >Get same or next business day in-office or telehealth
                       visits</strong
                     >
-                    with unhurried, longer appointments when needed;</v-col
+                    with unhurried, longer appointments as needed;</v-col
                   >
                   <v-divider :thickness="4" color="highlight" />
 
@@ -184,28 +184,30 @@
       <v-col class="mt-8">
         <v-container class="body-text text-body-1 text-white pa-4">
           <v-col cols="">
-            Board Certified Pediatrician since 2009. I help local families and
-            individuals get the level of care they deserve with the convenience
-            and intimacy of a small practice. But without the usual high
-            concierge membership fees you’d expect to pay for personalized care.
+            Board Certified Pediatrician since 2009 and 2022 Green Mountain
+            Pediatrician of the Year. I help local families and youth get the
+            high level of care they deserve, with the convenience and intimacy
+            of a small micro-practice. All without the high concierge membership
+            fees you'd expect to pay for personalized care.
           </v-col>
           <v-col>
             South Royalton Health Center is a patient-centered, comprehensive,
             team-based, coordinated, accessible, medical home focused on quality
-            and safety. We love kids, and our goal is to have a positive impact
-            in the lives of children by providing exceptional evidence based
-            health care and compassionate service to the families we serve.
+            and safety. Our goal is to have a positive impact in the lives of
+            youth by providing exceptional evidence-based and compassionate
+            health care to the families we serve.
           </v-col>
           <v-col>
             We offer a full range of pediatric care including prenatal visits
-            for expecting parents, well–child check–ups, immunizations, sick
-            appointments, mental health and women's health care. We set aside
-            time to allow families to feel at ease, and to equip parents with
-            the tools and education necessary for the development of healthy
-            children from birth to adolescence. We have a dedicated nurse care
-            coordinator to help patients and families coordinate their specialty
-            care and community/school education to achieve the best quality of
-            life possible and to help in the transition to adult medicine.
+            for expecting parents, well–child checkups, immunizations, sick
+            appointments, mental health and young women's health care. We set
+            aside time to allow families to feel at ease, and to equip parents
+            with the tools and education necessary for the development of
+            healthy children from birth to young adulthood. We have a dedicated
+            nurse care coordinator to help patients and families with access
+            their specialty care, community resources and educational needs to
+            achieve the best quality of life possible and to then help in the
+            transition to adult medicine.
           </v-col>
           <v-col
             >Get the full introduction on our
@@ -227,7 +229,7 @@
         <p
           class="hero-text body-text text-h5 text-md-h3 text-white pa-4 my-8 rounded text-center"
         >
-          Accessible pediatric care in a child friendly environment
+          Accessible pediatric care in a youth friendly environment
         </p>
       </v-col>
     </v-row>

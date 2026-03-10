@@ -100,17 +100,7 @@ const staffDetails = reactive([
     name: "Ashley Miller",
     cert: "MD, FAAP, DipABLM",
     field: "Clinician",
-    text:
-      "Dr. Ashley was born and raised in southern New Hampshire, left briefly for college, returned to the " +
-      "Upper Valley for medical school at Dartmouth and never left. She was lucky to spend time at " +
-      "South Royalton Health Center during training and was very excited to join her practice in 2014 and become " +
-      "the owner when Dr. Becky retired." +
-      "She has a special interest in adolescent medicine and mental health, but truly enjoys following families " +
-      "from birth to graduation. She is a fellow of the American Academy of Pediatrics, and before has been actively involved at the state and national level. " +
-      "She is a Certified Lifestyle Medicine Physician which means she looks at patients and families as a whole, and how every aspect of their life affects their health. Dr. Ashley enjoys teaching and is a Clinical Assistant Professor of Pediatrics at Geisel School of Medicine at Dartmouth. She was honored to be named Green Mountain Pediatrician of the year in 2022. " +
-      "When not seeing patients you can find Dr. Ashley competing at local horse " +
-      "trials (triathlons on horse back), hiking or snowshoeing in the surrounding mountains, and swimming in the " +
-      "local rivers with her dogs.",
+    text: "Dr. Ashley was born and raised in southern New Hampshire, left briefly for college, returned to the Upper Valley for medical school at Dartmouth, and never left. She was lucky to spend time at South Royalton Health Center during training and was very excited to join the practice in 2014. She has a special interest in adolescent medicine and mental health but truly enjoys following families from birth to graduation. She is a board-certified pediatrician and a fellow of the American Academy of Pediatrics where she is actively involved at the state and national level. She is also a board-certified Lifestyle Medicine Physician. This means she looks at patients and families as a whole, taking into account how every aspect of their life affects their health and offering lifestyle based interventions, not just medication. Dr. Ashley enjoys teaching and is a Clinical Assistant Professor of Pediatrics at Geisel School of Medicine at Dartmouth. She was honored to be named Green Mountain Pediatrician of the year in 2022. When not seeing patients, you can find Dr. Ashley competing at local dressage show (think ice dancing on horseback), hiking or snowshoeing in the surrounding mountains, and swimming in the local rivers and lakes with her dogs.",
     avatar: millerAvatar,
     photo: millerPhoto,
     alt: "Photo of Dr. Ashley Miller at South Royalton Health Center",
@@ -119,17 +109,14 @@ const staffDetails = reactive([
   {
     id: 1,
     name: "Amelia Lincoln",
-    cert: "MCMHC",
+    cert: "MEd, LCMHC",
     field: "Clinician",
     text:
-      "Amelia P. Lincoln has worked with youth in Upper Valley schools for over 15 years, most recently as a " +
-      "Student Assistance Professional at White River Valley Schools. Amelia has a master’s in education from " +
-      "New England College, her master’s in clinical mental health counseling through " +
-      "Northern Vermont University, and is a clinical mental health counselor and alcohol and drug counselor. " +
-      "She is especially interested in working in the area of substance use prevention " +
-      "and early intervention and helping youth value themselves. She is affectionately known by many as ‘the lady " +
-      "with the dog,’ as her English Shepherd True has been a school therapy dog for many years and the two are most " +
-      "often together. Amelia sees patients at SRHC and at the local schools.",
+      "Amelia P. Lincoln, MEd, LCMHC is a licensed clinical mental health counselor who has been working with youth in Upper Valley schools for over twenty years. " +
+      "She is known to many as 'the lady with the dog' as her English Shepherd True was the school therapy dog at White River Valley School and the two are most often seen together. " +
+      "Amelia is working towards her licensed alcohol and drug counselor credentials and is especially interested in working in the area of substance use prevention and early intervention and helping youth find their way. " +
+      "She sees patients via Telehealth, at SRHC and in the local schools through her private practice True Paths Counseling LLC. " +
+      "Amelia can be reached at 802-282-9281 or at amelia@truepathscounseling.net",
     avatar: lincolnAvatar,
     photo: lincolnPhoto,
     alt: "Photo of Amelia Lincoln at South Royalton Health Center",
