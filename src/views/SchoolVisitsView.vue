@@ -85,8 +85,7 @@
           visit the HealthHUB webpage at
           <a href="https://www.healthhubvt.org/" target="_blank"
             >https://www.healthhubvt.org/</a
-          >
-          for more information.
+          >.
         </p>
       </v-col>
 

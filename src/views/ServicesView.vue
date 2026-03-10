@@ -18,7 +18,12 @@
         </v-list-item>
       </v-list>
     </p>
-
+    <p class="body-text text-body-1 text-white my-4">
+      One of the reasons we are trusted advisers for parents is because we are a
+      safe harbor where they can ask questions, tell us their fears, be taken
+      seriously and receive evidence-based information, reassurance and
+      guidance.
+    </p>
     <p class="text-h6 text-primary font-weight-bold my-4">Services</p>
     <p class="body-text text-body-1 text-white">
       If you are preparing for your child's first visit, you can do a few things
@@ -150,7 +155,6 @@ const missionBullets = [
   "Listening to our patients and their families who we are privileged to serve.",
   "Guiding our patients along a path of optimal health and wellness.",
   "Continually pursuing excellence at all levels through continuing education.",
-  '"One of the reasons we are trusted advisers for parents is because we are a safe harbor where they can ask questions, tell us their fears, be taken seriously and receive evidence-based information, reassurance and guidance." -- AAP President Moira A. Szilagyi, M.D., Ph.D., FAAP',
 ];
 
 const serviceBullets = [
