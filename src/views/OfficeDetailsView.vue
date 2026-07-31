@@ -1,9 +1,9 @@
 <template>
   <v-container class="pa-8">
-    <p class="text-h2 text-white text-center my-16">Office Details</p>
+    <p class="text-display-large text-white text-center my-16">Office Details</p>
 
-    <p class="text-h6 text-primary font-weight-bold my-4">Appointments</p>
-    <p class="body-text text-body-1 text-white">
+    <p class="text-title-large text-primary font-weight-bold my-4">Appointments</p>
+    <p class="body-text text-body-large text-white">
       SRHC takes pride in offering a range of clinicians and appointment times
       to accommodate your schedule. Please
       <a :href="appStore.officePhone">call</a> our office to schedule your
@@ -18,10 +18,10 @@
       well.
     </p>
 
-    <p class="text-h6 text-primary font-weight-bold my-4">
+    <p class="text-title-large text-primary font-weight-bold my-4">
       Insurance and Billing
     </p>
-    <p class="body-text text-body-1 text-white">
+    <p class="body-text text-body-large text-white">
       Please call or
       <router-link
         :to="{ path: 'contact' }"
@@ -33,8 +33,8 @@
       further with you.
     </p>
 
-    <p class="text-h6 text-primary font-weight-bold my-4">Payment Options</p>
-    <p class="body-text text-body-1 text-white">
+    <p class="text-title-large text-primary font-weight-bold my-4">Payment Options</p>
+    <p class="body-text text-body-large text-white">
       We accept checks, cash or credit cards and you can now pay through the
       <router-link
         :to="{ path: 'patient-portal' }"
@@ -59,7 +59,7 @@
         height="400"
         color="primary"
       >
-        <p class="text-body-1 text-white text-center font-weight-bold my-4">
+        <p class="text-body-large text-white text-center font-weight-bold my-4">
           Photos of South Royalton Health Center
         </p>
         <small class="my-2">Click to Enlarge</small>
@@ -87,15 +87,6 @@ import { useAppStore } from "@/store/app";
 import srhcBuilding from "@/assets/img/office/srhc-building.jpg";
 import srhcHandyHouse from "@/assets/img/office/srhc-handy-house.jpg";
 import srhcSign from "@/assets/img/office/srhc-sign.jpg";
-import srhcEntrance from "@/assets/img/office/srhc-entrance.jpg";
-import officeOne from "@/assets/img/office/office-1.jpg";
-import officeTwo from "@/assets/img/office/office-2.jpg";
-import officeThree from "@/assets/img/office/office-3.jpg";
-import officeFour from "@/assets/img/office/office-4.jpg";
-import officeFive from "@/assets/img/office/office-5.jpg";
-import officeSix from "@/assets/img/office/office-6.jpg";
-import examRoomOne from "@/assets/img/office/exam-room-1.jpg";
-import examRoomTwo from "@/assets/img/office/exam-room-2.jpg";
 import examRoomThree from "@/assets/img/office/exam-room-3.jpg";
 import examRoomFour from "@/assets/img/office/exam-room-4.jpg";
 import examRoomFive from "@/assets/img/office/exam-room-5.jpg";
@@ -147,8 +138,7 @@ const officePhotos = [
 </script>
 
 <style scoped>
-a,
-router-link {
+a:not(.v-btn) {
   color: #f0ebce;
 }
 
@@ -156,13 +146,11 @@ router-link {
 /*  color: #AA8B56;*/
 /*}*/
 
-a:hover,
-router-link:hover {
+a:not(.v-btn):hover {
   color: #4e6c50;
 }
 
-a:focus,
-router-link:focus {
+a:not(.v-btn):focus {
   color: sandybrown;
 }
 </style>

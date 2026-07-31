@@ -44,7 +44,7 @@
                     </v-col>
 
                     <v-col class="d-flex flex-column justify-center">
-                      <p class="staff-card-text body-text text-body-2 pa-4">
+                      <p class="staff-card-text body-text text-body-medium pa-4">
                         {{ staffDetail.text }}
                       </p>
                       <v-btn

@@ -5,29 +5,29 @@
     <v-expansion-panel id="aboutUs">
       <v-expansion-panel-title color="highlight">About Us</v-expansion-panel-title>
       <v-expansion-panel-text>
-        <p class="body-text text-body-1 pa-4">{{ aboutUsText }}</p>
+        <p class="body-text text-body-large pa-4">{{ aboutUsText }}</p>
       </v-expansion-panel-text>
     </v-expansion-panel>
 
     <v-expansion-panel id="ourMission">
       <v-expansion-panel-title color="highlight">Our Mission</v-expansion-panel-title>
       <v-expansion-panel-text>
-        <p class="body-text text-body-1 pa-4">{{ missionText.text }}</p>
+        <p class="body-text text-body-large pa-4">{{ missionText.text }}</p>
         <v-list>
           <v-list-item v-for="bullet in missionText.bullets" :key="bullet">
-            <p class="body-text text-body-2 pa-2">* {{ bullet }}</p>
+            <p class="body-text text-body-medium pa-2">* {{ bullet }}</p>
           </v-list-item>
         </v-list>
-        <p class="body-text text-body-1 pa-4">"{{ missionText.subtext }}"</p>
-        <p class="text-subtitle-2 my-4 pa-4"> -- {{ missionText.signed }}</p>
+        <p class="body-text text-body-large pa-4">"{{ missionText.subtext }}"</p>
+        <p class="text-title-small my-4 pa-4"> -- {{ missionText.signed }}</p>
       </v-expansion-panel-text>
     </v-expansion-panel>
 
     <v-expansion-panel id="testimonials">
       <v-expansion-panel-title color="highlight">Testimonials</v-expansion-panel-title>
       <v-expansion-panel-text v-for="testimonial in testimonials" :key="testimonial.id">
-        <p class="body-text text-body-1 pa-4">"{{ testimonial.text }}"</p>
-        <p class="body-text text-subtitle-2 my-4 pa-4"> -- {{ testimonial.signed }}</p>
+        <p class="body-text text-body-large pa-4">"{{ testimonial.text }}"</p>
+        <p class="body-text text-title-small my-4 pa-4"> -- {{ testimonial.signed }}</p>
       </v-expansion-panel-text>
     </v-expansion-panel>
 

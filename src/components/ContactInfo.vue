@@ -1,6 +1,6 @@
 <template>
 
-  <p class="text-primary text-h4 text-center my-4">Location and Hours</p>
+  <p class="text-primary text-display-small text-center my-4">Location and Hours</p>
   <v-row justify="center" align="stretch">
     <v-col>
       <v-list class="rounded" bg-color="highlight" elevation="8">
@@ -8,7 +8,7 @@
           <p class="text-center font-weight-bold">{{ address }}</p>
         </v-list-item>
         <v-list-item v-for="hours in contactInfo.hours" :key="hours">
-          <p class="body-text text-body-1">
+          <p class="body-text text-body-large">
             <v-icon :icon="mdiHospital" class="mx-2" color="primary"/>
             {{ hours }}
           </p>

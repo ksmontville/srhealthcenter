@@ -1,9 +1,9 @@
 <template>
   <v-container class="pa-8">
-    <p class="text-h2 text-white text-center my-16">Services</p>
+    <p class="text-display-large text-white text-center my-16">Services</p>
 
-    <p class="text-h6 text-primary font-weight-bold my-4">Our Mission</p>
-    <p class="body-text text-body-1 text-white">
+    <p class="text-title-large text-primary font-weight-bold my-4">Our Mission</p>
+    <p class="body-text text-body-large text-white">
       Our practice works together to build life-long relationships between our
       staff and our families by consistently providing our patients with
       compassion, excellence and value. To fulfill this mission, we are
@@ -18,14 +18,14 @@
         </v-list-item>
       </v-list>
     </p>
-    <p class="body-text text-body-1 text-white my-4">
+    <p class="body-text text-body-large text-white my-4">
       One of the reasons we are trusted advisers for parents is because we are a
       safe harbor where they can ask questions, tell us their fears, be taken
       seriously and receive evidence-based information, reassurance and
       guidance.
     </p>
-    <p class="text-h6 text-primary font-weight-bold my-4">Services</p>
-    <p class="body-text text-body-1 text-white">
+    <p class="text-title-large text-primary font-weight-bold my-4">Services</p>
+    <p class="body-text text-body-large text-white">
       If you are preparing for your child's first visit, you can do a few things
       to help expedite the appointment
       <router-link
@@ -34,7 +34,7 @@
         >please see our new patient page.</router-link
       >
     </p>
-    <p class="body-text text-body-1 text-white">
+    <p class="body-text text-body-large text-white">
       South Royalton Health Center offers a full array of services to help your
       child maintain good health.
       <v-list
@@ -70,14 +70,14 @@
 
     <v-row justify="center" align="center">
       <v-col cols="12" md="8">
-        <p class="text-h6 text-primary font-weight-bold my-4">
+        <p class="text-title-large text-primary font-weight-bold my-4">
           Local Weekly Free Play Groups
         </p>
-        <!--        <p class="body-text text-body-1 text-white">-->
+        <!--        <p class="body-text text-body-large text-white">-->
         <!--          Danielle Isham, our Care Coordinator, teams up with Orange County Child Center and the Family Place with the-->
         <!--          free weekly playgroup for families and caregivers with children birth to age five at the Red Door Church in South Royalton.-->
         <!--        </p>-->
-        <p class="body-text text-body-1 text-white my-4">
+        <p class="body-text text-body-large text-white my-4">
           Playgroups are a great way for families to connect, find out about
           other resources in the area and provide conversations and written
           information about child development and parenting.
@@ -87,12 +87,12 @@
           <!--          morning with some stories and nutritious snacks.  During the summer months we enjoy the outside with a large set-->
           <!--          of swings and places to climb. We hope you will join us  on Wednesdays from 9:30-11 AM!-->
         </p>
-        <p class="body-text text-body-1 text-white my-4">
+        <p class="body-text text-body-large text-white my-4">
           Local playgroups are funded by the Agency of Human Services,
           Department for Children and Families, Child Development Division
           through a Vermont Parent Child Center Network master grant.
         </p>
-        <p class="body-text text-body-1 text-white my-4">
+        <p class="body-text text-body-large text-white my-4">
           The list of playgroups available in the area provided by Orange County
           and the Family Place can be found at websites below.
         </p>
@@ -137,7 +137,7 @@
       </v-col>
     </v-row>
 
-    <!--  <p class="body-text text-h6 text-primary text-center my-8">Weekly Playgroup Locations and Schedule</p>-->
+    <!--  <p class="body-text text-title-large text-primary text-center my-8">Weekly Playgroup Locations and Schedule</p>-->
     <!--  <playgroup-table class="rounded mx-auto my-8"/>-->
   </v-container>
 </template>
@@ -145,7 +145,6 @@
 <script setup>
 import { useAppStore } from "@/store/app";
 import { mdiHospital } from "@mdi/js";
-import PlaygroupTable from "@/components/PlaygroupTable.vue";
 import playgroupPhoto from "@/assets/img/services/playgroup.jpg";
 
 const appStore = useAppStore();
@@ -188,8 +187,7 @@ const counselingBullets = [
 </script>
 
 <style scoped>
-a,
-router-link {
+a:not(.v-btn) {
   color: #f0ebce;
 }
 
@@ -197,13 +195,11 @@ router-link {
 /*  color: #AA8B56;*/
 /*}*/
 
-a:hover,
-router-link:hover {
+a:not(.v-btn):hover {
   color: #4e6c50;
 }
 
-a:focus,
-router-link:focus {
+a:not(.v-btn):focus {
   color: sandybrown;
 }
 </style>

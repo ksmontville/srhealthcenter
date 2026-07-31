@@ -41,7 +41,7 @@
 
 <style scoped>
 
-  a, router-link {
+  a:not(.v-btn) {
     color: #F0EBCE;
   }
 
@@ -49,11 +49,11 @@
   /*  color: #AA8B56;*/
   /*}*/
 
-  a:hover, router-link:hover {
+  a:not(.v-btn):hover {
     color: #AA8B56;
   }
 
-  a:focus, router-link:focus {
+  a:not(.v-btn):focus {
     color: sandybrown;
   }
 

@@ -12,7 +12,7 @@
                     max-width="128"
                     @click="$router.push('/')"
                   />
-                  <p class="brand text-subtitle-2">
+                  <p class="brand text-title-small">
                     Improving the lives of children
                   </p>
                 </v-col>

@@ -28,7 +28,7 @@
   >
     <v-sheet
       color="primary"
-      class="rounded text-h6 text-center ma-4 pa-3"
+      class="rounded text-title-large text-center ma-4 pa-3"
       elevation="4"
       >{{ toolBarTitle }}</v-sheet
     >
@@ -51,7 +51,7 @@
 
       <v-sheet
         color="primary"
-        class="rounded text-h6 text-center ma-4"
+        class="rounded text-title-large text-center ma-4"
         elevation="4"
         >Office Hours</v-sheet
       >
@@ -90,7 +90,6 @@
 import { useDisplay } from "vuetify";
 import {
   mdiMedicalBag,
-  mdiNearMe,
   mdiBookOpenPageVariantOutline,
   mdiNeedle,
   mdiHospitalBoxOutline,

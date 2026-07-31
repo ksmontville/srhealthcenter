@@ -26,9 +26,9 @@
         <v-list bg-color="transparent">
           <v-list-item v-for="item in generalHelp" :key="item.id">
             <a :href="item.url" target="_blank"><strong>{{ item.text }}</strong></a>
-            <v-list-item v-if="item.subtext" class="text-body-2">{{ item.subtext }}</v-list-item>
+            <v-list-item v-if="item.subtext" class="text-body-medium">{{ item.subtext }}</v-list-item>
 
-            <v-list v-if="item.list" bg-color="transparent" class="text-body-2">
+            <v-list v-if="item.list" bg-color="transparent" class="text-body-medium">
               <v-list-item v-for="item in item.list" :key="item">
                 {{ item.text }}: <a :href="item.tel">{{ item.phone }}</a>
               </v-list-item>
@@ -49,9 +49,9 @@
                   <v-img v-if="item.text === 'Veggie VanGo'" class="my-2"
                        :src="veggieVanGo"  alt="Logo for the Veggie VanGo food pantry." width="200" height="200"/>
 
-                <v-list-item v-if="item.subtext" class="text-body-2">{{ item.subtext }}</v-list-item>
+                <v-list-item v-if="item.subtext" class="text-body-medium">{{ item.subtext }}</v-list-item>
                 <v-list v-if="item.list" bg-color="transparent">
-                  <v-list-item v-for="item in item.list" :key="item" class="text-body-2">
+                  <v-list-item v-for="item in item.list" :key="item" class="text-body-medium">
                     <p>{{ item.contact }}</p>
                     <p>{{ item.text }}</p>
                     <a :href="item.tel">{{ item.phone }}</a>
@@ -75,7 +75,7 @@
                   <p v-else><strong>{{ item.text }}</strong></p>
                   <v-img v-if="item.text === 'Capstone'" class="my-2"
                    :src="capstoneLogo" alt="Logo for Capstone." width="200" height="56"/>
-                <v-list-item class="text-body-2">
+                <v-list-item class="text-body-medium">
                   <p v-if="item.subtext">{{ item.subtext }}</p>
                   <p v-if="item.address">{{ item.address }}</p>
                   <p v-if="item.phone">
@@ -84,7 +84,7 @@
                 </v-list-item>
 
                 <v-list v-if="item.list" bg-color="transparent">
-                  <v-list-item v-for="item in item.list" :key="item" class="text-body-2">
+                  <v-list-item v-for="item in item.list" :key="item" class="text-body-medium">
                     <p><strong>{{ item.name }}</strong></p>
                     <a v-if="item.url" :href="item.url" target="blank">{{ item.contact }}</a>
                     <p v-else><em>{{ item.contact }}</em></p>
@@ -131,7 +131,7 @@
                   <v-img v-if="item.text === 'Suicide, Drug, and Alcohol Crisis Hotline'"  class="my-2"
                        :src="headrestLogo" alt="Logo for the Suicide, Drug, and Alcohol Crisis Center." width="200" height="56"/>
 
-                  <v-list-item class="text-body-2">
+                  <v-list-item class="text-body-medium">
                     <p v-if="item.subtext">{{ item.subtext }}</p>
                     <p v-if="item.contact">{{ item.contact }}</p>
                     <p v-if="item.address">{{ item.address }}</p>
@@ -141,7 +141,7 @@
                   </v-list-item>
 
                   <v-list v-if="item.list" bg-color="transparent">
-                    <v-list-item v-for="item in item.list" :key="item" class="text-body-2">
+                    <v-list-item v-for="item in item.list" :key="item" class="text-body-medium">
                       <p><strong>{{ item.name }}</strong></p>
                       <a v-if="item.url" :href="item.url" target="blank">{{ item.contact }}</a>
                       <p v-else>{{ item.contact }}</p>
@@ -172,7 +172,7 @@
                   <v-img v-if="item.text === 'Bright Futures Childcare Information System'"  class="my-2"
                          :src="vtdcf" alt="Logo for the Vermont Department for Children and Families" width="200" height=""/>
 
-                  <v-list-item class="text-body-2">
+                  <v-list-item class="text-body-medium">
                     <p v-if="item.subtext" class="my-2">{{ item.subtext }}</p>
                     <p v-if="item.contact">{{ item.contact }}</p>
                     <p v-if="item.address">{{ item.address }}</p>
@@ -182,7 +182,7 @@
                   </v-list-item>
 
                   <v-list v-if="item.list" bg-color="transparent">
-                    <v-list-item v-for="item in item.list" :key="item" class="text-body-2">
+                    <v-list-item v-for="item in item.list" :key="item" class="text-body-medium">
                       <p><strong>{{ item.name }}</strong></p>
                       <a v-if="item.url" :href="item.url" target="blank">{{ item.contact }}</a>
                       <p v-else>{{ item.contact }}</p>
@@ -207,7 +207,7 @@
                   <a v-if="item.url" :href="item.url" target="_blank">{{ item.text }}</a>
                   <p v-else><strong>{{ item.text }}</strong></p>
 
-                  <v-list-item class="text-body-2">
+                  <v-list-item class="text-body-medium">
                     <p v-if="item.subtext" class="my-2">{{ item.subtext }}</p>
                     <p v-if="item.contact">{{ item.contact }}</p>
                     <p v-if="item.address">{{ item.address }}</p>
@@ -217,7 +217,7 @@
                   </v-list-item>
 
                   <v-list v-if="item.list" bg-color="transparent">
-                    <v-list-item v-for="item in item.list" :key="item" class="text-body-2">
+                    <v-list-item v-for="item in item.list" :key="item" class="text-body-medium">
                       <p><strong>{{ item.name }}</strong></p>
                       <a v-if="item.url" :href="item.url" target="blank">{{ item.contact }}</a>
                       <p v-else>{{ item.contact }}</p>
@@ -248,7 +248,7 @@
                   <v-img v-if="item.text === 'Safeline Inc'" class="my-2"
                          :src="safelineLogo" alt="Logo for the Safeline Domestic Violence Victims Hotline" width="128" height="96"/>
 
-                  <v-list-item class="text-body-2">
+                  <v-list-item class="text-body-medium">
                     <p v-if="item.subtext" class="my-2">{{ item.subtext }}</p>
                     <p v-if="item.contact">{{ item.contact }}</p>
                     <p v-if="item.address">{{ item.address }}</p>
@@ -258,7 +258,7 @@
                   </v-list-item>
 
                   <v-list v-if="item.list" bg-color="transparent">
-                    <v-list-item v-for="item in item.list" :key="item" class="text-body-2">
+                    <v-list-item v-for="item in item.list" :key="item" class="text-body-medium">
                       <p><strong>{{ item.name }}</strong></p>
                       <a v-if="item.url" :href="item.url" target="blank">{{ item.contact }}</a>
                       <p v-else>{{ item.contact }}</p>
@@ -307,7 +307,7 @@
 
 <style scoped>
 
-  a, router-link {
+  a:not(.v-btn) {
     color: #F0EBCE;
   }
 
@@ -315,11 +315,11 @@
   /*  color: #AA8B56;*/
   /*}*/
 
-  a:hover, router-link:hover {
+  a:not(.v-btn):hover {
     color: #4E6C50;
   }
 
-  a:focus, router-link:focus {
+  a:not(.v-btn):focus {
     color: sandybrown;
   }
 

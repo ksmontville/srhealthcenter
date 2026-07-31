@@ -1,6 +1,6 @@
 <template>
   <v-container class="mt-8" id="hero">
-    <v-row class="mx-auto" align="">
+    <v-row class="mx-auto">
       <v-sheet
         color="primary"
         class="rounded-lg ma-auto pa-4 w-100"
@@ -17,7 +17,7 @@
         </v-col>
 
         <v-col cols="12" class="my-4">
-          <p class="hero-text text-h2 text-white text-center">
+          <p class="hero-text text-display-large text-white text-center">
             Welcome to Your Medical Home
           </p>
         </v-col>
@@ -55,12 +55,12 @@
         <v-col cols="12" md="8">
           <v-row class="bg-secondary rounded-lg my-16 pa-4">
             <v-col cols="12">
-              <p class="body-text text-white text-h4 text-md-h2 pa-2">
+              <p class="body-text text-white text-display-small text-md-display-large pa-2">
                 When you're ready to stop...
               </p></v-col
             >
             <v-divider :thickness="8" color="black" />
-            <v-container class="text-body text-body-1 ma-2 pa-2">
+            <v-container class="text-body text-body-large ma-2 pa-2">
               <v-row align="center">
                 <v-col cols="12" lg="6">
                   <v-col cols="12" class="ma-4"
@@ -97,19 +97,19 @@
           </v-row>
           <v-row class="rounded-lg my-16 pa-4">
             <v-col cols="12"
-              ><p class="body-text text-white text-h4 text-md-h2 pa-2">
+              ><p class="body-text text-white text-display-small text-md-display-large pa-2">
                 Come experience pediatrics in private practice!
               </p></v-col
             >
           </v-row>
           <v-row class="bg-secondary rounded-lg my-16 pa-4">
             <v-col cols="12"
-              ><p class="body-text text-white text-h4 text-md-h2 pa-2">
+              ><p class="body-text text-white text-display-small text-md-display-large pa-2">
                 Now imagine how it would feel to...
               </p></v-col
             >
             <v-divider :thickness="8" color="black" />
-            <v-container class="text-body text-body-1 ma-2 pa-2">
+            <v-container class="text-body text-body-large ma-2 pa-2">
               <v-row align="center">
                 <v-col cols="12" lg="6">
                   <v-col cols="12" class="ma-4"
@@ -152,7 +152,7 @@
           </v-row>
           <v-row class="rounded-lg my-16 pa-4">
             <v-col cols="12" class="mx-auto my-auto">
-              <p class="body-text text-white text-h5 text-md-h3 pa-2">
+              <p class="body-text text-white text-headline-small text-md-display-medium pa-2">
                 Get ready for a long-lasting, doctor-patient relationship that’s
                 all about meaningful connection -- not a cold transaction.
               </p>
@@ -176,13 +176,13 @@
     </v-row>
     <v-row class="bg-primary pa-2 pa-md-8 rounded-lg w-auto" align="center">
       <v-col cols="12">
-        <p class="body-text text-white text-center text-h5 text-md-h3 pa-2">
+        <p class="body-text text-white text-center text-headline-small text-md-display-medium pa-2">
           Hello, I'm Dr. Ashley Miller
         </p>
       </v-col>
       <v-divider :thickness="8" color="black" />
       <v-col class="mt-8">
-        <v-container class="body-text text-body-1 text-white pa-4">
+        <v-container class="body-text text-body-large text-white pa-4">
           <v-col cols="">
             Board Certified Pediatrician since 2009 and 2022 Green Mountain
             Pediatrician of the Year. I help local families and youth get the
@@ -227,7 +227,7 @@
     <v-row class="flex flex-column ma-8 pa-4" justify="center" align="center">
       <v-col cols="12">
         <p
-          class="hero-text body-text text-h5 text-md-h3 text-white pa-4 my-8 rounded text-center"
+          class="hero-text body-text text-headline-small text-md-display-medium text-white pa-4 my-8 rounded text-center"
         >
           Accessible pediatric care in a youth friendly environment
         </p>
@@ -276,8 +276,7 @@ const openUrl = (url) => {
 .hero-text {
   font-family: "Kalam", Roboto, Arial, sans-serif !important;
 }
-a,
-router-link {
+a:not(.v-btn) {
   color: #f0ebce;
 }
 </style>

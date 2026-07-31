@@ -1,6 +1,6 @@
 <template>
 
-  <p class="text-h2 text-white text-center my-16">It's a Pleasure to Meet You</p>
+  <p class="text-display-large text-white text-center my-16">It's a Pleasure to Meet You</p>
   <p class="text-white text-center">To reach our office staff please call our main office number at
     <a :href="`tel:${appStore.officePhoneStr}`">{{ appStore.officePhoneStr }}</a></p>
 
@@ -18,7 +18,7 @@
 
 <style scoped>
 
-  a {
+  a:not(.v-btn) {
     color: #F0EBCE;
   }
 

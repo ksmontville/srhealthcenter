@@ -1,8 +1,8 @@
 <template>
   <v-container class="pa-8">
-    <p class="text-h2 text-white text-center my-16">Vaccine Information</p>
+    <p class="text-display-large text-white text-center my-16">Vaccine Information</p>
 
-    <p class="body-text text-body-1 text-white my-4">
+    <p class="body-text text-body-large text-white my-4">
       South Royalton Health Center follows the immunization guidelines
       recommended by the American Academy of Pediatrics (AAP). For information
       about these vaccines and the diseases they protect against, please visit
@@ -20,10 +20,10 @@
       >.
     </p>
 
-    <p class="text-h6 text-primary font-weight-bold my-4">
+    <p class="text-title-large text-primary font-weight-bold my-4">
       Our Vaccine Philosophy
     </p>
-    <p class="body-text text-body-1 text-white">
+    <p class="body-text text-body-large text-white">
       Our practice believes that all children should receive the recommended
       vaccines according to the guidelines provided by the AAP. Vaccines are
       safe and effective in preventing diseases and health complications in
@@ -31,13 +31,13 @@
       infections, and are administered as one of the safest and best methods of
       disease prevention.
     </p>
-    <p class="body-text text-body-1 text-white my-4">
+    <p class="body-text text-body-large text-white my-4">
       We are happy to discuss your concerns about vaccines at your child's next
       visit.
     </p>
 
     <v-list bg-color="primary" class="rounded mx-auto my-8" max-width="512">
-      <h6 class="body-text text-body-1 text-white text-center pa-2">
+      <h6 class="body-text text-body-large text-white text-center pa-2">
         <strong>Why vaccinate?</strong>
       </h6>
       <v-list-item>
@@ -70,10 +70,10 @@
       </v-list-item>
     </v-list>
 
-    <p class="text-h6 text-primary font-weight-bold my-4">
+    <p class="text-title-large text-primary font-weight-bold my-4">
       Recommended Immunization Schedule
     </p>
-    <p class="body-text text-body-1 text-white">
+    <p class="body-text text-body-large text-white">
       <v-list bg-color="transparent">
         <v-list-item v-for="vaccineLink in vaccineLinks" :key="vaccineLink.id">
           <a :href="vaccineLink.url" target="_blank">
@@ -85,7 +85,7 @@
       </v-list>
     </p>
 
-    <!-- <p class="body-text text-body-1 text-white my-4">
+    <!-- <p class="body-text text-body-large text-white my-4">
       For detailed informational sheets published by the Centers for Disease
       Control (CDC) please visit
       <a href="https://www.cdc.gov/vaccines/hcp/current-vis/" target="_blank">
@@ -108,8 +108,7 @@ const vaccineLinks = [
 </script>
 
 <style scoped>
-a,
-router-link {
+a:not(.v-btn) {
   color: #f0ebce;
 }
 
@@ -117,13 +116,11 @@ router-link {
 /*  color: #AA8B56;*/
 /*}*/
 
-a:hover,
-router-link:hover {
+a:not(.v-btn):hover {
   color: #4e6c50;
 }
 
-a:focus,
-router-link:focus {
+a:not(.v-btn):focus {
   color: sandybrown;
 }
 </style>

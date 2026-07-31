@@ -2,7 +2,7 @@
   <v-app class="app">
     <app-bar v-if="smAndDown" />
     <nav-bar v-else />
-    <default-view />
+    <default-main />
     <education-toolbar />
     <default-footer />
   </v-app>
@@ -12,7 +12,7 @@
 import AppBar from "./TheAppBar.vue";
 import NavBar from "./TheNavBar.vue";
 import EducationToolbar from "@/layouts/default/EducationToolbar.vue";
-import DefaultView from "./View.vue";
+import DefaultMain from "./DefaultMain.vue";
 import DefaultFooter from "./TheFooter.vue";
 import { useDisplay } from "vuetify";
 

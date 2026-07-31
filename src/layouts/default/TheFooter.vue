@@ -5,7 +5,7 @@
     >
       <v-row class="my-4" align="center" justify="center" no-gutters>
         <v-col cols="12">
-          <p class="text-body-2 text-center font-weight-bold mb-4">
+          <p class="text-body-medium text-center font-weight-bold mb-4">
             Patient Links
           </p>
         </v-col>
@@ -93,8 +93,7 @@ const openFacebook = () => {
   opacity: 85%;
 }
 
-a,
-router-link {
+a:not(.v-btn) {
   color: #f0ebce;
 }
 
@@ -102,13 +101,11 @@ router-link {
 /*  color: #AA8B56;*/
 /*}*/
 
-a:hover,
-router-link:hover {
+a:not(.v-btn):hover {
   color: #395144;
 }
 
-a:focus,
-router-link:focus {
+a:not(.v-btn):focus {
   color: sandybrown;
 }
 </style>

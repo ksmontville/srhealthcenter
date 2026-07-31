@@ -2,9 +2,9 @@
 
   <v-container class="pa-8">
 
-    <p class="text-h2 text-white text-center my-16">New Patients</p>
+    <p class="text-display-large text-white text-center my-16">New Patients</p>
 
-    <p class="body-text text-body-1 text-white my-4">
+    <p class="body-text text-body-large text-white my-4">
       Thank you for choosing South Royalton Health Center as your child's medical home, where we always provide a
       comfortable, caring environment so our patients and their families can feel at ease. We've included helpful items
       on this page to ensure you and your child's first trip, and every trip, to our office is productive, stress-free and enjoyable.
@@ -14,8 +14,8 @@
       download immunization and health forms, and  even pay your bill online!
     </p>
 
-    <p class="text-h6 text-primary font-weight-bold my-4">The Initial Visit</p>
-    <p class="body-text text-body-1 text-white">
+    <p class="text-title-large text-primary font-weight-bold my-4">The Initial Visit</p>
+    <p class="body-text text-body-large text-white">
       Our compassionate pediatric providers do whatever it takes to make every visit to our office a pleasant, relaxed experience.
       With all of the important information about our practice available on our website, you can feel confident that
       you and your child are well-prepared for your first appointment. We also invite you to review our about us page in
@@ -24,12 +24,12 @@
       before you come in. We look forward to meeting you!
     </p>
 
-    <p class="text-h6 text-primary font-weight-bold my-4">Prior to your first appointment pleases send or drop off:</p>
-    <v-list class="body-text text-body-1 text-white" bg-color="transparent">
+    <p class="text-title-large text-primary font-weight-bold my-4">Prior to your first appointment pleases send or drop off:</p>
+    <v-list class="body-text text-body-large text-white" bg-color="transparent">
       <v-list-item><v-icon :icon="mdiHospital" class="mx-2" color="secondary"/>Complete immunization records</v-list-item>
       <v-list-item><v-icon :icon="mdiHospital" class="mx-2" color="secondary"/>Medical records from your previous pediatrician</v-list-item>
     </v-list>
-    <p class="body-text text-body-1 text-white">
+    <p class="body-text text-body-large text-white">
       For your first appointment, please fill out the
       <router-link :to="{path: 'patient-forms'}" @click="appStore.setActiveId('patient-forms')">New Patient Forms</router-link>.
       Please bring your <strong>insurance card</strong> with you and any questions or concerns for your clinician (we love when people bring their list!).
@@ -38,8 +38,8 @@
       prior to the appointment.
     </p>
 
-    <p class="text-h6 text-primary font-weight-bold my-4">What to Bring to Your Appointment</p>
-    <p class="body-text text-body-1 text-white">
+    <p class="text-title-large text-primary font-weight-bold my-4">What to Bring to Your Appointment</p>
+    <p class="body-text text-body-large text-white">
       <v-list bg-color="transparent">
         <v-list-item><v-icon :icon="mdiHospital" class="mx-2" color="secondary"/>Insurance cards</v-list-item>
         <v-list-item><v-icon :icon="mdiHospital" class="mx-2" color="secondary"/>Co-Payment/deductible payment</v-list-item>
@@ -47,8 +47,8 @@
       </v-list>
     </p>
 
-    <p class="text-h6 text-primary font-weight-bold my-4">Please be Ready to Tell Clinician:</p>
-    <p class="body-text text-body-1 text-white">
+    <p class="text-title-large text-primary font-weight-bold my-4">Please be Ready to Tell Clinician:</p>
+    <p class="body-text text-body-large text-white">
       <v-list class="" bg-color="transparent">
         <v-list-item><v-icon :icon="mdiHospital" class="mx-2" color="secondary"/>
           Child's medical history, medications, over the counter medications and supplements, and any allergies</v-list-item>
@@ -74,7 +74,7 @@
 
 <style scoped>
 
- a, router-link {
+ a:not(.v-btn) {
     color: #F0EBCE;
   }
 
@@ -82,11 +82,11 @@
   /*  color: #AA8B56;*/
   /*}*/
 
-  a:hover, router-link:hover {
+  a:not(.v-btn):hover {
     color: #4E6C50;
   }
 
-  a:focus, router-link:focus {
+  a:not(.v-btn):focus {
     color: sandybrown;
   }
 

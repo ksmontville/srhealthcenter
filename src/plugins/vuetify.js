@@ -5,7 +5,6 @@
  */
 
 // Styles
-import '@mdi/font/css/materialdesignicons.css'
 import 'vuetify/styles'
 
 // Composables
@@ -22,6 +21,10 @@ export default createVuetify({
     },
   },
   theme: {
+    // Vuetify 4 changed the default to 'system'. This site only defines a light
+    // theme, so without this a visitor in OS dark mode gets Vuetify's stock dark
+    // palette instead of the SRHC brand colors.
+    defaultTheme: 'light',
     themes: {
       light: {
         colors: {

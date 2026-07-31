@@ -1,8 +1,8 @@
 <template>
   <v-container class="pa-8">
-    <p class="text-h2 text-white text-center my-16">Patient Forms</p>
+    <p class="text-display-large text-white text-center my-16">Patient Forms</p>
 
-    <p class="body-text text-body-1 text-white my-8">
+    <p class="body-text text-body-large text-white my-8">
       We are happy to provide our office forms for convenient online secure submission. Questions about which forms you
       need to fill out? Please call our office and our staff will assist you in preparing for your visit.
     </p>
@@ -19,7 +19,7 @@
 
 <style scoped>
 
-  a, router-link {
+  a:not(.v-btn) {
     color: #F0EBCE;
   }
 
@@ -27,11 +27,11 @@
   /*  color: #AA8B56;*/
   /*}*/
 
-  a:hover, router-link:hover {
+  a:not(.v-btn):hover {
     color: #4E6C50;
   }
 
-  a:focus, router-link:focus {
+  a:not(.v-btn):focus {
     color: sandybrown;
   }
 

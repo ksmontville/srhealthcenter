@@ -10,7 +10,7 @@
         </v-expansion-panel-title>
 
         <v-expansion-panel-text>
-          <p v-if="index.text" class="body-text text-body-1 text-white my-4">{{ index.text }}</p>
+          <p v-if="index.text" class="body-text text-body-large text-white my-4">{{ index.text }}</p>
 
           <v-list bg-color="transparent">
             <v-list-item v-for="item in index.forms" :key="item.id">
@@ -36,7 +36,7 @@
 
 <style scoped>
 
-  a, router-link {
+  a:not(.v-btn) {
     color: #F0EBCE;
   }
 
@@ -44,11 +44,11 @@
   /*  color: #AA8B56;*/
   /*}*/
 
-  a:hover, router-link:hover {
+  a:not(.v-btn):hover {
     color: #AA8B56;
   }
 
-  a:focus, router-link:focus {
+  a:not(.v-btn):focus {
     color: sandybrown;
   }
 

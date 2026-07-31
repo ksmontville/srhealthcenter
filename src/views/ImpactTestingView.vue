@@ -2,21 +2,21 @@
 
 <!--  <v-container class="pa-8">-->
 
-<!--    <p class="text-h2 text-white text-center my-16">ImPACT Concussion Testing</p>-->
+<!--    <p class="text-display-large text-white text-center my-16">ImPACT Concussion Testing</p>-->
 
-<!--    <p class="body-text text-body-1 text-white my-4">-->
+<!--    <p class="body-text text-body-large text-white my-4">-->
 <!--      Because <strong>concussions can happen to anyone, anywhere,</strong> and they can change your life for the worse if-->
 <!--      you’re not prepared, <strong>ImPACT™</strong> (Immediate Post-Concussion Assessment and Cognitive Testing) should-->
 <!--      be part of your return to school plan. Just like an annual physical, it is recommended that you take a-->
 <!--      baseline test every year.-->
 <!--    </p>-->
 
-<!--    <p class="body-text text-body-1 text-white my-4">-->
+<!--    <p class="body-text text-body-large text-white my-4">-->
 <!--      In order to take the baseline ImPACT Test <strong>for free</strong> you must be a patient SRHC or a student of one of the-->
 <!--      HealthHubVT Schools.-->
 <!--    </p>-->
 
-<!--    <p class="body-text text-body-1 text-white my-4">-->
+<!--    <p class="body-text text-body-large text-white my-4">-->
 <!--      Once you complete this baseline test, your results will be stored in our records. If you have a head injury-->
 <!--      or think you have a concussion any time after taking the test, make an appointment at SRHC or-->
 <!--      HealthHubVT within 2-3 days. We will evaluate your injury and possibly repeat the ImPACT test at the-->
@@ -24,16 +24,16 @@
 <!--      from the concussion and effectively guide your return to play.-->
 <!--    </p>-->
 
-<!--    <p class="bg-primary body-text text-body-1 text-white text-center pa-2 my-4 rounded">-->
+<!--    <p class="bg-primary body-text text-body-large text-white text-center pa-2 my-4 rounded">-->
 <!--      <strong>Notes Before Starting the Test</strong>-->
 <!--    </p>-->
 
-<!--    <p class="body-text text-body-1 text-white my-4">-->
+<!--    <p class="body-text text-body-large text-white my-4">-->
 <!--      This test is intended as <strong>baseline testing only</strong> for people who are currently <strong>symptom-free</strong>.-->
 <!--      If you need to be evaluated for a recent head injury, call the office directly at 802-763-7575 to make an appointment;-->
 <!--      we will perform the ImPACT test in the office if necessary.-->
 
-<!--      <v-list class="body-text text-body-2 pa-4 my-4" bg-color="highlight" rounded>-->
+<!--      <v-list class="body-text text-body-medium pa-4 my-4" bg-color="highlight" rounded>-->
 <!--        <v-list-item>-->
 <!--          <v-icon :icon="mdiHospital" class="mx-2" color="secondary"/>-->
 <!--          <strong>DO NOT</strong> take this test if you have recently sustained a head injury and/or are currently experiencing symptoms.-->
@@ -84,7 +84,7 @@
 <!--    <v-row justify="center">-->
 <!--      <v-btn class="ma-4" size="x-large" color="primary" @click="openLink(testLink)">TAKE THE TEST</v-btn>-->
 <!--    </v-row>-->
-<!--      <p class="body-text text-body-1 text-white text-center my-4">-->
+<!--      <p class="body-text text-body-large text-white text-center my-4">-->
 <!--        <em>Please contact SRHC for an access code if you do not already have one.</em>-->
 <!--      </p>-->
 <!--  </v-container>-->

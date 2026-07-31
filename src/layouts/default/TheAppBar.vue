@@ -8,7 +8,7 @@
 
           <v-col cols="10" class="">
             <v-img :src="logo" max-width="128" @click="$router.push('/')"/>
-            <p class="brand text-subtitle-2">Improving the lives of children</p>
+            <p class="brand text-title-small">Improving the lives of children</p>
           </v-col>
 
           <v-col cols="2">
