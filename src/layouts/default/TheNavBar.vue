@@ -69,6 +69,8 @@
                     {{ navLink.name }}
                   </v-btn>
                 </template>
+
+                <theme-toggle class="ml-2" />
               </v-row>
             </nav>
           </v-col>
@@ -84,6 +86,7 @@ import { mdiChevronDown } from "@mdi/js";
 import navbarBg from "@/assets/img/background/navbar-bg.jpg";
 import logo from "@/assets/img/srhc-logo-white.png";
 import { useAppStore } from "@/store/app";
+import ThemeToggle from "@/components/ThemeToggle.vue";
 
 const appStore = useAppStore();
 const route = useRoute();

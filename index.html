@@ -36,6 +36,35 @@
 
   <body>
     <div id="app"></div>
+    <!--
+      Applies the visitor's theme before first paint.
+
+      Pages are prerendered with the light theme baked into the markup, so a
+      visitor who prefers dark would see a flash of light while the bundle
+      loads. Vuetify's theme stylesheet is captured in the prerendered HTML and
+      defines both `.v-theme--light` and `.v-theme--dark`, so swapping the class
+      is enough — no colour values are duplicated here, and nothing to keep in
+      sync with plugins/vuetify.js.
+
+      Must stay after #app so the prerendered app root already exists.
+    -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("srhc-theme");
+          var dark =
+            stored === "dark" ||
+            (stored !== "light" &&
+              window.matchMedia("(prefers-color-scheme: dark)").matches);
+          var app = document.querySelector(".v-application");
+          if (!app) return;
+          app.classList.remove(dark ? "v-theme--light" : "v-theme--dark");
+          app.classList.add(dark ? "v-theme--dark" : "v-theme--light");
+        } catch (e) {
+          /* storage blocked — fall through to the prerendered default */
+        }
+      })();
+    </script>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

@@ -18,7 +18,8 @@
               </router-link>
             </v-col>
 
-            <v-col cols="2">
+            <v-col cols="2" class="d-flex align-center justify-end">
+              <theme-toggle />
               <v-app-bar-nav-icon
                 aria-label="Open navigation menu"
                 @click="toggleNav"
@@ -81,6 +82,7 @@
 import { ref, watch } from "vue";
 import { useRoute } from "vue-router";
 import { useAppStore } from "@/store/app";
+import ThemeToggle from "@/components/ThemeToggle.vue";
 import navbarBg from "@/assets/img/background/navbar-bg.jpg";
 import logo from "@/assets/img/srhc-logo-white.png";
 
