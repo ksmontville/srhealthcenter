@@ -15,6 +15,15 @@ export const useAppStore = defineStore("app", () => {
   const onlinePaymentUrl = ref("https://12904.portal.athenahealth.com/");
   const facebookUrl = ref("https://www.facebook.com/southroyaltonhealthcenter/");
 
+  /**
+   * Primary navigation.
+   *
+   * Top-level entries either link somewhere (`route`) or open a dropdown
+   * (`children`). Grouping became necessary once the four new pages landed —
+   * a flat bar of 12 links wrapped to two rows at 1440px.
+   *
+   * Routes are absolute so they resolve the same from any depth.
+   */
   const navLinks = ref([
     {
       id: 0,
@@ -24,56 +33,52 @@ export const useAppStore = defineStore("app", () => {
     {
       id: 1,
       name: "About Us",
-      route: "meet-our-providers-staff",
+      children: [
+        { id: 10, name: "Meet Our Team", route: "/meet-our-providers-staff" },
+        {
+          id: 11,
+          name: "Community Leadership, Media & Advocacy",
+          route: "/community-leadership-media-advocacy",
+        },
+      ],
+    },
+    {
+      id: 2,
+      name: "Services",
+      children: [
+        { id: 20, name: "Our Mission & Services", route: "/our-mission-and-services" },
+        {
+          id: 21,
+          name: "Integrative Pediatric Care",
+          route: "/integrative-pediatric-care",
+        },
+        { id: 22, name: "Auricular Acupuncture", route: "/auricular-acupuncture" },
+        { id: 23, name: "School Visits", route: "/school-visits" },
+      ],
     },
     {
       id: 3,
-      name: "New Patients",
-      route: "new-patients",
+      name: "Patients",
+      children: [
+        { id: 30, name: "New Patients", route: "/new-patients" },
+        { id: 31, name: "Expecting", route: "/expecting" },
+        { id: 32, name: "Patient Forms", route: "/patient-forms" },
+        { id: 33, name: "Patient Portal", route: "/patient-portal" },
+        { id: 34, name: "Frequently Asked Questions", route: "/faq" },
+      ],
     },
     {
       id: 4,
-      name: "Expecting",
-      route: "expecting",
-    },
-    {
-      id: 5,
-      name: "Patient Forms",
-      route: "patient-forms",
-    },
-    {
-      id: 6,
-      name: "Services",
-      route: "our-mission-and-services",
-    },
-    {
-      id: 7,
-      name: "School Visits",
-      route: "school-visits",
-    },
-    {
-      id: 8,
       name: "Contact Us",
-      route: "contact",
+      route: "/contact",
     },
   ]);
 
-  // ID of active nav-link for styling purposes
-  let activeId = ref(null);
-  const setActiveId = (route) => {
-    activeId.value = null;
-    for (let i = 0; i < navLinks.value.length; i++) {
-      if (navLinks.value[i].route === route) {
-        activeId.value = navLinks.value[i].id;
-      }
-    }
-    if (activeId.value === 0) {
-      document.querySelectorAll("a[href='/']")[0].classList.add("v-btn--active");
-    }
-    if (activeId.value !== 0) {
-      document.querySelectorAll("a[href='/']")[0].classList.remove("v-btn--active");
-    }
-  };
+  // Active-link state is derived from the current route in the nav components
+  // (see `isActive` / `isGroupActive` in TheNavBar and TheAppBar). The previous
+  // implementation tracked it manually and poked `classList` on a
+  // `querySelectorAll("a[href='/']")[0]` lookup, which broke as soon as links
+  // were nested and would throw if that anchor wasn't mounted.
 
   return {
     officePhoneStr,
@@ -85,7 +90,5 @@ export const useAppStore = defineStore("app", () => {
     onlinePaymentUrl,
     facebookUrl,
     navLinks,
-    activeId,
-    setActiveId,
   };
 });

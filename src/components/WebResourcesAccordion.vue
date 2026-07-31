@@ -5,6 +5,7 @@
       v-for="[category, links] in Object.entries(webLinks)"
       :key="category"
       :title="category"
+      :count="links.length"
     >
       <ul class="link-list">
         <li v-for="link in links" :key="link.url">

@@ -102,14 +102,6 @@ const routes = [
           ),
       },
       {
-        path: "local-resources",
-        name: "Local Resources",
-        component: () =>
-          import(
-            /*webpackChunkName: "local-resources": */ "@/views/resources/LocalResourcesView.vue"
-          ),
-      },
-      {
         path: "srhc-recommended-books",
         name: "Reading",
         component: () =>

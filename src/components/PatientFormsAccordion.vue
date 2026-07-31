@@ -1,6 +1,11 @@
 <template>
   <disclosure-group elevated class="mx-auto">
-    <disclosure-panel v-for="group in patientForms" :key="group.id" :title="group.type">
+    <disclosure-panel
+      v-for="group in patientForms"
+      :key="group.id"
+      :title="group.type"
+      :count="group.forms.length"
+    >
       <p v-if="group.text" class="body-text mb-3">{{ group.text }}</p>
 
       <ul class="form-list">

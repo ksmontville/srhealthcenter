@@ -5,4 +5,8 @@
 # content now lives on the FAQ page. 301 so existing links keep their value.
 /office-details    /faq    301!
 
+# Local Resources was removed at the client's request. It was previously listed
+# in the sitemap, so send any indexed links to the surviving resources page.
+/local-resources    /srhc-recommended-child-health-web-links    301!
+
 /*    /index.html   200

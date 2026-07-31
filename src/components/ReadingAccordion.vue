@@ -1,11 +1,11 @@
 <template>
   <disclosure-group elevated>
-    <disclosure-panel v-for="group in readingList" :key="group.id">
-      <template #title>
-        {{ group.topic }}
-        <span class="reading-count">{{ group.books.length }}</span>
-      </template>
-
+    <disclosure-panel
+      v-for="group in readingList"
+      :key="group.id"
+      :title="group.topic"
+      :count="group.books.length"
+    >
       <ul class="reading-list">
         <li v-for="book in group.books" :key="book">
           <svg
@@ -31,19 +31,6 @@ import { readingList } from "@/assets/readingList";
 </script>
 
 <style scoped>
-.reading-count {
-  display: inline-block;
-  min-width: 1.75rem;
-  margin-left: 0.5rem;
-  padding: 0.05rem 0.45rem;
-  border-radius: 999px;
-  background-color: rgba(240, 235, 206, 0.2);
-  color: #f0ebce;
-  font-size: 0.8rem;
-  text-align: center;
-  vertical-align: middle;
-}
-
 .reading-list {
   list-style: none;
   padding: 0;

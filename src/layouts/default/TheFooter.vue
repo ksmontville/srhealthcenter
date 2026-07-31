@@ -15,7 +15,6 @@
         >
           <v-btn
             :to="footerLink.route"
-            @click="appStore.setActiveId(footerLink.route)"
             class="footer-link my-2"
             size="x-small"
             variant="text"
@@ -60,12 +59,12 @@ const footerLinks = [
   {
     id: 0,
     name: "Portal",
-    route: "patient-portal",
+    route: "/patient-portal",
   },
   {
     id: 1,
     name: "Forms",
-    route: "patient-forms",
+    route: "/patient-forms",
   },
   // {
   //   id: 2,
@@ -75,7 +74,7 @@ const footerLinks = [
   {
     id: 3,
     name: "Contact",
-    route: "contact",
+    route: "/contact",
   },
 ];
 

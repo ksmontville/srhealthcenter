@@ -10,9 +10,16 @@
   -->
   <details class="disclosure" :open="open" :name="name">
     <summary class="disclosure__summary text-title-large">
-      <span
-        ><slot name="title">{{ title }}</slot></span
-      >
+      <span class="disclosure__label">
+        <slot name="title">{{ title }}</slot>
+        <span
+          v-if="count !== null"
+          class="disclosure__count"
+          :aria-label="`${count} ${count === 1 ? 'item' : 'items'}`"
+        >
+          {{ count }}
+        </span>
+      </span>
       <svg
         class="disclosure__chevron"
         viewBox="0 0 24 24"
@@ -40,6 +47,12 @@ defineProps({
    * native HTML behaviour — no JS state required.
    */
   name: { type: String, default: undefined },
+  /**
+   * Optional badge showing how many entries the panel holds, so visitors can see
+   * the size of a section before opening it. Omit for panels that hold a single
+   * block of prose (e.g. an FAQ answer) rather than a list.
+   */
+  count: { type: Number, default: null },
 });
 </script>
 
@@ -69,6 +82,25 @@ defineProps({
 .disclosure__summary:focus-visible {
   outline: 2px solid sandybrown;
   outline-offset: -2px;
+}
+
+.disclosure__label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+.disclosure__count {
+  flex: 0 0 auto;
+  min-width: 1.75rem;
+  padding: 0.05rem 0.45rem;
+  border-radius: 999px;
+  background-color: rgba(240, 235, 206, 0.2);
+  color: #f0ebce;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  text-align: center;
 }
 
 .disclosure__chevron {
