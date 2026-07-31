@@ -1,5 +1,40 @@
 # Changelog
 
+## July 2026 Updates
+
+A significant update focused on making it easier for families — and for search engines and AI assistants — to find the care you offer.
+
+### New Pages
+- **Frequently Asked Questions**: 17 answers covering scheduling, insurance, after-hours care, telehealth, newborn care and more. Replaces the old Office Details page, whose appointment, insurance and payment information now lives here.
+- **Integrative Pediatric Care**: A new home for Lifestyle Medicine, nutrition counseling and whole-child care.
+- **Auricular Acupuncture**: A dedicated page covering what it is, what it helps, safety, what happens during a visit, and cost.
+- **Community Leadership, Media & Advocacy**: Dr. Ashley's published articles, professional leadership, medical education and community work, with links to each source.
+
+### Rewritten Content
+- **Services**: Fully rewritten and reorganised into clear sections — preventive care, same-day sick visits, nutrition, infant feeding, integrative care, ADHD & behavioral health, developmental & school support, adolescent medicine, and more. The old scrolling service box is gone; everything is now visible on the page.
+- **Jump to a service**: A quick-links menu at the top of the Services page for going straight to any section.
+- **Home, About Us, New Patients and Expecting**: Refreshed copy throughout, plus updated biographies for the whole team.
+
+### Easier to Navigate
+- **Grouped menus**: The main menu is now organised under About Us, Services and Patients, so new pages are easy to find without a crowded menu bar.
+- **Consistent page layout**: Every page now uses the same margins and spacing.
+
+### Findability
+- **Every page now has its own title and description** in search results, rather than sharing one.
+- **Pages are readable by AI assistants**: Previously, tools like ChatGPT and Perplexity saw a blank page. All page content is now delivered directly in the page itself.
+- **Expandable sections are now searchable**: Patient forms, recommended web links and reading lists used to be hidden from search engines until clicked. All of that content is now indexed — including all 71 recommended books and every patient form.
+- **Practice information for search engines**: Address, phone, hours and services are now published in a structured format so Google and AI assistants can read them accurately.
+
+### Accessibility
+- Proper heading structure on every page, improved image descriptions, clearer link wording, and a keyboard-accessible Facebook link in the footer.
+
+### Housekeeping
+- **Reading list**: Reorganised from a cramped tabbed box into clear expandable topics with book counts.
+- **Local Resources**: Page retired at your request.
+- **Copyright year** now updates automatically.
+
+---
+
 ## November 2025 Updates
 
 We've made several improvements to our website based on your feedback to make it easier to find the information and services you need.

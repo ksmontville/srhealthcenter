@@ -79,6 +79,7 @@
                       :src="stockBabySm"
                       :srcset="`${stockBabySm} 480w, ${stockBabyMd} 800w, ${stockBabyLg} 1200w`"
                       class="rounded ma-auto"
+                      alt="An infant resting in a caregiver's hands"
                       cover
                     />
                   </v-lazy>
@@ -131,6 +132,7 @@
                       :src="stockTeddySm"
                       :srcset="`${stockTeddySm} 480w, ${stockTeddyMd} 800w, ${stockTeddyLg} 1200w`"
                       class="rounded"
+                      alt="A teddy bear beside a face mask and syringe"
                       cover
                     />
                   </v-lazy>

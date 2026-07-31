@@ -431,14 +431,14 @@ const behavioralTreatments = [
   {
     text: "Lifestyle Medicine counseling, including nutrition, physical activity, sleep, and stress management —",
     to: "/integrative-pediatric-care",
-    linkLabel: "learn more",
+    linkLabel: "more on Lifestyle Medicine",
   },
   "Behavioral and emotional support",
   "Medication management",
   {
     text: "Auricular acupuncture as an adjunctive treatment —",
     to: "/auricular-acupuncture",
-    linkLabel: "learn more",
+    linkLabel: "more on auricular acupuncture",
   },
   "Ongoing follow-up to support long-term success and well-being",
 ];
@@ -462,7 +462,7 @@ const adolescentMedicine = [
   {
     text: "Lifestyle Medicine counseling —",
     to: "/integrative-pediatric-care",
-    linkLabel: "learn more",
+    linkLabel: "more on Lifestyle Medicine",
   },
   "Healthy weight management",
   "Sports nutrition and optimization of athletic performance",
@@ -492,13 +492,13 @@ const whyChooseUs = [
   {
     text: "School-based healthcare services and collaboration with local schools —",
     to: "/school-visits",
-    linkLabel: "learn more",
+    linkLabel: "more on school visits",
   },
   "Comprehensive behavioral health care, including ADHD, anxiety, depression, and eating disorders",
   {
     text: "Nutrition counseling and comprehensive pediatric obesity care, combining Lifestyle Medicine, behavioral support, and evidence-based medications when appropriate —",
     to: "/integrative-pediatric-care",
-    linkLabel: "learn more",
+    linkLabel: "more on nutrition and Lifestyle Medicine",
   },
   {
     text: "Integrative pediatric care, including",

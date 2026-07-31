@@ -37,7 +37,18 @@
         </v-col>
         <v-col cols="12" class="d-flex justify-center align-center my-2">
           <small class="">{{ copy }}</small>
-          <v-icon :icon="mdiFacebook" class="mx-4" @click="openFacebook" />
+          <!-- A real link, not a click-handled icon: the old version rendered an
+               <i role="button"> with no accessible name, and wasn't keyboard
+               reachable or openable in a new tab. -->
+          <a
+            :href="appStore.facebookUrl"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social mx-4 d-inline-flex"
+            aria-label="South Royalton Health Center on Facebook (opens in a new tab)"
+          >
+            <v-icon :icon="mdiFacebook" />
+          </a>
         </v-col>
       </v-row>
     </v-container>
@@ -77,10 +88,6 @@ const footerLinks = [
     route: "/contact",
   },
 ];
-
-const openFacebook = () => {
-  window.open(appStore.facebookUrl);
-};
 </script>
 
 <style scoped>

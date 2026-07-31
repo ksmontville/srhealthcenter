@@ -145,13 +145,13 @@ const whyChooseUs = [
   {
     text: "Lifestyle Medicine and whole-child care —",
     to: "/integrative-pediatric-care",
-    linkLabel: "learn more",
+    linkLabel: "more on Lifestyle Medicine",
   },
   "Breastfeeding and lactation support",
   {
     text: "Integrated behavioral health and school-based services as your child grows —",
     to: "/school-visits",
-    linkLabel: "learn more",
+    linkLabel: "more on school-based care",
   },
   "Care from infancy through adolescence",
 ];

@@ -1,7 +1,7 @@
 <template>
   <!-- Matches TheNavBar: the prominent density clips the brand subtext. -->
   <v-app-bar class="navbar" color="primary" :height="168">
-    <v-img :src="navbarBg" class="navbar-bg" cover>
+    <v-img :src="navbarBg" class="navbar-bg" alt="" cover>
       <v-app-bar-title>
         <v-container>
           <v-row justify="center" align="center">
