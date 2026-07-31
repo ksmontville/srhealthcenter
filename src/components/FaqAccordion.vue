@@ -20,7 +20,9 @@
         <p v-if="item.links?.length" class="faq-links">
           <template v-for="(link, i) in item.links" :key="link.label">
             <router-link v-if="link.to" :to="link.to">{{ link.label }}</router-link>
-            <a v-else :href="link.href" v-bind="externalAttrs(link)">{{ link.label }}</a>
+            <a v-else :href="link.href" v-bind="externalAttrs(link)">{{
+              link.label
+            }}</a>
             <span v-if="i < item.links.length - 1" class="faq-link-sep"> · </span>
           </template>
         </p>
@@ -43,12 +45,13 @@ defineProps({
 // Answers are authored as plain text so the exact string can be reused verbatim in
 // FAQPage JSON-LD. Blank lines separate paragraphs.
 const paragraphs = (answer) =>
-  answer.split("\n\n").map((p) => p.trim()).filter(Boolean);
+  answer
+    .split("\n\n")
+    .map((p) => p.trim())
+    .filter(Boolean);
 
 const externalAttrs = (link) =>
-  link.href?.startsWith("http")
-    ? { target: "_blank", rel: "noopener noreferrer" }
-    : {};
+  link.href?.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {};
 </script>
 
 <style scoped>

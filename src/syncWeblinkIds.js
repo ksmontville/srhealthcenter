@@ -1,9 +1,9 @@
 let id = 0;
 
 // Fetch the JSON file
-fetch('src/assets/weblinks.json')
-  .then(response => response.json())
-  .then(json => {
+fetch("src/assets/weblinks.json")
+  .then((response) => response.json())
+  .then((json) => {
     // Iterate over each category
     for (let category in json) {
       // Iterate over each item in the category

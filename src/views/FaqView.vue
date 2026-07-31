@@ -11,8 +11,8 @@
           insurance, after-hours care, and the kinds of pediatric care we provide at
           South Royalton Health Center. If you don't find what you're looking for,
           please
-          <router-link to="/contact">get in touch</router-link> — we're always happy
-          to help.
+          <router-link to="/contact">get in touch</router-link> — we're always happy to
+          help.
         </p>
 
         <faq-accordion :items="faqItems" />
@@ -23,8 +23,8 @@
           </h2>
           <p class="body-text text-body-large text-white text-center mb-6">
             Call or text our office during business hours, or send us a secure message
-            through the Patient Portal. Our on-call pediatric team is available by
-            phone after hours for urgent concerns.
+            through the Patient Portal. Our on-call pediatric team is available by phone
+            after hours for urgent concerns.
           </p>
           <div class="d-flex flex-column flex-sm-row justify-center ga-4">
             <v-btn :href="appStore.officePhone" color="highlight" size="large">

@@ -8,7 +8,12 @@
 
       <ul class="reading-list">
         <li v-for="book in group.books" :key="book">
-          <svg class="reading-list__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <svg
+            class="reading-list__icon"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            focusable="false"
+          >
             <path :d="mdiBookOpenOutline" />
           </svg>
           <span>{{ book }}</span>

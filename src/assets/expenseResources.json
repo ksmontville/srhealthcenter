@@ -28,7 +28,7 @@
       }
     ]
   },
-   {
+  {
     "id": 2,
     "text": "Carrie Sanborn Fund",
     "subtext": "For help with household bills, such as a heating bill.",
@@ -49,7 +49,7 @@
       }
     ]
   },
-    {
+  {
     "id": 3,
     "text": "United Ways of Vermont",
     "subtext": "For help with unexpected expenses, dial 211.",
@@ -73,14 +73,14 @@
     "phone": "(802) 295-8820 ext. 2",
     "tel": "tel:8022958820"
   },
-    {
+  {
     "id": 6,
     "text": "Vermont Economic Services",
     "subtext": "For Vermont state help with food stamps, on-going fuel assistance, Medicaid/health/dental insurance.",
     "phone": "(800) 479-6151",
     "tel": "tel:8004796151"
   },
-    {
+  {
     "id": 7,
     "text": "Vermont Health Connect",
     "subtext": "Health and dental insurance.",
@@ -93,7 +93,7 @@
       }
     ]
   },
-    {
+  {
     "id": 8,
     "text": "Upper Valley Haven",
     "subtext": "Housing for homeless, food shelf, and clothing.",

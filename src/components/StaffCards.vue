@@ -73,11 +73,9 @@
                           v-for="(link, i) in staffDetail.links"
                           :key="link.label"
                         >
-                          <a
-                            :href="link.href"
-                            v-bind="externalAttrs(link.href)"
-                            >{{ link.label }}</a
-                          >
+                          <a :href="link.href" v-bind="externalAttrs(link.href)">{{
+                            link.label
+                          }}</a>
                           <span v-if="i < staffDetail.links.length - 1"> · </span>
                         </template>
                       </p>

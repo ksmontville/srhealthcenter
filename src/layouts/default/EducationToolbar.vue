@@ -61,11 +61,7 @@
           <small>{{ hour }}</small>
         </v-list-item>
         <v-list-item class="d-flex align-center justify-center my-4">
-          <v-btn
-            @click="openUrl(appStore.patientPortalUrl)"
-            color="primary"
-            block
-          >
+          <v-btn @click="openUrl(appStore.patientPortalUrl)" color="primary" block>
             Patient Portal
           </v-btn>
         </v-list-item>

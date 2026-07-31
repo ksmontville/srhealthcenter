@@ -2,18 +2,10 @@
   <!-- pa-8 matches the container padding used by every other page. -->
   <v-container class="mt-8 pa-8" id="hero">
     <v-row class="mx-auto">
-      <v-sheet
-        color="primary"
-        class="rounded-lg ma-auto pa-4 w-100"
-        elevation="16"
-      >
+      <v-sheet color="primary" class="rounded-lg ma-auto pa-4 w-100" elevation="16">
         <v-col cols="12">
           <v-lazy>
-            <v-img
-              :src="logo"
-              alt="South Royal Health Center Logo"
-              max-height="256"
-            />
+            <v-img :src="logo" alt="South Royal Health Center Logo" max-height="256" />
           </v-lazy>
         </v-col>
 
@@ -70,14 +62,13 @@
                   >
                   <v-divider :thickness="4" color="highlight" />
                   <v-col cols="12" class="ma-4"
-                    ><strong>Feeling rushed</strong> in the treatment
-                    room;</v-col
+                    ><strong>Feeling rushed</strong> in the treatment room;</v-col
                   >
                   <v-divider :thickness="4" color="highlight" />
                   <v-col cols="12" class="ma-4"
-                    ><strong>Having your treatment limited</strong> to symptoms
-                    for just one ailment per visit—and not having the time to
-                    explore the source of your problem...</v-col
+                    ><strong>Having your treatment limited</strong> to symptoms for just
+                    one ailment per visit—and not having the time to explore the source
+                    of your problem...</v-col
                   >
 
                   <v-divider :thickness="4" color="highlight" />
@@ -113,9 +104,9 @@
               <v-row align="center">
                 <v-col cols="12" lg="6">
                   <v-col cols="12" class="ma-4"
-                    ><strong>Have the same, highly-trained doctor</strong> who
-                    knows your family well, and has managed your childrens'
-                    health from newborns to young adults;</v-col
+                    ><strong>Have the same, highly-trained doctor</strong> who knows
+                    your family well, and has managed your childrens' health from
+                    newborns to young adults;</v-col
                   >
                   <v-divider :thickness="4" color="highlight" />
                   <v-col cols="12" class="ma-4"
@@ -129,9 +120,7 @@
 
                   <v-col cols="12" class="ma-4"
                     >Know you can
-                    <strong
-                      >text, email, and call your doctor's office
-                      directly</strong
+                    <strong>text, email, and call your doctor's office directly</strong
                     >, even after hours!
                   </v-col>
                   <v-divider :thickness="4" color="highlight" />
@@ -152,8 +141,8 @@
           <v-row class="rounded-lg my-16 pa-4">
             <v-col cols="12" class="mx-auto my-auto">
               <p class="text-white text-headline-small text-md-display-medium pa-2">
-                Get ready for a long-lasting, doctor-patient relationship that’s
-                all about meaningful connection -- not a cold transaction.
+                Get ready for a long-lasting, doctor-patient relationship that’s all
+                about meaningful connection -- not a cold transaction.
               </p>
             </v-col>
           </v-row>
@@ -176,7 +165,9 @@
     </v-row>
     <v-row class="bg-primary pa-2 pa-md-8 rounded-lg w-auto" align="start">
       <v-col cols="12">
-        <h2 class="text-white text-center text-headline-small text-md-display-medium pa-2">
+        <h2
+          class="text-white text-center text-headline-small text-md-display-medium pa-2"
+        >
           Hello, I'm Dr. Ashley Miller
         </h2>
       </v-col>
@@ -184,16 +175,15 @@
       <v-col cols="12" md="7" class="mt-8">
         <v-container class="body-text text-body-large text-white pa-4">
           <v-col cols="12">
-            I've had the privilege of caring for children and families throughout
-            the Upper Valley for nearly two decades. As the owner of South Royalton
-            Health Center, I'm committed to providing relationship-based,
-            evidence-based pediatric care that helps every child thrive.
+            I've had the privilege of caring for children and families throughout the
+            Upper Valley for nearly two decades. As the owner of South Royalton Health
+            Center, I'm committed to providing relationship-based, evidence-based
+            pediatric care that helps every child thrive.
           </v-col>
           <v-col cols="12">
-            Our independent, woman-owned pediatric practice offers longer
-            appointments, direct access to your pediatric team, and comprehensive
-            care—from newborns to young adults—in a welcoming, family-centered
-            environment.
+            Our independent, woman-owned pediatric practice offers longer appointments,
+            direct access to your pediatric team, and comprehensive care—from newborns
+            to young adults—in a welcoming, family-centered environment.
           </v-col>
           <v-col cols="12">
             <router-link to="/meet-our-providers-staff" class="font-weight-bold">

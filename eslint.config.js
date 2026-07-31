@@ -1,5 +1,6 @@
 import js from "@eslint/js";
 import pluginVue from "eslint-plugin-vue";
+import eslintConfigPrettier from "eslint-config-prettier";
 
 // ESLint 9+ flat config. Replaces the old .eslintrc.js; note that `--ignore-path
 // .gitignore` was removed from the CLI, so ignores live here now.
@@ -23,4 +24,7 @@ export default [
       },
     },
   },
+  // Must stay last: turns off ESLint rules that would fight Prettier. Formatting is
+  // Prettier's job (`npm run format`), correctness is ESLint's.
+  eslintConfigPrettier,
 ];

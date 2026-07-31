@@ -9,7 +9,10 @@
         <section-nav :items="sections" label="Jump to a service" class="mb-10" />
 
         <!-- Our Mission -->
-        <h2 class="text-headline-small text-primary font-weight-bold mb-4" id="our-mission">
+        <h2
+          class="text-headline-small text-primary font-weight-bold mb-4"
+          id="our-mission"
+        >
           Our Mission
         </h2>
         <p class="body-text text-body-large text-white">
@@ -25,7 +28,10 @@
         </p>
 
         <!-- Preventive Pediatric Care -->
-        <h2 class="text-headline-small text-primary font-weight-bold mt-12 mb-4" id="preventive-care">
+        <h2
+          class="text-headline-small text-primary font-weight-bold mt-12 mb-4"
+          id="preventive-care"
+        >
           Preventive Pediatric Care
         </h2>
         <p class="body-text text-body-large text-white">
@@ -35,7 +41,10 @@
         <icon-list dense :items="preventiveCare" />
 
         <!-- Same-Day Sick Visits -->
-        <h2 class="text-headline-small text-primary font-weight-bold mt-12 mb-4" id="same-day-sick-visits">
+        <h2
+          class="text-headline-small text-primary font-weight-bold mt-12 mb-4"
+          id="same-day-sick-visits"
+        >
           Same-Day Sick Visits
         </h2>
         <p class="body-text text-body-large text-white mb-2">
@@ -55,7 +64,10 @@
         </p>
 
         <!-- Nutrition -->
-        <h2 class="text-headline-small text-primary font-weight-bold mt-12 mb-4" id="nutrition">
+        <h2
+          class="text-headline-small text-primary font-weight-bold mt-12 mb-4"
+          id="nutrition"
+        >
           Nutrition
         </h2>
         <p class="body-text text-body-large text-white">
@@ -73,7 +85,10 @@
         </p>
 
         <!-- Infant Feeding & Family Support -->
-        <h2 class="text-headline-small text-primary font-weight-bold mt-12 mb-4" id="infant-feeding">
+        <h2
+          class="text-headline-small text-primary font-weight-bold mt-12 mb-4"
+          id="infant-feeding"
+        >
           Infant Feeding &amp; Family Support
         </h2>
         <p class="body-text text-body-large text-white">
@@ -89,7 +104,10 @@
         </p>
 
         <!-- Integrative Pediatric Care -->
-        <h2 class="text-headline-small text-primary font-weight-bold mt-12 mb-4" id="integrative-care">
+        <h2
+          class="text-headline-small text-primary font-weight-bold mt-12 mb-4"
+          id="integrative-care"
+        >
           Integrative Pediatric Care
         </h2>
         <p class="body-text text-body-large text-white mb-2">
@@ -134,18 +152,21 @@
           Auricular Acupuncture
         </h3>
         <p class="body-text text-body-large text-white">
-          Dr. Ashley offers physician-provided auricular acupuncture as an evidence-based
-          option to support children and teens with anxiety, ADHD symptoms, headaches,
-          pain, sleep concerns, emotional regulation, injury recovery, and overall
-          wellness. Because she is also your child's pediatrician, every treatment is
-          integrated into their overall care plan.
+          Dr. Ashley offers physician-provided auricular acupuncture as an
+          evidence-based option to support children and teens with anxiety, ADHD
+          symptoms, headaches, pain, sleep concerns, emotional regulation, injury
+          recovery, and overall wellness. Because she is also your child's pediatrician,
+          every treatment is integrated into their overall care plan.
           <router-link to="/auricular-acupuncture">
-            Learn more about auricular acupuncture
-          </router-link>.
+            Learn more about auricular acupuncture </router-link
+          >.
         </p>
 
         <!-- ADHD & Behavioral Health -->
-        <h2 class="text-headline-small text-primary font-weight-bold mt-12 mb-4" id="behavioral-health">
+        <h2
+          class="text-headline-small text-primary font-weight-bold mt-12 mb-4"
+          id="behavioral-health"
+        >
           ADHD &amp; Behavioral Health Care
         </h2>
         <p class="body-text text-body-large text-white mb-2">
@@ -169,7 +190,10 @@
         </p>
 
         <!-- Developmental & School Support -->
-        <h2 class="text-headline-small text-primary font-weight-bold mt-12 mb-4" id="school-support">
+        <h2
+          class="text-headline-small text-primary font-weight-bold mt-12 mb-4"
+          id="school-support"
+        >
           Developmental &amp; School Support
         </h2>
         <p class="body-text text-body-large text-white">
@@ -178,7 +202,10 @@
         <icon-list dense :items="schoolSupport" />
 
         <!-- Adolescent Medicine -->
-        <h2 class="text-headline-small text-primary font-weight-bold mt-12 mb-4" id="adolescent-medicine">
+        <h2
+          class="text-headline-small text-primary font-weight-bold mt-12 mb-4"
+          id="adolescent-medicine"
+        >
           Adolescent Medicine
         </h2>
         <p class="body-text text-body-large text-white">
@@ -194,14 +221,20 @@
         </p>
 
         <!-- Additional Medical Services -->
-        <h2 class="text-headline-small text-primary font-weight-bold mt-12 mb-4" id="additional-services">
+        <h2
+          class="text-headline-small text-primary font-weight-bold mt-12 mb-4"
+          id="additional-services"
+        >
           Additional Medical Services
         </h2>
         <p class="body-text text-body-large text-white">We also provide:</p>
         <icon-list dense :items="additionalServices" />
 
         <!-- Why Families Choose Us -->
-        <h2 class="text-headline-small text-primary font-weight-bold mt-12 mb-4" id="why-families-choose-us">
+        <h2
+          class="text-headline-small text-primary font-weight-bold mt-12 mb-4"
+          id="why-families-choose-us"
+        >
           Why Families Choose Us
         </h2>
         <p class="body-text text-body-large text-white">
@@ -234,8 +267,8 @@
               Parent Child Center Network master grant.
             </p>
             <p class="body-text text-body-large text-white my-4">
-              The list of playgroups available in the area provided by Orange County
-              and the Family Place can be found at the websites below.
+              The list of playgroups available in the area provided by Orange County and
+              the Family Place can be found at the websites below.
             </p>
             <icon-list color="#f0ebce" :items="playgroupLinks" />
           </v-col>

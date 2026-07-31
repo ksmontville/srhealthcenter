@@ -117,8 +117,6 @@ export const acupunctureFaqItems = [
  * including display-only bullets and closing copy so the markup matches the page.
  */
 export const acupunctureAnswerText = (item) =>
-  [item.answer, ...(item.bullets ?? []), item.closing]
-    .filter(Boolean)
-    .join("\n\n");
+  [item.answer, ...(item.bullets ?? []), item.closing].filter(Boolean).join("\n\n");
 
 export default acupunctureFaqItems;

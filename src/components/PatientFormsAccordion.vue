@@ -1,15 +1,16 @@
 <template>
   <disclosure-group elevated class="mx-auto">
-    <disclosure-panel
-      v-for="group in patientForms"
-      :key="group.id"
-      :title="group.type"
-    >
+    <disclosure-panel v-for="group in patientForms" :key="group.id" :title="group.type">
       <p v-if="group.text" class="body-text mb-3">{{ group.text }}</p>
 
       <ul class="form-list">
         <li v-for="item in group.forms" :key="item.id">
-          <svg class="form-list__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <svg
+            class="form-list__icon"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            focusable="false"
+          >
             <path :d="mdiHospital" />
           </svg>
           <span>

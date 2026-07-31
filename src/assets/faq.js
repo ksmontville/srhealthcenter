@@ -97,7 +97,7 @@ export const faqItems = [
     id: "newborns",
     question: "Do you care for newborns?",
     answer:
-      "Absolutely. We provide complimentary prenatal \"Meet Your Pediatrician\" visits, newborn care, lactation consultation, infant feeding support, developmental monitoring, and ongoing well-child care from infancy through young adulthood.",
+      'Absolutely. We provide complimentary prenatal "Meet Your Pediatrician" visits, newborn care, lactation consultation, infant feeding support, developmental monitoring, and ongoing well-child care from infancy through young adulthood.',
     links: [{ label: "So, you're expecting?", to: "/expecting" }],
   },
   {
@@ -126,7 +126,9 @@ export const faqItems = [
     question: "Do you attend school meetings?",
     answer:
       "Yes. When appropriate, we participate in 504 Plan and IEP meetings, communicate with teachers and school staff, and help coordinate services that support your child's success at school.",
-    links: [{ label: "School-based healthcare with HealthHubVT", to: "/school-visits" }],
+    links: [
+      { label: "School-based healthcare with HealthHubVT", to: "/school-visits" },
+    ],
   },
   {
     id: "sports-physicals",

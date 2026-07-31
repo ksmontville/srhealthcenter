@@ -1,6 +1,9 @@
 <template>
   <!-- Shared chrome for a stack of <disclosure-panel> children. -->
-  <div class="disclosure-group rounded overflow-hidden" :class="{ 'disclosure-group--elevated': elevated }">
+  <div
+    class="disclosure-group rounded overflow-hidden"
+    :class="{ 'disclosure-group--elevated': elevated }"
+  >
     <slot />
   </div>
 </template>

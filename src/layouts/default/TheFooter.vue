@@ -1,8 +1,6 @@
 <template>
   <v-footer class="footer" color="secondary">
-    <v-container
-      :class="mobile ? '' : 'd-flex flex-row justify-center align-center'"
-    >
+    <v-container :class="mobile ? '' : 'd-flex flex-row justify-center align-center'">
       <v-row class="my-4" align="center" justify="center" no-gutters>
         <v-col cols="12">
           <p class="text-body-medium text-center font-weight-bold mb-4">
@@ -29,14 +27,11 @@
       <v-row class="my-8" align="center" justify="center" no-gutters>
         <v-col cols="12" class="d-flex justify-center align-center my-2">
           <small class="text-center"
-            >79 South Windsor Street, PO Box 119, South Royalton, VT
-            05068</small
+            >79 South Windsor Street, PO Box 119, South Royalton, VT 05068</small
           >
         </v-col>
         <v-col cols="12" class="d-flex justify-center align-center my-2">
-          <small
-            ><a :href="appStore.officePhone">Phone: (802) 763-7575</a></small
-          >
+          <small><a :href="appStore.officePhone">Phone: (802) 763-7575</a></small>
         </v-col>
         <v-col cols="12" class="d-flex justify-center align-center my-2">
           <small><a :href="appStore.officeFax">Fax: (844) 289-8252</a></small>

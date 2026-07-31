@@ -9,43 +9,43 @@
         <!-- Intro nested in the same content column as the sections below so the
              left edges line up. -->
         <v-row align="start">
-      <v-col cols="12" md="6" lg="7" class="pl-0">
-        <p class="body-text text-body-large text-white mb-4">
-          Welcoming a new baby into your family is one of life's greatest joys—and one
-          of its biggest adventures. <strong>Congratulations!</strong>
-        </p>
-        <p class="body-text text-body-large text-white mb-4">
-          Choosing your child's pediatric team is one of the first important decisions
-          you'll make as a parent. At South Royalton Health Center, we're honored to be
-          considered as your child's medical home and would love the opportunity to
-          partner with your family from those very first days through every stage of
-          childhood.
-        </p>
-        <p class="body-text text-body-large text-white">
-          We believe pediatric care is about more than treating illness. It's about
-          building relationships, answering your questions, celebrating milestones, and
-          supporting your family as your child grows and thrives.
-        </p>
-      </v-col>
+          <v-col cols="12" md="6" lg="7" class="pl-0">
+            <p class="body-text text-body-large text-white mb-4">
+              Welcoming a new baby into your family is one of life's greatest joys—and
+              one of its biggest adventures. <strong>Congratulations!</strong>
+            </p>
+            <p class="body-text text-body-large text-white mb-4">
+              Choosing your child's pediatric team is one of the first important
+              decisions you'll make as a parent. At South Royalton Health Center, we're
+              honored to be considered as your child's medical home and would love the
+              opportunity to partner with your family from those very first days through
+              every stage of childhood.
+            </p>
+            <p class="body-text text-body-large text-white">
+              We believe pediatric care is about more than treating illness. It's about
+              building relationships, answering your questions, celebrating milestones,
+              and supporting your family as your child grows and thrives.
+            </p>
+          </v-col>
 
-      <v-col cols="12" md="6" lg="5">
-        <!-- TODO(client): swap for the new newborn/family photo once images are chosen. -->
-        <figure class="ma-0">
-          <v-img
-            class="rounded-lg"
-            :src="babyPhoto"
-            :srcset="`${babyPhotoSm} 480w, ${babyPhoto} 800w, ${babyPhotoLg} 1200w`"
-            :max-height="380"
-            cover
-            alt="An infant patient cared for at South Royalton Health Center."
-          />
-          <figcaption class="text-white text-center mt-2">
-            <small>
-              We care for babies from their very first days through young adulthood.
-            </small>
-          </figcaption>
-        </figure>
-      </v-col>
+          <v-col cols="12" md="6" lg="5">
+            <!-- TODO(client): swap for the new newborn/family photo once images are chosen. -->
+            <figure class="ma-0">
+              <v-img
+                class="rounded-lg"
+                :src="babyPhoto"
+                :srcset="`${babyPhotoSm} 480w, ${babyPhoto} 800w, ${babyPhotoLg} 1200w`"
+                :max-height="380"
+                cover
+                alt="An infant patient cared for at South Royalton Health Center."
+              />
+              <figcaption class="text-white text-center mt-2">
+                <small>
+                  We care for babies from their very first days through young adulthood.
+                </small>
+              </figcaption>
+            </figure>
+          </v-col>
         </v-row>
 
         <h2 class="text-headline-small text-primary font-weight-bold mt-12 mb-4">
@@ -72,10 +72,11 @@
         <p class="body-text text-body-large text-white mb-2">
           We invite expecting parents to schedule a complimentary prenatal "Get
           Acquainted" visit. This is an opportunity to
-          <router-link to="/meet-our-providers-staff">meet one of our clinicians</router-link>,
-          tour our office, learn about our approach to care, and ask any questions you
-          may have about newborn care, feeding, sleep, immunizations, or those first few
-          weeks at home.
+          <router-link to="/meet-our-providers-staff"
+            >meet one of our clinicians</router-link
+          >, tour our office, learn about our approach to care, and ask any questions
+          you may have about newborn care, feeding, sleep, immunizations, or those first
+          few weeks at home.
         </p>
         <p class="body-text text-body-large text-white">
           There is no obligation—just an opportunity to get to know us and decide if
@@ -177,7 +178,8 @@ const resources = [
     text: "Sign up for our",
     to: "/patient-portal",
     linkLabel: "Patient Portal",
-    after: " to securely communicate with our office and complete paperwork before your baby's first visit.",
+    after:
+      " to securely communicate with our office and complete paperwork before your baby's first visit.",
   },
 ];
 </script>

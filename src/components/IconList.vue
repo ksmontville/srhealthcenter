@@ -6,7 +6,12 @@
   -->
   <ul class="icon-list text-body-large" :class="{ 'icon-list--dense': dense }">
     <li v-for="item in items" :key="typeof item === 'string' ? item : item.text">
-      <svg class="icon-list__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <svg
+        class="icon-list__icon"
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+        focusable="false"
+      >
         <path :d="mdiHospital" />
       </svg>
       <span>

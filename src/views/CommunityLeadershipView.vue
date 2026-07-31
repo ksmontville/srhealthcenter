@@ -14,8 +14,8 @@
           children and families extends beyond the walls of our office. Our commitment
           to improving children's health includes caring for individual families,
           supporting <router-link to="/school-visits">schools</router-link>, educating
-          future clinicians, advocating for better healthcare policies, and
-          contributing to conversations that strengthen pediatric care across Vermont.
+          future clinicians, advocating for better healthcare policies, and contributing
+          to conversations that strengthen pediatric care across Vermont.
         </p>
         <p class="body-text text-body-large text-white">
           <router-link to="/meet-our-providers-staff">Dr. Ashley</router-link> is
@@ -165,8 +165,7 @@ const mediaStories = [
     topic: "Mental Health & Primary Care",
     summary:
       "Dr. Ashley discusses the growing pediatric mental health crisis and the important role primary care clinicians play in supporting children and families.",
-    label:
-      "Mental Health Crisis Is Overwhelming Our Primary Care System – VTDigger",
+    label: "Mental Health Crisis Is Overwhelming Our Primary Care System – VTDigger",
     publication: "VTDigger",
     date: "2022-03-21",
     href: "https://vtdigger.org/2022/03/21/dr-ashley-miller-mental-health-crisis-is-overwhelming-our-primary-care-system/",

@@ -87,19 +87,19 @@
       }
     ]
   },
- {
-  "id": 8,
-  "text": "Bethel Area Food Shelf",
-  "url": "",
-  "list": [
-    {
-      "contact": "Monday 12:00 pm - 2:00 pm & Wednesday 4:00 pm - 6:00 pm",
-      "text": "129 Church Street, Bethel, VT 05032",
-      "phone": "(802) 234-5680",
-      "tel": "tel:8022345680"
-    }
-  ]
-},
+  {
+    "id": 8,
+    "text": "Bethel Area Food Shelf",
+    "url": "",
+    "list": [
+      {
+        "contact": "Monday 12:00 pm - 2:00 pm & Wednesday 4:00 pm - 6:00 pm",
+        "text": "129 Church Street, Bethel, VT 05032",
+        "phone": "(802) 234-5680",
+        "tel": "tel:8022345680"
+      }
+    ]
+  },
   {
     "id": 9,
     "text": "3SquaresVT",

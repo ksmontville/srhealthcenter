@@ -13,9 +13,7 @@ export const useAppStore = defineStore("app", () => {
     "https://book2.getweave.com/62731e39-480c-4e5b-99d5-fd864ed4fa63/request-appointment/",
   );
   const onlinePaymentUrl = ref("https://12904.portal.athenahealth.com/");
-  const facebookUrl = ref(
-    "https://www.facebook.com/southroyaltonhealthcenter/",
-  );
+  const facebookUrl = ref("https://www.facebook.com/southroyaltonhealthcenter/");
 
   const navLinks = ref([
     {
@@ -70,14 +68,10 @@ export const useAppStore = defineStore("app", () => {
       }
     }
     if (activeId.value === 0) {
-      document
-        .querySelectorAll("a[href='/']")[0]
-        .classList.add("v-btn--active");
+      document.querySelectorAll("a[href='/']")[0].classList.add("v-btn--active");
     }
     if (activeId.value !== 0) {
-      document
-        .querySelectorAll("a[href='/']")[0]
-        .classList.remove("v-btn--active");
+      document.querySelectorAll("a[href='/']")[0].classList.remove("v-btn--active");
     }
   };
 

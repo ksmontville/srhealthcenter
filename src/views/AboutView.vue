@@ -22,8 +22,8 @@
             pediatric primary care</router-link
           >
           — from <strong>newborn care</strong> and
-          <strong>preventive medicine</strong> to
-          <strong>behavioral health</strong>, <strong>adolescent medicine</strong>, and
+          <strong>preventive medicine</strong> to <strong>behavioral health</strong>,
+          <strong>adolescent medicine</strong>, and
           <router-link to="/integrative-pediatric-care">
             integrative pediatric services</router-link
           >

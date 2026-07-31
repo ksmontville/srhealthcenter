@@ -9,42 +9,42 @@
         <!-- Intro nested in the same content column as the sections below so the
              left edges line up. -->
         <v-row align="start">
-      <v-col cols="12" md="6" lg="7" class="pl-0">
-        <p class="body-text text-body-large text-white mb-4">
-          We're so glad you're here!
-        </p>
-        <p class="body-text text-body-large text-white mb-4">
-          Whether you're new to the Upper Valley, changing pediatric practices, or
-          joining us with your first child, we're honored you've chosen South Royalton
-          Health Center as your child's medical home.
-        </p>
-        <p class="body-text text-body-large text-white">
-          Our team is committed to making your first visit — and every visit after that
-          — as welcoming, organized, and stress-free as possible.
-          <router-link to="/meet-our-providers-staff">Meet our team</router-link>
-          before you come in.
-        </p>
-      </v-col>
+          <v-col cols="12" md="6" lg="7" class="pl-0">
+            <p class="body-text text-body-large text-white mb-4">
+              We're so glad you're here!
+            </p>
+            <p class="body-text text-body-large text-white mb-4">
+              Whether you're new to the Upper Valley, changing pediatric practices, or
+              joining us with your first child, we're honored you've chosen South
+              Royalton Health Center as your child's medical home.
+            </p>
+            <p class="body-text text-body-large text-white">
+              Our team is committed to making your first visit — and every visit after
+              that — as welcoming, organized, and stress-free as possible.
+              <router-link to="/meet-our-providers-staff">Meet our team</router-link>
+              before you come in.
+            </p>
+          </v-col>
 
-      <v-col cols="12" md="6" lg="5">
-        <!-- TODO(client): swap for the new waiting-room photo once images are chosen. -->
-        <figure class="ma-0">
-          <!-- Portrait source; cap the height so a short intro column doesn't
+          <v-col cols="12" md="6" lg="5">
+            <!-- TODO(client): swap for the new waiting-room photo once images are chosen. -->
+            <figure class="ma-0">
+              <!-- Portrait source; cap the height so a short intro column doesn't
                sit beside a very tall image on wide screens. -->
-          <v-img
-            class="rounded-lg"
-            :src="playroomPhoto"
-            :max-height="380"
-            cover
-            alt="The playroom in the South Royalton Health Center waiting area, where children can play before their appointment."
-          />
-          <figcaption class="text-white text-center mt-2">
-            <small>
-              Our playroom gives children time to settle in before their visit.
-            </small>
-          </figcaption>
-        </figure>
-      </v-col>
+              <v-img
+                class="rounded-lg"
+                :src="playroomPhoto"
+                :max-height="380"
+                cover
+                alt="The playroom in the South Royalton Health Center waiting area, where children can play before their appointment."
+              />
+              <figcaption class="text-white text-center mt-2">
+                <small>
+                  Our playroom gives children time to settle in before their visit.
+                </small>
+              </figcaption>
+            </figure>
+          </v-col>
         </v-row>
 
         <h2 class="text-headline-small text-primary font-weight-bold mt-12 mb-4">

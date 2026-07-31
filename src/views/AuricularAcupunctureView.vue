@@ -9,41 +9,41 @@
         <!-- Intro nested in the same content column as the sections below so the
              left edges line up. -->
         <v-row align="start">
-      <v-col cols="12" md="6" lg="7" class="pl-0">
-        <p class="body-text text-body-large text-white mb-4">
-          Every child is different, and sometimes traditional medical care benefits
-          from additional tools. Dr. Ashley offers physician-provided auricular
-          acupuncture as one evidence-based option to support children and teens with
-          concerns such as anxiety, headaches, sleep difficulties, pain, weight
-          regulation, concussion recovery, and emotional well-being.
-        </p>
-        <p class="body-text text-body-large text-white">
-          Because Dr. Ashley is also your child's pediatrician, every treatment is
-          thoughtfully integrated into your child's overall
-          <router-link to="/integrative-pediatric-care">care plan</router-link> and
-          tailored to your child's individual needs.
-        </p>
-      </v-col>
+          <v-col cols="12" md="6" lg="7" class="pl-0">
+            <p class="body-text text-body-large text-white mb-4">
+              Every child is different, and sometimes traditional medical care benefits
+              from additional tools. Dr. Ashley offers physician-provided auricular
+              acupuncture as one evidence-based option to support children and teens
+              with concerns such as anxiety, headaches, sleep difficulties, pain, weight
+              regulation, concussion recovery, and emotional well-being.
+            </p>
+            <p class="body-text text-body-large text-white">
+              Because Dr. Ashley is also your child's pediatrician, every treatment is
+              thoughtfully integrated into your child's overall
+              <router-link to="/integrative-pediatric-care">care plan</router-link> and
+              tailored to your child's individual needs.
+            </p>
+          </v-col>
 
-      <v-col cols="12" md="6" lg="5">
-        <!-- TODO(client): replace with the new photo of Dr. Ashley once the team
+          <v-col cols="12" md="6" lg="5">
+            <!-- TODO(client): replace with the new photo of Dr. Ashley once the team
              finishes selecting images. Using her existing headshot as a placeholder. -->
-        <figure class="ma-0">
-          <v-img
-            :src="millerPhoto"
-            class="rounded-lg"
-            :max-height="380"
-            cover
-            alt="Dr. Ashley Miller, board-certified pediatrician at South Royalton Health Center"
-          />
-          <figcaption class="text-white text-center mt-2">
-            <small>
-              Dr. Ashley Miller, board-certified pediatrician and Lifestyle Medicine
-              physician.
-            </small>
-          </figcaption>
-        </figure>
-      </v-col>
+            <figure class="ma-0">
+              <v-img
+                :src="millerPhoto"
+                class="rounded-lg"
+                :max-height="380"
+                cover
+                alt="Dr. Ashley Miller, board-certified pediatrician at South Royalton Health Center"
+              />
+              <figcaption class="text-white text-center mt-2">
+                <small>
+                  Dr. Ashley Miller, board-certified pediatrician and Lifestyle Medicine
+                  physician.
+                </small>
+              </figcaption>
+            </figure>
+          </v-col>
         </v-row>
 
         <h2 class="text-headline-small text-primary font-weight-bold mt-12 mb-6">
@@ -58,8 +58,8 @@
           </h2>
           <p class="body-text text-body-large text-white text-center mb-6">
             If you're wondering whether auricular acupuncture may be appropriate for
-            your child, we'd love to talk with you. Contact South Royalton Health
-            Center to schedule a consultation or to discuss whether it may be a helpful
+            your child, we'd love to talk with you. Contact South Royalton Health Center
+            to schedule a consultation or to discuss whether it may be a helpful
             addition to your child's individualized care plan.
           </p>
           <div class="d-flex flex-column flex-sm-row justify-center ga-4">

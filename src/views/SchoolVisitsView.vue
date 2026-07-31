@@ -2,20 +2,19 @@
   <v-container class="pa-8">
     <h1 class="text-display-large text-white text-center my-16">School Visits</h1>
     <p class="text-title-large text-primary text-center my-16">
-      South Royalton, Strafford, Chelsea, Sharon, Bethel, Tunbridge, Orange,
-      Washington, and Williamstown, Vermont
+      South Royalton, Strafford, Chelsea, Sharon, Bethel, Tunbridge, Orange, Washington,
+      and Williamstown, Vermont
     </p>
     <v-row justify="center" align="baseline">
       <v-col cols="12" md="10" lg="9" id="schoolServices">
         <p class="body-text text-body-large text-white">
           <a href="https://www.healthhubvt.org/" target="_blank">HealthHUBVT</a>
-          was started in the 1990s by Robert Wood Johnson Foundation grants. It
-          is a non-profit, 501(c3) organization. HealthHUB operates in
-          collaboration with the South Royalton Health Center providing school
-          based health care. Our shared vision is to make comprehensive health
-          services available to children in a location that is readily
-          accessible to all, thereby improving their overall health and
-          wellbeing, helping them be ready to learn.
+          was started in the 1990s by Robert Wood Johnson Foundation grants. It is a
+          non-profit, 501(c3) organization. HealthHUB operates in collaboration with the
+          South Royalton Health Center providing school based health care. Our shared
+          vision is to make comprehensive health services available to children in a
+          location that is readily accessible to all, thereby improving their overall
+          health and wellbeing, helping them be ready to learn.
         </p>
 
         <h2 class="text-title-large text-primary text-center font-weight-bold my-8">
@@ -34,21 +33,20 @@
             >
               <v-list-item>
                 <v-icon :icon="mdiHospital" class="mx-2" color="primary" />
-                <strong>Parents benefit</strong> by not losing time from work
-                and getting prompt treatment for their children.
+                <strong>Parents benefit</strong> by not losing time from work and
+                getting prompt treatment for their children.
               </v-list-item>
               <v-list-item>
                 <v-icon :icon="mdiHospital" class="mx-2" color="primary" />
-                <strong>Students and teachers benefit</strong> by having more
-                class time because appointments are scheduled in coordination
-                with the student’s schedule.
+                <strong>Students and teachers benefit</strong> by having more class time
+                because appointments are scheduled in coordination with the student’s
+                schedule.
               </v-list-item>
               <v-list-item>
                 <v-icon :icon="mdiHospital" class="mx-2" color="primary" />
-                <strong>Everyone benefits</strong> by having a health care
-                professional regularly in the school available for questions and
-                able to provide accurate information to children in a timely and
-                friendly manner.
+                <strong>Everyone benefits</strong> by having a health care professional
+                regularly in the school available for questions and able to provide
+                accurate information to children in a timely and friendly manner.
               </v-list-item>
             </v-list>
           </v-col>
@@ -61,9 +59,9 @@
             >
               <h3 class="my-4 text-headline-small"><strong>Did you know...</strong></h3>
               <p class="text-title-large">
-                ... that the average in-school visit SAVES parents 2 hours of
-                travel and work time, while reducing lost classroom time for
-                students and teachers by 1.5 hours!
+                ... that the average in-school visit SAVES parents 2 hours of travel and
+                work time, while reducing lost classroom time for students and teachers
+                by 1.5 hours!
               </p>
             </v-sheet>
           </v-col>
@@ -75,14 +73,14 @@
           To Schedule Appointments:
         </h2>
         <p class="body-text text-body-large text-white">
-          To schedule for medical visits please call the SRHC main office and we
-          will get you connected! For counseling visits Amelia can be reached at
+          To schedule for medical visits please call the SRHC main office and we will
+          get you connected! For counseling visits Amelia can be reached at
           <a href="tel:8022829281">802-282-9281</a> or at
           <a href="mailto:amelia@truepathscounseling.net"
             >amelia@truepathscounseling.net</a
           >. For more information please feel free to email us at
-          <a href="mailto:HealthHubVT@gmail.com">HealthHubVT@gmail.com</a> or
-          visit the HealthHUB webpage at
+          <a href="mailto:HealthHubVT@gmail.com">HealthHubVT@gmail.com</a> or visit the
+          HealthHUB webpage at
           <a href="https://www.healthhubvt.org/" target="_blank"
             >https://www.healthhubvt.org/</a
           >.

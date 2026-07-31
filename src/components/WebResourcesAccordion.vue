@@ -8,7 +8,12 @@
     >
       <ul class="link-list">
         <li v-for="link in links" :key="link.url">
-          <svg class="link-list__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <svg
+            class="link-list__icon"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            focusable="false"
+          >
             <path :d="mdiHospital" />
           </svg>
           <span>

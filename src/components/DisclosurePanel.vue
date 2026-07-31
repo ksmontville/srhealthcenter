@@ -10,8 +10,15 @@
   -->
   <details class="disclosure" :open="open" :name="name">
     <summary class="disclosure__summary text-title-large">
-      <span><slot name="title">{{ title }}</slot></span>
-      <svg class="disclosure__chevron" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <span
+        ><slot name="title">{{ title }}</slot></span
+      >
+      <svg
+        class="disclosure__chevron"
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+        focusable="false"
+      >
         <path :d="mdiChevronDown" />
       </svg>
     </summary>

@@ -13,31 +13,27 @@
         <patient-forms-accordion />
       </v-col>
     </v-row>
-
   </v-container>
 </template>
 
 <script setup>
-  import PatientFormsAccordion from "@/components/PatientFormsAccordion.vue";
-
+import PatientFormsAccordion from "@/components/PatientFormsAccordion.vue";
 </script>
 
 <style scoped>
+a:not(.v-btn) {
+  color: #f0ebce;
+}
 
-  a:not(.v-btn) {
-    color: #F0EBCE;
-  }
+/*a:visited, router-link:visited {*/
+/*  color: #AA8B56;*/
+/*}*/
 
-  /*a:visited, router-link:visited {*/
-  /*  color: #AA8B56;*/
-  /*}*/
+a:not(.v-btn):hover {
+  color: #4e6c50;
+}
 
-  a:not(.v-btn):hover {
-    color: #4E6C50;
-  }
-
-  a:not(.v-btn):focus {
-    color: sandybrown;
-  }
-
+a:not(.v-btn):focus {
+  color: sandybrown;
+}
 </style>
