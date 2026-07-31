@@ -1,5 +1,6 @@
 <template>
-  <v-container class="mt-8" id="hero">
+  <!-- pa-8 matches the container padding used by every other page. -->
+  <v-container class="mt-8 pa-8" id="hero">
     <v-row class="mx-auto">
       <v-sheet
         color="primary"
@@ -17,9 +18,9 @@
         </v-col>
 
         <v-col cols="12" class="my-4">
-          <p class="hero-text text-display-large text-white text-center">
+          <h1 class="hero-text text-display-large text-white text-center">
             Welcome to Your Medical Home
-          </p>
+          </h1>
         </v-col>
 
         <v-col class="d-flex flex-column align-center justify-center my-4">
@@ -55,9 +56,9 @@
         <v-col cols="12" md="8">
           <v-row class="bg-secondary rounded-lg my-16 pa-4">
             <v-col cols="12">
-              <p class="body-text text-white text-display-small text-md-display-large pa-2">
+              <h2 class="text-white text-display-small text-md-display-large pa-2">
                 When you're ready to stop...
-              </p></v-col
+              </h2></v-col
             >
             <v-divider :thickness="8" color="black" />
             <v-container class="text-body text-body-large ma-2 pa-2">
@@ -81,7 +82,6 @@
 
                   <v-divider :thickness="4" color="highlight" />
                 </v-col>
-                <v-spacer />
                 <v-col cols="12" lg="6">
                   <v-lazy>
                     <v-img
@@ -97,16 +97,16 @@
           </v-row>
           <v-row class="rounded-lg my-16 pa-4">
             <v-col cols="12"
-              ><p class="body-text text-white text-display-small text-md-display-large pa-2">
+              ><p class="text-white text-display-small text-md-display-large pa-2">
                 Come experience pediatrics in private practice!
               </p></v-col
             >
           </v-row>
           <v-row class="bg-secondary rounded-lg my-16 pa-4">
             <v-col cols="12"
-              ><p class="body-text text-white text-display-small text-md-display-large pa-2">
+              ><h2 class="text-white text-display-small text-md-display-large pa-2">
                 Now imagine how it would feel to...
-              </p></v-col
+              </h2></v-col
             >
             <v-divider :thickness="8" color="black" />
             <v-container class="text-body text-body-large ma-2 pa-2">
@@ -127,7 +127,6 @@
                   >
                   <v-divider :thickness="4" color="highlight" />
 
-                  <v-spacer />
                   <v-col cols="12" class="ma-4"
                     >Know you can
                     <strong
@@ -152,7 +151,7 @@
           </v-row>
           <v-row class="rounded-lg my-16 pa-4">
             <v-col cols="12" class="mx-auto my-auto">
-              <p class="body-text text-white text-headline-small text-md-display-medium pa-2">
+              <p class="text-white text-headline-small text-md-display-medium pa-2">
                 Get ready for a long-lasting, doctor-patient relationship that’s
                 all about meaningful connection -- not a cold transaction.
               </p>
@@ -167,6 +166,7 @@
                 :src="childSm"
                 class="rounded"
                 :max-height="!mobile ? 400 : null"
+                alt="A young patient at South Royalton Health Center"
               />
             </v-lazy>
             <testimonial-cards />
@@ -174,60 +174,47 @@
         </v-col>
       </v-row>
     </v-row>
-    <v-row class="bg-primary pa-2 pa-md-8 rounded-lg w-auto" align="center">
+    <v-row class="bg-primary pa-2 pa-md-8 rounded-lg w-auto" align="start">
       <v-col cols="12">
-        <p class="body-text text-white text-center text-headline-small text-md-display-medium pa-2">
+        <h2 class="text-white text-center text-headline-small text-md-display-medium pa-2">
           Hello, I'm Dr. Ashley Miller
-        </p>
+        </h2>
       </v-col>
       <v-divider :thickness="8" color="black" />
-      <v-col class="mt-8">
+      <v-col cols="12" md="7" class="mt-8">
         <v-container class="body-text text-body-large text-white pa-4">
-          <v-col cols="">
-            Board Certified Pediatrician since 2009 and 2022 Green Mountain
-            Pediatrician of the Year. I help local families and youth get the
-            high level of care they deserve, with the convenience and intimacy
-            of a small micro-practice. All without the high concierge membership
-            fees you'd expect to pay for personalized care.
+          <v-col cols="12">
+            I've had the privilege of caring for children and families throughout
+            the Upper Valley for nearly two decades. As the owner of South Royalton
+            Health Center, I'm committed to providing relationship-based,
+            evidence-based pediatric care that helps every child thrive.
           </v-col>
-          <v-col>
-            South Royalton Health Center is a patient-centered, comprehensive,
-            team-based, coordinated, accessible, medical home focused on quality
-            and safety. Our goal is to have a positive impact in the lives of
-            youth by providing exceptional evidence-based and compassionate
-            health care to the families we serve.
+          <v-col cols="12">
+            Our independent, woman-owned pediatric practice offers longer
+            appointments, direct access to your pediatric team, and comprehensive
+            care—from newborns to young adults—in a welcoming, family-centered
+            environment.
           </v-col>
-          <v-col>
-            We offer a full range of pediatric care including prenatal visits
-            for expecting parents, well–child checkups, immunizations, sick
-            appointments, mental health and young women's health care. We set
-            aside time to allow families to feel at ease, and to equip parents
-            with the tools and education necessary for the development of
-            healthy children from birth to young adulthood. We have a dedicated
-            nurse care coordinator to help patients and families with access
-            their specialty care, community resources and educational needs to
-            achieve the best quality of life possible and to then help in the
-            transition to adult medicine.
+          <v-col cols="12">
+            <router-link to="/meet-our-providers-staff" class="font-weight-bold">
+              Learn more about our story and meet our team →
+            </router-link>
           </v-col>
-          <v-col
-            >Get the full introduction on our
-            <router-link
-              :to="{ path: 'meet-our-providers-staff' }"
-              @click="appStore.setActiveId('meet-our-providers-staff')"
-              >About Us</router-link
-            >
-            page.</v-col
-          >
         </v-container>
       </v-col>
-      <v-col>
-        <v-img :src="millerPhoto" class="rounded-lg ma-auto" :width="400" />
+      <v-col cols="12" md="5" class="mt-8">
+        <v-img
+          :src="millerPhoto"
+          class="rounded-lg ma-auto"
+          :max-width="360"
+          alt="Dr. Ashley Miller, board-certified pediatrician and owner of South Royalton Health Center"
+        />
       </v-col>
     </v-row>
     <v-row class="flex flex-column ma-8 pa-4" justify="center" align="center">
       <v-col cols="12">
         <p
-          class="hero-text body-text text-headline-small text-md-display-medium text-white pa-4 my-8 rounded text-center"
+          class="hero-text text-headline-small text-md-display-medium text-white pa-4 my-8 rounded text-center"
         >
           Accessible pediatric care in a youth friendly environment
         </p>

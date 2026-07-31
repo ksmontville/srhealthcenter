@@ -29,11 +29,6 @@ export const useAppStore = defineStore("app", () => {
       route: "meet-our-providers-staff",
     },
     {
-      id: 2,
-      name: "Office Details",
-      route: "office-details",
-    },
-    {
       id: 3,
       name: "New Patients",
       route: "new-patients",

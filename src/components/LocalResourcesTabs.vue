@@ -86,7 +86,7 @@
                 <v-list v-if="item.list" bg-color="transparent">
                   <v-list-item v-for="item in item.list" :key="item" class="text-body-medium">
                     <p><strong>{{ item.name }}</strong></p>
-                    <a v-if="item.url" :href="item.url" target="blank">{{ item.contact }}</a>
+                    <a v-if="item.url" :href="item.url" target="_blank" rel="noopener noreferrer">{{ item.contact }}</a>
                     <p v-else><em>{{ item.contact }}</em></p>
                     <p>{{ item.text }}</p>
                     <a :href="item.tel">{{ item.phone }}</a>
@@ -143,7 +143,7 @@
                   <v-list v-if="item.list" bg-color="transparent">
                     <v-list-item v-for="item in item.list" :key="item" class="text-body-medium">
                       <p><strong>{{ item.name }}</strong></p>
-                      <a v-if="item.url" :href="item.url" target="blank">{{ item.contact }}</a>
+                      <a v-if="item.url" :href="item.url" target="_blank" rel="noopener noreferrer">{{ item.contact }}</a>
                       <p v-else>{{ item.contact }}</p>
                       <p>{{ item.text }}</p>
                       <a :href="item.tel">{{ item.phone }}</a>
@@ -184,7 +184,7 @@
                   <v-list v-if="item.list" bg-color="transparent">
                     <v-list-item v-for="item in item.list" :key="item" class="text-body-medium">
                       <p><strong>{{ item.name }}</strong></p>
-                      <a v-if="item.url" :href="item.url" target="blank">{{ item.contact }}</a>
+                      <a v-if="item.url" :href="item.url" target="_blank" rel="noopener noreferrer">{{ item.contact }}</a>
                       <p v-else>{{ item.contact }}</p>
                       <p>{{ item.text }}</p>
                       <a :href="item.tel">{{ item.phone }}</a>
@@ -219,7 +219,7 @@
                   <v-list v-if="item.list" bg-color="transparent">
                     <v-list-item v-for="item in item.list" :key="item" class="text-body-medium">
                       <p><strong>{{ item.name }}</strong></p>
-                      <a v-if="item.url" :href="item.url" target="blank">{{ item.contact }}</a>
+                      <a v-if="item.url" :href="item.url" target="_blank" rel="noopener noreferrer">{{ item.contact }}</a>
                       <p v-else>{{ item.contact }}</p>
                       <p>{{ item.text }}</p>
                       <a :href="item.tel">{{ item.phone }}</a>
@@ -260,7 +260,7 @@
                   <v-list v-if="item.list" bg-color="transparent">
                     <v-list-item v-for="item in item.list" :key="item" class="text-body-medium">
                       <p><strong>{{ item.name }}</strong></p>
-                      <a v-if="item.url" :href="item.url" target="blank">{{ item.contact }}</a>
+                      <a v-if="item.url" :href="item.url" target="_blank" rel="noopener noreferrer">{{ item.contact }}</a>
                       <p v-else>{{ item.contact }}</p>
                       <p>{{ item.text }}</p>
                       <a :href="item.tel">{{ item.phone }}</a>

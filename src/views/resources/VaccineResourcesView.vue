@@ -1,6 +1,9 @@
 <template>
   <v-container class="pa-8">
-    <p class="text-display-large text-white text-center my-16">Vaccine Information</p>
+    <h1 class="text-display-large text-white text-center my-16">Vaccine Information</h1>
+
+    <v-row justify="center">
+      <v-col cols="12" md="10" lg="9">
 
     <p class="body-text text-body-large text-white my-4">
       South Royalton Health Center follows the immunization guidelines
@@ -9,6 +12,7 @@
       <a
         href="https://healthychildren.org/English/safety-prevention/immunizations/Pages/default.aspx"
         target="_blank"
+        rel="noopener noreferrer"
       >
         healthychildren.org</a
       >
@@ -16,13 +20,14 @@
       <a
         href="https://www.chop.edu/centers-programs/vaccine-education-center"
         target="_blank"
+        rel="noopener noreferrer"
         >Vaccine Education Center</a
       >.
     </p>
 
-    <p class="text-title-large text-primary font-weight-bold my-4">
+    <h2 class="text-title-large text-primary font-weight-bold my-4">
       Our Vaccine Philosophy
-    </p>
+    </h2>
     <p class="body-text text-body-large text-white">
       Our practice believes that all children should receive the recommended
       vaccines according to the guidelines provided by the AAP. Vaccines are
@@ -37,14 +42,15 @@
     </p>
 
     <v-list bg-color="primary" class="rounded mx-auto my-8" max-width="512">
-      <h6 class="body-text text-body-large text-white text-center pa-2">
+      <p class="body-text text-body-large text-white text-center pa-2">
         <strong>Why vaccinate?</strong>
-      </h6>
+      </p>
       <v-list-item>
         <v-icon :icon="mdiHospital" class="mx-2" color="white" />Click
         <a
           href="https://www.healthychildren.org/English/safety-prevention/immunizations/Pages/Why-I-Vaccinate-Parent-Testimonials.aspx?_gl=1*188lr2s*_ga*NTM5Mjg4MDQ2LjE2ODMwNTg0NTM.*_ga_FD9D3XZVQQ*MTY4MzgzMTgyMS4zLjAuMTY4MzgzMTgyNi4wLjAuMA..&_ga=2.200534894.1563832976.1683831821-539288046.1683058453"
           target="_blank"
+        rel="noopener noreferrer"
         >
           here</a
         >
@@ -55,6 +61,7 @@
         <v-icon :icon="mdiHospital" class="mx-2" color="white" /><a
           href="https://www.healthychildren.org/English/safety-prevention/immunizations/Pages/Vaccine-Safety-The-Facts.aspx"
           target="_blank"
+        rel="noopener noreferrer"
           >Vaccine Safety: The Facts</a
         >
         from the AAP.
@@ -63,20 +70,22 @@
       <v-list-item>
         <v-icon :icon="mdiHospital" class="mx-2" color="white" />Dr. Ari Brown's
         informative
-        <a href="https://www.youtube.com/watch?v=-QKyI2ujtvg" target="_blank">
+        <a href="https://www.youtube.com/watch?v=-QKyI2ujtvg" target="_blank"
+        rel="noopener noreferrer">
           video</a
         >
         on the vaccine schedule.
       </v-list-item>
     </v-list>
 
-    <p class="text-title-large text-primary font-weight-bold my-4">
+    <h2 class="text-title-large text-primary font-weight-bold my-4">
       Recommended Immunization Schedule
-    </p>
+    </h2>
     <p class="body-text text-body-large text-white">
       <v-list bg-color="transparent">
         <v-list-item v-for="vaccineLink in vaccineLinks" :key="vaccineLink.id">
-          <a :href="vaccineLink.url" target="_blank">
+          <a :href="vaccineLink.url" target="_blank"
+        rel="noopener noreferrer">
             <v-icon :icon="mdiHospital" class="mx-2" color="secondary" />{{
               vaccineLink.text
             }}</a
@@ -88,10 +97,13 @@
     <!-- <p class="body-text text-body-large text-white my-4">
       For detailed informational sheets published by the Centers for Disease
       Control (CDC) please visit
-      <a href="https://www.cdc.gov/vaccines/hcp/current-vis/" target="_blank">
+      <a href="https://www.cdc.gov/vaccines/hcp/current-vis/" target="_blank"
+        rel="noopener noreferrer">
         www.cdc.gov/vaccines/hcp/current-vis/</a
       >
     </p> -->
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 

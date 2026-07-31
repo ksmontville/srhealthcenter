@@ -1,14 +1,15 @@
 <template>
-  <v-app-bar class="navbar" color="primary" density="prominent">
+  <!-- Matches TheNavBar: the prominent density clips the brand subtext. -->
+  <v-app-bar class="navbar" color="primary" :height="168">
     <v-img :src="navbarBg" class="navbar-bg" cover>
     <v-app-bar-title>
       <v-container>
 
         <v-row justify="center" align="center">
 
-          <v-col cols="10" class="">
-            <v-img :src="logo" max-width="128" @click="$router.push('/')"/>
-            <p class="brand text-title-small">Improving the lives of children</p>
+          <v-col cols="10" class="py-2">
+            <v-img :src="logo" max-width="128" alt="South Royalton Health Center" @click="$router.push('/')"/>
+            <p class="brand text-title-small mt-1">Improving the lives of children</p>
           </v-col>
 
           <v-col cols="2">

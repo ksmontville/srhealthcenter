@@ -2,11 +2,14 @@
 
   <v-container class="pa-8">
 
-    <p class="text-display-large text-white text-center my-16">Contact Us</p>
+    <h1 class="text-display-large text-white text-center my-16">Contact Us</h1>
+
+    <v-row justify="center">
+      <v-col cols="12" md="10" lg="9">
 
     <p class="body-text text-body-large text-white my-4">
       Do you have a
-      <router-link :to="{path: 'patient-portal'}" @click="appStore.setActiveId('patient-portal')">
+      <router-link to="/patient-portal">
         patient portal account
       </router-link>?
     </p>
@@ -29,6 +32,9 @@
 
 
     <contact-info />
+
+      </v-col>
+    </v-row>
 
   </v-container>
 </template>

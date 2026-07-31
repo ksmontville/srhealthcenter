@@ -34,3 +34,19 @@
   .body-text {
     line-height: 2;
   }
+
+  /* Anchor targets (jump-to-section links) would otherwise land underneath the
+     fixed app bar. Keep in step with the app bar height if that ever changes. */
+  h1[id],
+  h2[id],
+  h3[id] {
+    scroll-margin-top: 184px;
+  }
+
+  @media (max-width: 960px) {
+    h1[id],
+    h2[id],
+    h3[id] {
+      scroll-margin-top: 170px;
+    }
+  }

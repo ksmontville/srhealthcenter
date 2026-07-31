@@ -58,7 +58,8 @@ import { mdiFacebook } from "@mdi/js";
 const { mobile } = useDisplay();
 const appStore = useAppStore();
 
-const copy = "Copyright © 2025 South Royalton Health Center";
+// Derived rather than hardcoded so it doesn't go stale each January.
+const copy = `Copyright © ${new Date().getFullYear()} South Royalton Health Center`;
 
 const footerLinks = [
   {

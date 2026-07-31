@@ -24,14 +24,6 @@ const routes = [
           ),
       },
       {
-        path: "office-details",
-        name: "Office Details",
-        component: () =>
-          import(
-            /*webpackChunkName: "office-details": */ "@/views/OfficeDetailsView.vue"
-          ),
-      },
-      {
         path: "new-patients",
         name: "New Patients",
         component: () =>
@@ -62,6 +54,36 @@ const routes = [
           import(
             /*webpackChunkName: "our-mission-and-services": */ "@/views/ServicesView.vue"
           ),
+      },
+      {
+        path: "integrative-pediatric-care",
+        name: "Integrative Care",
+        component: () =>
+          import(
+            /*webpackChunkName: "integrative-pediatric-care": */ "@/views/IntegrativeCareView.vue"
+          ),
+      },
+      {
+        path: "auricular-acupuncture",
+        name: "Auricular Acupuncture",
+        component: () =>
+          import(
+            /*webpackChunkName: "auricular-acupuncture": */ "@/views/AuricularAcupunctureView.vue"
+          ),
+      },
+      {
+        path: "community-leadership-media-advocacy",
+        name: "Community Leadership",
+        component: () =>
+          import(
+            /*webpackChunkName: "community-leadership-media-advocacy": */ "@/views/CommunityLeadershipView.vue"
+          ),
+      },
+      {
+        path: "faq",
+        name: "FAQ",
+        component: () =>
+          import(/*webpackChunkName: "faq": */ "@/views/FaqView.vue"),
       },
       {
         path: "school-visits",
@@ -130,7 +152,13 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes,
-  scrollBehavior() {
+  scrollBehavior(to) {
+    // Honour #anchor targets (jump-to-section links, and links into a section
+    // from another page). scroll-margin-top on the headings handles the offset
+    // for the fixed app bar.
+    if (to.hash) {
+      return { el: to.hash, behavior: "smooth" };
+    }
     return { top: 0 };
   },
 });

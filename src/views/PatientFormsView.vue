@@ -1,19 +1,24 @@
 <template>
   <v-container class="pa-8">
-    <p class="text-display-large text-white text-center my-16">Patient Forms</p>
+    <h1 class="text-display-large text-white text-center my-16">Patient Forms</h1>
 
-    <p class="body-text text-body-large text-white my-8">
-      We are happy to provide our office forms for convenient online secure submission. Questions about which forms you
-      need to fill out? Please call our office and our staff will assist you in preparing for your visit.
-    </p>
+    <v-row justify="center">
+      <v-col cols="12" md="10" lg="9">
+        <p class="body-text text-body-large text-white my-8">
+          We are happy to provide our office forms for convenient online secure
+          submission. Questions about which forms you need to fill out? Please call our
+          office and our staff will assist you in preparing for your visit.
+        </p>
 
-    <patient-forms-expansion-panels />
+        <patient-forms-accordion />
+      </v-col>
+    </v-row>
 
   </v-container>
 </template>
 
 <script setup>
-  import PatientFormsExpansionPanels from "@/components/PatientFormsExpansionPanels.vue";
+  import PatientFormsAccordion from "@/components/PatientFormsAccordion.vue";
 
 </script>
 

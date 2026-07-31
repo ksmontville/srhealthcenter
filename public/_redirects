@@ -1,3 +1,8 @@
 /robots.txt    /robots.txt   200
 /sitemap.xml    /sitemap.xml   200
+
+# The Office Details page was retired; its appointments / insurance / payment
+# content now lives on the FAQ page. 301 so existing links keep their value.
+/office-details    /faq    301!
+
 /*    /index.html   200

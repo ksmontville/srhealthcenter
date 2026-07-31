@@ -1,18 +1,21 @@
 <template>
-  <v-app-bar class="navbar" color="primary" density="prominent">
+  <!-- The `prominent` density (128px) clipped the brand subtext, which needs ~155px.
+       Note density multiplies an explicit height, so set the height on its own. -->
+  <v-app-bar class="navbar" color="primary" :height="176">
     <v-img :src="navbarBg" cover>
       <v-container fluid>
         <v-row justify="center" align="center">
           <v-col cols="3">
             <v-app-bar-title>
               <v-row justify="center" align="center">
-                <v-col @click="appStore.setActiveId('/')">
+                <v-col class="py-2" @click="appStore.setActiveId('/')">
                   <v-img
                     :src="logo"
                     max-width="128"
+                    alt="South Royalton Health Center"
                     @click="$router.push('/')"
                   />
-                  <p class="brand text-title-small">
+                  <p class="brand text-title-small mt-1">
                     Improving the lives of children
                   </p>
                 </v-col>

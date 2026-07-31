@@ -1,12 +1,12 @@
 <template>
   <v-container class="pa-8">
-    <p class="text-display-large text-white text-center my-16">School Visits</p>
+    <h1 class="text-display-large text-white text-center my-16">School Visits</h1>
     <p class="text-title-large text-primary text-center my-16">
       South Royalton, Strafford, Chelsea, Sharon, Bethel, Tunbridge, Orange,
       Washington, and Williamstown, Vermont
     </p>
     <v-row justify="center" align="baseline">
-      <v-col cols="12" id="schoolServices">
+      <v-col cols="12" md="10" lg="9" id="schoolServices">
         <p class="body-text text-body-large text-white">
           <a href="https://www.healthhubvt.org/" target="_blank">HealthHUBVT</a>
           was started in the 1990s by Robert Wood Johnson Foundation grants. It
@@ -18,9 +18,9 @@
           wellbeing, helping them be ready to learn.
         </p>
 
-        <p class="text-title-large text-primary text-center font-weight-bold my-8">
+        <h2 class="text-title-large text-primary text-center font-weight-bold my-8">
           Why School Based?
-        </p>
+        </h2>
         <p class="body-text text-body-large text-white">
           Since school is where students spend a considerable part of their day,
           providing health services, there are many benefits.
@@ -59,7 +59,7 @@
               elevation="8"
               max-width="400"
             >
-              <p class="my-4 text-headline-small"><strong>Did you know...</strong></p>
+              <h3 class="my-4 text-headline-small"><strong>Did you know...</strong></h3>
               <p class="text-title-large">
                 ... that the average in-school visit SAVES parents 2 hours of
                 travel and work time, while reducing lost classroom time for
@@ -70,10 +70,10 @@
         </v-row>
       </v-col>
 
-      <v-col>
-        <p class="text-title-large text-primary text-center font-weight-bold my-8">
+      <v-col cols="12" md="10" lg="9">
+        <h2 class="text-title-large text-primary text-center font-weight-bold my-8">
           To Schedule Appointments:
-        </p>
+        </h2>
         <p class="body-text text-body-large text-white">
           To schedule for medical visits please call the SRHC main office and we
           will get you connected! For counseling visits Amelia can be reached at

@@ -1,8 +1,11 @@
 <template>
   <v-container class="pa-8">
-    <p class="text-display-large text-white text-center my-16">Patient Portal</p>
+    <h1 class="text-display-large text-white text-center my-16">Patient Portal</h1>
 
-    <p class="text-title-large text-primary font-weight-bold my-4">Sign Up or Log In</p>
+    <v-row justify="center">
+      <v-col cols="12" md="10" lg="9">
+
+    <h2 class="text-title-large text-primary font-weight-bold my-4">Sign Up or Log In</h2>
     <p class="body-text text-body-large text-white">
     The Patient Portal is the easiest way to manage your appointments and communicate securely with your medical
     care provider.
@@ -15,7 +18,7 @@
       Go to Patient Portal
     </v-btn>
 
-    <p class="text-title-large text-primary font-weight-bold my-4">Pay Bill Online</p>
+    <h2 class="text-title-large text-primary font-weight-bold my-4">Pay Bill Online</h2>
     <p class="body-text text-body-large text-white">
     Patients can now pay their bill online safely and securely using Weave! Just press the button below to be taken to our encrypted online payment portal.
     </p>
@@ -31,6 +34,9 @@
 <!--      <a href="https://weavebillpay.com/c9ad33ec" target="_blank"><img src="https://api.weaveconnect.com/payments/v1/download/qr?data=c9ad33ec"/></a>-->
 <!--    </v-col>-->
   </v-row>
+
+      </v-col>
+    </v-row>
 
   </v-container>
 </template>
