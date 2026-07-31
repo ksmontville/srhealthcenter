@@ -165,6 +165,13 @@
 
 <script setup>
 import { mdiHospital } from "@mdi/js";
+import { useSeo } from "@/composables/useSeo";
+
+useSeo({
+  title: "School-Based Health Care with HealthHubVT",
+  description:
+    "In-school pediatric and counseling visits through HealthHubVT across South Royalton, Strafford, Chelsea, Sharon, Bethel, Tunbridge and neighbouring Vermont schools.",
+});
 </script>
 
 <style scoped>

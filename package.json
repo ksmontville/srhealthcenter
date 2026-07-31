@@ -5,12 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node scripts/generate-sitemap.mjs && node scripts/prerender.mjs",
+    "build:spa": "vite build",
+    "prerender": "node scripts/prerender.mjs",
     "preview": "vite preview",
     "lint": "eslint . --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "prepare": "husky || true"
+    "prepare": "husky || true",
+    "sitemap": "node scripts/generate-sitemap.mjs"
   },
   "lint-staged": {
     "*.{js,vue}": [
@@ -23,6 +26,7 @@
   },
   "dependencies": {
     "@mdi/js": "^7.4.47",
+    "@unhead/vue": "^3.2.3",
     "pinia": "^4.0.2",
     "vue": "^3.5.40",
     "vue-router": "^5.2.0",

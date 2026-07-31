@@ -38,8 +38,15 @@
 <script setup>
 import { useAppStore } from "@/store/app";
 import ContactInfo from "@/components/ContactInfo.vue";
+import { useSeo } from "@/composables/useSeo";
 
 const appStore = useAppStore();
+
+useSeo({
+  title: "Contact Us",
+  description:
+    "Call, text or message South Royalton Health Center in South Royalton, Vermont. On-call pediatric clinician available after hours for established patients.",
+});
 </script>
 
 <style scoped>

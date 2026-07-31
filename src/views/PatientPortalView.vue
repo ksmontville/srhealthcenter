@@ -49,12 +49,19 @@
 
 <script setup>
 import { useAppStore } from "@/store/app";
+import { useSeo } from "@/composables/useSeo";
 
 const appStore = useAppStore();
 
 const openUrl = (url) => {
   window.open(url);
 };
+
+useSeo({
+  title: "Patient Portal & Online Bill Pay",
+  description:
+    "Message your pediatric team securely, request appointments, access immunization records and pay your bill online through the South Royalton Health Center Patient Portal.",
+});
 </script>
 
 <style scoped></style>

@@ -134,6 +134,7 @@ import IconList from "@/components/IconList.vue";
 import babyPhotoSm from "@/assets/img/stock/stock-baby-sm.jpg";
 import babyPhoto from "@/assets/img/stock/stock-baby-md.jpg";
 import babyPhotoLg from "@/assets/img/stock/stock-baby-lg.jpg";
+import { useSeo } from "@/composables/useSeo";
 
 const appStore = useAppStore();
 
@@ -182,6 +183,12 @@ const resources = [
       " to securely communicate with our office and complete paperwork before your baby's first visit.",
   },
 ];
+
+useSeo({
+  title: "So, You're Expecting? Prenatal Visits",
+  description:
+    'Expecting a baby in the Upper Valley? Schedule a complimentary prenatal "Get Acquainted" visit at South Royalton Health Center and meet the pediatric team who will care for your newborn.',
+});
 </script>
 
 <style scoped>

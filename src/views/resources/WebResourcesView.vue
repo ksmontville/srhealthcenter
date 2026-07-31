@@ -43,8 +43,15 @@
 import { mdiFacebook } from "@mdi/js";
 import { useAppStore } from "@/store/app";
 import WebResourcesAccordion from "@/components/WebResourcesAccordion.vue";
+import { useSeo } from "@/composables/useSeo";
 
 const appStore = useAppStore();
+
+useSeo({
+  title: "Recommended Child Health Web Links",
+  description:
+    "Child health websites recommended by the clinicians at South Royalton Health Center — general health, early childhood development, parenting, adolescence and mental health resources.",
+});
 </script>
 
 <style scoped>

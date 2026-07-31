@@ -60,10 +60,12 @@ export const useAppStore = defineStore("app", () => {
       id: 3,
       name: "Patients",
       children: [
-        { id: 30, name: "New Patients", route: "/new-patients" },
-        { id: 31, name: "Expecting", route: "/expecting" },
-        { id: 32, name: "Patient Forms", route: "/patient-forms" },
-        { id: 33, name: "Patient Portal", route: "/patient-portal" },
+        // Ordered by what returning patients reach for most, rather than by
+        // the patient journey.
+        { id: 30, name: "Patient Portal", route: "/patient-portal" },
+        { id: 31, name: "Patient Forms", route: "/patient-forms" },
+        { id: 32, name: "New Patients", route: "/new-patients" },
+        { id: 33, name: "Expecting", route: "/expecting" },
         { id: 34, name: "Frequently Asked Questions", route: "/faq" },
       ],
     },

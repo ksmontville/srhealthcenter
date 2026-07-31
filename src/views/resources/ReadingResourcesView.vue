@@ -57,6 +57,7 @@ import ReadingAccordion from "@/components/ReadingAccordion.vue";
 import bookshelf from "@/assets/img/education/bookshelf.jpg";
 import readingPoster from "@/assets/img/education/reading-poster.jpg";
 import recommendedBooks from "@/assets/img/education/recommended-books.jpg";
+import { useSeo } from "@/composables/useSeo";
 
 const openImage = (src) => {
   window.open(src);
@@ -79,6 +80,12 @@ const photos = [
     alt: "Poster for recommended books in the office playroom.",
   },
 ];
+
+useSeo({
+  title: "Recommended Reading for Families",
+  description:
+    "Books recommended by South Royalton Health Center clinicians across 13 topics — newborns, breastfeeding, sleep, parenting, ADHD, anxiety and more.",
+});
 </script>
 
 <style scoped>

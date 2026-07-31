@@ -18,6 +18,13 @@
 
 <script setup>
 import PatientFormsAccordion from "@/components/PatientFormsAccordion.vue";
+import { useSeo } from "@/composables/useSeo";
+
+useSeo({
+  title: "Patient Forms",
+  description:
+    "Download and complete South Royalton Health Center patient forms online — new patient paperwork, well visit screeners, mental health and asthma visit forms.",
+});
 </script>
 
 <style scoped>

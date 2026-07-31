@@ -319,6 +319,8 @@ import { useAppStore } from "@/store/app";
 import IconList from "@/components/IconList.vue";
 import SectionNav from "@/components/SectionNav.vue";
 import playgroupPhoto from "@/assets/img/services/playgroup.jpg";
+import { useSeo } from "@/composables/useSeo";
+import { medicalWebPageSchema, physicianSchema } from "@/config/schema";
 
 const appStore = useAppStore();
 
@@ -519,6 +521,25 @@ const playgroupLinks = [
     linkLabel: "The Family Place",
   },
 ];
+
+// Section headings double as the service list for MedicalProcedure markup, so
+// the schema stays in step with the page as sections are added or renamed.
+const servicesSchema = medicalWebPageSchema({
+  path: "/our-mission-and-services",
+  name: "Our Mission & Pediatric Services",
+  description:
+    "Comprehensive pediatric primary care for newborns through young adults in the Upper Valley of Vermont and New Hampshire.",
+  services: sections
+    .filter((section) => section.id !== "our-mission" && section.id !== "playgroups")
+    .map((section) => section.label),
+});
+
+useSeo({
+  title: "Our Mission & Pediatric Services",
+  description:
+    "Comprehensive pediatric care in South Royalton, VT: preventive well-child visits, same-day sick visits, nutrition, ADHD and behavioral health, adolescent medicine and integrative pediatric care.",
+  schema: [servicesSchema, physicianSchema()],
+});
 </script>
 
 <style scoped>

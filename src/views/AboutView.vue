@@ -108,6 +108,8 @@ import examRoomThree from "@/assets/img/office/exam-room-3.jpg";
 import examRoomFour from "@/assets/img/office/exam-room-4.jpg";
 import examRoomFive from "@/assets/img/office/exam-room-5.jpg";
 import examRoomSix from "@/assets/img/office/exam-room-six.jpg";
+import { useSeo } from "@/composables/useSeo";
+import { physicianSchema } from "@/config/schema";
 
 const appStore = useAppStore();
 
@@ -152,6 +154,13 @@ const officePhotos = [
     alt: "An exam room at South Royalton Health Center.",
   },
 ];
+
+useSeo({
+  title: "Meet Our Pediatric Team",
+  description:
+    "Meet Dr. Ashley Miller and the clinicians, nurses and staff of South Royalton Health Center — an independent, woman-owned pediatric practice serving the Upper Valley of Vermont and New Hampshire.",
+  schema: [physicianSchema()],
+});
 </script>
 
 <style scoped>

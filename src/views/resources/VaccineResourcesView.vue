@@ -109,6 +109,7 @@
 
 <script setup>
 import { mdiHospital } from "@mdi/js";
+import { useSeo } from "@/composables/useSeo";
 
 const vaccineLinks = [
   {
@@ -117,6 +118,12 @@ const vaccineLinks = [
     url: "https://www.healthychildren.org/English/safety-prevention/immunizations/Pages/Recommended-Immunization-Schedules.aspx",
   },
 ];
+
+useSeo({
+  title: "Vaccine Information & Immunization Schedule",
+  description:
+    "South Royalton Health Center follows American Academy of Pediatrics immunization guidelines. Our vaccine philosophy plus trusted resources on vaccine safety and the recommended schedule.",
+});
 </script>
 
 <style scoped>

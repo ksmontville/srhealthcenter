@@ -44,8 +44,18 @@
 import FaqAccordion from "@/components/FaqAccordion.vue";
 import { faqItems } from "@/assets/faq";
 import { useAppStore } from "@/store/app";
+import { useSeo } from "@/composables/useSeo";
+import { faqPageSchema } from "@/config/schema";
+import { faqAnswerText } from "@/assets/faq";
 
 const appStore = useAppStore();
+
+useSeo({
+  title: "Frequently Asked Questions",
+  description:
+    "Answers about scheduling, insurance, after-hours care, telehealth, newborn care and the pediatric services offered at South Royalton Health Center in the Upper Valley.",
+  schema: [faqPageSchema(faqItems, faqAnswerText)],
+});
 </script>
 
 <style scoped>

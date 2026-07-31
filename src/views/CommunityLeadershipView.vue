@@ -159,6 +159,8 @@
 <script setup>
 import IconList from "@/components/IconList.vue";
 import ExternalLink from "@/components/ExternalLink.vue";
+import { useSeo } from "@/composables/useSeo";
+import { physicianSchema } from "@/config/schema";
 
 const mediaStories = [
   {
@@ -254,6 +256,13 @@ const commitments = [
   "Education and lifelong learning",
   "Improving healthcare for future generations",
 ];
+
+useSeo({
+  title: "Community Leadership & Media | South Royalton Health Center",
+  description:
+    "Learn about Dr. Ashley Miller's leadership in pediatric medicine, community advocacy, medical education, and media contributions supporting children and families throughout Vermont and the Upper Valley.",
+  schema: [physicianSchema()],
+});
 </script>
 
 <style scoped>

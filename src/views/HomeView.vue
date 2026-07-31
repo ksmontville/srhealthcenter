@@ -226,6 +226,7 @@ import stockTeddyLg from "@/assets/img/stock/stock-teddy-lg.jpg";
 import stockBabySm from "@/assets/img/stock/stock-baby-sm.jpg";
 import stockBabyMd from "@/assets/img/stock/stock-baby-md.jpg";
 import stockBabyLg from "@/assets/img/stock/stock-baby-lg.jpg";
+import { useSeo } from "@/composables/useSeo";
 
 const appStore = useAppStore();
 const { mobile } = useDisplay();
@@ -247,6 +248,12 @@ const openUrl = (url) => {
 //  "development of healthy children from birth to adolescence. We have a dedicated nurse care coordinator to help " +
 //  "patients and families coordinate their specialty care and community/school education to achieve the best quality " +
 //  "of life possible and to help in the transition to adult medicine.\n";
+
+useSeo({
+  title: "Pediatrician in South Royalton, VT | South Royalton Health Center",
+  description:
+    "Independent, woman-owned pediatric practice in South Royalton, Vermont. Same-day sick visits, newborn care, behavioral health and integrative pediatrics for families across the Upper Valley.",
+});
 </script>
 
 <style scoped>

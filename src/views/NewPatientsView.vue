@@ -123,6 +123,7 @@
 import { useAppStore } from "@/store/app";
 import IconList from "@/components/IconList.vue";
 import playroomPhoto from "@/assets/img/forms/playroom.jpg";
+import { useSeo } from "@/composables/useSeo";
 
 const appStore = useAppStore();
 
@@ -151,6 +152,12 @@ const portalFeatures = [
   "Complete paperwork",
   "Pay your bill online",
 ];
+
+useSeo({
+  title: "New Patients",
+  description:
+    "Welcome to South Royalton Health Center. What to bring, what to expect at your first visit, new patient forms and how to get set up on our Patient Portal.",
+});
 </script>
 
 <style scoped>

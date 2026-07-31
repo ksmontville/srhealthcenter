@@ -24,6 +24,19 @@ export default [
       },
     },
   },
+  {
+    // Build tooling runs in Node, not the browser.
+    files: ["scripts/**/*.mjs", "scripts/**/*.js", "*.config.js"],
+    languageOptions: {
+      globals: {
+        process: "readonly",
+        console: "readonly",
+        URL: "readonly",
+        setTimeout: "readonly",
+        clearTimeout: "readonly",
+      },
+    },
+  },
   // Must stay last: turns off ESLint rules that would fight Prettier. Formatting is
   // Prettier's job (`npm run format`), correctness is ESLint's.
   eslintConfigPrettier,

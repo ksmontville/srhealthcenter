@@ -115,6 +115,8 @@
 <script setup>
 import IconList from "@/components/IconList.vue";
 import { useAppStore } from "@/store/app";
+import { useSeo } from "@/composables/useSeo";
+import { medicalWebPageSchema } from "@/config/schema";
 
 const appStore = useAppStore();
 
@@ -143,6 +145,26 @@ const nutritionServices = [
   "Nutrition support for ADHD and other chronic health conditions",
   "Eating disorder care as part of a multidisciplinary treatment team",
 ];
+
+const integrativeSchema = medicalWebPageSchema({
+  path: "/integrative-pediatric-care",
+  name: "Integrative Pediatric Care",
+  description:
+    "Evidence-based complementary approaches — Lifestyle Medicine, nutrition counseling and auricular acupuncture — integrated into traditional pediatric care.",
+  services: [
+    "Lifestyle Medicine",
+    "Pediatric nutrition counseling",
+    "Auricular acupuncture",
+    "Mind-body strategies for stress and anxiety",
+  ],
+});
+
+useSeo({
+  title: "Integrative Pediatric Care & Lifestyle Medicine",
+  description:
+    "Evidence-based integrative pediatric care at South Royalton Health Center — Lifestyle Medicine, nutrition counseling and auricular acupuncture, integrated into your child's overall care plan.",
+  schema: [integrativeSchema],
+});
 </script>
 
 <style scoped>

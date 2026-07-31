@@ -82,8 +82,18 @@ import FaqAccordion from "@/components/FaqAccordion.vue";
 import { acupunctureFaqItems } from "@/assets/acupunctureFaq";
 import { useAppStore } from "@/store/app";
 import millerPhoto from "@/assets/img/staff/dr-miller-card-photo.jpeg";
+import { useSeo } from "@/composables/useSeo";
+import { faqPageSchema } from "@/config/schema";
+import { acupunctureAnswerText } from "@/assets/acupunctureFaq";
 
 const appStore = useAppStore();
+
+useSeo({
+  title: "Auricular Acupuncture for Children & Teens",
+  description:
+    "Physician-provided auricular acupuncture at South Royalton Health Center for anxiety, ADHD symptoms, headaches, pain, sleep and concussion recovery — integrated into your child's pediatric care.",
+  schema: [faqPageSchema(acupunctureFaqItems, acupunctureAnswerText)],
+});
 </script>
 
 <style scoped>
