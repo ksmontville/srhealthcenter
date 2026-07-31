@@ -42,7 +42,7 @@
                       </v-btn>
                     </template>
 
-                    <v-list bg-color="primary" density="compact">
+                    <v-list bg-color="primary" density="compact" role="none">
                       <v-list-item
                         v-for="child in navLink.children"
                         :key="child.id"

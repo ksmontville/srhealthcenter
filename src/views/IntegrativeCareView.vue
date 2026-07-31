@@ -26,7 +26,7 @@
         </p>
 
         <!-- Lifestyle Medicine -->
-        <h2 class="text-headline-small text-primary font-weight-bold mt-12 mb-4">
+        <h2 class="text-headline-small text-heading font-weight-bold mt-12 mb-4">
           Lifestyle Medicine
         </h2>
         <p class="body-text text-body-large text-white mb-4">
@@ -50,7 +50,7 @@
         </p>
 
         <!-- Nutrition -->
-        <h2 class="text-headline-small text-primary font-weight-bold mt-12 mb-4">
+        <h2 class="text-headline-small text-heading font-weight-bold mt-12 mb-4">
           Nutrition
         </h2>
         <p class="body-text text-body-large text-white mb-4">
@@ -70,7 +70,7 @@
         </p>
 
         <!-- Auricular Acupuncture -->
-        <h2 class="text-headline-small text-primary font-weight-bold mt-12 mb-4">
+        <h2 class="text-headline-small text-heading font-weight-bold mt-12 mb-4">
           Auricular Acupuncture
         </h2>
         <p class="body-text text-body-large text-white mb-4">
@@ -169,11 +169,11 @@ useSeo({
 
 <style scoped>
 a:not(.v-btn) {
-  color: #f0ebce;
+  color: rgb(var(--v-theme-highlight));
 }
 
 a:not(.v-btn):hover {
-  color: #4e6c50;
+  color: rgb(var(--v-theme-heading));
 }
 
 a:not(.v-btn):focus {

@@ -51,15 +51,15 @@ useSeo({
 
 <style scoped>
 a:not(.v-btn) {
-  color: #f0ebce;
+  color: rgb(var(--v-theme-highlight));
 }
 
 /*a:visited, router-link:visited {*/
-/*  color: #AA8B56;*/
+/*  color: rgb(var(--v-theme-heading));*/
 /*}*/
 
 a:not(.v-btn):hover {
-  color: #4e6c50;
+  color: rgb(var(--v-theme-heading));
 }
 
 a:not(.v-btn):focus {

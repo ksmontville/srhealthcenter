@@ -24,7 +24,7 @@
           >.
         </p>
 
-        <h2 class="text-title-large text-primary font-weight-bold my-4">
+        <h2 class="text-title-large text-heading font-weight-bold my-4">
           Our Vaccine Philosophy
         </h2>
         <p class="body-text text-body-large text-white">
@@ -79,7 +79,7 @@
           </v-list-item>
         </v-list>
 
-        <h2 class="text-title-large text-primary font-weight-bold my-4">
+        <h2 class="text-title-large text-heading font-weight-bold my-4">
           Recommended Immunization Schedule
         </h2>
         <p class="body-text text-body-large text-white">
@@ -128,15 +128,15 @@ useSeo({
 
 <style scoped>
 a:not(.v-btn) {
-  color: #f0ebce;
+  color: rgb(var(--v-theme-highlight));
 }
 
 /*a:visited, router-link:visited {*/
-/*  color: #AA8B56;*/
+/*  color: rgb(var(--v-theme-heading));*/
 /*}*/
 
 a:not(.v-btn):hover {
-  color: #4e6c50;
+  color: rgb(var(--v-theme-heading));
 }
 
 a:not(.v-btn):focus {

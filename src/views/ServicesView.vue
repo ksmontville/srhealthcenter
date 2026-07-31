@@ -10,7 +10,7 @@
 
         <!-- Our Mission -->
         <h2
-          class="text-headline-small text-primary font-weight-bold mb-4"
+          class="text-headline-small text-heading font-weight-bold mb-4"
           id="our-mission"
         >
           Our Mission
@@ -29,7 +29,7 @@
 
         <!-- Preventive Pediatric Care -->
         <h2
-          class="text-headline-small text-primary font-weight-bold mt-12 mb-4"
+          class="text-headline-small text-heading font-weight-bold mt-12 mb-4"
           id="preventive-care"
         >
           Preventive Pediatric Care
@@ -42,7 +42,7 @@
 
         <!-- Same-Day Sick Visits -->
         <h2
-          class="text-headline-small text-primary font-weight-bold mt-12 mb-4"
+          class="text-headline-small text-heading font-weight-bold mt-12 mb-4"
           id="same-day-sick-visits"
         >
           Same-Day Sick Visits
@@ -65,7 +65,7 @@
 
         <!-- Nutrition -->
         <h2
-          class="text-headline-small text-primary font-weight-bold mt-12 mb-4"
+          class="text-headline-small text-heading font-weight-bold mt-12 mb-4"
           id="nutrition"
         >
           Nutrition
@@ -86,7 +86,7 @@
 
         <!-- Infant Feeding & Family Support -->
         <h2
-          class="text-headline-small text-primary font-weight-bold mt-12 mb-4"
+          class="text-headline-small text-heading font-weight-bold mt-12 mb-4"
           id="infant-feeding"
         >
           Infant Feeding &amp; Family Support
@@ -105,7 +105,7 @@
 
         <!-- Integrative Pediatric Care -->
         <h2
-          class="text-headline-small text-primary font-weight-bold mt-12 mb-4"
+          class="text-headline-small text-heading font-weight-bold mt-12 mb-4"
           id="integrative-care"
         >
           Integrative Pediatric Care
@@ -132,7 +132,7 @@
           <router-link to="/auricular-acupuncture">auricular acupuncture</router-link>.
         </p>
 
-        <h3 class="text-title-large text-primary font-weight-bold mt-8 mb-2">
+        <h3 class="text-title-large text-heading font-weight-bold mt-8 mb-2">
           Lifestyle Medicine
         </h3>
         <p class="body-text text-body-large text-white">
@@ -148,7 +148,7 @@
           habits.
         </p>
 
-        <h3 class="text-title-large text-primary font-weight-bold mt-8 mb-2">
+        <h3 class="text-title-large text-heading font-weight-bold mt-8 mb-2">
           Auricular Acupuncture
         </h3>
         <p class="body-text text-body-large text-white">
@@ -164,7 +164,7 @@
 
         <!-- ADHD & Behavioral Health -->
         <h2
-          class="text-headline-small text-primary font-weight-bold mt-12 mb-4"
+          class="text-headline-small text-heading font-weight-bold mt-12 mb-4"
           id="behavioral-health"
         >
           ADHD &amp; Behavioral Health Care
@@ -191,7 +191,7 @@
 
         <!-- Developmental & School Support -->
         <h2
-          class="text-headline-small text-primary font-weight-bold mt-12 mb-4"
+          class="text-headline-small text-heading font-weight-bold mt-12 mb-4"
           id="school-support"
         >
           Developmental &amp; School Support
@@ -203,7 +203,7 @@
 
         <!-- Adolescent Medicine -->
         <h2
-          class="text-headline-small text-primary font-weight-bold mt-12 mb-4"
+          class="text-headline-small text-heading font-weight-bold mt-12 mb-4"
           id="adolescent-medicine"
         >
           Adolescent Medicine
@@ -222,7 +222,7 @@
 
         <!-- Additional Medical Services -->
         <h2
-          class="text-headline-small text-primary font-weight-bold mt-12 mb-4"
+          class="text-headline-small text-heading font-weight-bold mt-12 mb-4"
           id="additional-services"
         >
           Additional Medical Services
@@ -232,7 +232,7 @@
 
         <!-- Why Families Choose Us -->
         <h2
-          class="text-headline-small text-primary font-weight-bold mt-12 mb-4"
+          class="text-headline-small text-heading font-weight-bold mt-12 mb-4"
           id="why-families-choose-us"
         >
           Why Families Choose Us
@@ -249,7 +249,7 @@
         <!-- Local Playgroups: nested inside the same content column so it lines
              up with the service sections above rather than sitting full-width. -->
         <h2
-          class="text-headline-small text-primary font-weight-bold mt-12 mb-4"
+          class="text-headline-small text-heading font-weight-bold mt-12 mb-4"
           id="playgroups"
         >
           Local Weekly Free Play Groups
@@ -270,7 +270,7 @@
               The list of playgroups available in the area provided by Orange County and
               the Family Place can be found at the websites below.
             </p>
-            <icon-list color="#f0ebce" :items="playgroupLinks" />
+            <icon-list color="rgb(var(--v-theme-highlight))" :items="playgroupLinks" />
           </v-col>
 
           <v-col cols="12" md="4">
@@ -544,11 +544,11 @@ useSeo({
 
 <style scoped>
 a:not(.v-btn) {
-  color: #f0ebce;
+  color: rgb(var(--v-theme-highlight));
 }
 
 a:not(.v-btn):hover {
-  color: #4e6c50;
+  color: rgb(var(--v-theme-heading));
 }
 
 a:not(.v-btn):focus {

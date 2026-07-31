@@ -68,11 +68,11 @@ const webLinks = weblinks;
 }
 
 .link-list a {
-  color: #f0ebce;
+  color: rgb(var(--v-theme-highlight));
 }
 
 .link-list a:hover {
-  color: #aa8b56;
+  color: rgb(var(--v-theme-heading));
 }
 
 .link-list a:focus {

@@ -4,7 +4,7 @@
 
     <v-row justify="center" align="start">
       <v-col cols="12" md="10" lg="9">
-        <h2 class="text-title-large text-primary font-weight-bold">Disclaimer</h2>
+        <h2 class="text-title-large text-heading font-weight-bold">Disclaimer</h2>
         <p class="body-text text-body-large text-white">
           This website is an informational guide only; it cannot answer personal
           health-related questions, legal questions, or research questions. The
@@ -13,7 +13,7 @@
           health!
         </p>
 
-        <h2 class="text-headline-small text-primary font-weight-bold mt-12 mb-4">
+        <h2 class="text-headline-small text-heading font-weight-bold mt-12 mb-4">
           Reading by Topic
         </h2>
         <p class="body-text text-body-large text-white mb-6">
@@ -90,11 +90,11 @@ useSeo({
 
 <style scoped>
 a:not(.v-btn) {
-  color: #f0ebce;
+  color: rgb(var(--v-theme-highlight));
 }
 
 a:not(.v-btn):hover {
-  color: #4e6c50;
+  color: rgb(var(--v-theme-heading));
 }
 
 a:not(.v-btn):focus {

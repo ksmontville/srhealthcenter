@@ -96,15 +96,15 @@ const footerLinks = [
 }
 
 a:not(.v-btn) {
-  color: #f0ebce;
+  color: rgb(var(--v-theme-highlight));
 }
 
 /*a:visited, router-link:visited {*/
-/*  color: #AA8B56;*/
+/*  color: rgb(var(--v-theme-heading));*/
 /*}*/
 
 a:not(.v-btn):hover {
-  color: #395144;
+  color: rgb(var(--v-theme-primary));
 }
 
 a:not(.v-btn):focus {

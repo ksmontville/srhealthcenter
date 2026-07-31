@@ -48,7 +48,7 @@
           </v-col>
         </v-row>
 
-        <h2 class="text-headline-small text-primary font-weight-bold mt-12 mb-4">
+        <h2 class="text-headline-small text-heading font-weight-bold mt-12 mb-4">
           Why Families Choose South Royalton Health Center
         </h2>
         <p class="body-text text-body-large text-white mb-2">
@@ -62,7 +62,7 @@
         </p>
         <icon-list :items="whyChooseUs" />
 
-        <h2 class="text-headline-small text-primary font-weight-bold mt-12 mb-4">
+        <h2 class="text-headline-small text-heading font-weight-bold mt-12 mb-4">
           We'd Love to Meet You
         </h2>
         <p class="body-text text-body-large text-white mb-2">
@@ -83,7 +83,7 @@
           we're the right fit for your growing family.
         </p>
 
-        <h2 class="text-headline-small text-primary font-weight-bold mt-12 mb-4">
+        <h2 class="text-headline-small text-heading font-weight-bold mt-12 mb-4">
           When Your Baby Arrives
         </h2>
         <p class="body-text text-body-large text-white mb-2">
@@ -97,7 +97,7 @@
           which is typically within the first few days after discharge.
         </p>
 
-        <h2 class="text-headline-small text-primary font-weight-bold mt-12 mb-4">
+        <h2 class="text-headline-small text-heading font-weight-bold mt-12 mb-4">
           Helpful Resources
         </h2>
         <p class="body-text text-body-large text-white">
@@ -193,11 +193,11 @@ useSeo({
 
 <style scoped>
 a:not(.v-btn) {
-  color: #f0ebce;
+  color: rgb(var(--v-theme-highlight));
 }
 
 a:not(.v-btn):hover {
-  color: #4e6c50;
+  color: rgb(var(--v-theme-heading));
 }
 
 a:not(.v-btn):focus {

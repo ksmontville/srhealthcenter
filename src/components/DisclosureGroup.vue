@@ -16,7 +16,7 @@ defineProps({
 
 <style scoped>
 .disclosure-group {
-  border: 1px solid rgba(240, 235, 206, 0.25);
+  border: 1px solid rgba(var(--v-theme-highlight), 0.25);
 }
 
 .disclosure-group--elevated {
@@ -25,6 +25,6 @@ defineProps({
 
 /* Divider between adjacent panels (they are separate child components). */
 .disclosure-group :deep(details + details) {
-  border-top: 1px solid rgba(240, 235, 206, 0.25);
+  border-top: 1px solid rgba(var(--v-theme-highlight), 0.25);
 }
 </style>

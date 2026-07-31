@@ -35,10 +35,10 @@
     location="right"
     temporary
     width="280"
-    color="highlight"
+    color="panel"
   >
     <nav aria-label="Main">
-      <v-list density="compact" nav>
+      <v-list density="compact" nav role="none">
         <template v-for="navLink in appStore.navLinks" :key="navLink.id">
           <!-- Group: expands in place, open when the current page is inside it -->
           <v-list-group v-if="navLink.children" :value="navLink.name">

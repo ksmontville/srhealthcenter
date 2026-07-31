@@ -31,12 +31,12 @@ defineProps({
 
 <style scoped>
 .section-nav {
-  background-color: rgba(57, 81, 68, 0.9);
-  border: 1px solid rgba(240, 235, 206, 0.25);
+  background-color: rgba(var(--v-theme-primary), 0.9);
+  border: 1px solid rgba(var(--v-theme-highlight), 0.25);
 }
 
 .section-nav__title {
-  color: #f0ebce;
+  color: rgb(var(--v-theme-highlight));
 }
 
 .section-nav__list {
@@ -59,12 +59,12 @@ defineProps({
 .section-nav__list a::before {
   content: "→";
   margin-right: 0.5rem;
-  color: #aa8b56;
+  color: rgb(var(--v-theme-heading));
 }
 
 .section-nav__list a:hover {
-  color: #f0ebce;
-  border-bottom-color: rgba(240, 235, 206, 0.5);
+  color: rgb(var(--v-theme-highlight));
+  border-bottom-color: rgba(var(--v-theme-highlight), 0.5);
 }
 
 .section-nav__list a:focus-visible {

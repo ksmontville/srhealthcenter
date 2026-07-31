@@ -60,11 +60,11 @@ import patientForms from "@/assets/patientForms.json";
 }
 
 .form-list a {
-  color: #f0ebce;
+  color: rgb(var(--v-theme-highlight));
 }
 
 .form-list a:hover {
-  color: #aa8b56;
+  color: rgb(var(--v-theme-heading));
 }
 
 .form-list a:focus {

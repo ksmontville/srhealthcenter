@@ -46,7 +46,7 @@
           </v-col>
         </v-row>
 
-        <h2 class="text-headline-small text-primary font-weight-bold mt-12 mb-6">
+        <h2 class="text-headline-small text-heading font-weight-bold mt-12 mb-6">
           Common Questions About Auricular Acupuncture
         </h2>
 
@@ -98,11 +98,11 @@ useSeo({
 
 <style scoped>
 a:not(.v-btn) {
-  color: #f0ebce;
+  color: rgb(var(--v-theme-highlight));
 }
 
 a:not(.v-btn):hover {
-  color: #4e6c50;
+  color: rgb(var(--v-theme-heading));
 }
 
 a:not(.v-btn):focus {

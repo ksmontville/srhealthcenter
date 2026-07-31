@@ -43,7 +43,7 @@ defineProps({
    */
   items: { type: Array, required: true },
   dense: { type: Boolean, default: false },
-  color: { type: String, default: "#4e6c50" },
+  color: { type: String, default: "rgb(var(--v-theme-accent))" },
 });
 </script>
 
@@ -75,11 +75,11 @@ defineProps({
 }
 
 .icon-list a {
-  color: #f0ebce;
+  color: rgb(var(--v-theme-highlight));
 }
 
 .icon-list a:hover {
-  color: #aa8b56;
+  color: rgb(var(--v-theme-heading));
 }
 
 .icon-list a:focus {

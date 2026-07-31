@@ -72,11 +72,11 @@ const externalAttrs = (link) =>
 }
 
 .faq-answer a {
-  color: #f0ebce;
+  color: rgb(var(--v-theme-highlight));
 }
 
 .faq-answer a:hover {
-  color: #aa8b56;
+  color: rgb(var(--v-theme-heading));
 }
 
 .faq-answer a:focus {

@@ -3,7 +3,7 @@
     v-for="testimonial in testimonials"
     :key="testimonial.id"
     max-width="400"
-    color="highlight"
+    color="panel"
     class="testimonial-card mx-auto my-4"
     elevation="8"
   >

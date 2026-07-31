@@ -60,6 +60,6 @@ import { readingList } from "@/assets/readingList";
   width: 20px;
   height: 20px;
   margin-top: 0.25em;
-  fill: #f0ebce;
+  fill: rgb(var(--v-theme-highlight));
 }
 </style>

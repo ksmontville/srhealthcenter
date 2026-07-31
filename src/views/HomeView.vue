@@ -263,6 +263,6 @@ useSeo({
   font-family: "Kalam", Roboto, Arial, sans-serif !important;
 }
 a:not(.v-btn) {
-  color: #f0ebce;
+  color: rgb(var(--v-theme-highlight));
 }
 </style>

@@ -22,7 +22,6 @@ const { smAndDown } = useDisplay();
 <style scoped>
 .app {
   margin: auto;
-  background-color: #aa8b56;
   /*background-image: url("../../../src/assets/img/sr-bg-2-sm.jpg");*/
   /*background-repeat: no-repeat;*/
   /*background-attachment: fixed;*/

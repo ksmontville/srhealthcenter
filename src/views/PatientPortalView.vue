@@ -4,7 +4,7 @@
 
     <v-row justify="center">
       <v-col cols="12" md="10" lg="9">
-        <h2 class="text-title-large text-primary font-weight-bold my-4">
+        <h2 class="text-title-large text-heading font-weight-bold my-4">
           Sign Up or Log In
         </h2>
         <p class="body-text text-body-large text-white">
@@ -19,7 +19,7 @@
           Go to Patient Portal
         </v-btn>
 
-        <h2 class="text-title-large text-primary font-weight-bold my-4">
+        <h2 class="text-title-large text-heading font-weight-bold my-4">
           Pay Bill Online
         </h2>
         <p class="body-text text-body-large text-white">

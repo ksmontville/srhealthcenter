@@ -39,7 +39,7 @@
               transition="dialog-top-transition"
               scrollable
             >
-              <v-sheet color="highlight mx-auto" max-width="600">
+              <v-sheet color="panel" class="mx-auto" max-width="600">
                 <v-container class="my-4 pa-8">
                   <v-row align="center" justify="center">
                     <v-col cols="12" v-if="staffDetail.photo">
@@ -274,17 +274,19 @@ const staffDetails = reactive([
   opacity: 90%;
 }
 
+/* Sits on the card's green surface (secondary) in both themes. */
 .staff-initials {
   font-weight: 700;
-  color: #395144;
+  color: #fff;
 }
 
 .staff-card-text a {
-  color: #395144;
+  color: rgb(var(--v-theme-on-panel));
   font-weight: 700;
+  text-decoration: underline;
 }
 
 .staff-card-text a:hover {
-  color: #4e6c50;
+  color: rgb(var(--v-theme-heading));
 }
 </style>

@@ -26,7 +26,10 @@ A significant update focused on making it easier for families — and for search
 - **Practice information for search engines**: Address, phone, hours and services are now published in a structured format so Google and AI assistants can read them accurately.
 
 ### Accessibility
+- **Refreshed colour palette**: The page background is now a deeper walnut with warm amber headings. This keeps the autumnal look while making every piece of text meet accessibility contrast standards — previously body text, links and headings all fell short.
+- **Dark mode**: The site now follows your device's light or dark setting automatically, with a deep-bark palette that meets the same standards.
 - Proper heading structure on every page, improved image descriptions, clearer link wording, and a keyboard-accessible Facebook link in the footer.
+- The site now scores **100/100 for accessibility** in Google Lighthouse, in both light and dark mode.
 
 ### Housekeeping
 - **Reading list**: Reorganised from a cramped tabbed box into clear expandable topics with book counts.

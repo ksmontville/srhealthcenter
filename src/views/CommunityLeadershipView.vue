@@ -6,7 +6,7 @@
 
     <v-row justify="center">
       <v-col cols="12" md="10" lg="9">
-        <h2 class="text-headline-small text-primary font-weight-bold mb-4">
+        <h2 class="text-headline-small text-heading font-weight-bold mb-4">
           Caring for Children Beyond the Exam Room
         </h2>
         <p class="body-text text-body-large text-white mb-4">
@@ -25,7 +25,7 @@
         </p>
 
         <!-- Media & News -->
-        <h2 class="text-headline-small text-primary font-weight-bold mt-12 mb-4">
+        <h2 class="text-headline-small text-heading font-weight-bold mt-12 mb-4">
           Media &amp; News
         </h2>
         <p class="body-text text-body-large text-white mb-6">
@@ -35,7 +35,7 @@
         </p>
 
         <article v-for="story in mediaStories" :key="story.href" class="citation mb-8">
-          <h3 class="text-title-large text-primary font-weight-bold mb-2">
+          <h3 class="text-title-large text-heading font-weight-bold mb-2">
             {{ story.topic }}
           </h3>
           <p class="body-text text-body-large text-white mb-3">
@@ -51,7 +51,7 @@
         </article>
 
         <!-- Professional Leadership -->
-        <h2 class="text-headline-small text-primary font-weight-bold mt-12 mb-4">
+        <h2 class="text-headline-small text-heading font-weight-bold mt-12 mb-4">
           Professional Leadership
         </h2>
         <p class="body-text text-body-large text-white mb-6">
@@ -65,7 +65,7 @@
           :key="group.heading"
           class="citation mb-8"
         >
-          <h3 class="text-title-large text-primary font-weight-bold mb-2">
+          <h3 class="text-title-large text-heading font-weight-bold mb-2">
             {{ group.heading }}
           </h3>
           <p class="body-text text-body-large text-white mb-3">{{ group.summary }}</p>
@@ -81,7 +81,7 @@
         </article>
 
         <!-- Medical Education -->
-        <h2 class="text-headline-small text-primary font-weight-bold mt-12 mb-4">
+        <h2 class="text-headline-small text-heading font-weight-bold mt-12 mb-4">
           Medical Education
         </h2>
         <p class="body-text text-body-large text-white mb-3">
@@ -102,7 +102,7 @@
         />
 
         <!-- Community Leadership -->
-        <h2 class="text-headline-small text-primary font-weight-bold mt-12 mb-4">
+        <h2 class="text-headline-small text-heading font-weight-bold mt-12 mb-4">
           Community Leadership
         </h2>
         <p class="body-text text-body-large text-white mb-3">
@@ -120,7 +120,7 @@
           :key="group.heading"
           class="citation mb-8"
         >
-          <h3 class="text-title-large text-primary font-weight-bold mb-2">
+          <h3 class="text-title-large text-heading font-weight-bold mb-2">
             {{ group.heading }}
           </h3>
           <p class="body-text text-body-large text-white mb-3">{{ group.summary }}</p>
@@ -133,7 +133,7 @@
         </article>
 
         <!-- Our Commitment -->
-        <h2 class="text-headline-small text-primary font-weight-bold mt-12 mb-4">
+        <h2 class="text-headline-small text-heading font-weight-bold mt-12 mb-4">
           Our Commitment
         </h2>
         <p class="body-text text-body-large text-white">
@@ -267,16 +267,16 @@ useSeo({
 
 <style scoped>
 .citation {
-  border-left: 3px solid #4e6c50;
+  border-left: 3px solid rgb(var(--v-theme-accent));
   padding-left: 1rem;
 }
 
 a:not(.v-btn) {
-  color: #f0ebce;
+  color: rgb(var(--v-theme-highlight));
 }
 
 a:not(.v-btn):hover {
-  color: #4e6c50;
+  color: rgb(var(--v-theme-heading));
 }
 
 a:not(.v-btn):focus {

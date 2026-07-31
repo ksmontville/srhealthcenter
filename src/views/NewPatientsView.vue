@@ -47,7 +47,7 @@
           </v-col>
         </v-row>
 
-        <h2 class="text-headline-small text-primary font-weight-bold mt-12 mb-4">
+        <h2 class="text-headline-small text-heading font-weight-bold mt-12 mb-4">
           Before Your First Appointment
         </h2>
         <p class="body-text text-body-large text-white">
@@ -69,7 +69,7 @@
           means more time focused on your child and less time completing paperwork.
         </p>
 
-        <h2 class="text-headline-small text-primary font-weight-bold mt-12 mb-4">
+        <h2 class="text-headline-small text-heading font-weight-bold mt-12 mb-4">
           During Your Visit
         </h2>
         <p class="body-text text-body-large text-white">
@@ -81,7 +81,7 @@
           you to support their health and well-being.
         </p>
 
-        <h2 class="text-headline-small text-primary font-weight-bold mt-12 mb-4">
+        <h2 class="text-headline-small text-heading font-weight-bold mt-12 mb-4">
           Stay Connected
         </h2>
         <p class="body-text text-body-large text-white">
@@ -162,11 +162,11 @@ useSeo({
 
 <style scoped>
 a:not(.v-btn) {
-  color: #f0ebce;
+  color: rgb(var(--v-theme-highlight));
 }
 
 a:not(.v-btn):hover {
-  color: #4e6c50;
+  color: rgb(var(--v-theme-heading));
 }
 
 a:not(.v-btn):focus {

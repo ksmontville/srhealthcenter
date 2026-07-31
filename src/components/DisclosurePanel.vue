@@ -63,7 +63,7 @@ defineProps({
   justify-content: space-between;
   gap: 1rem;
   padding: 1rem 1.25rem;
-  background-color: #395144;
+  background-color: rgb(var(--v-theme-primary));
   color: #fff;
   cursor: pointer;
   list-style: none;
@@ -76,7 +76,7 @@ defineProps({
 
 .disclosure__summary:hover,
 .disclosure__summary:focus-visible {
-  background-color: #4e6c50;
+  background-color: rgb(var(--v-theme-secondary));
 }
 
 .disclosure__summary:focus-visible {
@@ -96,8 +96,8 @@ defineProps({
   min-width: 1.75rem;
   padding: 0.05rem 0.45rem;
   border-radius: 999px;
-  background-color: rgba(240, 235, 206, 0.2);
-  color: #f0ebce;
+  background-color: rgba(var(--v-theme-highlight), 0.2);
+  color: rgb(var(--v-theme-highlight));
   font-size: 0.8rem;
   line-height: 1.5;
   text-align: center;
@@ -117,7 +117,7 @@ defineProps({
 
 .disclosure__body {
   padding: 1.25rem;
-  background-color: #4e6c50;
+  background-color: rgb(var(--v-theme-secondary));
   color: #fff;
 }
 

@@ -61,13 +61,13 @@ const formattedDate = computed(() => {
 
 <style scoped>
 .external-link__anchor {
-  color: #f0ebce;
+  color: rgb(var(--v-theme-highlight));
   font-weight: 700;
   text-decoration: underline;
 }
 
 .external-link__anchor:hover {
-  color: #aa8b56;
+  color: rgb(var(--v-theme-heading));
 }
 
 .external-link__anchor:focus-visible {

@@ -1,8 +1,8 @@
 <template>
-  <p class="text-primary text-display-small text-center my-4">Location and Hours</p>
+  <p class="text-heading text-display-small text-center my-4">Location and Hours</p>
   <v-row justify="center" align="stretch">
     <v-col>
-      <v-list class="rounded" bg-color="highlight" elevation="8">
+      <v-list class="rounded" bg-color="panel" elevation="8">
         <v-list-item v-for="address in contactInfo.address" :key="address">
           <p class="text-center font-weight-bold">{{ address }}</p>
         </v-list-item>

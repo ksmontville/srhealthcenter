@@ -1,7 +1,7 @@
 <template>
   <v-container class="pa-8">
     <h1 class="text-display-large text-white text-center my-16">School Visits</h1>
-    <p class="text-title-large text-primary text-center my-16">
+    <p class="text-title-large text-heading text-center my-16">
       South Royalton, Strafford, Chelsea, Sharon, Bethel, Tunbridge, Orange, Washington,
       and Williamstown, Vermont
     </p>
@@ -17,7 +17,7 @@
           health and wellbeing, helping them be ready to learn.
         </p>
 
-        <h2 class="text-title-large text-primary text-center font-weight-bold my-8">
+        <h2 class="text-title-large text-heading text-center font-weight-bold my-8">
           Why School Based?
         </h2>
         <p class="body-text text-body-large text-white">
@@ -26,11 +26,7 @@
         </p>
         <v-row align="end" justify="center">
           <v-col cols="12" md="4">
-            <v-list
-              class="rounded mt-4 pa-4 mx-auto"
-              bg-color="highlight"
-              max-width="400"
-            >
+            <v-list class="rounded mt-4 pa-4 mx-auto" bg-color="panel" max-width="400">
               <v-list-item>
                 <v-icon :icon="mdiHospital" class="mx-2" color="primary" />
                 <strong>Parents benefit</strong> by not losing time from work and
@@ -69,7 +65,7 @@
       </v-col>
 
       <v-col cols="12" md="10" lg="9">
-        <h2 class="text-title-large text-primary text-center font-weight-bold my-8">
+        <h2 class="text-title-large text-heading text-center font-weight-bold my-8">
           To Schedule Appointments:
         </h2>
         <p class="body-text text-body-large text-white">
@@ -88,11 +84,11 @@
       </v-col>
 
       <!--    <v-col cols="12">-->
-      <!--      <p class="text-headline-small text-primary text-center body-text my-8">HealthHub provides the following services to schools:</p>-->
+      <!--      <p class="text-headline-small text-heading text-center body-text my-8">HealthHub provides the following services to schools:</p>-->
       <!--    </v-col>-->
 
       <!--    <v-col cols="12" md="6" id="medicalServices">-->
-      <!--      <p class="text-title-large text-primary text-center font-weight-bold my-4">Medical Services</p>-->
+      <!--      <p class="text-title-large text-heading text-center font-weight-bold my-4">Medical Services</p>-->
       <!--      <v-list bg-color="highlight" class="rounded" elevation="8">-->
       <!--        <v-list-item v-for="medicalService in medicalServices" :key="medicalService" class="rounded">-->
       <!--          <v-icon :icon="mdiHospital" class="mx-2" color="primary"/>-->
@@ -102,7 +98,7 @@
       <!--    </v-col>-->
 
       <!--    <v-col cols="12" md="6" id="mentalHealthServices">-->
-      <!--      <p class="text-title-large text-primary text-center font-weight-bold my-4">Mental Health Services</p>-->
+      <!--      <p class="text-title-large text-heading text-center font-weight-bold my-4">Mental Health Services</p>-->
       <!--      <p class="body-text text-body-large text-white">-->
       <!--        <strong>Kimberly J. Therrien</strong> is a Licensed Independent Clinical Social Worker (LICSW) who has 25 years of experience-->
       <!--        working with children and families. Kim utilizes a variety of therapeutic approaches in her clinical work-->
@@ -118,7 +114,7 @@
       <!--    </v-col>-->
 
       <!--    <v-col cols="12" id="dentalServices">-->
-      <!--      <p class="text-title-large text-primary text-center font-weight-bold my-4">Dental Services</p>-->
+      <!--      <p class="text-title-large text-heading text-center font-weight-bold my-4">Dental Services</p>-->
       <!--      <p class="body-text text-body-large text-white my-4">The clinic’s dental hygienist provides dental cleanings, screenings fluoride, digital diagnostic x-rays,-->
       <!--        and sealants every six to seven months for the schools of South Royalton, Strafford, Chelsea, Sharon, Bethel,-->
       <!--        Tunbridge, Orange, Washington, Stockbridge, Rochester, and Williamstown, Vermont. The school clinic has a-->
@@ -148,7 +144,7 @@
       <!--        </v-col>-->
 
       <!--        <v-col cols="12" md="3">-->
-      <!--          <p class="text-title-large text-primary text-center font-weight-bold my-4">Resources for adults without dental insurance:</p>-->
+      <!--          <p class="text-title-large text-heading text-center font-weight-bold my-4">Resources for adults without dental insurance:</p>-->
       <!--          <v-list bg-color="transparent" class="text-white text-center pa-4">-->
       <!--            <v-list-item v-for="dentalResource in dentalResources" :key="dentalResource.id">-->
       <!--              <p><strong>{{ dentalResource.name }}</strong>, {{ dentalResource.address }}</p>-->
@@ -176,15 +172,15 @@ useSeo({
 
 <style scoped>
 a:not(.v-btn) {
-  color: #f0ebce;
+  color: rgb(var(--v-theme-highlight));
 }
 
 /*a:visited, router-link:visited {*/
-/*  color: #AA8B56;*/
+/*  color: rgb(var(--v-theme-heading));*/
 /*}*/
 
 a:not(.v-btn):hover {
-  color: #4e6c50;
+  color: rgb(var(--v-theme-heading));
 }
 
 a:not(.v-btn):focus {
