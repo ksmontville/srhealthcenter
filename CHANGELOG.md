@@ -32,6 +32,14 @@ A significant update focused on making it easier for families — and for search
 - Proper heading structure on every page, improved image descriptions, clearer link wording, and a keyboard-accessible Facebook link in the footer.
 - The site now scores **100/100 for accessibility** in Google Lighthouse, in both light and dark mode.
 
+### Speed
+Tuned specifically for the slower, less reliable connections common across the practice's rural service area.
+
+- **Images are ~95% smaller**: photographs were being served at full camera resolution (up to 5 MB each) and scaled down in the browser. They are now resized to the size actually displayed and converted to a modern format. Total image weight dropped from **25 MB to 1.2 MB**.
+- **Images below the screen load only when you scroll to them**, so opening a page no longer downloads every photo on it.
+- **Fonts are 97% smaller and no longer come from Google**: the handwriting font alone was a 417 KB download on every page, most of it characters the site never uses. Fonts are now trimmed to what's needed and served from our own site — removing two outside connections that had to succeed before any text could appear.
+- **Removed 40 MB of unused images** left over from earlier versions of the site.
+
 ### Housekeeping
 - **Reading list**: Reorganised from a cramped tabbed box into clear expandable topics with book counts.
 - **Local Resources**: Page retired at your request.

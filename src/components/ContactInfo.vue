@@ -29,7 +29,6 @@
         height="300"
         style="border: 0"
         allowfullscreen=""
-        loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
       />
     </v-col>
@@ -41,7 +40,6 @@
         height="450"
         style="border: 0"
         allowfullscreen=""
-        loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
       />
     </v-col>

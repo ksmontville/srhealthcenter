@@ -101,6 +101,35 @@ for (const route of ROUTES) {
     });
     await page.waitForTimeout(300);
 
+    // Mark below-the-fold images for lazy loading.
+    //
+    // Two problems this solves at once. Scrolling above materialises v-lazy
+    // content into the DOM, so those images would otherwise ship as eager
+    // `<img src>` in the static HTML and download immediately. And Vuetify's
+    // VImg builds its `<img>` from a fixed prop list with no attribute spread,
+    // so a `loading="lazy"` written in the template is silently dropped.
+    //
+    // Doing it here means crawlers still see every image and its alt text,
+    // while browsers defer the bytes until they are near the viewport —
+    // which matters on the slow rural connections this practice serves.
+    const lazied = await page.evaluate((foldPx) => {
+      let n = 0;
+      for (const img of document.querySelectorAll("img")) {
+        const top = img.getBoundingClientRect().top + window.scrollY;
+        if (top > foldPx) {
+          img.setAttribute("loading", "lazy");
+          img.setAttribute("decoding", "async");
+          n += 1;
+        } else {
+          // Above the fold: hint the decoder but keep the fetch eager so LCP
+          // isn't delayed.
+          img.setAttribute("decoding", "sync");
+          img.setAttribute("fetchpriority", "high");
+        }
+      }
+      return n;
+    }, 900);
+
     // Sanity-check the route actually rendered before writing it out.
     const check = await page.evaluate(() => ({
       title: document.title,
@@ -134,7 +163,7 @@ for (const route of ROUTES) {
 
     written += 1;
     console.log(
-      `  ✓ ${route.padEnd(40)} ${String(check.chars).padStart(6)} chars  ${String(leaked).padStart(3)} urls fixed  ${check.title.slice(0, 34)}`,
+      `  ✓ ${route.padEnd(38)} ${String(check.chars).padStart(6)} chars  ${String(leaked).padStart(2)} urls  ${String(lazied).padStart(2)} lazy  ${check.title.slice(0, 30)}`,
     );
   } catch (err) {
     failures.push({ route, message: err.message });

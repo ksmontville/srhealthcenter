@@ -32,6 +32,7 @@ export default [
         process: "readonly",
         console: "readonly",
         URL: "readonly",
+        URLSearchParams: "readonly",
         setTimeout: "readonly",
         clearTimeout: "readonly",
       },
