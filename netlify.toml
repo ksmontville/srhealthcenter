@@ -5,10 +5,14 @@
 # needs a Chromium binary, which is not present in the build image by default —
 # without `playwright install`, `npm run build` fails in CI.
 #
-# `--with-deps` pulls the shared libraries Chromium needs on the Ubuntu image.
+# Deliberately NOT `--with-deps`: that flag shells out to `sudo`/`su` to apt-install
+# system libraries, and the build image runs as a non-root user with no password —
+# it fails with "su: Authentication failure" before the browser is even downloaded.
+# The image already ships the shared libraries headless Chromium needs, so the plain
+# install is both sufficient and faster.
 
 [build]
-  command = "npx playwright install --with-deps chromium && npm run build"
+  command = "npx playwright install chromium && npm run build"
   publish = "dist"
 
 [build.environment]

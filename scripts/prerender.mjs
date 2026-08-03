@@ -69,7 +69,37 @@ function serveDist() {
 const server = serveDist();
 await new Promise((resolve) => server.listen(PORT, resolve));
 
-const browser = await chromium.launch();
+/*
+ * Launch, with a legible failure.
+ *
+ * Prerendering is the reason AI crawlers see anything on this site at all, so a
+ * broken browser must fail the build rather than quietly shipping an empty SPA
+ * shell. But the raw Playwright error is cryptic in CI, so translate the two
+ * ways it actually breaks: the browser was never downloaded, or it downloaded
+ * but the host is missing a shared library it links against.
+ */
+let browser;
+try {
+  browser = await chromium.launch();
+} catch (error) {
+  const message = String(error);
+  console.error("\n✗ Could not start Chromium — cannot prerender.\n");
+  if (/Executable doesn't exist|Please run the following command/.test(message)) {
+    console.error("  The browser was never downloaded. The build must run:");
+    console.error("    npx playwright install chromium\n");
+  } else if (/error while loading shared libraries|libnss3|libgbm/.test(message)) {
+    console.error("  Chromium is present but the host is missing a shared library.");
+    console.error("  On a machine where you can install packages:");
+    console.error("    npx playwright install --with-deps chromium");
+    console.error("  On Netlify, `--with-deps` cannot work (it needs root); the build");
+    console.error("  image is expected to supply these already.\n");
+  }
+  console.error(`  Original error: ${message.split("\n")[0]}\n`);
+  console.error("  To ship without prerendering — which removes the site's");
+  console.error("  visibility to AI crawlers — use `npm run build:spa`.\n");
+  server.close();
+  process.exit(1);
+}
 // Wide viewport so responsive content renders in its desktop form, and tall so
 // less of the page depends on scrolling to become visible.
 const context = await browser.newContext({ viewport: { width: 1440, height: 2000 } });
