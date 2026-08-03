@@ -43,11 +43,30 @@
         <template v-for="navLink in appStore.navLinks" :key="navLink.id">
           <!-- Group: expands in place, open when the current page is inside it -->
           <v-list-group v-if="navLink.children" :value="navLink.name">
-            <template v-slot:activator="{ props }">
+            <!--
+              The activator is a disclosure control, so it is spelled as one.
+
+              Vuetify derives a list item's role from whether it is selectable,
+              and a group activator carries a `value`, so it ships
+              `role="option" aria-selected="false"`. Combined with the
+              `role="none"` on the list above — which is there because the items
+              are links, not listitems — that leaves an `option` with no
+              `listbox` ancestor: invalid ARIA, and it fails axe's
+              `aria-required-parent`. `aria-selected` is likewise not allowed
+              outside listbox/grid/tab contexts.
+
+              Vuetify also never emits `aria-expanded` here, so a screen reader
+              had no way to know these open a submenu at all — the worse of the
+              two problems, and one no automated audit reports.
+            -->
+            <template v-slot:activator="{ props, isOpen }">
               <v-list-item
                 v-bind="props"
                 :title="navLink.name"
                 class="font-weight-bold"
+                role="button"
+                :aria-expanded="isOpen"
+                :aria-selected="null"
               />
             </template>
 

@@ -1,5 +1,20 @@
 <template>
-  <v-bottom-navigation v-if="mobile" bg-color="panel" grow>
+  <!--
+    Rendered as a labelled <nav>, not Vuetify's default <header>.
+
+    <header> maps to the `banner` landmark, so on a phone this bar and the app
+    bar were both claiming to be the page banner — a screen reader user jumping
+    by landmark would hit two "banner"s and find resource shortcuts in the
+    second. It is navigation, so it says so, and the label distinguishes it from
+    the main menu.
+  -->
+  <v-bottom-navigation
+    v-if="mobile"
+    tag="nav"
+    aria-label="Resources for healthy kids and families"
+    bg-color="panel"
+    grow
+  >
     <v-btn :to="{ path: 'srhc-recommended-child-health-web-links' }">
       <v-icon :icon="mdiMedicalBag" />
       SRHC Recs
