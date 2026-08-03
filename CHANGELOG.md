@@ -1,49 +1,66 @@
 # Changelog
 
-## July 2026 Updates
+## 2026 Website Overhaul
 
-A significant update focused on making it easier for families — and for search engines and AI assistants — to find the care you offer.
+A full refresh of the site, focused on making it easier for families to find the
+care you offer — and on making sure Google and AI assistants like ChatGPT can
+read and recommend your practice.
 
-### New Pages
-- **Frequently Asked Questions**: 17 answers covering scheduling, insurance, after-hours care, telehealth, newborn care and more. Replaces the old Office Details page, whose appointment, insurance and payment information now lives here.
-- **Integrative Pediatric Care**: A new home for Lifestyle Medicine, nutrition counseling and whole-child care.
-- **Auricular Acupuncture**: A dedicated page covering what it is, what it helps, safety, what happens during a visit, and cost.
-- **Community Leadership, Media & Advocacy**: Dr. Ashley's published articles, professional leadership, medical education and community work, with links to each source.
+### New pages
+- **Frequently Asked Questions** — 15 answers covering scheduling, insurance, after-hours care, telehealth and newborn care. Replaces the old Office Details page; its appointment, insurance and payment information now lives here.
+- **Integrative Pediatric Care** — a home for Lifestyle Medicine, nutrition counselling and whole-child care.
+- **Auricular Acupuncture** — what it is, what it helps, safety, what happens during a visit, and cost.
+- **Community Leadership, Media & Advocacy** — your published articles, professional leadership, medical education and community work, each linked to its source.
+- **Patient Testimonials** — a page for families' own words, with a preview on the home page. Built to grow as you collect more.
 
-### Rewritten Content
-- **Services**: Fully rewritten and reorganised into clear sections — preventive care, same-day sick visits, nutrition, infant feeding, integrative care, ADHD & behavioral health, developmental & school support, adolescent medicine, and more. The old scrolling service box is gone; everything is now visible on the page.
-- **Jump to a service**: A quick-links menu at the top of the Services page for going straight to any section.
-- **Home, About Us, New Patients and Expecting**: Refreshed copy throughout, plus updated biographies for the whole team.
+### Rewritten content
+- **Services** — fully rewritten and reorganised into 13 clear sections, from preventive care and same-day sick visits through to adolescent medicine. The old scrolling box is gone; everything is visible on the page, with a quick-links menu at the top to jump straight to a section.
+- **Home, About Us, New Patients and Expecting** — refreshed throughout, plus updated biographies for all 7 team members.
 
-### Easier to Navigate
-- **Grouped menus**: The main menu is now organised under About Us, Services and Patients, so new pages are easy to find without a crowded menu bar.
-- **Consistent page layout**: Every page now uses the same margins and spacing.
+### Layout and design
+- **Home page rebuilt** — it now reads as one clear column from top to bottom: welcome, your story, your introduction, then what families say. Previously the content sat in two uneven columns that left large empty areas on wide screens.
+- **Contact page rebuilt** — address, opening hours and phone are now a single tidy card beside a map that resizes to fit any screen.
+- **Consistent spacing** — every page now uses the same margins and rhythm.
+- **Warmer headings** — section headings across the site now use the amber from your palette instead of plain white.
+- **Tidier footer**, and the reading list moved from a cramped tabbed box into clear expandable topics with book counts.
 
-### Findability
-- **Every page now has its own title and description** in search results, rather than sharing one.
-- **Pages are readable by AI assistants**: Previously, tools like ChatGPT and Perplexity saw a blank page. All page content is now delivered directly in the page itself.
-- **Expandable sections are now searchable**: Patient forms, recommended web links and reading lists used to be hidden from search engines until clicked. All of that content is now indexed — including all 71 recommended books and every patient form.
-- **Practice information for search engines**: Address, phone, hours and services are now published in a structured format so Google and AI assistants can read them accurately.
+### Easier to find things
+- **Grouped menus** — About Us, Services and Patients, so the new pages are easy to find without a crowded menu bar.
+- Everything is reachable in two clicks or fewer.
+
+### Being found online
+- **Every page now has its own title and description** in search results, rather than all sharing one.
+- **AI assistants can now read your pages.** Previously tools like ChatGPT and Perplexity saw a blank page on every route. All content is now delivered directly in the page.
+- **Menu links are now visible to search engines.** The dropdown menus previously hid every link inside them, so search engines could not follow the menu to your Services, Acupuncture, School Visits or FAQ pages.
+- **Hidden sections are now searchable** — all 71 recommended books across 13 topics, and all 18 patient forms, used to be invisible until clicked.
+- **Practice details published in a structured format** so Google and AI assistants read your address, phone, hours and services accurately.
+- Retired pages redirect to their replacements, so existing links and printed materials keep working.
 
 ### Accessibility
-- **Refreshed colour palette**: The page background is now a deeper walnut with warm amber headings. This keeps the autumnal look while making every piece of text meet accessibility contrast standards — previously body text, links and headings all fell short.
-- **Dark mode**: The site now follows your device's light or dark setting automatically, with a deep-bark palette that meets the same standards.
-- **Theme button**: A control in the menu bar cycles between following your device, always light, and always dark. Your choice is remembered between visits.
-- Proper heading structure on every page, improved image descriptions, clearer link wording, and a keyboard-accessible Facebook link in the footer.
-- The site now scores **100/100 for accessibility** in Google Lighthouse, in both light and dark mode.
+This matters for a medical practice, and the site now scores **100/100** in Google's accessibility audit, in both light and dark mode.
+
+- **Refreshed colour palette** — a deeper walnut background with warm amber headings. Keeps the autumnal look while making every piece of text meet contrast standards; previously body text, links and headings all fell short.
+- **Dark mode** — the site follows your device setting automatically, with a matching deep-bark palette. A button in the menu bar lets visitors choose, and their choice is remembered.
+- **Fixed several controls that were invisible in dark mode**, including the Call button, the sidebar buttons and the highlighted menu item.
+- **Improved the mobile menu for screen-reader users**, so it now announces which sections expand.
+- Proper heading structure on every page, clearer link wording, and better image descriptions.
 
 ### Speed
-Tuned specifically for the slower, less reliable connections common across the practice's rural service area.
+Tuned for the slower, less reliable connections common across your rural service area.
 
-- **Images are ~95% smaller**: photographs were being served at full camera resolution (up to 5 MB each) and scaled down in the browser. They are now resized to the size actually displayed and converted to a modern format. Total image weight dropped from **25 MB to 1.2 MB**.
-- **Images below the screen load only when you scroll to them**, so opening a page no longer downloads every photo on it.
-- **Fonts are 97% smaller and no longer come from Google**: the handwriting font alone was a 417 KB download on every page, most of it characters the site never uses. Fonts are now trimmed to what's needed and served from our own site — removing two outside connections that had to succeed before any text could appear.
-- **Removed 40 MB of unused images** left over from earlier versions of the site.
+- **Images are about 95% smaller** — from **25 MB down to 1.3 MB** in total. Photos were being sent at full camera resolution and shrunk in the browser.
+- **Photos below the screen load only when scrolled to**, so opening a page no longer downloads every image on it.
+- **Fonts are 97% smaller and no longer come from Google**, removing two outside connections that had to succeed before any text could appear.
+- **Removed 40 MB of unused images** left over from earlier versions.
 
 ### Housekeeping
-- **Reading list**: Reorganised from a cramped tabbed box into clear expandable topics with book counts.
-- **Local Resources**: Page retired at your request.
-- **Copyright year** now updates automatically.
+- **Local Resources** page retired at your request.
+- Copyright year now updates automatically.
+
+### Still to come — we need a few things from you
+- **Photographs** for the Auricular Acupuncture, New Patients and Expecting pages — placeholders are in place.
+- **A headshot for Kahlee Holden** — her card currently shows her initials.
+- **Confirm Amelia Lincoln's listing.** Her biography describes a separate private practice with its own phone and email, so it may be worth listing her under a "Collaborating Clinicians" heading rather than in the main staff grid.
 
 ---
 
