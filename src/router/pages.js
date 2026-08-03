@@ -40,6 +40,12 @@ export const pages = [
     sitemap: { priority: "0.8", changefreq: "monthly" },
   },
   {
+    path: "/patient-testimonials",
+    name: "Testimonials",
+    view: () => import("@/views/TestimonialsView.vue"),
+    sitemap: { priority: "0.7", changefreq: "monthly" },
+  },
+  {
     path: "/faq",
     name: "FAQ",
     view: () => import("@/views/FaqView.vue"),

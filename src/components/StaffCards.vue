@@ -82,7 +82,7 @@
 
                       <v-btn
                         @click="staffDetail.showText = false"
-                        color="primary"
+                        color="action"
                         class="align-self-center my-8"
                         >Close</v-btn
                       >

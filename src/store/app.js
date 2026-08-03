@@ -35,6 +35,7 @@ export const useAppStore = defineStore("app", () => {
       name: "About Us",
       children: [
         { id: 10, name: "Meet Our Team", route: "/meet-our-providers-staff" },
+        { id: 12, name: "Patient Testimonials", route: "/patient-testimonials" },
         {
           id: 11,
           name: "Community Leadership, Media & Advocacy",

@@ -258,7 +258,9 @@ const commitments = [
 ];
 
 useSeo({
-  title: "Community Leadership & Media | South Royalton Health Center",
+  // Matches the <h1> and the nav label exactly. Passed without the site name so
+  // useSeo appends it, as every other page does.
+  title: "Community Leadership, Media & Advocacy",
   description:
     "Learn about Dr. Ashley Miller's leadership in pediatric medicine, community advocacy, medical education, and media contributions supporting children and families throughout Vermont and the Upper Valley.",
   schema: [physicianSchema()],

@@ -32,6 +32,12 @@ import { aliases, mdi } from "vuetify/iconsets/mdi-svg";
  *   panel       large cream panels in light mode; a dark surface in dark mode.
  *               Distinct from `highlight`, which stays cream in both themes
  *               because it is used for button fills where that reads well.
+ *   action      button fill for buttons that sit *on* a `panel` surface. It has
+ *               to invert with the theme for the same reason `panel` does:
+ *               `primary`/`secondary` are mid-to-dark greens, so on the dark
+ *               panel they measured 1.24:1 and 1.02:1 against their own
+ *               background — the button text stayed legible (which is why
+ *               Lighthouse still passed) but the button itself disappeared.
  */
 const light = {
   dark: false,
@@ -44,6 +50,8 @@ const light = {
     highlight: "#F0EBCE",
     heading: "#F2C879", // amber
     panel: "#F0EBCE", // cream panels: sidebar, drawers, cards
+    action: "#33493D", // dark green on the cream panel — 8.09:1
+    "on-action": "#FFFFFF", // 9.72:1 on the fill above
   },
 };
 
@@ -58,6 +66,8 @@ const dark = {
     highlight: "#F0EBCE",
     heading: "#F2C879",
     panel: "#2F3A31", // panels go dark rather than flashing cream
+    action: "#F0EBCE", // cream on the dark panel — 9.87:1
+    "on-action": "#1E2B24", // 12.26:1 on the fill above
   },
 };
 

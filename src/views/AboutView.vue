@@ -44,7 +44,7 @@
       </v-col>
     </v-row>
 
-    <h2 class="text-headline-small text-white text-center mt-16 mb-2">
+    <h2 class="text-headline-small text-heading text-center mt-16 mb-2">
       It's a Pleasure to Meet You
     </h2>
     <p class="text-body-large text-white text-center mb-4">
@@ -71,7 +71,7 @@
   <v-container class="my-8">
     <!-- Heading deliberately outside v-lazy: lazy content is absent from the DOM
          until scrolled into view, which would hide it from crawlers. -->
-    <h2 class="text-headline-small text-white text-center mb-4">
+    <h2 class="text-headline-small text-heading text-center mb-4">
       Photos of South Royalton Health Center
     </h2>
     <v-lazy>

@@ -56,28 +56,28 @@
     >
 
     <v-list>
-      <v-list-item v-for="hour in hours" :key="hour">
-        <v-icon :icon="mdiHospitalBoxOutline" class="mx-2" />
+      <v-list-item v-for="hour in hours" :key="hour" class="hours-item">
+        <v-icon :icon="mdiHospitalBoxOutline" />
         <small>{{ hour }}</small>
       </v-list-item>
     </v-list>
 
     <!-- Buttons are actions, not list items — outside the list. -->
     <div class="d-flex flex-column align-center ga-4 px-4 pb-6">
-      <v-btn @click="openUrl(appStore.patientPortalUrl)" color="primary" block>
+      <v-btn @click="openUrl(appStore.patientPortalUrl)" color="action" block>
         Patient Portal
       </v-btn>
 
       <div class="text-center">
         <p class="font-weight-bold my-2">Office Phone</p>
-        <v-btn :href="appStore.officePhone" color="primary">{{
+        <v-btn :href="appStore.officePhone" color="action">{{
           appStore.officePhoneStr
         }}</v-btn>
       </div>
 
       <div class="text-center">
         <p class="font-weight-bold my-2">Office Fax</p>
-        <v-btn :href="appStore.officeFax" color="primary">{{
+        <v-btn :href="appStore.officeFax" color="action">{{
           appStore.officeFaxStr
         }}</v-btn>
       </div>
@@ -114,4 +114,17 @@ const hours = [
 // ]
 </script>
 
-<style scoped></style>
+<style scoped>
+/* Same defect as the contact card's hours list: with the icon as an inline
+   sibling of the text, every wrapped line ran back underneath it. */
+.hours-item :deep(.v-list-item__content) {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.hours-item .v-icon {
+  flex: 0 0 auto;
+  margin-top: 0.1em;
+}
+</style>

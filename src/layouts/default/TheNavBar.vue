@@ -28,8 +28,18 @@
             <nav aria-label="Main">
               <v-row justify="end" align="center" no-gutters>
                 <template v-for="navLink in appStore.navLinks" :key="navLink.id">
-                  <!-- Dropdown group -->
-                  <v-menu v-if="navLink.children" open-on-hover>
+                  <!--
+                    Dropdown group.
+
+                    `eager` matters for more than a flash of layout: v-menu builds
+                    its contents on first open, so without it the prerendered HTML
+                    contained not one link to Services, Auricular Acupuncture,
+                    School Visits, FAQ or any other page that lives in a dropdown.
+                    Crawlers saw a home page whose only internal links were the
+                    footer and sidebar. Same defect the expansion panels had in
+                    Phase 2, in the one place it costs the most.
+                  -->
+                  <v-menu v-if="navLink.children" open-on-hover eager>
                     <template v-slot:activator="{ props }">
                       <v-btn
                         v-bind="props"

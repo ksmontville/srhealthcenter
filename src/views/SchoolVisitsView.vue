@@ -8,7 +8,12 @@
     <v-row justify="center" align="baseline">
       <v-col cols="12" md="10" lg="9" id="schoolServices">
         <p class="body-text text-body-large text-white">
-          <a href="https://www.healthhubvt.org/" target="_blank">HealthHUBVT</a>
+          <a
+            href="https://www.healthhubvt.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >HealthHUBVT</a
+          >
           was started in the 1990s by Robert Wood Johnson Foundation grants. It is a
           non-profit, 501(c3) organization. HealthHUB operates in collaboration with the
           South Royalton Health Center providing school based health care. Our shared
@@ -75,10 +80,12 @@
           <a href="mailto:amelia@truepathscounseling.net"
             >amelia@truepathscounseling.net</a
           >. For more information please feel free to email us at
-          <a href="mailto:HealthHubVT@gmail.com">HealthHubVT@gmail.com</a> or visit the
-          HealthHUB webpage at
-          <a href="https://www.healthhubvt.org/" target="_blank"
-            >https://www.healthhubvt.org/</a
+          <a href="mailto:HealthHubVT@gmail.com">HealthHubVT@gmail.com</a> or visit
+          <a
+            href="https://www.healthhubvt.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >the HealthHUB website</a
           >.
         </p>
       </v-col>

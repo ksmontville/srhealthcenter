@@ -57,7 +57,6 @@
               :to="child.route"
               :title="child.name"
               :active="isActive(child.route)"
-              color="primary"
               @click="navOpen = false"
             />
           </v-list-group>
@@ -68,7 +67,6 @@
             :to="navLink.route"
             :title="navLink.name"
             :active="isActive(navLink.route)"
-            color="primary"
             class="font-weight-bold"
             @click="navOpen = false"
           />
@@ -120,5 +118,22 @@ watch(
 
 .brand {
   font-family: "Kalam", Roboto, Arial, sans-serif !important;
+}
+
+/*
+ * Active drawer link.
+ *
+ * This was `color="primary"`, which paints the *text* dark green. On the dark
+ * theme's panel that measured 1.24:1 — the current page was the one item you
+ * couldn't read. Marking it with an amber wash instead leaves the text at the
+ * panel's own foreground colour, so it stays legible in both themes by
+ * construction rather than by a hand-picked hex (8.6:1 dark, 15.3:1 light).
+ */
+:deep(.v-list-item--active) {
+  background-color: rgba(var(--v-theme-accent), 0.2);
+}
+
+:deep(.v-list-item--active .v-list-item-title) {
+  font-weight: 700;
 }
 </style>

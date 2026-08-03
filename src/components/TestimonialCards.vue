@@ -1,57 +1,81 @@
 <template>
-  <v-card
-    v-for="testimonial in testimonials"
-    :key="testimonial.id"
-    max-width="400"
-    color="panel"
-    class="testimonial-card mx-auto my-4"
-    elevation="8"
-  >
-    <v-card-title class="">
-      {{ testimonial.name }}
-    </v-card-title>
-    <v-card-subtitle>
-      {{ testimonial.role }}
-    </v-card-subtitle>
-    <v-card-text class="body-text pa-4">
-      {{ testimonial.text }}
-    </v-card-text>
-  </v-card>
+  <!--
+    A responsive grid rather than a fixed stack. This was sized for a ~300px
+    right rail; the same component now serves both the home page strip and the
+    full testimonials page, so the cards flow to fill whatever width they get.
+
+    <figure>/<blockquote>/<figcaption> rather than v-card's nested divs: a
+    quotation with an attribution is exactly what these elements are for, and it
+    gives crawlers the quote-to-author relationship for free.
+  -->
+  <ul class="testimonial-grid" :style="{ '--min': `${minWidth}px` }">
+    <li v-for="testimonial in items" :key="testimonial.id">
+      <figure class="testimonial-card bg-panel rounded-lg elevation-8">
+        <blockquote class="testimonial-card__text body-text text-body-medium">
+          {{ testimonial.text }}
+        </blockquote>
+        <figcaption class="testimonial-card__by">
+          <span class="testimonial-card__name text-title-medium">{{
+            testimonial.name
+          }}</span>
+          <span class="testimonial-card__role text-body-small">{{
+            testimonial.role
+          }}</span>
+        </figcaption>
+      </figure>
+    </li>
+  </ul>
 </template>
 
 <script setup>
-const testimonials = [
-  {
-    id: 0,
-    name: "Laura DiCicco",
-    role: "Parent",
-    text:
-      "Everyone here cares about my kids, knows how to connect with them, and answers hundreds of questions for me. " +
-      "It is the sweetest small practice, and we love Dr Ashley and Sabra!",
-  },
-  {
-    id: 1,
-    name: "Monique Braman",
-    role: "Parent",
-    text: "Dr. Ashley is an amazing person who cares deeply about her patients and families. She takes her time and is just wonderful. We are lucky to have her!",
-  },
-  {
-    id: 2,
-    name: "Rachel Chapin",
-    role: "Parent",
-    text: "The staff are amazing and patient. They all care about my son and his needs listens to my concerns as well. Been bringing my son for over 5 years.",
-  },
-  {
-    id: 3,
-    name: "Mary Etna Haac",
-    role: "Parent",
-    text: "Wonderful experience! Dr. Miller was attentive and helped my nervous 2 -yr old feel comfortable. We did not feel rushed and felt the space to ask questions comfortably.",
-  },
-];
+defineProps({
+  /** Testimonials to render — see src/assets/testimonials.js. */
+  items: { type: Array, required: true },
+  /** Narrowest a card may get before the grid drops a column. */
+  minWidth: { type: Number, default: 280 },
+});
 </script>
 
 <style scoped>
+.testimonial-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  /* auto-fit + minmax so the column count follows the space available rather
+     than a breakpoint guess — one grid works in a strip and on a full page.
+     The inner min() stops the track exceeding the container on narrow phones. */
+  grid-template-columns: repeat(auto-fit, minmax(min(var(--min), 100%), 1fr));
+  gap: 1.5rem;
+}
+
 .testimonial-card {
-  font-family: "Kalam", Roboto, Arial, sans-serif !important;
+  height: 100%;
+  margin: 0;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: "Kalam", Roboto, Arial, sans-serif;
+}
+
+.testimonial-card__text {
+  margin: 0;
+  /* Grows so the attributions line up along the bottom of a row of cards. */
+  flex: 1 1 auto;
+  line-height: 1.5;
+}
+
+.testimonial-card__by {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-card__name {
+  font-weight: 700;
+}
+
+.testimonial-card__role {
+  opacity: 0.75;
 }
 </style>
