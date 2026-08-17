@@ -47,6 +47,19 @@
     <h2 class="text-headline-small text-heading text-center mt-16 mb-2">
       It's a Pleasure to Meet You
     </h2>
+    <!-- Not inside v-lazy: a single feature image does not need it, and lazy
+         content is absent from the DOM until scrolled to, which hides it from
+         crawlers. The prerender step tags below-fold images `loading="lazy"`. -->
+    <v-row justify="center" class="mb-6">
+      <v-col cols="12" md="10" lg="9">
+        <v-img
+          :src="teamPhoto"
+          class="rounded-lg"
+          alt="Six members of the South Royalton Health Center team together on the porch of the practice"
+        />
+      </v-col>
+    </v-row>
+
     <p class="text-body-large text-white text-center mb-4">
       To reach our office staff please call our main office number at
       <a :href="appStore.officePhone">{{ appStore.officePhoneStr }}</a>
@@ -101,6 +114,7 @@
 <script setup>
 import StaffCards from "@/components/StaffCards.vue";
 import { useAppStore } from "@/store/app";
+import teamPhoto from "@/assets/img/office/srhc-team.jpg";
 import srhcBuilding from "@/assets/img/office/srhc-building.jpg";
 import srhcHandyHouse from "@/assets/img/office/srhc-handy-house.jpg";
 import srhcSign from "@/assets/img/office/srhc-sign.jpg";

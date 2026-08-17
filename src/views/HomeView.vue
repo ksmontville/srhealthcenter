@@ -163,7 +163,7 @@
                 class="greeting__media"
               >
                 <v-img
-                  :src="millerPhoto"
+                  :src="ashleyPhoto"
                   class="rounded-lg greeting__img"
                   alt="Dr. Ashley Miller, board-certified pediatrician and owner of South Royalton Health Center"
                   cover
@@ -237,7 +237,9 @@ import { useAppStore } from "@/store/app";
 import TestimonialCards from "@/components/TestimonialCards.vue";
 import { testimonials, HOME_TESTIMONIAL_COUNT } from "@/assets/testimonials";
 import logo from "../assets/img/srhc-logo-white.png";
-import millerPhoto from "../assets/img/staff/dr-miller-card-photo.jpeg";
+// A 3:4 crop framed head-and-torso: the full portrait is a standing shot,
+// which left her tiny in this 220px slot.
+import ashleyPhoto from "../assets/img/staff/ashley-greeting.jpg";
 import stockTeddySm from "@/assets/img/stock/stock-teddy-sm.jpg";
 import stockTeddyMd from "@/assets/img/stock/stock-teddy-md.jpg";
 import stockTeddyLg from "@/assets/img/stock/stock-teddy-lg.jpg";

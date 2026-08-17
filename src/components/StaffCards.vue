@@ -127,15 +127,25 @@
 <script setup>
 import { reactive } from "vue";
 import { useDisplay } from "vuetify";
-import millerPhoto from "@/assets/img/staff/dr-miller-card-photo.jpeg";
-import abbiPhoto from "@/assets/img/staff/abbi-card-photo.jpeg";
+/*
+ * Two derivatives per person: a square, face-centred crop for the circular card
+ * avatar and the full portrait for the dialog. The 2025 photos shared one file
+ * for both, which meant a full-length shot squeezed into a 64px circle.
+ */
+import ashleyPhoto from "@/assets/img/staff/ashley-card-photo.jpg";
+import ashleyAvatar from "@/assets/img/staff/ashley-card-avatar.jpg";
+import abbiPhoto from "@/assets/img/staff/abbi-card-photo.jpg";
+import abbiAvatar from "@/assets/img/staff/abbi-card-avatar.jpg";
+import daniellePhoto from "@/assets/img/staff/danielle-card-photo.jpg";
+import danielleAvatar from "@/assets/img/staff/danielle-card-avatar.jpg";
 import cindyPhoto from "@/assets/img/staff/cindy-card-photo.jpg";
-import lincolnPhoto from "@/assets/img/staff/lincoln-card-photo.jpg";
-import lincolnAvatar from "@/assets/img/staff/lincoln-card-avatar.jpg";
-import ishamPhoto from "@/assets/img/staff/isham-card-photo.jpg";
-import ishamAvatar from "@/assets/img/staff/isham-card-avatar.jpg";
+import cindyAvatar from "@/assets/img/staff/cindy-card-avatar.jpg";
 import amberPhoto from "@/assets/img/staff/amber-card-photo.jpg";
 import amberAvatar from "@/assets/img/staff/amber-card-avatar.jpg";
+import kahleePhoto from "@/assets/img/staff/kahlee-card-photo.jpg";
+import kahleeAvatar from "@/assets/img/staff/kahlee-card-avatar.jpg";
+import ameliaPhoto from "@/assets/img/staff/amelia-card-photo.jpg";
+import ameliaAvatar from "@/assets/img/staff/amelia-card-avatar.jpg";
 
 const { mobile } = useDisplay();
 
@@ -150,7 +160,6 @@ const externalAttrs = (href) =>
   href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {};
 
 // Bios rewritten from the client document "website edits.docx" (2026-07).
-// TODO(client): Kahlee Holden still has no headshot — falls back to initials.
 const staffDetails = reactive([
   {
     id: 0,
@@ -171,8 +180,8 @@ const staffDetails = reactive([
       },
       { label: "Auricular acupuncture", href: "/auricular-acupuncture" },
     ],
-    avatar: millerPhoto,
-    photo: millerPhoto,
+    avatar: ashleyAvatar,
+    photo: ashleyPhoto,
     alt: "Photo of Dr. Ashley Miller at South Royalton Health Center",
     showText: false,
   },
@@ -192,7 +201,7 @@ const staffDetails = reactive([
       { label: "HealthHubVT", href: "https://www.healthhubvt.org/" },
       { label: "School-based visits", href: "/school-visits" },
     ],
-    avatar: abbiPhoto,
+    avatar: abbiAvatar,
     photo: abbiPhoto,
     alt: "Photo of Abbi Henderson at South Royalton Health Center",
     showText: false,
@@ -207,8 +216,8 @@ const staffDetails = reactive([
       "A Vermont native, Danielle earned her Bachelor of Science in Nursing from the University of Vermont in 2011. Her diverse nursing experience includes working as a medical assistant and EMT, caring for patients on Dartmouth Hitchcock Medical Center's orthopedic, trauma, and plastics unit, and serving as the school nurse at White River Valley School–Bethel Campus for eight years. This unique combination of hospital, school, and community-based nursing gives Danielle a well-rounded perspective on helping children and families navigate complex healthcare needs.",
       "Outside of work, Danielle enjoys spending time at the lake with her family and friends and taking advantage of everything Vermont has to offer.",
     ],
-    avatar: ishamAvatar,
-    photo: ishamPhoto,
+    avatar: danielleAvatar,
+    photo: daniellePhoto,
     alt: "Photo of Danielle Isham at South Royalton Health Center",
     showText: false,
   },
@@ -222,7 +231,7 @@ const staffDetails = reactive([
       "A lifelong Vermonter, Cindy grew up in Bradford and is proud to care for families in the community she calls home. Before pursuing nursing, she managed horse farms and worked in a pediatric office, where she discovered her passion for caring for children and supporting families. She earned her Practical Nursing degree from Vermont State University and is currently pursuing her lactation counselor certification to better support breastfeeding families. She also has a special interest in behavioral health and is committed to continuing her education to provide even more comprehensive care.",
       "Outside of work, Cindy enjoys reading novels, hiking, and fishing Vermont's lakes and ponds for bass.",
     ],
-    avatar: cindyPhoto,
+    avatar: cindyAvatar,
     photo: cindyPhoto,
     alt: "Photo of Cindy Eggleston at South Royalton Health Center",
     showText: false,
@@ -252,8 +261,8 @@ const staffDetails = reactive([
       "A lifelong Vermonter, Kahlee grew up in West Fairlee before raising her family in Groton and later settling in Bradford. As a mom herself, she understands the joys and challenges of raising children and enjoys helping make the healthcare experience a little easier for other families. She takes pride in helping families navigate the details of their child's care with kindness, organization, and efficiency.",
       "Outside of work, Kahlee enjoys reading and spending time with her family.",
     ],
-    avatar: null,
-    photo: null,
+    avatar: kahleeAvatar,
+    photo: kahleePhoto,
     alt: "Kahlee Holden at South Royalton Health Center",
     showText: false,
   },
@@ -273,8 +282,8 @@ const staffDetails = reactive([
         href: "mailto:amelia@truepathscounseling.net",
       },
     ],
-    avatar: lincolnAvatar,
-    photo: lincolnPhoto,
+    avatar: ameliaAvatar,
+    photo: ameliaPhoto,
     alt: "Photo of Amelia Lincoln at South Royalton Health Center",
     showText: false,
   },

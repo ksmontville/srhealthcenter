@@ -26,11 +26,9 @@
           </v-col>
 
           <v-col cols="12" md="6" lg="5">
-            <!-- TODO(client): replace with the new photo of Dr. Ashley once the team
-             finishes selecting images. Using her existing headshot as a placeholder. -->
             <figure class="ma-0">
               <v-img
-                :src="millerPhoto"
+                :src="ashleyPhoto"
                 class="rounded-lg"
                 :max-height="380"
                 cover
@@ -81,7 +79,9 @@
 import FaqAccordion from "@/components/FaqAccordion.vue";
 import { acupunctureFaqItems } from "@/assets/acupunctureFaq";
 import { useAppStore } from "@/store/app";
-import millerPhoto from "@/assets/img/staff/dr-miller-card-photo.jpeg";
+// The square face crop, not the standing portrait: this slot is roughly
+// square and uses `cover`, which would otherwise crop her head off.
+import ashleyPhoto from "@/assets/img/staff/ashley-card-avatar.jpg";
 import { useSeo } from "@/composables/useSeo";
 import { faqPageSchema } from "@/config/schema";
 import { acupunctureAnswerText } from "@/assets/acupunctureFaq";
