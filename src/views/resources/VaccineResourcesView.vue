@@ -44,15 +44,18 @@
             <strong>Why vaccinate?</strong>
           </p>
           <v-list-item>
-            <v-icon :icon="mdiHospital" class="mx-2" color="white" />Click
+            <v-icon :icon="mdiHospital" class="mx-2" color="white" />
+            <!-- "Click here" told a screen-reader user reading the page's links in
+                 isolation nothing, and it was the one link Lighthouse flagged. The
+                 URL also carried someone's Google Analytics session parameters from
+                 whenever it was copied. -->
             <a
-              href="https://www.healthychildren.org/English/safety-prevention/immunizations/Pages/Why-I-Vaccinate-Parent-Testimonials.aspx?_gl=1*188lr2s*_ga*NTM5Mjg4MDQ2LjE2ODMwNTg0NTM.*_ga_FD9D3XZVQQ*MTY4MzgzMTgyMS4zLjAuMTY4MzgzMTgyNi4wLjAuMA..&_ga=2.200534894.1563832976.1683831821-539288046.1683058453"
+              href="https://www.healthychildren.org/English/safety-prevention/immunizations/Pages/Why-I-Vaccinate-Parent-Testimonials.aspx"
               target="_blank"
               rel="noopener noreferrer"
+              >Why I Vaccinate: parent testimonials</a
             >
-              here</a
-            >
-            for an informative article and parent testimonials.
+            — an article and stories from other families.
           </v-list-item>
 
           <v-list-item>
