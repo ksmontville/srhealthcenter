@@ -29,19 +29,23 @@
           </v-col>
 
           <v-col cols="12" md="6" lg="5">
-            <!-- TODO(client): swap for the new newborn/family photo once images are chosen. -->
+            <!-- A photograph of the practice's own shelf rather than a stock infant:
+                 the reading it offers families is real, and the top title is one we
+                 recommend. Swapped in at the client's request. -->
             <figure class="ma-0">
               <v-img
                 class="rounded-lg"
-                :src="babyPhoto"
-                :srcset="`${babyPhotoSm} 480w, ${babyPhoto} 800w, ${babyPhotoLg} 1200w`"
+                :src="newbornBooksPhoto"
                 :max-height="380"
                 cover
-                alt="An infant patient cared for at South Royalton Health Center."
+                alt="Books offered to expecting families at South Royalton Health Center, including Heading Home With Your Newborn and What to Expect."
               />
               <figcaption class="text-white text-center mt-2">
                 <small>
-                  We care for babies from their very first days through young adulthood.
+                  Reading we share with expecting families — see our
+                  <router-link to="/srhc-recommended-books"
+                    >full reading list</router-link
+                  >.
                 </small>
               </figcaption>
             </figure>
@@ -131,9 +135,7 @@
 <script setup>
 import { useAppStore } from "@/store/app";
 import IconList from "@/components/IconList.vue";
-import babyPhotoSm from "@/assets/img/stock/stock-baby-sm.jpg";
-import babyPhoto from "@/assets/img/stock/stock-baby-md.jpg";
-import babyPhotoLg from "@/assets/img/stock/stock-baby-lg.jpg";
+import newbornBooksPhoto from "@/assets/img/office/srhc-newborn-books.jpg";
 import { useSeo } from "@/composables/useSeo";
 
 const appStore = useAppStore();

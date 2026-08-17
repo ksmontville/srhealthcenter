@@ -27,16 +27,13 @@
           </v-col>
 
           <v-col cols="12" md="6" lg="5">
-            <!-- TODO(client): swap for the new waiting-room photo once images are chosen. -->
             <figure class="ma-0">
-              <!-- Portrait source; cap the height so a short intro column doesn't
-               sit beside a very tall image on wide screens. -->
               <v-img
                 class="rounded-lg"
-                :src="playroomPhoto"
+                :src="waitingAreaPhoto"
                 :max-height="380"
                 cover
-                alt="The playroom in the South Royalton Health Center waiting area, where children can play before their appointment."
+                alt="The waiting area at South Royalton Health Center, with a wooden climbing slide, armchairs and houseplants by the window."
               />
               <figcaption class="text-white text-center mt-2">
                 <small>
@@ -122,7 +119,7 @@
 <script setup>
 import { useAppStore } from "@/store/app";
 import IconList from "@/components/IconList.vue";
-import playroomPhoto from "@/assets/img/forms/playroom.jpg";
+import waitingAreaPhoto from "@/assets/img/office/srhc-waiting-area.jpg";
 import { useSeo } from "@/composables/useSeo";
 
 const appStore = useAppStore();

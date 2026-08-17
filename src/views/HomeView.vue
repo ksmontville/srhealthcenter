@@ -67,10 +67,9 @@
               <v-col cols="12" lg="5" class="story-panel__media">
                 <v-lazy>
                   <v-img
-                    :src="stockBabySm"
-                    :srcset="`${stockBabySm} 480w, ${stockBabyMd} 800w, ${stockBabyLg} 1200w`"
+                    :src="windowCornerPhoto"
                     class="rounded story-panel__img"
-                    alt="An infant resting in a caregiver's hands"
+                    alt="A sunlit window in the South Royalton Health Center waiting area, with a trailing houseplant and a child-sized chair"
                     cover
                   />
                 </v-lazy>
@@ -115,10 +114,9 @@
               <v-col cols="12" lg="5" class="story-panel__media">
                 <v-lazy>
                   <v-img
-                    :src="stockTeddySm"
-                    :srcset="`${stockTeddySm} 480w, ${stockTeddyMd} 800w, ${stockTeddyLg} 1200w`"
+                    :src="entrancePathPhoto"
                     class="rounded story-panel__img"
-                    alt="A teddy bear beside a face mask and syringe"
+                    alt="The brick garden path leading to the entrance of South Royalton Health Center"
                     cover
                   />
                 </v-lazy>
@@ -240,12 +238,11 @@ import logo from "../assets/img/srhc-logo-white.png";
 // A 3:4 crop framed head-and-torso: the full portrait is a standing shot,
 // which left her tiny in this 220px slot.
 import ashleyPhoto from "../assets/img/staff/ashley-greeting.jpg";
-import stockTeddySm from "@/assets/img/stock/stock-teddy-sm.jpg";
-import stockTeddyMd from "@/assets/img/stock/stock-teddy-md.jpg";
-import stockTeddyLg from "@/assets/img/stock/stock-teddy-lg.jpg";
-import stockBabySm from "@/assets/img/stock/stock-baby-sm.jpg";
-import stockBabyMd from "@/assets/img/stock/stock-baby-md.jpg";
-import stockBabyLg from "@/assets/img/stock/stock-baby-lg.jpg";
+// Photographs of the practice itself, replacing the last two stock images on
+// the site: a quiet sunlit corner against the copy about feeling rushed, and
+// the path to the front door against "imagine how it would feel to...".
+import windowCornerPhoto from "@/assets/img/office/srhc-window-corner.jpg";
+import entrancePathPhoto from "@/assets/img/office/srhc-entrance-path.jpg";
 import { useSeo } from "@/composables/useSeo";
 
 const appStore = useAppStore();

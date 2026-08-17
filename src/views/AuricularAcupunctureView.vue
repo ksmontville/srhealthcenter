@@ -79,9 +79,15 @@
 import FaqAccordion from "@/components/FaqAccordion.vue";
 import { acupunctureFaqItems } from "@/assets/acupunctureFaq";
 import { useAppStore } from "@/store/app";
-// The square face crop, not the standing portrait: this slot is roughly
-// square and uses `cover`, which would otherwise crop her head off.
-import ashleyPhoto from "@/assets/img/staff/ashley-card-avatar.jpg";
+/*
+ * A dedicated crop, not the card avatar.
+ *
+ * This slot is square at 1440px but 1.55:1 at 2560px, so `cover` trims it
+ * vertically on wide screens. The avatar is framed tight for a 64px circle, so
+ * at that trim it clipped her forehead and chin. This one is squared but zoomed
+ * out to head-and-shoulders, which leaves enough margin to survive both shapes.
+ */
+import ashleyPhoto from "@/assets/img/staff/ashley-portrait.jpg";
 import { useSeo } from "@/composables/useSeo";
 import { faqPageSchema } from "@/config/schema";
 import { acupunctureAnswerText } from "@/assets/acupunctureFaq";
