@@ -25,6 +25,16 @@
           we'll set something up today!
         </p>
 
+        <!-- The boundary is stated explicitly: text is convenient but not a secure
+             channel for health information, and it is not monitored out of hours. -->
+        <p class="body-text text-body-large text-white my-4">
+          Prefer to text? You can reach us at
+          <a :href="appStore.officeText">(802) 763-7575</a> for non-medical questions —
+          appointment requests, forms, directions and the like. Please send medical
+          questions through the patient portal instead, where they reach your care team
+          securely, and call us if something is urgent.
+        </p>
+
         <p class="body-text text-body-large text-white mt-4 mb-8">
           As always if this is an emergency please call 911.
         </p>

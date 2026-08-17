@@ -74,7 +74,7 @@ export const acupunctureFaqItems = [
     id: "does-it-hurt",
     question: "Does auricular acupuncture hurt?",
     answer:
-      "Most children and teens tolerate auricular acupuncture very well. The needles are extremely thin — much thinner than typical medical needles. Some children notice a brief pinch, mild tingling, warmth, or little sensation at all. Depending on the treatment plan, small ear seeds may also be used instead of or in addition to needles.\n\nMany patients find treatment calming and relaxing, and treatment can be paused or stopped at any time.",
+      "Most children and teens tolerate auricular acupuncture very well. The needles are tiny, flexible strands\u2014no thicker than a cat's whisker or a single hair\u2014that feel like a light tap, a quick tickle, or a tiny pinch rather than a shot. Depending on the treatment plan, small ear seeds may also be used instead of or in addition to needles.\n\nMany patients find treatment calming and relaxing, and treatment can be paused or stopped at any time.",
   },
   {
     id: "is-it-safe",

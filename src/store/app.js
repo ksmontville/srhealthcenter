@@ -8,10 +8,10 @@ export const useAppStore = defineStore("app", () => {
   const officeFax = ref("fax:8442898252");
   const officeFaxStr = "(844) 289-8252";
 
+  // Appointment requests arrive by text or through the portal. The practice
+  // retired Weave online booking, so that URL is gone rather than left dangling.
+  const officeText = ref("sms:8027637575");
   const patientPortalUrl = ref("https://12904.portal.athenahealth.com/");
-  const onlineBookingUrl = ref(
-    "https://book2.getweave.com/62731e39-480c-4e5b-99d5-fd864ed4fa63/request-appointment/",
-  );
   const onlinePaymentUrl = ref("https://12904.portal.athenahealth.com/");
   const facebookUrl = ref("https://www.facebook.com/southroyaltonhealthcenter/");
 
@@ -86,10 +86,10 @@ export const useAppStore = defineStore("app", () => {
   return {
     officePhoneStr,
     officePhone,
+    officeText,
     officeFax,
     officeFaxStr,
     patientPortalUrl,
-    onlineBookingUrl,
     onlinePaymentUrl,
     facebookUrl,
     navLinks,

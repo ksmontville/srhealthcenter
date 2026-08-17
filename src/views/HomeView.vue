@@ -18,12 +18,10 @@
                 Call for Appointments
               </v-btn>
 
-              <v-btn
-                color="highlight"
-                size="large"
-                @click="openUrl(appStore.onlineBookingUrl)"
-              >
-                Book Appointment Online
+              <!-- Weave online booking was retired; requests come in by text or
+                   through the portal instead. -->
+              <v-btn :href="appStore.officeText" color="highlight" size="large">
+                Text Us a Request
               </v-btn>
 
               <v-btn

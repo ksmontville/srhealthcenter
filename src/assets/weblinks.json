@@ -1,6 +1,11 @@
 {
   "General Sites": [
     {
+      "id": "0",
+      "text": "HealthyChildren.org — the American Academy of Pediatrics parenting site",
+      "url": "https://www.healthychildren.org/English/Pages/default.aspx"
+    },
+    {
       "id": "1",
       "text": "Children's health The Mayo Clinic",
       "url": "https://www.mayoclinic.org/healthy-lifestyle/childrens-health/basics/childrens-health/hlv-20049425"
@@ -24,11 +29,6 @@
     }
   ],
   "Parenting": [
-    {
-      "id": "0",
-      "text": "The AAP Parenting Website",
-      "url": "https://www.healthychildren.org/English/Pages/default.aspx"
-    },
     {
       "id": "5",
       "text": "Raising Teens: Ten Tasks of Adolescent Development",
@@ -60,7 +60,7 @@
   "Mental Health Resources": [
     {
       "id": "9",
-      "text": "Mental Health Resources for Caregivers & Perinatal People: A wealth of resources, carefully curated to address your diverse needs and empower you in your journey",
+      "text": "VT Mental Health Resources for Caregivers & Perinatal People: A wealth of resources, carefully curated to address your diverse needs and empower you in your journey",
       "url": "https://www.vtcpap.com/resources-for-caregivers"
     }
   ],

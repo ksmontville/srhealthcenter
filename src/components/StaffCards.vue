@@ -33,11 +33,24 @@
           <v-card-item :subtitle="staffDetail.field" />
 
           <v-card-text>
+            <!--
+              `eager` so the biography is in the page from the start.
+
+              A dialog builds its contents on first open, so until someone
+              clicked "Learn More" not one word of any bio existed in the HTML —
+              no board certifications, no Dartmouth faculty appointment, no
+              Pediatrician of the Year. For a practice whose credibility rests on
+              exactly that, it was the most valuable content on the site and the
+              only content search engines and AI assistants could not see. Same
+              defect the expansion panels had in Phase 2.
+            -->
             <v-dialog
               v-model="staffDetail.showText"
               :fullscreen="mobile"
               transition="dialog-top-transition"
               scrollable
+              eager
+              :aria-label="`About ${staffDetail.name}`"
             >
               <v-sheet color="panel" class="mx-auto" max-width="600">
                 <v-container class="my-4 pa-8">
@@ -148,7 +161,7 @@ const staffDetails = reactive([
       "Ashley Miller, MD, FAAP, DipABLM, is a board-certified Pediatrician and Lifestyle Medicine physician and owner of South Royalton Health Center. She is passionate about partnering with children and families to build healthy habits that support lifelong wellness and empower children to become healthy, resilient adults.",
       "Originally from southern New Hampshire, Dr. Ashley returned to New Hampshire to attend the Geisel School of Medicine at Dartmouth and completed her pediatric residency at Dartmouth-Hitchcock Medical Center in 2009. After several years practicing pediatrics in New Hampshire, she was thrilled to join South Royalton Health Center in 2014 and became the practice owner in 2019.",
       "Today, Dr. Ashley is proud to lead an independent, woman-owned pediatric medical home dedicated to providing relationship-based, evidence-based, whole-child care for families throughout Vermont and New Hampshire.",
-      "In addition to caring for patients, Dr. Ashley is a Fellow of the American Academy of Pediatrics (FAAP), a Clinical Assistant Professor of Pediatrics at the Geisel School of Medicine at Dartmouth, and remains active in the American Academy of Pediatrics at both the state and national levels. She was honored to be named the 2022 Green Mountain Pediatrician of the Year.",
+      "In addition to caring for patients, Dr. Ashley is a Fellow of the American Academy of Pediatrics (FAAP), a Diplomate of the American Board of Lifestyle Medicine, a Clinical Assistant Professor of Pediatrics at the Geisel School of Medicine at Dartmouth, and remains active in the American Academy of Pediatrics at both the state and national levels. She was honored to be named the 2022 Green Mountain Pediatrician of the Year.",
       "When she's not caring for patients, you'll likely find Dr. Ashley competing in local dressage shows (think ice dancing on horseback!), hiking or snowshoeing in the surrounding mountains, or swimming in Vermont's rivers and lakes with her dogs. She feels incredibly fortunate to live and work in the community she calls home.",
     ],
     links: [
@@ -207,7 +220,7 @@ const staffDetails = reactive([
     bio: [
       "Cindy Eggleston, LPN, is one of the nurses families know and trust at South Royalton Health Center and an integral part of our clinical team. Working closely alongside Dr. Ashley, Cindy helps care for patients throughout the day, provides telephone triage and nursing advice, performs in-office blood draws, follows up with families after emergency department visits and hospitalizations, and helps ensure every child receives timely, compassionate care. She understands that a reassuring voice and a thoughtful conversation can make all the difference when parents are worried about their child, and she strives to make every interaction as calm and supportive as possible.",
       "A lifelong Vermonter, Cindy grew up in Bradford and is proud to care for families in the community she calls home. Before pursuing nursing, she managed horse farms and worked in a pediatric office, where she discovered her passion for caring for children and supporting families. She earned her Practical Nursing degree from Vermont State University and is currently pursuing her lactation counselor certification to better support breastfeeding families. She also has a special interest in behavioral health and is committed to continuing her education to provide even more comprehensive care.",
-      "Outside of work, Cindy enjoys reading novels, hiking with her beloved dogs, and fishing Vermont's lakes and ponds for bass.",
+      "Outside of work, Cindy enjoys reading novels, hiking, and fishing Vermont's lakes and ponds for bass.",
     ],
     avatar: cindyPhoto,
     photo: cindyPhoto,

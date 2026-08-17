@@ -27,6 +27,22 @@
           seriously and receive evidence-based information, reassurance and guidance.
         </p>
 
+        <!-- Why Families Choose Us -->
+        <h2
+          class="text-headline-small text-heading font-weight-bold mt-12 mb-4"
+          id="why-families-choose-us"
+        >
+          Why Families Choose Us
+        </h2>
+        <p class="body-text text-body-large text-white">
+          Families choose our practice because we offer:
+        </p>
+        <icon-list :items="whyChooseUs" />
+        <p class="body-text text-body-large text-white mt-4">
+          Our goal is to build lasting relationships with families while helping every
+          child thrive.
+        </p>
+
         <!-- Preventive Pediatric Care -->
         <h2
           class="text-headline-small text-heading font-weight-bold mt-12 mb-4"
@@ -230,22 +246,6 @@
         <p class="body-text text-body-large text-white">We also provide:</p>
         <icon-list dense :items="additionalServices" />
 
-        <!-- Why Families Choose Us -->
-        <h2
-          class="text-headline-small text-heading font-weight-bold mt-12 mb-4"
-          id="why-families-choose-us"
-        >
-          Why Families Choose Us
-        </h2>
-        <p class="body-text text-body-large text-white">
-          Families choose our practice because we offer:
-        </p>
-        <icon-list :items="whyChooseUs" />
-        <p class="body-text text-body-large text-white mt-4">
-          Our goal is to build lasting relationships with families while helping every
-          child thrive.
-        </p>
-
         <!-- Local Playgroups: nested inside the same content column so it lines
              up with the service sections above rather than sitting full-width. -->
         <h2
@@ -327,6 +327,7 @@ const appStore = useAppStore();
 // Must stay in sync with the id attributes on the <h2> section headings below.
 const sections = [
   { id: "our-mission", label: "Our Mission" },
+  { id: "why-families-choose-us", label: "Why Families Choose Us" },
   { id: "preventive-care", label: "Preventive Pediatric Care" },
   { id: "same-day-sick-visits", label: "Same-Day Sick Visits" },
   { id: "nutrition", label: "Nutrition" },
@@ -336,7 +337,6 @@ const sections = [
   { id: "school-support", label: "Developmental & School Support" },
   { id: "adolescent-medicine", label: "Adolescent Medicine" },
   { id: "additional-services", label: "Additional Medical Services" },
-  { id: "why-families-choose-us", label: "Why Families Choose Us" },
   { id: "playgroups", label: "Local Weekly Free Play Groups" },
 ];
 
@@ -395,7 +395,7 @@ const infantFeeding = [
   "Infant sleep guidance and healthy sleep habits",
   "Growth and nutrition support during infancy",
   "Developmental monitoring",
-  "Diaper Bank assistance",
+  "Onsite Diaper Bank assistance",
   "Community resource referrals",
 ];
 
