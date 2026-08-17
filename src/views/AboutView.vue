@@ -94,78 +94,113 @@
         height="400"
         color="primary"
       >
-        <small class="my-2">Click to Enlarge</small>
+        <small class="my-2">Select a photo to enlarge</small>
         <v-carousel color="white" cycle continuous>
           <v-carousel-item v-for="officePhoto in officePhotos" :key="officePhoto.id">
-            <v-img
-              :src="officePhoto.image"
-              :alt="officePhoto.alt"
-              cover
-              height="400"
-              @click="openImage(officePhoto.image)"
-            />
+            <!--
+              A real button, not a click handler on the image.
+
+              This used to call window.open() with the asset URL, which navigates
+              to the raw .webp file rather than enlarging anything — and whether
+              the browser renders or downloads it depends on the browser and the
+              content type it is served with. It was also a bare <div>, so it was
+              unreachable by keyboard and announced as nothing at all.
+            -->
+            <button type="button" class="photo-button" @click="enlarged = officePhoto">
+              <v-img
+                :src="officePhoto.image"
+                :alt="officePhoto.alt"
+                cover
+                height="400"
+              />
+              <span class="d-sr-only">Enlarge this photo</span>
+            </button>
           </v-carousel-item>
         </v-carousel>
       </v-sheet>
     </v-lazy>
+
+    <v-dialog
+      :model-value="enlarged !== null"
+      max-width="1100"
+      :aria-label="enlarged?.alt"
+      @update:model-value="enlarged = null"
+    >
+      <v-card color="panel" class="pa-2">
+        <v-img :src="enlarged?.image" :alt="enlarged?.alt" max-height="80vh" contain />
+        <v-card-actions class="justify-center">
+          <v-btn color="action" @click="enlarged = null">Close</v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
   </v-container>
 </template>
 
 <script setup>
+import { ref } from "vue";
 import StaffCards from "@/components/StaffCards.vue";
 import { useAppStore } from "@/store/app";
 import teamPhoto from "@/assets/img/office/srhc-team.jpg";
-import srhcBuilding from "@/assets/img/office/srhc-building.jpg";
-import srhcHandyHouse from "@/assets/img/office/srhc-handy-house.jpg";
 import srhcSign from "@/assets/img/office/srhc-sign.jpg";
-import examRoomThree from "@/assets/img/office/exam-room-3.jpg";
-import examRoomFour from "@/assets/img/office/exam-room-4.jpg";
-import examRoomFive from "@/assets/img/office/exam-room-5.jpg";
-import examRoomSix from "@/assets/img/office/exam-room-six.jpg";
+import srhcPorch from "@/assets/img/office/srhc-porch.jpg";
+import srhcReception from "@/assets/img/office/srhc-reception.jpg";
+import srhcPlayArea from "@/assets/img/office/srhc-play-area.jpg";
+import srhcPuzzleTable from "@/assets/img/office/srhc-puzzle-table.jpg";
+import srhcExamForest from "@/assets/img/office/srhc-exam-forest.jpg";
+import srhcExamBlue from "@/assets/img/office/srhc-exam-blue.jpg";
 import { useSeo } from "@/composables/useSeo";
 import { physicianSchema } from "@/config/schema";
 
 const appStore = useAppStore();
 
-const openImage = (src) => {
-  window.open(src);
-};
+// Which photo the lightbox is showing; null when closed.
+const enlarged = ref(null);
 
+/*
+ * Ordered as a visit: arrive, be greeted, wait, be seen.
+ *
+ * Replaces the 2025 set, which was four near-identical exam rooms plus three
+ * bare-tree exteriors — and whose street view showed the roadside sign still
+ * advertising clinicians who left before the practice changed hands.
+ *
+ * Each alt describes its own photo. The old set gave all four exam rooms the
+ * identical string, which tells a screen-reader user nothing about which is which.
+ */
 const officePhotos = [
   {
     id: 0,
-    image: srhcBuilding,
-    alt: "The South Royalton Health Center historic building.",
+    image: srhcSign,
+    alt: "The South Royalton Health Center sign beside the entrance, reading Pediatrics and Adolescent Medicine.",
   },
   {
     id: 1,
-    image: srhcHandyHouse,
-    alt: "The Handy Houses historic sign.",
+    image: srhcPorch,
+    alt: "Purple and yellow irises in bloom in the garden beside the front porch.",
   },
   {
     id: 2,
-    image: srhcSign,
-    alt: "The signage for South Royalton Health Center.",
+    image: srhcReception,
+    alt: "A member of the front desk team at the reception window, beside a rack of children's books.",
   },
   {
     id: 3,
-    image: examRoomThree,
-    alt: "An exam room at South Royalton Health Center.",
+    image: srhcPlayArea,
+    alt: "The play corner of the waiting area, with a children's book rack, a wooden rocking horse and a table of toys.",
   },
   {
     id: 4,
-    image: examRoomFour,
-    alt: "An exam room at South Royalton Health Center.",
+    image: srhcPuzzleTable,
+    alt: "A part-finished jigsaw puzzle on a table between two armchairs in a quiet corner.",
   },
   {
     id: 5,
-    image: examRoomFive,
-    alt: "An exam room at South Royalton Health Center.",
+    image: srhcExamForest,
+    alt: "An exam room painted with a forest mural of deer, a rabbit and pine trees.",
   },
   {
     id: 6,
-    image: examRoomSix,
-    alt: "An exam room at South Royalton Health Center.",
+    image: srhcExamBlue,
+    alt: "A blue exam room with a privacy curtain, exam table and butterfly decals.",
   },
 ];
 
@@ -178,6 +213,21 @@ useSeo({
 </script>
 
 <style scoped>
+/* The button is only a hit target and focus ring; the image supplies the visuals. */
+.photo-button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: zoom-in;
+}
+
+.photo-button:focus-visible {
+  outline: 3px solid rgb(var(--v-theme-heading));
+  outline-offset: -3px;
+}
+
 a:not(.v-btn) {
   color: rgb(var(--v-theme-highlight));
 }
