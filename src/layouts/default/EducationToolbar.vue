@@ -1,13 +1,24 @@
 <template>
-  <v-bottom-navigation v-if="mobile" bg-color="highlight" grow>
+  <!--
+    Rendered as a labelled <nav>, not Vuetify's default <header>.
+
+    <header> maps to the `banner` landmark, so on a phone this bar and the app
+    bar were both claiming to be the page banner — a screen reader user jumping
+    by landmark would hit two "banner"s and find resource shortcuts in the
+    second. It is navigation, so it says so, and the label distinguishes it from
+    the main menu.
+  -->
+  <v-bottom-navigation
+    v-if="mobile"
+    tag="nav"
+    aria-label="Resources for healthy kids and families"
+    bg-color="panel"
+    grow
+  >
     <v-btn :to="{ path: 'srhc-recommended-child-health-web-links' }">
       <v-icon :icon="mdiMedicalBag" />
       SRHC Recs
     </v-btn>
-    <!-- <v-btn :to="{ path: 'local-resources' }">
-      <v-icon :icon="mdiNearMe" />
-      Local
-    </v-btn> -->
     <v-btn :to="{ path: 'srhc-recommended-books' }">
       <v-icon :icon="mdiBookOpenPageVariantOutline" />
       Reading
@@ -23,66 +34,69 @@
     location="right"
     permanent
     floating
-    color="highlight"
+    color="panel"
     elevation="8"
   >
     <v-sheet
       color="primary"
-      class="rounded text-h6 text-center ma-4 pa-3"
+      class="rounded text-title-large text-center ma-4 pa-3"
       elevation="4"
       >{{ toolBarTitle }}</v-sheet
     >
-    <v-list>
-      <v-list-item :to="{ path: 'srhc-recommended-child-health-web-links' }"
-        ><v-icon :icon="mdiMedicalBag" class="mx-2" />SRHC Recs</v-list-item
-      >
-      <!-- <v-list-item :to="{ path: 'local-resources' }"
-        ><v-icon :icon="mdiNearMe" class="mx-2" />Local</v-list-item
-      > -->
-      <v-list-item :to="{ path: 'srhc-recommended-books' }"
-        ><v-icon
-          :icon="mdiBookOpenPageVariantOutline"
-          class="mx-2"
-        />Reading</v-list-item
-      >
-      <v-list-item :to="{ path: 'vaccine-information' }"
-        ><v-icon :icon="mdiNeedle" class="mx-2" />Vaccines</v-list-item
-      >
-
-      <v-sheet
-        color="primary"
-        class="rounded text-h6 text-center ma-4"
-        elevation="4"
-        >Office Hours</v-sheet
-      >
-      <v-list>
-        <v-list-item v-for="hour in hours" :key="hour">
-          <v-icon :icon="mdiHospitalBoxOutline" class="mx-2" />
-          <small>{{ hour }}</small>
-        </v-list-item>
-        <v-list-item class="d-flex align-center justify-center my-4">
-          <v-btn
-            @click="openUrl(appStore.patientPortalUrl)"
-            color="primary"
-            block
-          >
-            Patient Portal
-          </v-btn>
-        </v-list-item>
-        <v-list-item class="d-flex align-center justify-center my-4">
-          <p class="text-center font-weight-bold mx-auto my-2">Office Phone</p>
-          <v-btn :href="appStore.officePhone" color="secondary">{{
-            appStore.officePhoneStr
-          }}</v-btn>
-        </v-list-item>
-        <v-list-item class="d-flex align-center justify-center my-4">
-          <p class="text-center font-weight-bold mx-auto my-2">Office Fax</p>
-          <v-btn :href="appStore.officeFax" color="secondary">{{
-            appStore.officeFaxStr
-          }}</v-btn>
-        </v-list-item>
+    <!-- Two sibling lists rather than a nested one. A `role="list"` may only
+         contain `role="listitem"`, so the previous structure — a v-list holding
+         a v-sheet and a second v-list — failed aria-required-children. -->
+    <nav aria-label="Resources for healthy kids and families">
+      <v-list role="none">
+        <v-list-item :to="{ path: 'srhc-recommended-child-health-web-links' }"
+          ><v-icon :icon="mdiMedicalBag" class="mx-2" />SRHC Recs</v-list-item
+        >
+        <v-list-item :to="{ path: 'srhc-recommended-books' }"
+          ><v-icon
+            :icon="mdiBookOpenPageVariantOutline"
+            class="mx-2"
+          />Reading</v-list-item
+        >
+        <v-list-item :to="{ path: 'vaccine-information' }"
+          ><v-icon :icon="mdiNeedle" class="mx-2" />Vaccines</v-list-item
+        >
       </v-list>
+    </nav>
+
+    <v-sheet
+      color="primary"
+      class="rounded text-title-large text-center ma-4"
+      elevation="4"
+      >Office Hours</v-sheet
+    >
+
+    <v-list>
+      <v-list-item v-for="hour in hours" :key="hour" class="hours-item">
+        <v-icon :icon="mdiHospitalBoxOutline" />
+        <small>{{ hour }}</small>
+      </v-list-item>
     </v-list>
+
+    <!-- Buttons are actions, not list items — outside the list. -->
+    <div class="d-flex flex-column align-center ga-4 px-4 pb-6">
+      <v-btn @click="openUrl(appStore.patientPortalUrl)" color="action" block>
+        Patient Portal
+      </v-btn>
+
+      <div class="text-center">
+        <p class="font-weight-bold my-2">Office Phone</p>
+        <v-btn :href="appStore.officePhone" color="action">{{
+          appStore.officePhoneStr
+        }}</v-btn>
+      </div>
+
+      <div class="text-center">
+        <p class="font-weight-bold my-2">Office Fax</p>
+        <v-btn :href="appStore.officeFax" color="action">{{
+          appStore.officeFaxStr
+        }}</v-btn>
+      </div>
+    </div>
   </v-navigation-drawer>
 </template>
 
@@ -90,7 +104,6 @@
 import { useDisplay } from "vuetify";
 import {
   mdiMedicalBag,
-  mdiNearMe,
   mdiBookOpenPageVariantOutline,
   mdiNeedle,
   mdiHospitalBoxOutline,
@@ -116,4 +129,17 @@ const hours = [
 // ]
 </script>
 
-<style scoped></style>
+<style scoped>
+/* Same defect as the contact card's hours list: with the icon as an inline
+   sibling of the text, every wrapped line ran back underneath it. */
+.hours-item :deep(.v-list-item__content) {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.hours-item .v-icon {
+  flex: 0 0 auto;
+  margin-top: 0.1em;
+}
+</style>

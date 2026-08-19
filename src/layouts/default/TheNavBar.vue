@@ -1,41 +1,88 @@
 <template>
-  <v-app-bar class="navbar" color="primary" density="prominent">
-    <v-img :src="navbarBg" cover>
+  <!-- The `prominent` density (128px) clipped the brand subtext, which needs ~155px.
+       Note density multiplies an explicit height, so set the height on its own. -->
+  <v-app-bar class="navbar" color="primary" :height="176">
+    <v-img :src="navbarBg" alt="" cover>
       <v-container fluid>
         <v-row justify="center" align="center">
           <v-col cols="3">
             <v-app-bar-title>
               <v-row justify="center" align="center">
-                <v-col @click="appStore.setActiveId('/')">
-                  <v-img
-                    :src="logo"
-                    max-width="128"
-                    @click="$router.push('/')"
-                  />
-                  <p class="brand text-subtitle-2">
-                    Improving the lives of children
-                  </p>
+                <v-col class="py-2">
+                  <router-link to="/" class="brand-link">
+                    <v-img
+                      :src="logo"
+                      max-width="128"
+                      alt="South Royalton Health Center — home"
+                    />
+                    <p class="brand text-title-small mt-1">
+                      Improving the lives of children
+                    </p>
+                  </router-link>
                 </v-col>
               </v-row>
             </v-app-bar-title>
           </v-col>
 
           <v-col cols="9">
-            <v-row justify="center" align="center">
-              <v-col
-                v-for="navLink in appStore.navLinks"
-                :key="navLink.id"
-                class="mx-2"
-              >
-                <v-btn
-                  :text="navLink.name"
-                  :to="navLink.route"
-                  variant="text"
-                  @click="appStore.setActiveId(navLink.route)"
-                  class="nav-link"
-                />
-              </v-col>
-            </v-row>
+            <nav aria-label="Main">
+              <v-row justify="end" align="center" no-gutters>
+                <template v-for="navLink in appStore.navLinks" :key="navLink.id">
+                  <!--
+                    Dropdown group.
+
+                    `eager` matters for more than a flash of layout: v-menu builds
+                    its contents on first open, so without it the prerendered HTML
+                    contained not one link to Services, Auricular Acupuncture,
+                    School Visits, FAQ or any other page that lives in a dropdown.
+                    Crawlers saw a home page whose only internal links were the
+                    footer and sidebar. Same defect the expansion panels had in
+                    Phase 2, in the one place it costs the most.
+                  -->
+                  <v-menu v-if="navLink.children" open-on-hover eager>
+                    <template v-slot:activator="{ props }">
+                      <v-btn
+                        v-bind="props"
+                        variant="text"
+                        class="nav-link mx-1"
+                        :active="isGroupActive(navLink)"
+                        :append-icon="mdiChevronDown"
+                      >
+                        {{ navLink.name }}
+                      </v-btn>
+                    </template>
+
+                    <v-list bg-color="primary" density="compact" role="none">
+                      <v-list-item
+                        v-for="child in navLink.children"
+                        :key="child.id"
+                        :to="child.route"
+                        :active="isActive(child.route)"
+                        color="highlight"
+                      >
+                        <v-list-item-title>{{ child.name }}</v-list-item-title>
+                      </v-list-item>
+                    </v-list>
+                  </v-menu>
+
+                  <!-- Plain top-level link.
+                       `:active` is set explicitly because v-btn otherwise derives it
+                       from router-link-active, which is prefix-based — that made
+                       "Home" (`/`) highlight on every page. -->
+                  <v-btn
+                    v-else
+                    :to="navLink.route"
+                    variant="text"
+                    class="nav-link mx-1"
+                    :active="isActive(navLink.route)"
+                  >
+                    {{ navLink.name }}
+                  </v-btn>
+                </template>
+
+                <theme-toggle class="ml-2" />
+              </v-row>
+            </nav>
           </v-col>
         </v-row>
       </v-container>
@@ -44,15 +91,23 @@
 </template>
 
 <script setup>
+import { useRoute } from "vue-router";
+import { mdiChevronDown } from "@mdi/js";
 import navbarBg from "@/assets/img/background/navbar-bg.jpg";
-import logo from "../../assets/img/srhc-logo-white.png";
+import logo from "@/assets/img/srhc-logo-white.png";
 import { useAppStore } from "@/store/app";
-
-// const openFacebook = () => {
-// window.open(facebookUrl)
-// }
+import ThemeToggle from "@/components/ThemeToggle.vue";
 
 const appStore = useAppStore();
+const route = useRoute();
+
+// Home should only match exactly; every other route matches on its own path.
+const isActive = (target) =>
+  target === "/" ? route.path === "/" : route.path === target;
+
+// A group highlights when any of its children is the current page.
+const isGroupActive = (group) =>
+  (group.children ?? []).some((child) => isActive(child.route));
 </script>
 
 <style scoped>
@@ -60,11 +115,13 @@ const appStore = useAppStore();
   opacity: 95%;
 }
 
-.brand {
-  font-family: "Kalam", Roboto, Arial, sans-serif !important;
+.brand-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
 }
 
-.highlight {
-  background-color: rgba(200, 200, 200, 0.2);
+.brand {
+  font-family: "Kalam", Roboto, Arial, sans-serif !important;
 }
 </style>

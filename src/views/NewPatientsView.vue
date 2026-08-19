@@ -1,93 +1,172 @@
 <template>
-
   <v-container class="pa-8">
+    <h1 class="text-display-large text-white text-center my-16">
+      Welcome to South Royalton Health Center!
+    </h1>
 
-    <p class="text-h2 text-white text-center my-16">New Patients</p>
+    <v-row justify="center">
+      <v-col cols="12" md="10" lg="9">
+        <!-- Intro nested in the same content column as the sections below so the
+             left edges line up. -->
+        <v-row align="start">
+          <v-col cols="12" md="6" lg="7" class="pl-0">
+            <p class="body-text text-body-large text-white mb-4">
+              We're so glad you're here!
+            </p>
+            <p class="body-text text-body-large text-white mb-4">
+              Whether you're new to the Upper Valley, changing pediatric practices, or
+              joining us with your first child, we're honored you've chosen South
+              Royalton Health Center as your child's medical home.
+            </p>
+            <p class="body-text text-body-large text-white">
+              Our team is committed to making your first visit — and every visit after
+              that — as welcoming, organized, and stress-free as possible.
+              <router-link to="/meet-our-providers-staff">Meet our team</router-link>
+              before you come in.
+            </p>
+          </v-col>
 
-    <p class="body-text text-body-1 text-white my-4">
-      Thank you for choosing South Royalton Health Center as your child's medical home, where we always provide a
-      comfortable, caring environment so our patients and their families can feel at ease. We've included helpful items
-      on this page to ensure you and your child's first trip, and every trip, to our office is productive, stress-free and enjoyable.
-      Also please check out the
-      <router-link :to="{path: 'patient-portal'}" @click="appStore.setActiveId('patient-portal')">patient portal page</router-link>.
-      Our patient portal allows you to communicate securely with your clinician and office staff, request appointments,
-      download immunization and health forms, and  even pay your bill online!
-    </p>
+          <v-col cols="12" md="6" lg="5">
+            <figure class="ma-0">
+              <v-img
+                class="rounded-lg"
+                :src="waitingAreaPhoto"
+                :max-height="380"
+                cover
+                alt="The waiting area at South Royalton Health Center, with a wooden climbing slide, armchairs and houseplants by the window."
+              />
+              <figcaption class="text-white text-center mt-2">
+                <small>
+                  Our playroom gives children time to settle in before their visit.
+                </small>
+              </figcaption>
+            </figure>
+          </v-col>
+        </v-row>
 
-    <p class="text-h6 text-primary font-weight-bold my-4">The Initial Visit</p>
-    <p class="body-text text-body-1 text-white">
-      Our compassionate pediatric providers do whatever it takes to make every visit to our office a pleasant, relaxed experience.
-      With all of the important information about our practice available on our website, you can feel confident that
-      you and your child are well-prepared for your first appointment. We also invite you to review our about us page in
-      order to get to know our
-      <router-link :to="{path: 'meet-our-providers-staff'}" @click="appStore.setActiveId('meet-our-providers-staff')">clinicians and staff</router-link>
-      before you come in. We look forward to meeting you!
-    </p>
+        <h2 class="text-headline-small text-heading font-weight-bold mt-12 mb-4">
+          Before Your First Appointment
+        </h2>
+        <p class="body-text text-body-large text-white">
+          To help us get to know your child and make the most of your visit, please send
+          or drop off the following before your appointment whenever possible:
+        </p>
+        <icon-list :items="beforeVisit" />
 
-    <p class="text-h6 text-primary font-weight-bold my-4">Prior to your first appointment pleases send or drop off:</p>
-    <v-list class="body-text text-body-1 text-white" bg-color="transparent">
-      <v-list-item><v-icon :icon="mdiHospital" class="mx-2" color="secondary"/>Complete immunization records</v-list-item>
-      <v-list-item><v-icon :icon="mdiHospital" class="mx-2" color="secondary"/>Medical records from your previous pediatrician</v-list-item>
-    </v-list>
-    <p class="body-text text-body-1 text-white">
-      For your first appointment, please fill out the
-      <router-link :to="{path: 'patient-forms'}" @click="appStore.setActiveId('patient-forms')">New Patient Forms</router-link>.
-      Please bring your <strong>insurance card</strong> with you and any questions or concerns for your clinician (we love when people bring their list!).
-      Please plan on arriving <strong>15 minutes early</strong> so your child can play in our playroom while we assure your paperwork is in order.
-      These steps allow you to have the full time with your clinician, and your child to get comfortable with our office
-      prior to the appointment.
-    </p>
+        <p class="body-text text-body-large text-white mt-4">
+          Please complete your
+          <router-link to="/patient-forms">New Patient Forms</router-link> before your
+          visit and bring:
+        </p>
+        <icon-list :items="whatToBring" />
 
-    <p class="text-h6 text-primary font-weight-bold my-4">What to Bring to Your Appointment</p>
-    <p class="body-text text-body-1 text-white">
-      <v-list bg-color="transparent">
-        <v-list-item><v-icon :icon="mdiHospital" class="mx-2" color="secondary"/>Insurance cards</v-list-item>
-        <v-list-item><v-icon :icon="mdiHospital" class="mx-2" color="secondary"/>Co-Payment/deductible payment</v-list-item>
-        <v-list-item><v-icon :icon="mdiHospital" class="mx-2" color="secondary"/>List of any questions or concerns for clinician</v-list-item>
-      </v-list>
-    </p>
+        <p class="body-text text-body-large text-white mt-4">
+          We ask that you arrive about <strong>15 minutes early</strong> so your child
+          has time to explore our playroom while we complete your registration. That
+          means more time focused on your child and less time completing paperwork.
+        </p>
 
-    <p class="text-h6 text-primary font-weight-bold my-4">Please be Ready to Tell Clinician:</p>
-    <p class="body-text text-body-1 text-white">
-      <v-list class="" bg-color="transparent">
-        <v-list-item><v-icon :icon="mdiHospital" class="mx-2" color="secondary"/>
-          Child's medical history, medications, over the counter medications and supplements, and any allergies</v-list-item>
-        <v-list-item><v-icon :icon="mdiHospital" class="mx-2" color="secondary"/>
-          Details about your family medical history</v-list-item>
-        <v-list-item><v-icon :icon="mdiHospital" class="mx-2" color="secondary"/>
-          Recent care obtained outside our practice</v-list-item>
-        <v-list-item><v-icon :icon="mdiHospital" class="mx-2" color="secondary"/>
-          Info on how your child is doing at home, school, etc</v-list-item>
-      </v-list>
-    </p>
+        <h2 class="text-headline-small text-heading font-weight-bold mt-12 mb-4">
+          During Your Visit
+        </h2>
+        <p class="body-text text-body-large text-white">
+          To help us provide the best possible care, we'll ask about:
+        </p>
+        <icon-list :items="duringVisit" />
+        <p class="body-text text-body-large text-white mt-4">
+          The more we know about your child and family, the better we can partner with
+          you to support their health and well-being.
+        </p>
 
+        <h2 class="text-headline-small text-heading font-weight-bold mt-12 mb-4">
+          Stay Connected
+        </h2>
+        <p class="body-text text-body-large text-white">
+          Our <router-link to="/patient-portal">Patient Portal</router-link> makes it
+          easy to stay connected with our office. Through the portal, you can:
+        </p>
+        <icon-list :items="portalFeatures" />
+        <p class="body-text text-body-large text-white mt-4">
+          If you have questions before your first visit, please don't hesitate to call
+          us. We're always happy to help — you may also find your answer on our
+          <router-link to="/faq">frequently asked questions</router-link> page.
+        </p>
+        <p class="body-text text-body-large text-white mt-4">
+          We look forward to welcoming your family to South Royalton Health Center!
+        </p>
+
+        <v-sheet color="primary" class="rounded-lg mt-12 pa-8" elevation="8">
+          <h2 class="text-headline-small text-white text-center mb-4">
+            Ready to schedule?
+          </h2>
+          <div class="d-flex flex-column flex-sm-row justify-center ga-4">
+            <v-btn :href="appStore.officePhone" color="highlight" size="large">
+              Call {{ appStore.officePhoneStr }}
+            </v-btn>
+            <v-btn to="/patient-forms" color="highlight" size="large">
+              New Patient Forms
+            </v-btn>
+            <v-btn to="/patient-portal" color="highlight" size="large">
+              Patient Portal
+            </v-btn>
+          </div>
+        </v-sheet>
+      </v-col>
+    </v-row>
   </v-container>
-
 </template>
 
 <script setup>
-  import { useAppStore } from "@/store/app";
-  import { mdiHospital } from "@mdi/js";
+import { useAppStore } from "@/store/app";
+import IconList from "@/components/IconList.vue";
+import waitingAreaPhoto from "@/assets/img/office/srhc-waiting-area.jpg";
+import { useSeo } from "@/composables/useSeo";
 
-  const appStore = useAppStore()
+const appStore = useAppStore();
+
+const beforeVisit = [
+  "Complete immunization records",
+  "Medical records from your previous pediatrician",
+];
+
+const whatToBring = [
+  "Your insurance card",
+  "A list of your child's current medications, vitamins, and supplements",
+  "A list of questions or concerns you'd like to discuss (we love when families bring a list!)",
+];
+
+const duringVisit = [
+  "Your child's medical history, medications, allergies, vitamins, and supplements",
+  "Your family's medical history",
+  "Any recent care received outside our practice",
+  "How your child is doing at home, school, and in the community",
+];
+
+const portalFeatures = [
+  "Securely message our team",
+  "Request appointments",
+  "Access immunization records and health forms",
+  "Complete paperwork",
+  "Pay your bill online",
+];
+
+useSeo({
+  title: "New Patients",
+  description:
+    "Welcome to South Royalton Health Center. What to bring, what to expect at your first visit, new patient forms and how to get set up on our Patient Portal.",
+});
 </script>
 
 <style scoped>
+a:not(.v-btn) {
+  color: rgb(var(--v-theme-highlight));
+}
 
- a, router-link {
-    color: #F0EBCE;
-  }
+a:not(.v-btn):hover {
+  color: rgb(var(--v-theme-heading));
+}
 
-  /*a:visited, router-link:visited {*/
-  /*  color: #AA8B56;*/
-  /*}*/
-
-  a:hover, router-link:hover {
-    color: #4E6C50;
-  }
-
-  a:focus, router-link:focus {
-    color: sandybrown;
-  }
-
+a:not(.v-btn):focus {
+  color: sandybrown;
+}
 </style>

@@ -9,28 +9,42 @@
 //   $color-pack: false
 // );
 
-
 ::-webkit-scrollbar {
-    width: 16px;
-    height: 16px;
-  }
+  width: 16px;
+  height: 16px;
+}
 
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: var(--lightestgrey);
-  }
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--lightestgrey);
+}
 
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #4E6C50;
-  }
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--v-theme-secondary));
+}
 
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
+.body-text {
+  line-height: 2;
+}
 
-  .body-text {
-    line-height: 2;
+/* Anchor targets (jump-to-section links) would otherwise land underneath the
+     fixed app bar. Keep in step with the app bar height if that ever changes. */
+h1[id],
+h2[id],
+h3[id] {
+  scroll-margin-top: 184px;
+}
+
+@media (max-width: 960px) {
+  h1[id],
+  h2[id],
+  h3[id] {
+    scroll-margin-top: 170px;
   }
+}

@@ -18,23 +18,44 @@
         >
           <template v-slot:append>
             <v-avatar size="x-large" class="ma-auto">
-              <v-img :src="staffDetail.avatar" :alt="staffDetail.alt" cover />
+              <v-img
+                v-if="staffDetail.avatar"
+                :src="staffDetail.avatar"
+                :alt="staffDetail.alt"
+                cover
+              />
+              <span v-else class="staff-initials">{{
+                initials(staffDetail.name)
+              }}</span>
             </v-avatar>
           </template>
 
           <v-card-item :subtitle="staffDetail.field" />
 
           <v-card-text>
+            <!--
+              `eager` so the biography is in the page from the start.
+
+              A dialog builds its contents on first open, so until someone
+              clicked "Learn More" not one word of any bio existed in the HTML —
+              no board certifications, no Dartmouth faculty appointment, no
+              Pediatrician of the Year. For a practice whose credibility rests on
+              exactly that, it was the most valuable content on the site and the
+              only content search engines and AI assistants could not see. Same
+              defect the expansion panels had in Phase 2.
+            -->
             <v-dialog
               v-model="staffDetail.showText"
               :fullscreen="mobile"
               transition="dialog-top-transition"
               scrollable
+              eager
+              :aria-label="`About ${staffDetail.name}`"
             >
-              <v-sheet color="highlight mx-auto" max-width="600">
+              <v-sheet color="panel" class="mx-auto" max-width="600">
                 <v-container class="my-4 pa-8">
                   <v-row align="center" justify="center">
-                    <v-col cols="12">
+                    <v-col cols="12" v-if="staffDetail.photo">
                       <v-img
                         :src="staffDetail.photo"
                         class="staff-photo"
@@ -44,12 +65,37 @@
                     </v-col>
 
                     <v-col class="d-flex flex-column justify-center">
-                      <p class="staff-card-text body-text text-body-2 pa-4">
-                        {{ staffDetail.text }}
+                      <h2 class="text-headline-small px-4">
+                        {{ staffDetail.name
+                        }}<span v-if="staffDetail.cert">, {{ staffDetail.cert }}</span>
+                      </h2>
+
+                      <p
+                        v-for="(para, i) in staffDetail.bio"
+                        :key="i"
+                        class="staff-card-text body-text text-body-medium px-4 pt-4"
+                      >
+                        {{ para }}
                       </p>
+
+                      <p
+                        v-if="staffDetail.links?.length"
+                        class="staff-card-text body-text text-body-medium px-4 pt-4"
+                      >
+                        <template
+                          v-for="(link, i) in staffDetail.links"
+                          :key="link.label"
+                        >
+                          <a :href="link.href" v-bind="externalAttrs(link.href)">{{
+                            link.label
+                          }}</a>
+                          <span v-if="i < staffDetail.links.length - 1"> · </span>
+                        </template>
+                      </p>
+
                       <v-btn
                         @click="staffDetail.showText = false"
-                        color="primary"
+                        color="action"
                         class="align-self-center my-8"
                         >Close</v-btn
                       >
@@ -81,128 +127,164 @@
 <script setup>
 import { reactive } from "vue";
 import { useDisplay } from "vuetify";
-import millerPhoto from "@/assets/img/staff/dr-miller-card-photo.jpeg";
-import millerAvatar from "@/assets/img/staff/dr-miller-card-photo.jpeg";
-import abbiPhoto from "@/assets/img/staff/abbi-card-photo.jpeg";
+/*
+ * Two derivatives per person: a square, face-centred crop for the circular card
+ * avatar and the full portrait for the dialog. The 2025 photos shared one file
+ * for both, which meant a full-length shot squeezed into a 64px circle.
+ */
+import ashleyPhoto from "@/assets/img/staff/ashley-card-photo.jpg";
+import ashleyAvatar from "@/assets/img/staff/ashley-card-avatar.jpg";
+import abbiPhoto from "@/assets/img/staff/abbi-card-photo.jpg";
+import abbiAvatar from "@/assets/img/staff/abbi-card-avatar.jpg";
+import daniellePhoto from "@/assets/img/staff/danielle-card-photo.jpg";
+import danielleAvatar from "@/assets/img/staff/danielle-card-avatar.jpg";
 import cindyPhoto from "@/assets/img/staff/cindy-card-photo.jpg";
-import lincolnPhoto from "@/assets/img/staff/lincoln-card-photo.jpg";
-import lincolnAvatar from "@/assets/img/staff/lincoln-card-avatar.jpg";
-import ishamPhoto from "@/assets/img/staff/isham-card-photo.jpg";
-import ishamAvatar from "@/assets/img/staff/isham-card-avatar.jpg";
+import cindyAvatar from "@/assets/img/staff/cindy-card-avatar.jpg";
 import amberPhoto from "@/assets/img/staff/amber-card-photo.jpg";
 import amberAvatar from "@/assets/img/staff/amber-card-avatar.jpg";
+import kahleePhoto from "@/assets/img/staff/kahlee-card-photo.jpg";
+import kahleeAvatar from "@/assets/img/staff/kahlee-card-avatar.jpg";
+import ameliaPhoto from "@/assets/img/staff/amelia-card-photo.jpg";
+import ameliaAvatar from "@/assets/img/staff/amelia-card-avatar.jpg";
 
 const { mobile } = useDisplay();
 
+const initials = (name) =>
+  name
+    .split(" ")
+    .map((part) => part[0])
+    .join("")
+    .slice(0, 2);
+
+const externalAttrs = (href) =>
+  href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {};
+
+// Bios rewritten from the client document "website edits.docx" (2026-07).
 const staffDetails = reactive([
   {
     id: 0,
     name: "Ashley Miller",
     cert: "MD, FAAP, DipABLM",
-    field: "Clinician",
-    text: "Dr. Ashley was born and raised in southern New Hampshire, left briefly for college, returned to the Upper Valley for medical school at Dartmouth, and never left. She was lucky to spend time at South Royalton Health Center during training and was very excited to join the practice in 2014. She has a special interest in adolescent medicine and mental health but truly enjoys following families from birth to graduation. She is a board-certified pediatrician and a fellow of the American Academy of Pediatrics where she is actively involved at the state and national level. She is also a board-certified Lifestyle Medicine Physician. This means she looks at patients and families as a whole, taking into account how every aspect of their life affects their health and offering lifestyle based interventions, not just medication. Dr. Ashley enjoys teaching and is a Clinical Assistant Professor of Pediatrics at Geisel School of Medicine at Dartmouth. She was honored to be named Green Mountain Pediatrician of the year in 2022. When not seeing patients, you can find Dr. Ashley competing at local dressage show (think ice dancing on horseback), hiking or snowshoeing in the surrounding mountains, and swimming in the local rivers and lakes with her dogs.",
-    avatar: millerAvatar,
-    photo: millerPhoto,
+    field: "Pediatrician & Practice Owner",
+    bio: [
+      "Ashley Miller, MD, FAAP, DipABLM, is a board-certified Pediatrician and Lifestyle Medicine physician and owner of South Royalton Health Center. She is passionate about partnering with children and families to build healthy habits that support lifelong wellness and empower children to become healthy, resilient adults.",
+      "Originally from southern New Hampshire, Dr. Ashley returned to New Hampshire to attend the Geisel School of Medicine at Dartmouth and completed her pediatric residency at Dartmouth-Hitchcock Medical Center in 2009. After several years practicing pediatrics in New Hampshire, she was thrilled to join South Royalton Health Center in 2014 and became the practice owner in 2019.",
+      "Today, Dr. Ashley is proud to lead an independent, woman-owned pediatric medical home dedicated to providing relationship-based, evidence-based, whole-child care for families throughout Vermont and New Hampshire.",
+      "In addition to caring for patients, Dr. Ashley is a Fellow of the American Academy of Pediatrics (FAAP), a Diplomate of the American Board of Lifestyle Medicine, a Clinical Assistant Professor of Pediatrics at the Geisel School of Medicine at Dartmouth, and remains active in the American Academy of Pediatrics at both the state and national levels. She was honored to be named the 2022 Green Mountain Pediatrician of the Year.",
+      "When she's not caring for patients, you'll likely find Dr. Ashley competing in local dressage shows (think ice dancing on horseback!), hiking or snowshoeing in the surrounding mountains, or swimming in Vermont's rivers and lakes with her dogs. She feels incredibly fortunate to live and work in the community she calls home.",
+    ],
+    links: [
+      {
+        label: "Community leadership & media",
+        href: "/community-leadership-media-advocacy",
+      },
+      { label: "Auricular acupuncture", href: "/auricular-acupuncture" },
+    ],
+    avatar: ashleyAvatar,
+    photo: ashleyPhoto,
     alt: "Photo of Dr. Ashley Miller at South Royalton Health Center",
     showText: false,
   },
   {
     id: 1,
-    name: "Amelia Lincoln",
-    cert: "MEd, LCMHC",
-    field: "Clinician",
-    text:
-      "Amelia P. Lincoln, MEd, LCMHC is a licensed clinical mental health counselor who has been working with youth in Upper Valley schools for over twenty years. " +
-      "She is known to many as 'the lady with the dog' as her English Shepherd True was the school therapy dog at White River Valley School and the two are most often seen together. " +
-      "Amelia is working towards her licensed alcohol and drug counselor credentials and is especially interested in working in the area of substance use prevention and early intervention and helping youth find their way. " +
-      "She sees patients via Telehealth, at SRHC and in the local schools through her private practice True Paths Counseling LLC. " +
-      "Amelia can be reached at 802-282-9281 or at amelia@truepathscounseling.net",
-    avatar: lincolnAvatar,
-    photo: lincolnPhoto,
-    alt: "Photo of Amelia Lincoln at South Royalton Health Center",
+    name: "Abbi Henderson",
+    cert: "MSN, APRN, CPNP-PC",
+    field: "Pediatric Nurse Practitioner",
+    bio: [
+      "Abbi Henderson, MSN, APRN, CPNP-PC, is a Pediatric Nurse Practitioner at South Royalton Health Center who grew up in Rutland County and is proud to care for children and families in her home state of Vermont.",
+      "As the mother of three young children, Abbi understands many of the joys and challenges families experience. She has special interests in newborn care, lactation support, and pediatric mental health. She enjoys partnering with families through every stage of childhood and believes compassionate, relationship-based care helps children and parents feel confident, supported, and empowered.",
+      "Through HealthHubVT, Abbi serves as South Royalton Health Center's school-based pediatric clinician, providing medical care for students in local schools, participating in school team meetings, and collaborating with teachers, counselors, and other school professionals to strengthen the connection between healthcare and education so children can thrive both in and out of the classroom.",
+      "Abbi earned her Bachelor of Science in Nursing from the University of Connecticut and her Master of Science in Nursing from Maryville University. She is also credentialed as a Forensic Nurse Examiner, providing compassionate, trauma-informed care for children and adolescents who have experienced physical or sexual abuse.",
+      "When she's not caring for patients, Abbi enjoys spending time with her husband, their three young children, and their collection of animals. You'll often find her mountain biking, snowboarding, hiking, running, horseback riding, or exploring Vermont's beautiful outdoors.",
+    ],
+    links: [
+      { label: "HealthHubVT", href: "https://www.healthhubvt.org/" },
+      { label: "School-based visits", href: "/school-visits" },
+    ],
+    avatar: abbiAvatar,
+    photo: abbiPhoto,
+    alt: "Photo of Abbi Henderson at South Royalton Health Center",
     showText: false,
   },
   {
     id: 2,
-    name: "Abigail Henderson",
-    cert: "PNP",
-    field: "Clinician",
-    text:
-      " Abigail Henderson is a Pediatric Nurse Practitioner who grew up in Rutland County. " +
-      "Abbi earned her Bachelor of Science in nursing from the University of Connecticut and her Master of Science in Nursing from Maryville University. " +
-      "Working with children of all ages has always been her passion, but she especially loves providing newborn care and lactation support, as well as treating mental health concerns. " +
-      "Additionally, she is credentialed as a Forensic Nurse Examiner which allows her the privilege of helping adolescents and children who have suffered physical and sexual abuse. " +
-      "She loves working with children and families and is thrilled to be joining the team at South Royalton Health Center. " +
-      "Abbi lives with her husband, two children, and their collection of animals. " +
-      "She enjoys all outdoor activities but especially mountain biking, snowboarding, hiking, running, and horseback riding.",
-    avatar: abbiPhoto,
-    photo: abbiPhoto,
-    alt: "Photo of Abigail Henderson of the South Royalton Health Center",
-    showText: false,
-  },
-  {
-    id: 3,
     name: "Danielle Isham",
-    cert: "RN, Care Coordinator",
-    field: "Nursing",
-    text:
-      "Danielle grew up in Vermont, and graduated with her BSN from the University of Vermont School of " +
-      "Nursing in 2011. During her years at school she spent time working as a Medical Assistant and EMT for a " +
-      "local hospital and rescue squad. After graduating with her BSN Danielle worked at DHMC for several years on " +
-      "their orthopedic/trauma/plastics unit prior to becoming the School Nurse at the " +
-      "White River School-Bethel Campus in 2014. She continued her Nursing Career there until joining us in the " +
-      "fall of 2022. When not in the office Danielle enjoys spending time at the lake with her family and friends.",
-    avatar: ishamAvatar,
-    photo: ishamPhoto,
+    cert: "BSN, RN",
+    field: "Care Coordinator",
+    bio: [
+      "Danielle Isham, BSN, RN, is the Care Coordinator at South Royalton Health Center, where she helps children and families navigate the healthcare system and connect with the services they need. She works closely with families, schools, specialists, therapists, and community organizations to ensure every child receives coordinated, compassionate care. Whether she's helping a family access resources, facilitating referrals, or supporting communication between a child's healthcare team and school, Danielle is dedicated to making care more connected and less overwhelming.",
+      "A Vermont native, Danielle earned her Bachelor of Science in Nursing from the University of Vermont in 2011. Her diverse nursing experience includes working as a medical assistant and EMT, caring for patients on Dartmouth Hitchcock Medical Center's orthopedic, trauma, and plastics unit, and serving as the school nurse at White River Valley School–Bethel Campus for eight years. This unique combination of hospital, school, and community-based nursing gives Danielle a well-rounded perspective on helping children and families navigate complex healthcare needs.",
+      "Outside of work, Danielle enjoys spending time at the lake with her family and friends and taking advantage of everything Vermont has to offer.",
+    ],
+    avatar: danielleAvatar,
+    photo: daniellePhoto,
     alt: "Photo of Danielle Isham at South Royalton Health Center",
     showText: false,
   },
   {
-    id: 4,
+    id: 3,
     name: "Cindy Eggleston",
     cert: "LPN",
     field: "Nursing",
-    text:
-      'Judith "Cindy" Eggleston was born and raised in Bradford, Vermont. Though she moved around some in her early to mid 20\'s, Bradford has always been considered home to her. ' +
-      "She spent several years managing large horse farms and a ranch, then worked as an Administrative Assistant at a pediatrics office for 2 years. " +
-      "The pediatrics office was where she discovered she really enjoyed the atmosphere of clinical care and wanted to further her career in order to be more involved. " +
-      "She attended Vermont State University where she graduated the Practical Nursing program. " +
-      "She intends to next begin working towards her Associates Degree in Behavioral Sciences to broaden the scope of her abilities and knowledge for those among the practice as well as the community. " +
-      "When she isn't at work, Cindy enjoys reading novels, hiking with her beloved dogs and fishing the local lakes and ponds for bass.",
-    avatar: cindyPhoto,
+    bio: [
+      "Cindy Eggleston, LPN, is one of the nurses families know and trust at South Royalton Health Center and an integral part of our clinical team. Working closely alongside Dr. Ashley, Cindy helps care for patients throughout the day, provides telephone triage and nursing advice, performs in-office blood draws, follows up with families after emergency department visits and hospitalizations, and helps ensure every child receives timely, compassionate care. She understands that a reassuring voice and a thoughtful conversation can make all the difference when parents are worried about their child, and she strives to make every interaction as calm and supportive as possible.",
+      "A lifelong Vermonter, Cindy grew up in Bradford and is proud to care for families in the community she calls home. Before pursuing nursing, she managed horse farms and worked in a pediatric office, where she discovered her passion for caring for children and supporting families. She earned her Practical Nursing degree from Vermont State University and is currently pursuing her lactation counselor certification to better support breastfeeding families. She also has a special interest in behavioral health and is committed to continuing her education to provide even more comprehensive care.",
+      "Outside of work, Cindy enjoys reading novels, hiking, and fishing Vermont's lakes and ponds for bass.",
+    ],
+    avatar: cindyAvatar,
     photo: cindyPhoto,
     alt: "Photo of Cindy Eggleston at South Royalton Health Center",
     showText: false,
   },
   {
-    id: 5,
+    id: 4,
     name: "Amber Barnard",
-    cert: "Front Desk",
-    field: "Support Staff",
-    text:
-      "Amber grew up in VT and left seeking adventure. Luckily she came back to us and found that she could " +
-      "combine her passion of working/being around children and her previous office experience. " +
-      "Now you can find her at the front desk at South Royalton Health Center ready to help patients and families " +
-      "check into their appointments, answering the phones, and helping with billing questions. Come say Hi!",
+    cert: "Office Manager",
+    field: "Billing Specialist",
+    bio: [
+      "Amber Barnard is the Office Manager and Billing Specialist at South Royalton Health Center, where she helps ensure every family's experience is welcoming, organized, and seamless from the moment they contact our office. Whether she's answering scheduling questions, assisting with billing, or greeting families at the front desk, Amber is committed to making every interaction a positive one.",
+      "A Vermont native, Amber left the state in search of adventure before ultimately finding her way back home. She enjoys being part of a close-knit pediatric practice where she can build lasting relationships with local children and families while helping keep the office running smoothly.",
+      "When you visit South Royalton Health Center, there's a good chance Amber will be one of the first friendly faces to welcome you.",
+    ],
     avatar: amberAvatar,
     photo: amberPhoto,
     alt: "Photo of Amber Barnard at South Royalton Health Center",
     showText: false,
   },
   {
-    id: 6,
+    id: 5,
     name: "Kahlee Holden",
     cert: "Front Desk",
     field: "Support Staff",
-    text:
-      "Kahlee grew up in West Fairlee Vermont. After a decade long stint in Groton Vermont starting her family, " +
-      "Kahlee moved to Bradford Vermont where she worked at a Pediatrics office as the assistant practice manager " +
-      "and referral specialist for 3 years. It was here that Kahlee found out she had a knack for medical " +
-      "administration and paperwork! Now she sits behind our check in/check out window ready to help with checking " +
-      "in and scheduling appointments. When she isn't at work, Kahlee enjoys reading and spending time with her family.",
-    avatar: null,
-    photo: null,
-    alt: "Photo of Kahlee Holden at South Royalton Health Center",
+    bio: [
+      "Kahlee Holden is one of the first friendly faces you'll see when you visit South Royalton Health Center. She helps families navigate every step of their child's visit — from scheduling appointments and coordinating referrals to ensuring lab orders and follow-up are completed. Whether you're checking in for a visit or calling with a question, Kahlee is always happy to help.",
+      "A lifelong Vermonter, Kahlee grew up in West Fairlee before raising her family in Groton and later settling in Bradford. As a mom herself, she understands the joys and challenges of raising children and enjoys helping make the healthcare experience a little easier for other families. She takes pride in helping families navigate the details of their child's care with kindness, organization, and efficiency.",
+      "Outside of work, Kahlee enjoys reading and spending time with her family.",
+    ],
+    avatar: kahleeAvatar,
+    photo: kahleePhoto,
+    alt: "Kahlee Holden at South Royalton Health Center",
+    showText: false,
+  },
+  {
+    id: 6,
+    name: "Amelia Lincoln",
+    cert: "MEd, LCMHC, LADC",
+    field: "True Paths Counseling LLC",
+    bio: [
+      "Amelia P. Lincoln, MEd, LCMHC, LADC has been working with youth in the Upper Valley for over twenty years. She is known to many as 'the lady with the dog' as her English Shepherd True was the school therapy dog at White River Valley School and the two are most often seen together.",
+      "Amelia is especially interested in substance use prevention and early intervention and in helping youth find their way. She sees patients via Telehealth, at SRHC and in the local schools through her private practice True Paths Counseling LLC.",
+    ],
+    links: [
+      { label: "802-282-9281", href: "tel:8022829281" },
+      {
+        label: "amelia@truepathscounseling.net",
+        href: "mailto:amelia@truepathscounseling.net",
+      },
+    ],
+    avatar: ameliaAvatar,
+    photo: ameliaPhoto,
+    alt: "Photo of Amelia Lincoln at South Royalton Health Center",
     showText: false,
   },
 ]);
@@ -212,5 +294,21 @@ const staffDetails = reactive([
 .staff-card-header,
 .staff-card-footer {
   opacity: 90%;
+}
+
+/* Sits on the card's green surface (secondary) in both themes. */
+.staff-initials {
+  font-weight: 700;
+  color: #fff;
+}
+
+.staff-card-text a {
+  color: rgb(var(--v-theme-on-panel));
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.staff-card-text a:hover {
+  color: rgb(var(--v-theme-heading));
 }
 </style>

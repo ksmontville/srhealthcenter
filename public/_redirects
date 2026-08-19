@@ -1,3 +1,16 @@
 /robots.txt    /robots.txt   200
 /sitemap.xml    /sitemap.xml   200
-/*    /index.html   200
+
+# The Office Details page was retired; its appointments / insurance / payment
+# content now lives on the FAQ page. 301 so existing links keep their value.
+/office-details    /faq    301!
+
+# Local Resources was removed at the client's request. It was previously listed
+# in the sitemap, so send any indexed links to the surviving resources page.
+/local-resources    /srhc-recommended-child-health-web-links    301!
+
+# Every real route is prerendered to its own dist/<route>/index.html, and Netlify
+# serves an existing file in preference to this non-forced rule. So this now only
+# catches genuinely unknown paths — returning 404 rather than 200 keeps them out
+# of the index instead of registering as soft 404s.
+/*    /index.html   404

@@ -1,68 +1,69 @@
 <template>
   <v-container class="pa-8">
-
-    <p class="text-h2 text-white text-center my-16">Child Health Web Links</p>
-    <p class="text-h4 text-white text-center my-16"><em>SRHC Recommended</em></p>
-
-    <p class="text-h6 text-primary font-weight-bold">Disclaimer</p>
-    <p class="body-text text-body-1 text-white">
-      This website is an informational guide only; it cannot answer personal health-related questions, legal questions,
-      or research questions. The information presented here should not be substituted for medical, legal or other
-      professional advice. Please feel free to call us about your child's health!
+    <h1 class="text-display-large text-white text-center my-16">
+      Child Health Web Links
+    </h1>
+    <p class="text-display-small text-white text-center mt-n8 mb-16">
+      <em>SRHC Recommended</em>
     </p>
 
-    <p class="text-h6 text-white text-center font-weight-bold my-16">
-      Please like us on <a :href="appStore.facebookUrl" target="_blank">Facebook <v-icon :icon="mdiFacebook" class="mx02" /></a>
-      for current hot topic news and fun!</p>
+    <v-row justify="center">
+      <v-col cols="12" md="10" lg="9">
+        <h2 class="text-title-large text-heading font-weight-bold">Disclaimer</h2>
+        <p class="body-text text-body-large text-white">
+          This website is an informational guide only; it cannot answer personal
+          health-related questions, legal questions, or research questions. The
+          information presented here should not be substituted for medical, legal or
+          other professional advice. Please feel free to call us about your child's
+          health!
+        </p>
 
-    <p class="text-h6 text-white font-weight-bold my-4"></p>
-    <p class="body-text text-body-1 text-white">
-    </p>
+        <p class="text-title-large text-white text-center font-weight-bold my-12">
+          Please like us on
+          <a :href="appStore.facebookUrl" target="_blank" rel="noopener noreferrer"
+            >Facebook <v-icon :icon="mdiFacebook" class="mx-1"
+          /></a>
+          for current hot topic news and fun!
+        </p>
 
-    <p class="text-h6 text-white font-weight-bold my-4"></p>
-    <p class="body-text text-body-1 text-white"></p>
+        <h2 class="text-headline-small text-heading font-weight-bold mt-12 mb-4">
+          Recommended Links by Topic
+        </h2>
+        <p class="body-text text-body-large text-white mb-6">
+          Select a topic panel for links to helpful resources.
+        </p>
 
-    <v-container class="my-8">
-      <v-row justify="center" align="start">
-        <v-col cols="12" md="3">
-          <p class="body-text text-h6 tex-center text-white">Select a topic panel for links to helpful resources.</p>
-        </v-col>
-        <v-col cols="12" md="9">
-          <web-resources-expansion-panels />
-        </v-col>
-      </v-row>
-
-    </v-container>
-
-</v-container>
+        <web-resources-accordion />
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script setup>
-  import {mdiFacebook} from "@mdi/js";
-  import {useAppStore} from "@/store/app";
-  import WebResourcesExpansionPanels from "@/components/WebResourcesExpansionPanels.vue";
+import { mdiFacebook } from "@mdi/js";
+import { useAppStore } from "@/store/app";
+import WebResourcesAccordion from "@/components/WebResourcesAccordion.vue";
+import { useSeo } from "@/composables/useSeo";
 
-  const appStore = useAppStore()
+const appStore = useAppStore();
 
-
+useSeo({
+  title: "Recommended Child Health Web Links",
+  description:
+    "Child health websites recommended by the clinicians at South Royalton Health Center — general health, early childhood development, parenting, adolescence and mental health resources.",
+});
 </script>
 
 <style scoped>
+a:not(.v-btn) {
+  color: rgb(var(--v-theme-highlight));
+}
 
-  a, router-link {
-    color: #F0EBCE;
-  }
+a:not(.v-btn):hover {
+  color: rgb(var(--v-theme-heading));
+}
 
-  /*a:visited, router-link:visited {*/
-  /*  color: #AA8B56;*/
-  /*}*/
-
-  a:hover, router-link:hover {
-    color: #4E6C50;
-  }
-
-  a:focus, router-link:focus {
-    color: sandybrown;
-  }
-
+a:not(.v-btn):focus {
+  color: sandybrown;
+}
 </style>

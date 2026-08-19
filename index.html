@@ -1,31 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" href="/teddy-bear.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pediatrician South Royalton, VT - South Royalton Health Center - Pediatrics for Family Health</title>
-  <meta name="description" content="South Royalton Health Center serves children and parents in Vermont and the New Hampshire Upper Valley.
-If you're looking for accessible pediatric care, a child–friendly environment, and a responsive team of pediatricians in the Upper Valley/Central Vermont, then look no further." />
-    <meta http-equiv="content-type" content="https://srhealthcenter.com" name="website" />
-    <meta name="keywords" content="pediatrics, healthcare, family medicine, vermont, new hampshire, darthmouth hitchcock" />
-    <meta name="google-site-verification" content="google-site-verification=IOFeyPbweoBZN8pbH_ku1gH-OsC8HoE3TohlokGbD1M" />
-    <meta name="robots" content="index,follow" />
+  <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="og:title" content="South Royalton Health Center serves children and parents in Vermont and the New Hampshire Upper Valley.
-If you're looking for accessible pediatric care, a child–friendly environment, and a responsive team of pediatricians in the Upper Valley/Central Vermont, then look no further." />
-    <meta name="og:url" content="https://srhealthcenter.com" />
-    <meta name="og:type" content="website" />
-    <meta name="og:description" content="South Royalton Health Center serves children and parents in Vermont and the New Hampshire Upper Valley.
-If you're looking for accessible pediatric care, a child–friendly environment, and a responsive team of pediatricians in the Upper Valley/Central Vermont, then look no further.." />
-    <meta name="og:image" content="https://ibb.co/nk8pFMn" />
-    <meta name="og:locale" content="en_US" />
-</head>
+    <link rel="icon" href="/teddy-bear.svg" />
 
-<body>
-  <div id="app"></div>
-  <script type="module" src="/src/main.js"></script>
-</body>
+    <!--
+      Fonts are self-hosted (see public/font/README.md and the @font-face rules
+      in App.vue). Preloaded because they are render-critical and would
+      otherwise only be discovered after the CSS parses.
+    -->
+    <link
+      rel="preload"
+      href="/font/Roboto-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/font/Roboto-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
 
+    <!--
+      Title, description, canonical, Open Graph and Twitter tags are set per
+      route by `useSeo()` (src/composables/useSeo.js) and captured into the
+      static HTML by the prerender step. Only genuinely global tags belong here —
+      anything page-specific duplicated below would fight unhead, and the old
+      `name="og:*"` spelling would not even dedupe against unhead's correct
+      `property="og:*"`.
+    -->
+    <title>Pediatrician in South Royalton, VT | South Royalton Health Center</title>
+    <meta
+      name="description"
+      content="Independent, woman-owned pediatric practice in South Royalton, Vermont, serving newborns through young adults across the Upper Valley of Vermont and New Hampshire."
+    />
+
+    <meta name="robots" content="index,follow" />
+    <meta name="theme-color" content="#395144" />
+    <meta
+      name="google-site-verification"
+      content="google-site-verification=IOFeyPbweoBZN8pbH_ku1gH-OsC8HoE3TohlokGbD1M"
+    />
+  </head>
+
+  <body>
+    <div id="app"></div>
+    <!--
+      Applies the visitor's theme before first paint.
+
+      Pages are prerendered with the light theme baked into the markup, so a
+      visitor who prefers dark would see a flash of light while the bundle
+      loads. Vuetify's theme stylesheet is captured in the prerendered HTML and
+      defines both `.v-theme--light` and `.v-theme--dark`, so swapping the class
+      is enough — no colour values are duplicated here, and nothing to keep in
+      sync with plugins/vuetify.js.
+
+      Must stay after #app so the prerendered app root already exists.
+    -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("srhc-theme");
+          var dark =
+            stored === "dark" ||
+            (stored !== "light" &&
+              window.matchMedia("(prefers-color-scheme: dark)").matches);
+          var app = document.querySelector(".v-application");
+          if (!app) return;
+          app.classList.remove(dark ? "v-theme--light" : "v-theme--dark");
+          app.classList.add(dark ? "v-theme--dark" : "v-theme--light");
+        } catch (e) {
+          /* storage blocked — fall through to the prerendered default */
+        }
+      })();
+    </script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>

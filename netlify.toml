@@ -1,0 +1,25 @@
+# Netlify build configuration.
+#
+# NOTE: this file takes precedence over the build settings configured in the
+# Netlify UI. It was added because the prerender step (scripts/prerender.mjs)
+# needs a Chromium binary, which is not present in the build image by default —
+# without `playwright install`, `npm run build` fails in CI.
+#
+# Deliberately NOT `--with-deps`: that flag shells out to `sudo`/`su` to apt-install
+# system libraries, and the build image runs as a non-root user with no password —
+# it fails with "su: Authentication failure" before the browser is even downloaded.
+# The image already ships the shared libraries headless Chromium needs, so the plain
+# install is both sufficient and faster.
+
+[build]
+  command = "npx playwright install chromium && npm run build"
+  publish = "dist"
+
+[build.environment]
+  # Matches the Netlify UI setting and local development. The site was pinned to
+  # Node 16, which cannot run Vite 8 (requires >=20.19) — the build would have
+  # failed on the first deploy after the toolchain upgrade.
+  NODE_VERSION = "24"
+  # Cache the browser inside the repo so Netlify's build cache can reuse it
+  # between deploys instead of re-downloading ~120 MB every time.
+  PLAYWRIGHT_BROWSERS_PATH = "0"
